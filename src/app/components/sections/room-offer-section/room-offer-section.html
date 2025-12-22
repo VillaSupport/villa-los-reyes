@@ -17,8 +17,8 @@
 
         <p class="price">
           <span class="amount">{{ price() }}</span>
-          <span class="currency">{{ currency() | translate }}</span>
-          <span class="per-person">{{ perPerson() | translate }}</span>
+          <span class="currency">{{currency()}}</span>
+          <span class="per-person">{{ perUnit() | translate }}</span>
         </p>
 
         @if (link()) {

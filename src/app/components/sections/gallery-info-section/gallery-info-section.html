@@ -1,9 +1,10 @@
 <section class="gallery-info-section" [class.reverse]="reverse()" [style.background]="color()">
   <div class="gallery-wrapper">
-    <gallery-grid [mainImage]="mainImage()" [thumbImages]="thumbImages()" />
+    <gallery-grid  class="gallery-grid" [mainImage]="mainImage()" [thumbImages]="thumbImages()"
+    />
 
     <div class="info-column">
-      <info-panel [title]="title()" [description]="description()" [link]="link()" [style.width]="panelWidth()" />
+      <info-panel [title]="title()" [description]="description()" [link]="link()"  />
 
       @if (featuresTitle() && features()) {
       <feature-list [title]="featuresTitle()!" [features]="features()!" />

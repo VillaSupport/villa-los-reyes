@@ -16,6 +16,6 @@ export class GridRoomsSection {
   }>();
 
   rooms = input<
-    { src: string; alt: string; name: string; details: string; link?: string }[]
+    { src: string; alt: string; name: string; details: string; path?: string }[]
   >([]);
 }

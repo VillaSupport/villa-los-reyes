@@ -19,5 +19,6 @@ export class ExperienceBasePage {
   }>();
 
   // Input para las imágenes de la galería
+  title = input.required<string>();
   images = input.required<{ src: string; title: string,path:string }[]>();
 }

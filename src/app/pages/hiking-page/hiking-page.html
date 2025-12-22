@@ -1,21 +1,25 @@
-<experience-base-page [header]="{
-      head: {
-        title: 'Experiencias y aventuras',
-        description: 'Descubre aventuras inolvidables y experiencias únicas en Viñales.'
-      },
-      image: {
-        src: '/assets/images/experiences/experiences-header.jpg',
-        alt: 'Rutas de Senderismo - Villa Los Reyes'
-      },
-      objectPosition: 'center center'
-    }" [images]="[
-      { src: '/assets/images/adventures/slide-from-hell-to-paradise.jpg', title: 'Del infierno al paraíso',path:'/experiences/hiking/from-hell-to-paradise' },
-      { src: '/assets/images/adventures/slide-amazing-sunrise.jpg', title: 'Amanecer increíble',path:'/experiences/hiking/amazing-sunrise' },
-      { src: '/assets/images/adventures/slide-enjoying-the-sunset.jpg', title: 'Disfrutando del ocaso',path:'/experiences/hiking/enjoying-the-sunset' },
-      { src: '/assets/images/adventures/slide-true-hiking.jpg', title: 'Un verdadero hiking',path:'/experiences/hiking/true-hiking' },
-      { src: '/assets/images/adventures/slide-antiquity-and-nature.jpg', title: 'Antigüedad y naturaleza',path:'/experiences/hiking/antiquity-and-nature' },
-      { src: '/assets/images/adventures/slide-100-percent-ecology.jpg', title: '100% ecología',path:'/experiences/hiking/pure-ecology' },
-      { src: '/assets/images/adventures/slide-tobacco-inside.jpg', title: 'Tabaco inside',path:'/experiences/hiking/tobacco-inside' },
-      { src: '/assets/images/adventures/slide-vinales-day-trip.jpg', title: 'Viñales: day trip',path:'/experiences/hiking/vinales-day-trip' },
-      { src: '/assets/images/adventures/slide-history-culture-and-nature.jpg', title: 'Historia, cultura y naturaleza',path:'/experiences/hiking/history-culture-and-nature' }
-    ]" />
+<experience-base-page
+  [header]="{
+    head: {
+      title: 'adventuresPage.hiking.header.title',
+      description: 'adventuresPage.hiking.header.description'
+    },
+    image: {
+      src: '/assets/images/experiences/experiences-header.jpg',
+      alt: 'Rutas de Senderismo - Villa Los Reyes'
+    },
+    objectPosition: 'center center'
+  }"
+  [title]="'adventuresPage.hiking.sectionTitle'"
+  [images]="[
+    { src: '/assets/images/adventures/slide-from-hell-to-paradise.jpg', title: 'adventuresPage.hiking.items.0.label', path: '/experiences/hiking/from-hell-to-paradise' },
+    { src: '/assets/images/adventures/slide-amazing-sunrise.jpg', title: 'adventuresPage.hiking.items.1.label', path: '/experiences/hiking/amazing-sunrise' },
+    { src: '/assets/images/adventures/slide-enjoying-the-sunset.jpg', title: 'adventuresPage.hiking.items.2.label', path: '/experiences/hiking/enjoying-the-sunset' },
+    { src: '/assets/images/adventures/slide-true-hiking.jpg', title: 'adventuresPage.hiking.items.3.label', path: '/experiences/hiking/true-hiking' },
+    { src: '/assets/images/adventures/slide-antiquity-and-nature.jpg', title: 'adventuresPage.hiking.items.4.label', path: '/experiences/hiking/antiquity-and-nature' },
+    { src: '/assets/images/adventures/slide-100-percent-ecology.jpg', title: 'adventuresPage.hiking.items.5.label', path: '/experiences/hiking/pure-ecology' },
+    { src: '/assets/images/adventures/slide-tobacco-inside.jpg', title: 'adventuresPage.hiking.items.6.label', path: '/experiences/hiking/tobacco-inside' },
+    { src: '/assets/images/adventures/slide-vinales-day-trip.jpg', title: 'adventuresPage.hiking.items.7.label', path: '/experiences/hiking/vinales-day-trip' },
+    { src: '/assets/images/adventures/slide-history-culture-and-nature.jpg', title: 'adventuresPage.hiking.items.8.label', path: '/experiences/hiking/history-culture-and-nature' }
+  ]"
+/>

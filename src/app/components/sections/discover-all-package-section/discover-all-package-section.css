@@ -9,14 +9,17 @@
 .discover-package-section {
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
   gap: 2.5rem;
-  padding: 5rem 3rem;
+  padding:5rem;
   background-color: #f6f1e9;
   border-radius: 3rem 3rem 0 0;
 }
 
 .discover-info {
-  padding: 0 2.5rem;
+  margin: 0 auto;
+  max-width: 1568px;
+  width: 100%;
   text-align: left;
 }
 
@@ -40,11 +43,33 @@ p {
 }
 
 strong {
-  color: #234e3f;
-  font-family: Poppins, sans-serif;
-  font-size: 1.125rem;
   font-weight: 700;
-  line-height: 1.875rem;
-  letter-spacing: 0.03125rem;
 }
 
+@media (max-width: 600px) {
+
+
+  .discover-package-section {
+    padding: 2rem 1rem;
+    gap: 1rem;
+    border-radius: 1rem 1rem 0 0;
+    align-items: center;
+  }
+
+  .discover-info {
+    max-width: 400px;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    line-height: 2.2rem;
+    margin-bottom: 0.75rem;
+    text-align: left;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+}

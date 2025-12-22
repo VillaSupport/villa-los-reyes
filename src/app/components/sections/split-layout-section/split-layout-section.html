@@ -1,4 +1,6 @@
-<div class="split-layout" [class.reverse]="reverse()" [style.background]="color()">
+ <div class="split-layout-wrapper" [style.background]="color()">
+
+<div class="split-layout" [class.reverse]="reverse()" >
   <div class="text-container">
     <info-panel [title]="info().title" [description]="info().description" />
 
@@ -19,3 +21,5 @@
     }
   </div>
 </div>
+
+ </div>

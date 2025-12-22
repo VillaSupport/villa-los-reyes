@@ -1,66 +1,71 @@
 <div class="page-content">
-
-  <main-header-section [head]="{
-      title: ('services.header.title'),
-      description: ('services.header.description')
-    }" [image]="{
+  <!-- HEADER -->
+  <main-header-section
+    [head]="{
+      title: 'facilities.header.title',
+      description: 'facilities.header.description'
+    }"
+    [image]="{
       src: '/assets/images/outdoor-areas/gardens-03.jpg',
-      alt: 'Restaurante y bar de Villa Los Reyes'
-    }" [objectPosition]="'50% 40%'" />
-
-  <grid-rooms-section class="split-layout--up" [info]="{
-    title: 'Espacios diseñados para tu descanso y bienestar',
-    description: 'Las habitaciones están pensadas para ofrecer privacidad, confort y tranquilidad desde el primer momento. Con acceso independiente, buena ventilación y altos niveles de limpieza, cada detalle contribuye a una estancia placentera. Además, las zonas comunes como los jardines, la terraza y el restaurante-bar complementan la experiencia con opciones para relajarte y disfrutar del entorno.',
-
-  }" [rooms]="[
-    { src: '/assets/images/rooms/room-01/slide-01.jpg', alt: 'room1.alt', name: 'room1.name', details: 'room1.details' },
-    { src: '/assets/images/rooms/room-02/slide-01.jpg', alt: 'room2.alt', name: 'room2.name', details: 'room2.details' },
-    { src: '/assets/images/rooms/room-03/slide-06.jpg', alt: 'room3.alt', name: 'room3.name', details: 'room3.details' },
-    { src: '/assets/images/rooms/room-04/slide-03.jpg', alt: 'room4.alt', name: 'room4.name', details: 'room4.details' },
-    { src: '/assets/images/rooms/room-05/slide-02.jpg', alt: 'room5.alt', name: 'room5.name', details: 'room5.details' }
-  ]"
+      alt: 'Instalaciones de Villa Los Reyes'
+    }"
+    [objectPosition]="'50% 40%'"
   />
 
-  <gallery-info-section [mainImage]="{
+   <grid-rooms-section class="split-layout--up" [info]="{
+    title: 'facilities.restaurant.title',
+    description: 'facilities.restaurant.description'
+  }" [rooms]="rooms" />
+
+  <!-- RESTAURANTE -->
+  <gallery-info-section
+    [mainImage]="{
       src: 'assets/images/restaurant/slide-dining-area-01.jpg',
-      alt: ('services.sections.0.title') + ' - ' + ('services.header.title')
-    }" [thumbImages]="[
-      { src: 'assets/images/restaurant/slide-bar-area.jpg', alt: ('services.sections.0.title') + ' 1' },
-      { src: 'assets/images/gallery/slide-restaurant.jpg', alt: ('services.sections.0.title') + ' 2' },
-      { src: 'assets/images/restaurant/slide-dining-area-02.jpg', alt: ('services.sections.0.title') + ' 3' }
-    ]" [title]="('Bar-Restaurante')"
-    [description]="('Nuestro restaurante es amplio y acoge a varios comensales, ofreciendo un ambiente climatizado o, si lo prefieres, con acceso al jardín para disfrutar de las vistas. El bar, ubicado junto a una piscina en una pequeña terraza, te invita a relajarte mientras saboreas exquisitos cócteles. Un lugar ideal para disfrutar de una experiencia única.')"
-    [panelWidth]="'600px'"
+      alt: 'Bar-Restaurante'
+    }"
+    [thumbImages]="[
+      { src: 'assets/images/restaurant/slide-bar-area.jpg', alt: 'Bar-Restaurante' },
+      { src: 'assets/images/gallery/slide-restaurant.jpg', alt: 'Bar-Restaurante' },
+      { src: 'assets/images/restaurant/slide-dining-area-02.jpg', alt: 'Bar-Restaurante' }
+    ]"
+    [title]="'facilities.restaurant.title'"
+    [description]="'facilities.restaurant.description'"
     [reverse]="true"
     [color]="'#E4EAE5'"
-    />
+  />
 
-    <gallery-info-section [mainImage]="{
+  <!-- JARDINES Y PISCINA -->
+  <gallery-info-section
+    [mainImage]="{
       src: 'assets/images/outdoor-areas/gardens-01.jpg',
-      alt: ('services.sections.0.title') + ' - ' + ('services.header.title')
-    }" [thumbImages]="[
-      { src: 'assets/images/outdoor-areas/gardens-02.jpg', alt: ('services.sections.0.title') + ' 1' },
-      { src: 'assets/images/outdoor-areas/gardens-03.jpg', alt: ('services.sections.0.title') + ' 2' },
-      { src: 'assets/images/outdoor-areas/gardens-04.jpg', alt: ('services.sections.0.title') + ' 3' }
-    ]" [title]="('Jardínes y piscina')"
-    [description]="('Nuestro jardín está ambientado con plantas locales que resaltan el verdor y la naturaleza cubana. Disfruta de un clima agradable, con abundante exposición al sol, perfecto para relajarte. Además, cuenta con una piscina para que disfrutes de un refrescante baño en un entorno único y tranquilo.')"
-    [panelWidth]="'600px'"
+      alt: 'Jardines y piscina'
+    }"
+    [thumbImages]="[
+      { src: 'assets/images/outdoor-areas/gardens-02.jpg', alt: 'Jardines y piscina' },
+      { src: 'assets/images/outdoor-areas/gardens-03.jpg', alt: 'Jardines y piscina' },
+      { src: 'assets/images/outdoor-areas/gardens-04.jpg', alt: 'Jardines y piscina' }
+    ]"
+    [title]="'facilities.gardens.title'"
+    [description]="'facilities.gardens.description'"
     [reverse]="false"
     [color]="'#f7faf7'"
-    />
+  />
 
-    <gallery-info-section [mainImage]="{
+  <!-- TERRAZA -->
+  <gallery-info-section
+    [mainImage]="{
       src: 'assets/images/outdoor-areas/terraces-01.jpg',
-      alt: ('services.sections.0.title') + ' - ' + ('services.header.title')
-    }" [thumbImages]="[
-      { src: 'assets/images/outdoor-areas/terraces-02.jpg', alt: ('services.sections.0.title') + ' 1' },
-      { src: 'assets/images/outdoor-areas/terraces-03.jpg', alt: ('services.sections.0.title') + ' 2' },
-      { src: 'assets/images/outdoor-areas/terraces-04.jpg', alt: ('services.sections.0.title') + ' 3' }
-    ]" [title]="('Terraza')"
-    [description]="('Nuestra terraza en la azotea ofrece vistas impresionantes que te permitirán disfrutar de momentos únicos. Con varios espacios cómodos, es el lugar ideal para relajarte, tomar el desayuno o disfrutar de una comida mientras contemplas el paisaje. Un rincón perfecto para un rato agradable en plena naturaleza.')"
-    [panelWidth]="'600px'"
+      alt: 'Terraza'
+    }"
+    [thumbImages]="[
+      { src: 'assets/images/outdoor-areas/terraces-02.jpg', alt: 'Terraza' },
+      { src: 'assets/images/outdoor-areas/terraces-03.jpg', alt: 'Terraza' },
+      { src: 'assets/images/outdoor-areas/terraces-04.jpg', alt: 'Terraza' }
+    ]"
+    [title]="'facilities.terrace.title'"
+    [description]="'facilities.terrace.description'"
     [reverse]="true"
     [color]="'#E4EAE5'"
-    />
+  />
 
 </div>

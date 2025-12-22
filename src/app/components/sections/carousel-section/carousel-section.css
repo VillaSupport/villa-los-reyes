@@ -119,16 +119,89 @@
   transform: scale(1.6);
 }
 
+
+
+/* DESKTOP PEQUEÑO – 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .carousel-container {
+    padding: 14rem 2rem 10rem;
+  }
+
+  .carousel-overlay {
+    min-height: 15vh;
+    gap: 1.5rem;
+  }
+
+  .text-content h1 {
+    font-size: 3.8rem;
+    line-height: 3.6rem;
+  }
+
+  .text-content p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+
+  .nav-button {
+    font-size: 40px;
+  }
+
+  .indicator-container {
+    gap: 2.2rem;
+    padding: 0.75rem;
+  }
+}
+
+
+/* TABLETS Y MÓVILES GRANDES */
+@media (min-width: 601px) and (max-width: 768px) {
+
+  .carousel-container {
+    padding: 12rem 1.5rem 10rem;
+    
+  }
+
+  /* Ajusta overlay */
+  .carousel-overlay {
+    min-height: 10vh;
+    gap: 1rem;
+  }
+
+  /* Título adaptado */
+  .text-content h1 {
+    font-size: 3rem;
+    line-height: 3.2rem;
+  }
+
+  /* Subtítulo adaptado */
+  .text-content p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+  /* Botones laterales ligeramente más grandes que en móvil */
+  .nav-button {
+    font-size: 36px;
+  }
+
+  /* Indicadores */
+  .indicator-container {
+    gap: 2rem;
+    padding: 0.75rem;
+  }
+
+}
+
 @media (max-width: 600px) {
 
   .carousel-container {
     padding: 16rem 0.5rem 10rem;
-    /* max-height: 60vh; */
-    height: 60vh;
+    max-height: 90vh;
   }
 
   .text-content h1 {
-    font-size: 1.8rem;
+    font-size: 1.80rem;
     font-weight: 700;
     line-height: 2rem;
   }

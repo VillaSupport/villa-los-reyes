@@ -21,8 +21,6 @@ export class GalleryInfoSection {
   link = input<{ text: string; url: string }>();
   features = input<string[]>();
   featuresTitle = input<string>();
-  panelWidth = input<string>();
-
   reverse = input<boolean>(false);
 
   color = input<HexColor>('#E4EAE5');
@@ -35,6 +33,7 @@ export class GalleryInfoSection {
     const color = this.color();
     const hasBg = this.hasHostBg();
     this.hostBg = this.getHostColor(color, hasBg);
+
   }
 
   private getHostColor(color: string, active: boolean): string {

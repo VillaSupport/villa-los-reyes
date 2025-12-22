@@ -14,4 +14,6 @@ export class PackageItem {
   duration = input.required<string>();
   description = input.required<string>();
   price = input.required<string>();
+  perUnit = input.required<string>();
+
 }

@@ -12,12 +12,12 @@ import { RouterLink } from '@angular/router';
 export class PackagesList {
   packages = input.required<
     {
-      src: string;
-      alt: string;
+      background: string;
       title: string;
       duration: string;
       description: string;
       price: string;
+      perUnit:string;
       path:string;
     }[]
   >();

@@ -1,92 +1,109 @@
 <div class="page-content">
 
-   <main-header-section
-    [head]="header().head"
-    [image]="header().image"
-    [objectPosition]="header().objectPosition" />
-    
-  <section class="discover-package-section">
+  <main-header-section [head]="header.head" [image]="header.image" [objectPosition]="header.objectPosition" />
+  <div class="discover-package-container">
+    <section class="discover-package-section">
 
-    <header class="discover-header">
-      <h2>Naturaleza y Tradición</h2>
-      <p>
-        Vive una experiencia única en Viñales, donde la naturaleza y la tradición se fusionan en momentos de romance,
-        aventura y relajación inolvidables.
-      </p>
-    </header>
+      <header class="discover-header">
+        <h2>{{ packageDetails.title | translate }}</h2>
+        <p> {{ packageDetails.description | translate }}</p>
+      </header>
 
-    <section class="offer-details-container">
+      <section class="offer-details-container">
 
-      <!-- Columna izquierda -->
-      <div class="offer-column itinerary">
-        <h3>Itinerario detallado</h3>
-        <ul>
-          <li>
-            <strong>Día 1:</strong> Llegada a la casa de hospedaje. Cóctel de bienvenida con detalles románticos en la
-            habitación. Experiencia “Viñales: historia, cultura y naturaleza”. Cena especial en el restaurante “Los
-            Reyes”
-            con ambiente íntimo y música suave.
-          </li>
-          <li>
-            <strong>Día 2:</strong> Senderismo al amanecer disfrutando de vistas espectaculares del valle. Desayuno en
-            el restaurante “Los Reyes”. Tarde libre para relajarse o disfrutar de masajes opcionales. Cena bajo las
-            estrellas en la terraza del restaurante.
-          </li>
-          <li>
-            <strong>Día 3:</strong> Desayuno en la terraza con vistas a los mogotes. Tiempo libre para pasear por el
-            pueblo antes de la salida.
-          </li>
-        </ul>
-      </div>
+        <!-- Columna izquierda -->
+        <div class="offer-column itinerary">
+          <h3>{{ 'package.itineraryTitle' | translate }}</h3>
 
-      <!-- Columna derecha -->
-      <div class="offer-column includes">
-        <h3>Esta oferta incluye</h3>
-        <ul>
-          <li>
-            <h4>Hospedaje:</h4>
-            <ul>
-              <li><strong>Duración:</strong> 2 noches / 3 días</li>
-            </ul>
-          </li>
+          <ul>
+            @for (item of packageDetails.itinerary; let i = $index; track i) {
+            <li>
+              <strong>{{ 'package.includes.day' | translate }} {{ i + 1 }}:</strong>
+              {{ item | translate}}
+            </li>
+            }
+          </ul>
 
-          <li>
-            <h4>Experiencias y aventuras:</h4>
-            <ul>
-              <li>Senderismo por los lugares más emblemáticos de Viñales</li>
-              <li>Cabalgata al amanecer</li>
-            </ul>
-          </li>
-
-          <li>
-            <h4>Servicios gastronómicos:</h4>
-            <ul>
-              <li>2 desayunos</li>
-              <li>1 almuerzo</li>
-              <li>2 cenas</li>
-            </ul>
-          </li>
-
-          <li>
-            <h4>Transportación:</h4>
-            <ul>
-              <li>Traslados para excursiones privadas</li>
-            </ul>
-          </li>
-        </ul>
-
-        <hr class="divider" />
-
-        <div class="offer-total">
-          <span class="total-label">Total:</span>
-          <div class="total-info">
-            <span class="amount">00.00</span>
-            <span class="currency">USD</span>
-            <span class="note">por persona</span>
-          </div>
         </div>
-        <button class="reserve-btn">Reservar ya</button>
-      </div>
+
+        <!-- Columna derecha -->
+        <div class="offer-column includes">
+          <h3>{{ 'package.includesTitle' | translate }}</h3>
+
+          <ul>
+            <li>
+              <h4>{{ 'package.includes.lodging' | translate }}:</h4>
+
+              <ul>
+                <li><strong>{{ 'package.includes.duration' | translate }}:</strong>&nbsp;{{
+                  packageDetails.includes.duration | translate }}
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <h4>{{ 'package.includes.experiences' | translate }}:</h4>
+
+              <ul>
+                @for (experience of packageDetails.includes.activities; let i = $index; track i) {
+                <li>{{ experience | translate }}</li>
+                }
+              </ul>
+            </li>
+
+            <li>
+              <h4>{{ 'package.includes.gastronomy' | translate }}:</h4>
+
+              <ul>
+                @for (meal of packageDetails.includes.gastronomy; let i = $index; track i)
+                {
+                <li>{{meal | translate}}</li>
+                }
+
+              </ul>
+            </li>
+
+            <li>
+              <h4>{{ 'package.includes.transportation' | translate }}:</h4>
+
+              <ul>
+                @for (transport of packageDetails.includes.transportation; let i = $index; track i) {
+                <li>{{transport | translate}}</li>}
+              </ul>
+            </li>
+          </ul>
+
+          <hr class="divider" />
+
+          <div class="offer-total">
+            <span class="total-label">{{ 'package.total' | translate }}:</span>
+
+            <div class="total-info">
+              <span class="amount">00.00</span>
+              <span class="currency">USD</span>
+              <span class="note">{{ packageDetails.pricing.unit | translate }}</span>
+            </div>
+          </div>
+          <button class="reserve-btn">
+            {{ 'package.reserveButton' | translate }}
+          </button>
+
+        </div>
+      </section>
     </section>
-  </section>
+  </div>
+
+
+  <explore-items-section [title]="'explorePackages.title' | translate"
+    [description]="'explorePackages.description' | translate" [linkText]="'explorePackages.linkText' | translate"
+    [items]="allPackages" [link]="'/packages'" [cardTemplate]="packageItemTemplate">
+  </explore-items-section>
+
+
 </div>
+
+<ng-template #packageItemTemplate let-package>
+  <package-item [image]="package.background" [alt]="package.title" [title]="package.title" [duration]="package.duration"
+    [description]="package.description" [price]="package.price" [perUnit]="package.perUnit">
+  </package-item>
+</ng-template>

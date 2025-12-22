@@ -1,11 +1,12 @@
-import { Component, input, signal } from '@angular/core';
+import { Component, inject, input, signal } from '@angular/core';
 import { MainHeaderSection } from "../../sections/main-header-section/main-header-section";
 import { GalleryInfoSection } from "../../sections/gallery-info-section/gallery-info-section";
 import { DiscoverExperienceSection } from "../../sections/discover-experiences-section/discover-experience-section";
-import { RoomOfferSection } from "../../sections/room-offer-section/room-offer-section";
+import { RoomOfferSection } from '../../sections/room-offer-section/room-offer-section';
 import { Position, Transform, TransformOrigin } from '../../shared/interfaces/app-interfaces';
 import { ActivatedRoute } from '@angular/router';
 import { DiscoverServicesDefault } from "../../../presets/discover-services-default/discover-services-default";
+import { GroupNavigatorService } from '../../../services/group-navigator-service';
 
 
 
@@ -38,11 +39,18 @@ export interface OfferData {
   description: string;
   price: string;
   currency: string;
-  perPerson: string;
-  link?: { text: string; url: string };
+  perUnit: string;
+  textLink?: string;
+  path?: string ;
   objectPosition: Position;
   transform:Transform,
   transformOrigin:TransformOrigin,
+}
+
+export interface RoomPageRouteData {
+  header: HeaderData;
+  gallery: GalleryData;
+  offer: OfferData;
 }
 
 @Component({
@@ -53,12 +61,15 @@ export interface OfferData {
 })
 export class RoomBasePage {
 
+   navigator = inject(GroupNavigatorService);
+
   _header = input<HeaderData>();
   _gallery = input<GalleryData>();
   _offer = input<OfferData>();
 
   constructor(private route: ActivatedRoute) {}
 
+  // TODO: Lo que sale del  data['______'] no necesariamente es del tipo que esta delante , quizas hay formas de validar esto en tiempo de compilacion
   get header(): HeaderData {
     return this._header() ?? this.route.snapshot.data['header'];
   }
@@ -67,6 +78,15 @@ export class RoomBasePage {
   }
   get offer(): OfferData {
     return this._offer() ?? this.route.snapshot.data['offer'];
+  }
+
+
+  goNext() {
+    this.navigator.next();
+  }
+
+  goPrev() {
+    this.navigator.prev();
   }
 }
 

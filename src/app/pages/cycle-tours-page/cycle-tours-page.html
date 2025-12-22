@@ -1,17 +1,37 @@
 <adventure-base-page [header]="{
     head: {
-      title: 'Experiencias y aventuras',
-      description: 'Descubre aventuras inolvidables y experiencias únicas en Viñales.'
+      title: 'adventuresPage.cycleTours.header.title',
+      description: 'adventuresPage.cycleTours.header.description'
     },
     image: {
       src: '/assets/images/experiences/experiences-header.jpg',
       alt: 'Experiencias - Villa Los Reyes'
     },
     objectPosition: 'center center'
-  }" [items]="[
-  { label: 'El Calvario', src: '/assets/images/adventures/slide-the-calvary.jpg', path: '/experiences/cycle-tours/the-calvary' },
-  { label: 'El Resbaloso', src: '/assets/images/adventures/slide-the-slippery-one.jpg', path: '/experiences/cycle-tours/the-slippery-one' },
-  { label: 'Recorriendo valles', src: '/assets/images/adventures/slide-through-the-valleys.jpg', path: '/experiences/cycle-tours/through-the-valleys' },
-  { label: 'Agricultura ecológica', src: '/assets/images/adventures/slide-ecological-agriculture.jpg', path: '/experiences/cycle-tours/ecological-agriculture' },
-  { label: 'Visita al lago', src: '/assets/images/adventures/slide-lake-visit.jpg', path: '/experiences/cycle-tours/lake-visit' }
-]" />
+  }" [title]="'adventuresPage.cycleTours.sectionTitle'" [items]="[
+    { 
+      label: 'adventuresPage.cycleTours.items.0.label',
+      src: '/assets/images/adventures/slide-the-calvary.jpg',
+      path: '/experiences/cycle-tours/the-calvary'
+    },
+    { 
+      label: 'adventuresPage.cycleTours.items.1.label',
+      src: '/assets/images/adventures/slide-the-slippery-one.jpg',
+      path: '/experiences/cycle-tours/the-slippery-one'
+    },
+    { 
+      label: 'adventuresPage.cycleTours.items.2.label',
+      src: '/assets/images/adventures/slide-through-the-valleys.jpg',
+      path: '/experiences/cycle-tours/through-the-valleys'
+    },
+    { 
+      label: 'adventuresPage.cycleTours.items.3.label',
+      src: '/assets/images/adventures/slide-ecological-agriculture.jpg',
+      path: '/experiences/cycle-tours/ecological-agriculture'
+    },
+    { 
+      label: 'adventuresPage.cycleTours.items.4.label',
+      src: '/assets/images/adventures/slide-lake-visit.jpg',
+      path: '/experiences/cycle-tours/lake-visit'
+    }
+  ]" />

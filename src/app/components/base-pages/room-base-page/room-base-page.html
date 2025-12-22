@@ -4,12 +4,22 @@
 
   <gallery-info-section [mainImage]="gallery.mainImage" [thumbImages]="gallery.thumbImages" [title]="gallery.title"
     [description]="gallery.description" [featuresTitle]="gallery.featuresTitle" [features]="gallery.features"
-    [panelWidth]="'600px'" [hasHostBg]="false" />
+    [hasHostBg]="false" />
+
+  <div class="room-navigation">
+    <button (click)="goPrev()" class="nav-btn prev">
+      ← Anterior
+    </button>
+
+    <button (click)="goNext()" class="nav-btn next">
+      Siguiente →
+    </button>
+  </div>
 
   <room-offer-section [background]="offer.background" [title]="offer.title" [subtitle]="offer.subtitle"
     [duration]="offer.duration" [description]="offer.description" [price]="offer.price" [currency]="offer.currency"
-    [perPerson]="offer.perPerson" [link]="offer.link" [objectPosition]="offer.objectPosition"
-    [transform]="offer.transform" [transformOrigin]="offer.transformOrigin" />
+    [perUnit]="offer.perUnit" [link]="{ text: offer.textLink??'', url: offer.path??'' }"
+    [objectPosition]="offer.objectPosition" [transform]="offer.transform" [transformOrigin]="offer.transformOrigin" />
 
   <discover-experiences-section [header]="{
     title: 'experiences.header.title',
@@ -42,5 +52,5 @@
     }
   ]" />
 
-  <discover-services-default/>
+  <discover-services-default />
 </div>

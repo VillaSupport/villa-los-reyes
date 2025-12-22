@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   background: #f7faf7;
-  padding: 5rem 5rem 6.25rem 5rem;
+  padding: 5rem;
   border-radius: 3rem 3rem 0 0;
 }
 
@@ -20,10 +20,77 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  max-width: 1760px;
+  max-width: 1568px;
+
   width: 100%;
 }
 
+
+@media (min-width:1025px) and (max-width: 1280px) {
+  .discover-package-section {
+    padding: 5rem 0;
+    /* intermedio entre desktop grande y tablet */
+    border-radius: 2.5rem 2.5rem 0 0;
+  }
+
+  .package-wrapper {
+    gap: 1rem;
+  }
+
+  .section-header {
+    margin: 0 5rem;
+
+  }
+
+  .packages-list {
+    padding-left: 5rem;
+  }
+}
+
+/* ==========================
+   DESKTOP PEQUEÑO – 1024px
+   ========================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .discover-package-section {
+    padding: 3.5rem 0;
+    /* intermedio entre desktop grande y tablet */
+    border-radius: 2rem 2rem 0 0;
+  }
+
+  .package-wrapper {
+    gap: 1rem;
+  }
+
+  .section-header {
+    margin: 0 4rem;
+    /* ajuste intermedio de margen horizontal */
+  }
+
+  .packages-list {
+    padding-left: 4rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+
+  .discover-package-section {
+    padding: 2.5rem 0;
+    border-radius: 1.5rem 1.5rem 0 0;
+  }
+
+  .section-header {
+    margin: 0 2.5rem;
+  }
+
+  .packages-list {
+    padding-left: 2.5rem;
+  }
+
+  .package-wrapper {
+    gap: 0.5rem;
+  }
+}
 
 
 @media(max-width:600px) {

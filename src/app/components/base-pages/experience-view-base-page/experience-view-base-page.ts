@@ -1,14 +1,16 @@
-import { rooms } from './../../../config/room-data';
+import { rooms } from '../../../config/room-data';
 import { Component, input } from '@angular/core';
 import { MainHeaderSection } from "../../sections/main-header-section/main-header-section";
 import { GalleryInfoSection } from "../../sections/gallery-info-section/gallery-info-section";
 import { RoomOfferSection } from "../../sections/room-offer-section/room-offer-section";
-import { ExploreRoomsSection } from "../../sections/explore-rooms-section/explore-rooms-section";
 import { ActivatedRoute } from '@angular/router';
 import { OfferData } from '../room-base-page/room-base-page';
 import { HexColor, UnitString, Position } from '../../shared/interfaces/app-interfaces';
 import { rooms as roomsData} from '../../../config/room-data';
-
+import { ExploreItemsSection } from '../../sections/explore-items-section/explore-items-section';
+import { RoomCard } from "../../sections/explore-items-section/room-card/room-card";
+import { PackageItem } from "../../sections/discover-package-section/packages-list/package-item/package-item";
+import { packages } from '../../../config/packages-data';
 export interface HeaderData {
   title: string;
   description: string;
@@ -38,12 +40,13 @@ export interface GalleryData {
 }
 
 @Component({
-  selector: 'app-horseback-base-page',
-  imports: [MainHeaderSection, GalleryInfoSection, RoomOfferSection, ExploreRoomsSection],
-  templateUrl: './horseback-base-page.html',
-  styleUrl: './horseback-base-page.css'
+  selector: 'experience-view-base-page',
+  imports: [MainHeaderSection, GalleryInfoSection, RoomOfferSection, ExploreItemsSection, RoomCard],
+  templateUrl: './experience-view-base-page.html',
+  styleUrl: './experience-view-base-page.css'
+  
 })
-export class HorsebackBasePage {
+export class ExperienceViewBasePage {
 
   // 🔸 Cada bloque puede venir por input o por route.data
   _header = input<HeaderData>();
@@ -51,6 +54,7 @@ export class HorsebackBasePage {
   _offer = input<OfferData>();
   rooms = roomsData;
 
+  packages = packages
   constructor(private route: ActivatedRoute) {}
 
   get header(): HeaderData {
@@ -58,7 +62,8 @@ export class HorsebackBasePage {
   }
 
   get gallery(): GalleryData {
-    return this._gallery() ?? this.route.snapshot.data['gallery'];
+    let gallery = this._gallery() ?? this.route.snapshot.data['gallery'];
+    return gallery
   }
 
   get offer(): OfferData {

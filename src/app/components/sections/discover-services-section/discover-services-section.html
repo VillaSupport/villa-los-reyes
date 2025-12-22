@@ -1,8 +1,10 @@
 <section class="services-section">
   <div class="services-wrapper">
-    <section-header [header]="header()" />
+    <div class="header-wrapper">
+      <section-header [header]="header()" />
+    </div>
     <div class="gallery-wrapper">
-      <services-gallery [services]="services()" />
+      <services-gallery class="services-gallery" [services]="services()" />
     </div>
   </div>
 

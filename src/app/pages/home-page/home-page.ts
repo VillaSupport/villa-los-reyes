@@ -69,7 +69,6 @@ export class HomePage {
     title: 'about.info.title',
     description: 'about.info.description',
     link: { text: 'about.info.button', url: '/about' },
-    panelWidth: '600px',
     hasHostBg: false,
   };
 

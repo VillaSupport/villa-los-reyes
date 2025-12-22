@@ -1,0 +1,15 @@
+<div class="packages-grid">
+  @for (pkg of packages(); track pkg.title) {
+    <a [routerLink]="pkg.path" class="package-link">
+      <package-item
+        [image]="pkg.background"
+        [alt]="pkg.title"
+        [title]="pkg.title"
+        [duration]="pkg.duration"
+        [description]="pkg.description"
+        [price]="pkg.price"
+        [perUnit]="pkg.perUnit">
+      </package-item>
+    </a>
+  }
+</div>

@@ -8,23 +8,31 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 8px;
+  padding-top: 8px;
+
 }
 
 .main-image-wrapper {
-  grid-column: span 6;
-  height: 45vh;
   position: relative;
   border-radius: 16px;
+  aspect-ratio: 2.20 / 1;
+  grid-column: span 6;
   overflow: hidden;
 }
 
 .thumb-image-wrapper {
-  height: 24vh;
   position: relative;
   border-radius: 16px;
   overflow: hidden;
+  aspect-ratio: 1.60 / 1;
   grid-column: span 2;
+
   /* por defecto 3 thumbs -> 2 columnas c/u */
+}
+
+.gallery-grid:not(:has(.thumb-image-wrapper)) .main-image-wrapper {
+  aspect-ratio: 16 / 10;
+  /* nuevo ratio cuando no hay thumbs */
 }
 
 /* Ajuste si solo hay 2 thumbs */
@@ -52,6 +60,26 @@
       rgba(0, 0, 0, 0.06),
       rgba(0, 0, 0, 0.1));
   pointer-events: none;
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .gallery-grid {
+    padding: 0;
+  }
+
+  .main-image-wrapper {
+    aspect-ratio: 2.85 / 1;
+    /* más ancho → menos altura */
+  }
+
+  .thumb-image-wrapper {
+    aspect-ratio: 1.9 / 1;
+  }
+
+  /* Caso especial: sin thumbs */
+  .gallery-grid:not(:has(.thumb-image-wrapper)) .main-image-wrapper {
+    aspect-ratio: 2.8 / 1;
+  }
 }
 
 @media (max-width: 600px) {

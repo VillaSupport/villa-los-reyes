@@ -17,12 +17,12 @@ export class DiscoverPackageSection {
 
   packages = input.required<
     {
-      src: string;
-      alt: string;
+      background: string;
       title: string;
       duration: string;
       description: string;
       price: string;
+      perUnit:string;
       path: string;
     }[]
   >();

@@ -13,7 +13,7 @@
   gap: 1.5rem;
   width: 100%;
   scrollbar-width: none;
-  padding: 0.75rem 0;
+  padding: 0.5rem 1rem;
 
   scroll-snap-type: x mandatory;
 }
@@ -25,10 +25,20 @@
 /* Cada tarjeta */
 .package-link {
   text-decoration: none;
-  flex: 1 1 auto;
+  flex: 1 0 28rem;
 
   scroll-snap-align: start;
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .packages-list {
+    gap: 1.25rem;
+    padding: 0.5rem 2.5rem;
+  }
+
+  
+}
+
 
 @media(max-width: 600px) {
   .packages-list {

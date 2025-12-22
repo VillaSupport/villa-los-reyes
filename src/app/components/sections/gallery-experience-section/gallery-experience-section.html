@@ -1,10 +1,18 @@
+<div class="gallery-header">
+  <h2>{{ title() | translate }}</h2>
+</div>
+
 <section class="gallery-hiking-section">
   <div class="gallery-grid">
     @for (img of images(); track $index) {
       <a class="gallery-item" [routerLink]="img.path">
-        <img [src]="img.src" [alt]="img.title" loading="lazy" />
+        <img
+          [src]="img.src"
+          [alt]="img.title | translate"
+          loading="lazy"
+        />
         <div class="overlay">
-          <h3>{{ img.title }}</h3>
+          <h3>{{ img.title | translate }}</h3>
         </div>
       </a>
     }

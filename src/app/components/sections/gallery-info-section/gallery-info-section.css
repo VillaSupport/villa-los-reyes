@@ -2,7 +2,6 @@
   display: block;
   position: relative;
   overflow: hidden;
-
   z-index: 3;
 }
 
@@ -16,24 +15,22 @@
 
 .gallery-wrapper {
   width: 100%;
-  max-width: 1760px;
+  max-width: 1568px;
+
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 3.5rem;
+  gap: 1.5rem;
 }
 
-/* Columna de info */
 .info-column {
   flex: 0 1 40%;
   min-width: 20rem;
 }
 
 /* Galería de imágenes */
-.gallery-info-section>gallery-grid {
+.gallery-grid {
   flex: 1 1 60%;
-  width: 100%;
-  max-width: 100%;
   min-width: 0;
   overflow: hidden;
 }
@@ -47,11 +44,106 @@
   order: 2;
 }
 
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .gallery-info-section {
+    padding: 5rem;
+    border-radius: 2.5rem 2.5rem 0 0;
+    justify-content: center;
+  }
+
+  .gallery-wrapper {
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .info-column {
+    order: 1;
+    flex: 1 1 auto;
+    width: 100%;
+    min-width: 0;
+    margin-inline: auto;
+  }
+
+  .gallery-grid {
+    order: 2;
+    flex: 1 1 auto;
+    width: 100%;
+    min-width: unset;
+  }
+}
 
 /* ==========================
-   MÓVIL VERTICAL
+   DESKTOP PEQUEÑO – 1024px
+   ========================== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .gallery-info-section {
+    padding: 3.5rem 4rem;
+    border-radius: 2rem 2rem 0 0;
+
+    justify-content: center;
+  }
+
+  .gallery-wrapper {
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    gap: 1rem;
+  }
+
+
+  .info-column {
+    flex: 1 1 auto;
+    order: 1;
+  }
+
+  .gallery-grid {
+    flex: 1 1 auto;
+    order: 2;
+  }
+}
+
+
+/* ==========================
+   TABLET 768px
+   ========================== */
+
+@media (min-width: 601px) and (max-width: 768px) {
+
+  .gallery-info-section {
+    padding: 2.5rem;
+    border-radius: 1.5rem 1.5rem 0 0;
+    justify-content: center;
+  }
+
+  .gallery-wrapper {
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    max-width: 900px;
+    gap: 0.75rem;
+  }
+
+  .info-column {
+    flex: 1 1 auto;
+    order: 1;
+  }
+
+  .gallery-grid {
+    flex: 1 1 auto;
+    order: 2;
+  }
+}
+
+
+/* ==========================
+   MÓVIL 600px
    ========================== */
 @media (max-width: 600px) {
+
   .gallery-info-section {
     padding: 2rem 1rem;
     border-radius: 1rem 1rem 0 0;
@@ -73,10 +165,9 @@
     width: 100%;
     min-width: 0;
     margin-inline: auto;
-
   }
 
-  gallery-grid {
+  .gallery-grid {
     order: 2;
     flex: 1 1 auto;
     width: 100%;

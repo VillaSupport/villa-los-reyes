@@ -114,28 +114,142 @@
       "room3Details": "Suite / Garden View / 3 persons"
     }
   },
+  "exploreRooms": {
+    "title": "You may be interested",
+    "description": "Discover Viñales with our exciting excursions.\nUnforgettable adventures in a unique natural environment await you!",
+    "linkText": "Learn More"
+  },
   "packages": {
-    "title": "Promotional Packages",
+    "title": "Special Offer Packages",
     "description": "Experience the magic of Viñales with our exclusive packages: <strong>cozy accommodation</strong>, <strong>unforgettable landscapes</strong>, and <strong>authentic experiences</strong>. Book today!",
-    "linkText": "SEE ALL PROMOTIONAL PACKAGES",
+    "linkText": "VIEW ALL SPECIAL OFFER PACKAGES",
     "packageOne": {
       "title": "Natural Adventure",
+      "subtitle": "Special Offer Packages",
       "duration": "2 Nights / 3 Days",
       "description": "Immerse yourself in unique landscapes, explore the mogotes, and enjoy outdoor activities that connect you with the rural essence of Cuba.",
-      "price": "$250.00 per person"
+      "perUnit": "per person",
+      "linkText": "LEARN MORE"
     },
     "packageTwo": {
       "title": "Relax & Beach",
+      "subtitle": "Special Offer Packages",
       "duration": "3 Nights / 4 Days",
-      "description": "A package designed for those seeking a balance between countryside tranquility and the beauty of nearby beaches. Perfect for families or groups combining rest and fun.",
-      "price": "$250.00 per person"
+      "description": "A package designed for those seeking a balance between countryside tranquility and the beauty of nearby beaches. Perfect for families or groups looking to combine relaxation and fun.",
+      "perUnit": "per person",
+      "linkText": "LEARN MORE"
     },
     "packageThree": {
       "title": "Romance in Viñales",
+      "subtitle": "Special Offer Packages",
       "duration": "2 Nights / 3 Days",
-      "description": "Immerse yourself in the magic of Viñales with a romantic trip among spectacular landscapes, intimate dinners, and unforgettable relaxation moments.",
-      "price": "$250.00 per person"
+      "description": "Let yourself be enchanted by the magic of Viñales with a romantic getaway among spectacular landscapes, intimate dinners, and unforgettable moments of relaxation.",
+      "perUnit": "per person",
+      "linkText": "LEARN MORE"
+    },
+    "packageFour": {
+      "title": "Nature & Tradition",
+      "subtitle": "Special Offer Packages",
+      "duration": "2 Nights / 3 Days",
+      "description": "Enjoy a unique experience in Viñales, where nature and tradition come together in unforgettable moments of romance, adventure, and relaxation.",
+      "perUnit": "per person",
+      "linkText": "LEARN MORE"
+    },
+    "packageFive": {
+      "title": "Viñales 360°",
+      "subtitle": "Special Offer Packages",
+      "duration": "3 Nights / 4 Days",
+      "description": "Discover the essence of Viñales on a complete journey through valleys, traditions, and authentic flavors, with activities that connect you to its nature and culture.",
+      "perUnit": "per person",
+      "linkText": "LEARN MORE"
+    },
+    "packageSix": {
+      "title": "Viñales for Families",
+      "subtitle": "Special Offer Packages",
+      "duration": "4 Nights / 5 Days",
+      "description": "Designed especially for families with children, this package combines educational and recreational activities so everyone can enjoy an unforgettable experience in Viñales.",
+      "perUnit": "per person",
+      "linkText": "LEARN MORE"
     }
+  },
+  "headerExperience": {
+    "title": "Experiences and Adventures",
+    "description": "Discover unforgettable adventures and unique experiences in Viñales."
+  },
+  "galleryHorseRiding": {
+    "title": "Riding to the mountains",
+    "description": "Discover <strong>Los Acuáticos</strong>, a <strong>mountain community</strong> in <strong>Viñales</strong> known for its <strong>belief in the healing properties of water</strong>. Immerse yourself in their <strong>traditions</strong>, connect with the residents and enjoy their <strong>hospitality</strong> while admiring the <strong>impressive views</strong> of the <strong>Viñales</strong> and <strong>Palmarito Valleys</strong>. A unique experience that combines <strong>nature</strong>, <strong>culture</strong> and <strong>tradition</strong>.",
+    "featuresTitle": "Recommended to bring:",
+    "features": [
+      "Closed shoes",
+      "Long pants",
+      "Water bottle",
+      "Mosquito repellent",
+      "Sunscreen"
+    ],
+    "thumbAlt1": "Mountain and horse",
+    "thumbAlt2": "Panoramic valley view",
+    "mainAlt": "Riding to the mountains"
+  },
+  "galleryFascinatingLandscape": {
+    "title": "A fascinating landscape",
+    "description": "Explore the <strong>Palmarito Valley</strong>, an impressive landscape where the contrast between <strong>red soils</strong> and <strong>lush vegetation</strong> reflects the essence of <strong>rural Cuba</strong>. Enjoy <strong>panoramic views</strong>, learn about <strong>farmers' traditions</strong> and discover the process of <strong>tobacco cultivation</strong> directly from <strong>local farmers</strong>.",
+    "featuresTitle": "Recommended to bring:",
+    "features": [
+      "Closed shoes",
+      "Long pants",
+      "Water bottle",
+      "Mosquito repellent",
+      "Sunscreen"
+    ],
+    "thumbAlt1": "Landscapes and red soils",
+    "thumbAlt2": "Local farmers working",
+    "mainAlt": "A fascinating landscape"
+  },
+  "gallerySunsetRide": {
+    "title": "The setting sun",
+    "description": "A <strong>horseback ride</strong> through <strong>Viñales</strong> allows you to explore mountains and valleys surrounded by vibrant nature. Along the way, local farmers share their work in the <strong>tobacco fields</strong>, while you enjoy a <strong>criollo cigar</strong> and a <strong>Saoco Viñalero</strong> at sunset in the <strong>Valle del Silencio</strong>. The day ends with a refreshing swim in a nearby <strong>lake</strong>, watching the <strong>sunset</strong>.",
+    "featuresTitle": "Recommended to bring:",
+    "features": [
+      "Closed shoes",
+      "Long pants",
+      "Water bottle",
+      "Mosquito repellent",
+      "Sunscreen"
+    ],
+    "thumbAlt1": "Valle del Silencio at sunset",
+    "thumbAlt2": "Swimming in a nearby lake",
+    "mainAlt": "The setting sun"
+  },
+  "galleryPenitenceValley": {
+    "title": "Penitence Valley",
+    "description": "Explore the <strong>Penitence Valley</strong>, a small yet impressive destination featuring <strong>agricultural landscapes</strong> and remarkable <strong>natural beauty</strong>. During this excursion, you will enjoy its agricultural richness and visit the <strong>Mural of Prehistory</strong>, one of the largest <strong>open-air fresco paintings</strong>, depicting the geological evolution of Viñales.",
+    "featuresTitle": "Recommended to bring:",
+    "features": [
+      "Closed shoes",
+      "Long pants",
+      "Water bottle",
+      "Mosquito repellent",
+      "Sunscreen"
+    ],
+    "thumbAlt1": "Agricultural landscapes",
+    "thumbAlt2": "Mural of Prehistory",
+    "mainAlt": "Penitence Valley"
+  },
+  "galleryVinalesValley": {
+    "title": "The most famous",
+    "description": "Discover the stunning <strong>Viñales Valley</strong>, a world-renowned destination for its <strong>size</strong>, <strong>beauty</strong> and <strong>cultural richness</strong>. On a tour of approximately two hours, you will admire its <strong>unique landscapes</strong> and immerse yourself in the <strong>authentic rural life</strong>, interacting with <strong>local residents</strong> and learning about their <strong>traditions</strong>. An enriching experience combining <strong>nature</strong>, <strong>history</strong> and the <strong>cultural essence</strong> of <strong>Viñales</strong>.",
+    "featuresTitle": "Recommended to bring:",
+    "features": [
+      "Closed shoes",
+      "Long pants",
+      "Water bottle",
+      "Mosquito repellent",
+      "Sunscreen"
+    ],
+    "thumbAlt1": "Unique landscapes",
+    "thumbAlt2": "Authentic rural life",
+    "mainAlt": "Viñales Valley"
   },
   "discoverServices": {
     "header": {
@@ -212,97 +326,424 @@
       }
     ]
   },
+  "roomsInfo": [
+    {
+      "head": {
+        "title": "Our Rooms",
+        "description": "Discover services that will make your stay an unforgettable experience."
+      },
+      "title": "Room 1",
+      "description": "Enjoy a <strong>comfortable stay</strong> and a <strong>relaxing atmosphere</strong> in our spacious room, ideal for <strong>couples, families</strong>, or <strong>groups</strong>. Equipped with <strong>comfortable beds</strong>, <strong>air conditioning</strong>, a <strong>private bathroom</strong>, and <strong>warm décor</strong> with <strong>colonial touches</strong>, this room offers the perfect balance between <strong>comfort</strong> and <strong>Cuban authenticity</strong>.",
+      "capacity": "2 beds / private bathroom / 4 people",
+      "featuresTitle": "This room includes:",
+      "features": [
+        "2 double beds",
+        "Bed linens",
+        "Air conditioning (Split)",
+        "Fan",
+        "Safe box",
+        "Private bathroom",
+        "Hot and cold water",
+        "Hair dryer"
+      ]
+    },
+    {
+      "head": {
+        "title": "Our Rooms",
+        "description": "Discover services that will make your stay an unforgettable experience."
+      },
+      "title": "Room 2",
+      "description": "Discover our <strong>spacious</strong> and <strong>bright room</strong>, ideal for <strong>families</strong> or <strong>groups</strong>. With <strong>three comfortable beds</strong>, this room provides the perfect environment to <strong>relax</strong>. Enjoy the <strong>natural light</strong> coming through the large <strong>sliding window</strong> and the beautiful <strong>garden view</strong> outside.",
+      "capacity": "3 beds / private bathroom / 4 people",
+      "featuresTitle": "This room includes:",
+      "features": [
+        "2 double beds",
+        "1 single bed",
+        "Bed linens",
+        "Air conditioning (Split)",
+        "Fan",
+        "Safe box",
+        "Private bathroom",
+        "Hot and cold water",
+        "Hair dryer"
+      ]
+    },
+    {
+      "head": {
+        "title": "Our Rooms",
+        "description": "Discover services that will make your stay an unforgettable experience."
+      },
+      "title": "Room 3",
+      "description": "<strong>Room</strong> ideal for <strong>relaxing</strong> after a day of exploration. This <strong>room</strong> provides the <strong>essentials</strong> for a <strong>comfortable stay</strong>. Enjoy the <strong>natural light</strong> that <strong>brightens</strong> the space and the <strong>tranquility</strong> it offers.",
+      "capacity": "2 beds / private bathroom / 4 people",
+      "featuresTitle": "This room includes:",
+      "features": [
+        "2 double beds",
+        "Bed linens",
+        "Air conditioning (Split)",
+        "Fan",
+        "Safe box",
+        "Private bathroom",
+        "Hot and cold water",
+        "Hair dryer"
+      ]
+    },
+    {
+      "head": {
+        "title": "Our Rooms",
+        "description": "Discover services that will make your stay an unforgettable experience."
+      },
+      "title": "Room 4",
+      "description": "Relax in this <strong>cozy room</strong> in Viñales, ideal for your <strong>stay</strong>. With <strong>two comfortable single beds</strong> and décor in <strong>warm tones</strong>, this space offers everything you need for a <strong>pleasant stay</strong>.",
+      "capacity": "2 beds / private bathroom / 4 people",
+      "featuresTitle": "This room includes:",
+      "features": [
+        "2 single beds",
+        "Bed linens",
+        "Air conditioning (Split)",
+        "Fan",
+        "Safe box",
+        "Private bathroom",
+        "Hot and cold water",
+        "Hair dryer"
+      ]
+    },
+    {
+      "head": {
+        "title": "Our Rooms",
+        "description": "Discover services that will make your stay an unforgettable experience."
+      },
+      "title": "Room 5 — Suite",
+      "description": "Immerse yourself in a unique <strong>suite</strong>, designed to offer the perfect balance between <strong>comfort</strong> and <strong>style</strong>. Designed for <strong>couples</strong>, its <strong>warm atmosphere</strong> and <strong>elegant décor</strong> create the ideal environment for <strong>rest</strong>. The <strong>natural light</strong> that fills the space enhances its <strong>warmth</strong>, inviting you to <strong>relax</strong> after a day of exploring Viñales.",
+      "capacity": "2 beds / private bathroom / 4 people",
+      "featuresTitle": "This room includes:",
+      "features": [
+        "1 king-size bed",
+        "Bed linens",
+        "Air conditioning (Split)",
+        "Fan",
+        "Safe box",
+        "Private bathroom",
+        "Hot and cold water",
+        "Hair dryer"
+      ]
+    }
+  ],
   "experiencesContent": {
-  "header": {
-    "title": "Experiences & Adventures",
-    "description": "Discover unforgettable adventures and unique experiences in Viñales."
+    "header": {
+      "title": "Experiences & Adventures",
+      "description": "Discover unforgettable adventures and unique experiences in Viñales."
+    },
+    "gallerySections": [
+      {
+        "leftImageAlt": "Facilities and panoramic views of Villa Los Reyes",
+        "leftImageName": "Horse Riding 01",
+        "infoTitle": "Horseback Riding in Viñales: nature, culture, and tradition in every step",
+        "infoDescription": "Exploring <strong>Viñales on horseback</strong> is an immersive experience that reveals the essence of the <strong>Cuban landscape</strong>. Among towering <strong>mogotes</strong> and lush <strong>tobacco fields</strong>, the journey leads to <strong>traditional farms</strong> where <strong>tobacco and coffee</strong> are cultivated by hand. Accessible to all experience levels, this activity promotes <strong>sustainable tourism</strong>, strengthening the connection with <strong>local communities</strong> and protecting the natural environment.",
+        "linkText": "DISCOVER ALL HORSEBACK RIDES",
+        "rightImages": [
+          {
+            "alt": "Riding to the mountain",
+            "name": "Riding to the mountain"
+          },
+          {
+            "alt": "A fascinating landscape",
+            "name": "A fascinating landscape"
+          },
+          {
+            "alt": "The setting sun",
+            "name": "The setting sun"
+          }
+        ]
+      },
+      {
+        "leftImageAlt": "Facilities and panoramic views of Villa Los Reyes",
+        "leftImageName": "Hiking 01",
+        "infoTitle": "Hiking in Viñales: between mountains, valleys, and living traditions",
+        "infoDescription": "Walking through the <strong>trails of Viñales</strong> means discovering a vibrant environment where <strong>biodiversity</strong>, fresh air, and <strong>mountain landscapes</strong> set the pace of the <strong>journey</strong>. The routes pass through <strong>fertile valleys and natural viewpoints</strong>, while interactions with local <strong>farmers</strong> reveal <strong>agricultural traditions</strong> passed down through generations. An enriching experience that blends adventure, culture, and respect for nature.",
+        "linkText": "DISCOVER ALL HIKING TOURS",
+        "rightImages": [
+          {
+            "alt": "From hell to paradise",
+            "name": "From hell to paradise"
+          },
+          {
+            "alt": "Amazing sunrise",
+            "name": "Amazing sunrise"
+          },
+          {
+            "alt": "Tobacco inside",
+            "name": "Tobacco inside"
+          }
+        ]
+      },
+      {
+        "leftImageAlt": "Facilities and panoramic views of Villa Los Reyes",
+        "leftImageName": "Cycling 01",
+        "infoTitle": "Viñales on wheels: a journey through nature and tradition",
+        "infoDescription": "Exploring <strong>Viñales by bike</strong> is a dynamic and authentic way to connect with its <strong>iconic landscapes</strong>. The paths wind between <strong>mogotes</strong>, <strong>tobacco farms</strong>, and lively <strong>rural scenery</strong>, offering complete immersion in the environment. Encounters with <strong>local farmers</strong> and their traditional knowledge add cultural value to this active experience, where movement becomes a way of discovering.",
+        "linkText": "DISCOVER ALL CYCLE TOURS",
+        "rightImages": [
+          {
+            "alt": "El Calvario",
+            "name": "El Calvario"
+          },
+          {
+            "alt": "El Resbaloso",
+            "name": "El Resbaloso"
+          },
+          {
+            "alt": "Exploring the valleys",
+            "name": "Exploring the valleys"
+          }
+        ]
+      },
+      {
+        "leftImageAlt": "Facilities and panoramic views of Villa Los Reyes",
+        "leftImageName": "Beach 01",
+        "infoTitle": "Beyond the valley: unique experiences in Viñales",
+        "infoDescription": "<strong>Viñales</strong> surprises with a <strong>diverse</strong> range of experiences that go far beyond its <strong>mountain landscapes</strong>. Just a few kilometers away, <strong>Cayo Jutías</strong> invites you to relax among turquoise waters and white sands, perfect for <strong>swimming</strong>, <strong>snorkeling</strong>, or simply unwinding. On land, <strong>agro-ecological farms</strong> welcome visitors with <strong>sustainable practices and authentic flavors</strong>. A destination that blends <strong>nature</strong>, <strong>local culture</strong>, and moments of true serenity.",
+        "linkText": "DISCOVER MORE EXPERIENCES",
+        "rightImages": [
+          {
+            "alt": "A paradisiacal beach",
+            "name": "A paradisiacal beach"
+          },
+          {
+            "alt": "An intense day",
+            "name": "An intense day"
+          },
+          {
+            "alt": "Viñales: day trip",
+            "name": "Viñales: day trip"
+          }
+        ]
+      }
+    ]
   },
-  "gallerySections": [
-    {
-      "leftImageAlt": "Facilities and panoramic views of Villa Los Reyes",
-      "leftImageName": "Horse Riding 01",
-      "infoTitle": "Horseback Riding in Viñales: nature, culture, and tradition in every step",
-      "infoDescription": "Exploring <strong>Viñales on horseback</strong> is an immersive experience that reveals the essence of the <strong>Cuban landscape</strong>. Among towering <strong>mogotes</strong> and lush <strong>tobacco fields</strong>, the journey leads to <strong>traditional farms</strong> where <strong>tobacco and coffee</strong> are cultivated by hand. Accessible to all experience levels, this activity promotes <strong>sustainable tourism</strong>, strengthening the connection with <strong>local communities</strong> and protecting the natural environment.",
-      "linkText": "DISCOVER ALL HORSEBACK RIDES",
-      "rightImages": [
+  "offers": {
+    "offer1": {
+      "title": "Natural Adventure",
+      "subtitle": "Offer Packages",
+      "duration": "2 nights / 3 days",
+      "description": "Immerse yourself in unique landscapes, explore the mogotes, and enjoy outdoor activities that connect you with Cuba’s rural essence.",
+      "currency": "USD",
+      "perPerson": "per person",
+      "linkText": "DISCOVER MORE"
+    },
+    "offer2": {
+      "title": "Romance in Viñales",
+      "subtitle": "Offer Packages",
+      "duration": "2 nights / 3 days",
+      "description": "Let yourself be captivated by the magic of Viñales with a romantic trip surrounded by stunning landscapes, intimate dinners, and unforgettable moments of relaxation.",
+      "currency": "USD",
+      "perPerson": "per person",
+      "linkText": "DISCOVER MORE"
+    },
+    "offer3": {
+      "title": "Relax & Beach",
+      "subtitle": "Offer Packages",
+      "duration": "3 nights / 4 days",
+      "description": "A package designed for those seeking a balance between countryside tranquility and the beauty of nearby beaches. Perfect for families or groups wanting to combine rest and fun.",
+      "currency": "USD",
+      "perPerson": "per couple",
+      "linkText": "DISCOVER MORE"
+    },
+    "offer4": {
+      "title": "Nature & Tradition",
+      "subtitle": "Offer Packages",
+      "duration": "2 nights / 3 days",
+      "description": "Enjoy a unique experience in Viñales, where nature and tradition blend into unforgettable moments of romance, adventure, and relaxation.",
+      "currency": "USD",
+      "perPerson": "per room",
+      "linkText": "DISCOVER MORE"
+    },
+    "offer5": {
+      "title": "Family Viñales",
+      "subtitle": "Offer Packages",
+      "duration": "4 nights / 5 days",
+      "description": "Specially designed for families with children, this package combines educational and recreational activities so everyone can enjoy an unforgettable experience in Viñales.",
+      "currency": "USD",
+      "perPerson": "per person",
+      "linkText": "DISCOVER MORE"
+    },
+    "offer6": {
+      "title": "Viñales 360°",
+      "subtitle": "Offer Packages",
+      "duration": "3 nights / 4 days",
+      "description": "Discover the essence of Viñales in a unique tour through valleys, traditions, and authentic flavors, with activities that connect you with its nature and culture.",
+      "currency": "USD",
+      "perPerson": "per person",
+      "linkText": "DISCOVER MORE"
+    }
+  },
+  "adventuresPage": {
+    "horsebackRiding": {
+      "header": {
+        "title": "Experiences & Adventures",
+        "description": "Discover unforgettable adventures and unique experiences in Viñales."
+      },
+      "sectionTitle": "All Horseback Rides",
+      "items": [
         {
-          "alt": "Riding to the mountain",
-          "name": "Riding to the mountain"
+          "label": "Riding to the Mountain"
         },
         {
-          "alt": "A fascinating landscape",
-          "name": "A fascinating landscape"
+          "label": "A Fascinating Landscape"
         },
         {
-          "alt": "The setting sun",
-          "name": "The setting sun"
+          "label": "The Setting Sun"
+        },
+        {
+          "label": "Valley of La Penitencia"
+        },
+        {
+          "label": "The Most Famous"
         }
       ]
     },
-    {
-      "leftImageAlt": "Facilities and panoramic views of Villa Los Reyes",
-      "leftImageName": "Hiking 01",
-      "infoTitle": "Hiking in Viñales: between mountains, valleys, and living traditions",
-      "infoDescription": "Walking through the <strong>trails of Viñales</strong> means discovering a vibrant environment where <strong>biodiversity</strong>, fresh air, and <strong>mountain landscapes</strong> set the pace of the <strong>journey</strong>. The routes pass through <strong>fertile valleys and natural viewpoints</strong>, while interactions with local <strong>farmers</strong> reveal <strong>agricultural traditions</strong> passed down through generations. An enriching experience that blends adventure, culture, and respect for nature.",
-      "linkText": "DISCOVER ALL HIKING TOURS",
-      "rightImages": [
+    "hiking": {
+      "header": {
+        "title": "Experiences & Adventures",
+        "description": "Discover unforgettable adventures and unique experiences in Viñales."
+      },
+      "sectionTitle": "All Hiking Tours",
+      "items": [
         {
-          "alt": "From hell to paradise",
-          "name": "From hell to paradise"
+          "label": "From Hell to Paradise"
         },
         {
-          "alt": "Amazing sunrise",
-          "name": "Amazing sunrise"
+          "label": "Incredible Sunrise"
         },
         {
-          "alt": "Tobacco inside",
-          "name": "Tobacco inside"
+          "label": "Enjoying the Sunset"
+        },
+        {
+          "label": "A Real Hiking Experience"
+        },
+        {
+          "label": "Ancient Beauty & Nature"
+        },
+        {
+          "label": "100% Ecology"
+        },
+        {
+          "label": "Tobacco Inside"
+        },
+        {
+          "label": "Viñales: Day Trip"
+        },
+        {
+          "label": "History, Culture & Nature"
         }
       ]
     },
-    {
-      "leftImageAlt": "Facilities and panoramic views of Villa Los Reyes",
-      "leftImageName": "Cycling 01",
-      "infoTitle": "Viñales on wheels: a journey through nature and tradition",
-      "infoDescription": "Exploring <strong>Viñales by bike</strong> is a dynamic and authentic way to connect with its <strong>iconic landscapes</strong>. The paths wind between <strong>mogotes</strong>, <strong>tobacco farms</strong>, and lively <strong>rural scenery</strong>, offering complete immersion in the environment. Encounters with <strong>local farmers</strong> and their traditional knowledge add cultural value to this active experience, where movement becomes a way of discovering.",
-      "linkText": "DISCOVER ALL CYCLE TOURS",
-      "rightImages": [
+    "cycleTours": {
+      "header": {
+        "title": "Experiences & Adventures",
+        "description": "Discover unforgettable adventures and unique experiences in Viñales."
+      },
+      "sectionTitle": "All Cycle Tours",
+      "items": [
         {
-          "alt": "El Calvario",
-          "name": "El Calvario"
+          "label": "El Calvario"
         },
         {
-          "alt": "El Resbaloso",
-          "name": "El Resbaloso"
+          "label": "El Resbaloso"
         },
         {
-          "alt": "Exploring the valleys",
-          "name": "Exploring the valleys"
+          "label": "Exploring the Valleys"
+        },
+        {
+          "label": "Organic Farming"
+        },
+        {
+          "label": "Visit to the Lake"
         }
       ]
     },
-    {
-      "leftImageAlt": "Facilities and panoramic views of Villa Los Reyes",
-      "leftImageName": "Beach 01",
-      "infoTitle": "Beyond the valley: unique experiences in Viñales",
-      "infoDescription": "<strong>Viñales</strong> surprises with a <strong>diverse</strong> range of experiences that go far beyond its <strong>mountain landscapes</strong>. Just a few kilometers away, <strong>Cayo Jutías</strong> invites you to relax among turquoise waters and white sands, perfect for <strong>swimming</strong>, <strong>snorkeling</strong>, or simply unwinding. On land, <strong>agro-ecological farms</strong> welcome visitors with <strong>sustainable practices and authentic flavors</strong>. A destination that blends <strong>nature</strong>, <strong>local culture</strong>, and moments of true serenity.",
-      "linkText": "DISCOVER MORE EXPERIENCES",
-      "rightImages": [
+    "otherAdventures": {
+      "header": {
+        "title": "Experiences & Adventures",
+        "description": "Discover unforgettable adventures and unique experiences in Viñales."
+      },
+      "sectionTitle": "Other Experiences",
+      "items": [
         {
-          "alt": "A paradisiacal beach",
-          "name": "A paradisiacal beach"
+          "label": "A Paradise Beach"
         },
         {
-          "alt": "An intense day",
-          "name": "An intense day"
+          "label": "An Intense Day"
         },
         {
-          "alt": "Viñales: day trip",
-          "name": "Viñales: day trip"
+          "label": "For All Ages"
+        },
+        {
+          "label": "Great Cave of Santo Tomás"
+        },
+        {
+          "label": "Viñales: Day Trip"
+        },
+        {
+          "label": "History, Culture & Nature"
         }
       ]
     }
-  ]
-}
+  },
 
+  "explorePackages": {
+    "title": "You may also be interested",
+    "description": "Experience the magic of Viñales with our exclusive packages: <strong>cozy accommodation</strong>,\n <strong>unforgettable landscapes</strong>, and <strong>authentic experiences</strong>. Book today!",
+    "linkText": "Discover more"
+  },
+
+
+  "package": {
+    "itineraryTitle": "Detailed Itinerary",
+    "includesTitle": "This offer includes",
+    "includes": {
+      "lodging": "Lodging",
+      "duration": "Duration",
+      "day": "Day",
+      "experiences": "Experiences & Adventures",
+      "gastronomy": "Gastronomy",
+      "transportation": "Transportation"
+    },
+    "total": "Total",
+    "perPerson": "per person",
+    "reserveButton": "Book Now"
+  },
+  "packageHeader": {
+    "title": "Promotional Packages",
+    "description": "Discover the best deals for your stay in Viñales."
+  },
+  "aventuraNatural": {
+    "title": "Natural Adventure",
+    "description": "Immerse yourself in unique landscapes, explore the mogotes, and enjoy outdoor activities that connect you with the rural essence of Cuba. Ideal for couples, small groups, or solo travelers.",
+    "itinerary": [
+      "Welcome cocktail with refreshing natural juices or typical cocktails. Free afternoon to relax on the terrace with views of the mogotes. Dinner at a restaurant with traditional Cuban dishes.",
+      "Breakfast at the restaurant. Excursion to Cayo Jutías: \"A paradisiacal beach\". Return to the house and dinner at the restaurant.",
+      "Hiking: \"Incredible sunrise\". Breakfast at the restaurant. Experiences and adventures: \"Great Cave of Santo Tomás\". Dinner at the restaurant with a special menu.",
+      "Farewell breakfast at the restaurant with fresh local products. Departure to the next destination."
+    ],
+    "includes": {
+      "lodging": "Included",
+      "duration": "2 nights / 3 days",
+      "activities": [
+        "Hiking",
+        "Cyclotour around the surroundings (optional)"
+      ],
+      "gastronomy": [
+        "2 breakfasts",
+        "1 lunch",
+        "2 dinners"
+      ],
+      "transportation": [
+        "Transfers for all excursions"
+      ]
+    },
+    "pricing": {
+      "unit": "per person"
+    }
+  }
 }

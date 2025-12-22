@@ -6,12 +6,10 @@ import { ServicesFacilitiesPage } from './pages/services-facilities-page/service
 
 import { FacilitiesPage } from './pages/facilities-page/facilities-page';
 import { ServicesPage } from './pages/services-page/services-page';
-import { ButtonNavPage } from './pages/button-nav/button-nav';
 import { RoomBasePage } from './components/base-pages/room-base-page/room-base-page';
-import { offers, room01Data, room02Data, room03Data, room04Data, room05Data } from './config/room-data';
+import { room01Data, room02Data, room03Data, room04Data, room05Data } from './config/room-data';
 import { ExperiencesPage } from './pages/experiences-page/experiences-page';
 import { HorsebackRidingPage } from './pages/horseback-riding-page/horseback-riding-page';
-import { HorsebackBasePage } from './components/base-pages/horseback-base-page/horseback-base-page';
 import { HikingPage } from './pages/hiking-page/hiking-page';
 import { OtherExperiencesPage } from './pages/other-experiences-page/other-experiences-page';
 import { CycleToursPage } from './pages/cycle-tours-page/cycle-tours-page';
@@ -20,293 +18,349 @@ import { DiscoverPackageDefaultAll } from './presets/discover-package-default-al
 import { PackagesPage } from './pages/packages-page/packages-page';
 import { PackageBasePage } from './components/base-pages/package-base-page/package-base-page';
 import { ReviewsNewPage } from './pages/reviews-new-page/reviews-new-page';
+import { packages } from './config/packages-data';
+import { ExperienceViewBasePage } from './components/base-pages/experience-view-base-page/experience-view-base-page';
+import { aventuraNatural, headerAdventureNature, headerNatureAndTradition, headerRelaxAndBeach, headerRomanceInVinales, headerVinales360, headerVinalesExpress, headerVinalesFamily, naturalezaYTradicion, relaxYPlaya, romanceEnVinales, vinales360, vinalesEnFamilia, vinalesExpress } from './config/plans-details-data';
+import { groupNavigatorProvider } from './services/group-navigator.provider';
 
 export const routes: Routes = [
-  // { path: '', component: ButtonNavPage, pathMatch: 'full' }, // '/' muestra solo la botonera
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+
   { path: 'home', component: HomePage },
   { path: 'about', component: AboutPage },
-
   { path: 'services-facilities', component: ServicesFacilitiesPage },
   { path: 'services-facilities/facilities', component: FacilitiesPage },
+  {
+    path: 'services-facilities/facilities',
+    providers: [
+      groupNavigatorProvider('services-facilities/facilities')
+    ],
+    children: [
+      {
+        path: 'room-01',
+        loadComponent: () =>
+          import('./components/base-pages/room-base-page/room-base-page')
+            .then(m => m.RoomBasePage),
+        data: room01Data
+      },
+      {
+        path: 'room-02',
+        loadComponent: () =>
+          import('./components/base-pages/room-base-page/room-base-page')
+            .then(m => m.RoomBasePage),
+        data: room02Data
+      },
+      {
+        path: 'room-03',
+        loadComponent: () =>
+          import('./components/base-pages/room-base-page/room-base-page')
+            .then(m => m.RoomBasePage),
+        data: room03Data
+      },
+      {
+        path: 'room-04',
+        loadComponent: () =>
+          import('./components/base-pages/room-base-page/room-base-page')
+            .then(m => m.RoomBasePage),
+        data: room04Data
+      },
+      {
+        path: 'room-05',
+        loadComponent: () =>
+          import('./components/base-pages/room-base-page/room-base-page')
+            .then(m => m.RoomBasePage),
+        data: room05Data
+      }
+    ]
+  },
   { path: 'services-facilities/services', component: ServicesPage },
-
-  { path: 'services-facilities/facilities', component: FacilitiesPage },
-
-  {
-    path: 'services-facilities/facilities/room-01',
-    component: RoomBasePage,
-    data: room01Data,
-  },
-  {
-    path: 'services-facilities/facilities/room-02',
-    component: RoomBasePage,
-    data: room02Data,
-  },
-  {
-    path: 'services-facilities/facilities/room-03',
-    component: RoomBasePage,
-    data: room03Data,
-  },
-  {
-    path: 'services-facilities/facilities/room-04',
-    component: RoomBasePage,
-    data: room04Data,
-  },
-  {
-    path: 'services-facilities/facilities/room-05',
-    component: RoomBasePage,
-    data: room05Data,
-  },
-
-  {
-    path: 'experiences', component: ExperiencesPage,
-  },
-
-  {
-    path: 'experiences/horseback-riding', component: HorsebackRidingPage,
-  },
+  { path: 'experiences', component: ExperiencesPage, },
+  { path: 'experiences/horseback-riding', component: HorsebackRidingPage, },
   { path: 'experiences/hiking', component: HikingPage },
-
   { path: 'experiences/cycle-tours', component: CycleToursPage },
-
   { path: 'experiences/other', component: OtherExperiencesPage },
-
   {
     path: 'experiences/horseback-riding/mountain',
-    component: HorsebackBasePage,
+    component: ExperienceViewBasePage,
     data: {
       header: headerExperience,
       gallery: galleryHorseRiding,
-      offer: offers[1],
+      offer: packages[1],
     },
   },
   {
     path: 'experiences/horseback-riding/fascinating-landscape',
-    component: HorsebackBasePage,
+    component: ExperienceViewBasePage,
     data: {
       header: headerExperience,
       gallery: galleryFascinatingLandscape,
-      offer: offers[2],
+      offer: packages[2],
     },
   },
   {
     path: 'experiences/horseback-riding/sunset',
-    component: HorsebackBasePage,
+    component: ExperienceViewBasePage,
     data: {
       header: headerExperience,
       gallery: gallerySunsetRide,
-      offer: offers[3],
+      offer: packages[3],
     },
   },
-
   {
     path: 'experiences/horseback-riding/penitence-valley',
-    component: HorsebackBasePage,
+    component: ExperienceViewBasePage,
     data: {
       header: headerExperience,
       gallery: galleryPenitenceValley,
-      offer: offers[4],
+      offer: packages[4],
     },
   },
   {
     path: 'experiences/horseback-riding/vinales-valley',
-    component: HorsebackBasePage,
+    component: ExperienceViewBasePage,
     data: {
       header: headerExperience,
       gallery: galleryVinalesValley,
-      offer: offers[5],
+      offer: packages[5],
     },
   },
-
   {
     path: 'experiences/hiking/from-hell-to-paradise',
-    component: HorsebackBasePage,
+    component: ExperienceViewBasePage,
     data: {
       header: headerExperience,
       gallery: galleryFromHellToParadise,
-      offer: offers[0],
+      offer: packages[0],
     },
   },
   {
     path: 'experiences/hiking/amazing-sunrise',
-    component: HorsebackBasePage,
+    component: ExperienceViewBasePage,
     data: {
       header: headerExperience,
       gallery: galleryAmazingSunrise,
-      offer: offers[1],
+      offer: packages[1],
     },
   },
   {
     path: 'experiences/hiking/enjoying-the-sunset',
-    component: HorsebackBasePage,
+    component: ExperienceViewBasePage,
     data: {
       header: headerExperience,
       gallery: galleryEnjoyingTheSunset,
-      offer: offers[2],
+      offer: packages[2],
     },
   },
   {
     path: 'experiences/hiking/true-hiking',
-    component: HorsebackBasePage,
+    component: ExperienceViewBasePage,
     data: {
       header: headerExperience,
       gallery: galleryTrueHiking,
-      offer: offers[3],
+      offer: packages[3],
     },
   },
   {
     path: 'experiences/hiking/antiquity-and-nature',
-    component: HorsebackBasePage,
+    component: ExperienceViewBasePage,
     data: {
       header: headerExperience,
       gallery: galleryAntiquityAndNature,
-      offer: offers[4],
+      offer: packages[4],
     },
   },
   {
     path: 'experiences/hiking/pure-ecology',
-    component: HorsebackBasePage,
+    component: ExperienceViewBasePage,
     data: {
       header: headerExperience,
       gallery: galleryPureEcology,
-      offer: offers[5],
+      offer: packages[5],
     },
   },
   {
     path: 'experiences/hiking/tobacco-inside',
-    component: HorsebackBasePage,
+    component: ExperienceViewBasePage,
     data: {
       header: headerExperience,
       gallery: galleryTobaccoInside,
-      offer: offers[4],
+      offer: packages[4],
     },
   },
   {
     path: 'experiences/cycle-tours/the-calvary',
-    component: HorsebackBasePage,
+    component: ExperienceViewBasePage,
     data: {
       header: headerExperience,
       gallery: galleryTheCalvary,
-      offer: offers[0],
+      offer: packages[0],
     },
   },
   {
     path: 'experiences/cycle-tours/the-slippery-one',
-    component: HorsebackBasePage,
+    component: ExperienceViewBasePage,
     data: {
       header: headerExperience,
       gallery: galleryTheSlipperyOne,
-      offer: offers[1],
+      offer: packages[1],
     },
   },
-
   {
     path: 'experiences/cycle-tours/through-the-valleys',
-    component: HorsebackBasePage,
+    component: ExperienceViewBasePage,
     data: {
       header: headerExperience,
       gallery: galleryThroughTheValleys,
-      offer: offers[2],
+      offer: packages[2],
     },
   },
   {
     path: 'experiences/cycle-tours/ecological-agriculture',
-    component: HorsebackBasePage,
+    component: ExperienceViewBasePage,
     data: {
       header: headerExperience,
       gallery: galleryEcologicalAgriculture,
-      offer: offers[3],
+      offer: packages[3],
     },
   },
   {
     path: 'experiences/cycle-tours/lake-visit',
-    component: HorsebackBasePage,
+    component: ExperienceViewBasePage,
     data: {
       header: headerExperience,
       gallery: galleryLakeVisit,
-      offer: offers[4],
+      offer: packages[4],
     },
   },
   {
     path: 'experiences/other/paradise-beach',
-    component: HorsebackBasePage,
+    component: ExperienceViewBasePage,
     data: {
       header: headerExperience,
       gallery: galleryParadiseBeach,
-      offer: offers[0],
+      offer: packages[0],
     },
   },
   {
     path: 'experiences/other/intense-day',
-    component: HorsebackBasePage,
+    component: ExperienceViewBasePage,
     data: {
       header: headerExperience,
       gallery: galleryIntenseDay,
-      offer: offers[1],
+      offer: packages[1],
     },
   },
   {
     path: 'experiences/other/santo-tomas-caves',
-    component: HorsebackBasePage,
+    component: ExperienceViewBasePage,
     data: {
       header: headerExperience,
       gallery: gallerySantoTomas,
-      offer: offers[2],
+      offer: packages[2],
     },
   },
   {
     path: 'experiences/other/horse-carriage',
-    component: HorsebackBasePage,
+    component: ExperienceViewBasePage,
     data: {
       header: headerExperience,
       gallery: galleryHorseCarriage,
-      offer: offers[3],
+      offer: packages[3],
     },
   },
   {
     path: 'experiences/other/vinales-day-trip',
-    component: HorsebackBasePage,
+    component: ExperienceViewBasePage,
     data: {
       header: headerExperience,
       gallery: galleryVinalesDayTrip,
-      offer: offers[4],
+      offer: packages[4],
     },
   },
   {
     path: 'experiences/other/history-culture-and-nature',
-    component: HorsebackBasePage,
+    component: ExperienceViewBasePage,
     data: {
       header: headerExperience,
       gallery: galleryHistoryCultureNature,
-      offer: offers[5],
+      offer: packages[5],
     },
 
   },
-
   {
     path: 'nature',
     component: DiscoverPackageDefaultAll,
   },
-
   {
     path: 'packages',       // ← esta es la URL que se usará (ej: /packages)
-    component: PackagesPage // ← el componente que se mostrará
+    component: PackagesPage, // ← el componente que se mostrará
   },
-
-  // {
-  //   path: 'reviews',
-  //   component: ReviewsPage
-  // },
   {
-    path: 'PackageBasePage',
-    component: PackageBasePage
+    path: 'packages/adventure-nature',
+    component: PackageBasePage,
+    data: {
+      header: headerAdventureNature,
+      packageDetails: aventuraNatural,
+      allPackages: packages
+    }
   },
-
+  {
+    path: 'packages/relax-and-beach',
+    component: PackageBasePage,
+    data: {
+      header: headerRelaxAndBeach,
+      packageDetails: relaxYPlaya,
+      allPackages: packages
+    }
+  },
+  {
+    path: 'packages/vinales-family',
+    component: PackageBasePage,
+    data: {
+      header: headerVinalesFamily,
+      packageDetails: vinalesEnFamilia,
+      allPackages: packages
+    }
+  },
+  {
+    path: 'packages/romance-in-vinales',
+    component: PackageBasePage,
+    data: {
+      header: headerRomanceInVinales,
+      packageDetails: romanceEnVinales,
+      allPackages: packages
+    }
+  },
+  {
+    path: 'packages/nature-and-tradition',
+    component: PackageBasePage,
+    data: {
+      header: headerNatureAndTradition,
+      packageDetails: naturalezaYTradicion,
+      allPackages: packages
+    }
+  },
+  {
+    path: 'packages/vinales-360',
+    component: PackageBasePage,
+    data: {
+      header: headerVinales360,
+      packageDetails: vinales360,
+      allPackages: packages
+    }
+  },
+  {
+    path: 'packages/vinales-express',
+    component: PackageBasePage,
+    data: {
+      header: headerVinalesExpress,
+      packageDetails: vinalesExpress,
+      allPackages: packages
+    }
+  },
   {
     path: 'reviews',
     component: ReviewsNewPage
   },
-
   { path: '**', redirectTo: '/home' }
 ];

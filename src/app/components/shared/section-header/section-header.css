@@ -36,7 +36,7 @@
   text-decoration: none;
   transition: color 0.2s;
 }
-
+ 
 .section-header a:hover {
   color: #0f4e3a;
 }
@@ -61,12 +61,81 @@
   /* un poco más oscuro para hover */
 }
 
+/* ==========================
+   DESKTOP PEQUEÑO – 1024px
+   ========================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .section-header {
+   text-align: left;
+    align-items: flex-start;
+    gap: 0.6rem;              /* intermedio entre desktop y tablet */
+    padding: 0.5rem;
+  }
+
+  .section-header h1 {
+    font-size: 2rem;          /* ligeramente menor que desktop grande */
+    line-height: 2.5rem;
+  }
+
+  .section-header p {
+    font-size: 1rem;       /* intermedio entre desktop y tablet */
+    line-height: 1.75rem;
+    letter-spacing: 0.03125rem;
+  }
+
+  .section-header a {
+    font-size: 1rem;        /* ajustado para pantallas medianas */
+  }
+
+  .section-header a.text-link {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    letter-spacing:  0.03125rem;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .section-header {
+    text-align: left;
+    align-items: flex-start;
+    gap: 0.75rem;
+    max-width: 700px;
+    padding: 0.5rem;
+  }
+
+
+  .section-header h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .section-header p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.03125rem;
+  }
+
+  .section-header a {
+    font-size: 1rem;
+  }
+
+  .section-header a.text-link {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    letter-spacing: 0.03125rem;
+  }
+}
+
+
+
 @media (max-width: 600px) {
   .section-header {
     text-align: left;
     align-items: flex-start;
     padding: 0.5rem;
-    max-width: 470px;
+    max-width: 400px;
     gap: 0.75rem;
   }
 

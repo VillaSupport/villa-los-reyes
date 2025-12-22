@@ -49,9 +49,9 @@ export class ExperiencesPage {
         link: { text: 'experiencesContent.gallerySections.0.linkText', url: '/experiences/horseback-riding' }
       },
       rightImages: [
-        { src: '/assets/images/adventures/slide-horse-riding-02.jpg', alt: 'experiencesContent.gallerySections.0.rightImages.0.alt', name: 'experiencesContent.gallerySections.0.rightImages.0.name', path: '/TODO-adjust-path' },
-        { src: '/assets/images/adventures/slide-horse-riding-03.jpg', alt: 'experiencesContent.gallerySections.0.rightImages.1.alt', name: 'experiencesContent.gallerySections.0.rightImages.1.name', path: '/TODO-adjust-path' },
-        { src: '/assets/images/adventures/slide-horse-riding-04.jpg', alt: 'experiencesContent.gallerySections.0.rightImages.2.alt', name: 'experiencesContent.gallerySections.0.rightImages.2.name', path: '/TODO-adjust-path' }
+        { src: '/assets/images/adventures/slide-horse-riding-02.jpg', alt: 'experiencesContent.gallerySections.0.rightImages.0.alt', name: 'experiencesContent.gallerySections.0.rightImages.0.name', path: '/experiences/horseback-riding/mountain' },
+        { src: '/assets/images/adventures/slide-horse-riding-03.jpg', alt: 'experiencesContent.gallerySections.0.rightImages.1.alt', name: 'experiencesContent.gallerySections.0.rightImages.1.name', path: '/experiences/horseback-riding/fascinating-landscape' },
+        { src: '/assets/images/adventures/slide-horse-riding-04.jpg', alt: 'experiencesContent.gallerySections.0.rightImages.2.alt', name: 'experiencesContent.gallerySections.0.rightImages.2.name', path: '/experiences/horseback-riding/sunset' }
       ],
       color: '#f7faf7',
       hasHostBg: false
@@ -64,9 +64,9 @@ export class ExperiencesPage {
         link: { text: 'experiencesContent.gallerySections.1.linkText', url: '/experiences/hiking' }
       },
       rightImages: [
-        { src: '/assets/images/adventures/slide-hell-to-paradise.jpg', alt: 'experiencesContent.gallerySections.1.rightImages.0.alt', name: 'experiencesContent.gallerySections.1.rightImages.0.name', path: '/TODO-adjust-path' },
-        { src: '/assets/images/adventures/slide-amazing-sunrise.jpg', alt: 'experiencesContent.gallerySections.1.rightImages.1.alt', name: 'experiencesContent.gallerySections.1.rightImages.1.name', path: '/TODO-adjust-path' },
-        { src: '/assets/images/adventures/slide-tobacco-inside.jpg', alt: 'experiencesContent.gallerySections.1.rightImages.2.alt', name: 'experiencesContent.gallerySections.1.rightImages.2.name', path: '/TODO-adjust-path' }
+        { src: '/assets/images/adventures/slide-hell-to-paradise.jpg', alt: 'experiencesContent.gallerySections.1.rightImages.0.alt', name: 'experiencesContent.gallerySections.1.rightImages.0.name', path: '/experiences/hiking/from-hell-to-paradise' },
+        { src: '/assets/images/adventures/slide-amazing-sunrise.jpg', alt: 'experiencesContent.gallerySections.1.rightImages.1.alt', name: 'experiencesContent.gallerySections.1.rightImages.1.name', path: '/experiences/hiking/amazing-sunrise' },
+        { src: '/assets/images/adventures/slide-tobacco-inside.jpg', alt: 'experiencesContent.gallerySections.1.rightImages.2.alt', name: 'experiencesContent.gallerySections.1.rightImages.2.name', path: '/experiences/hiking/tobacco-inside' }
       ],
       color: '#E4EAE5',
       reverse: true
@@ -79,9 +79,9 @@ export class ExperiencesPage {
         link: { text: 'experiencesContent.gallerySections.2.linkText', url: '/experiences/cycle-tours' }
       },
       rightImages: [
-        { src: '/assets/images/adventures/slide-the-calvary.jpg', alt: 'experiencesContent.gallerySections.2.rightImages.0.alt', name: 'experiencesContent.gallerySections.2.rightImages.0.name', path: '/TODO-adjust-path' },
-        { src: '/assets/images/adventures/slide-the-slippery-one.jpg', alt: 'experiencesContent.gallerySections.2.rightImages.1.alt', name: 'experiencesContent.gallerySections.2.rightImages.1.name', path: '/TODO-adjust-path' },
-        { src: '/assets/images/adventures/slide-through-the-valleys.jpg', alt: 'experiencesContent.gallerySections.2.rightImages.2.alt', name: 'experiencesContent.gallerySections.2.rightImages.2.name', path: '/TODO-adjust-path' }
+        { src: '/assets/images/adventures/slide-the-calvary.jpg', alt: 'experiencesContent.gallerySections.2.rightImages.0.alt', name: 'experiencesContent.gallerySections.2.rightImages.0.name', path: '/experiences/cycle-tours/the-calvary' },
+        { src: '/assets/images/adventures/slide-the-slippery-one.jpg', alt: 'experiencesContent.gallerySections.2.rightImages.1.alt', name: 'experiencesContent.gallerySections.2.rightImages.1.name', path: '/experiences/cycle-tours/the-slippery-one' },
+        { src: '/assets/images/adventures/slide-through-the-valleys.jpg', alt: 'experiencesContent.gallerySections.2.rightImages.2.alt', name: 'experiencesContent.gallerySections.2.rightImages.2.name', path: '/experiences/cycle-tours/through-the-valleys' }
       ],
       color: '#f7faf7'
     },
@@ -93,9 +93,9 @@ export class ExperiencesPage {
         link: { text: 'experiencesContent.gallerySections.3.linkText', url: '/experiences/other' }
       },
       rightImages: [
-        { src: '/assets/images/adventures/slide-paradise-beach.jpg', alt: 'experiencesContent.gallerySections.3.rightImages.0.alt', name: 'experiencesContent.gallerySections.3.rightImages.0.name', path: '/TODO-adjust-path' },
-        { src: '/assets/images/adventures/slide-intense-day.jpg', alt: 'experiencesContent.gallerySections.3.rightImages.1.alt', name: 'experiencesContent.gallerySections.3.rightImages.1.name', path: '/TODO-adjust-path' },
-        { src: '/assets/images/adventures/slide-vinales-day-trip.jpg', alt: 'experiencesContent.gallerySections.3.rightImages.2.alt', name: 'experiencesContent.gallerySections.3.rightImages.2.name', path: '/TODO-adjust-path' }
+        { src: '/assets/images/adventures/slide-paradise-beach.jpg', alt: 'experiencesContent.gallerySections.3.rightImages.0.alt', name: 'experiencesContent.gallerySections.3.rightImages.0.name', path: '/experiences/other/paradise-beach' },
+        { src: '/assets/images/adventures/slide-intense-day.jpg', alt: 'experiencesContent.gallerySections.3.rightImages.1.alt', name: 'experiencesContent.gallerySections.3.rightImages.1.name', path: '/experiences/other/intense-day' },
+        { src: '/assets/images/adventures/slide-vinales-day-trip.jpg', alt: 'experiencesContent.gallerySections.3.rightImages.2.alt', name: 'experiencesContent.gallerySections.3.rightImages.2.name', path: '/experiences/other/vinales-day-trip' }
       ],
       color: '#E4EAE5',
       reverse: true

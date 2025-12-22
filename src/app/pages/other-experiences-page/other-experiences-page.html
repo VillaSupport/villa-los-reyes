@@ -1,19 +1,49 @@
-<experience-base-page [header]="{
+<experience-base-page
+  [header]="{
       head: {
-        title: 'Experiencias y aventuras',
-        description: 'Descubre aventuras inolvidables y experiencias únicas en Viñales.'
+        title: ('adventuresPage.otherAdventures.header.title'),
+        description: ('adventuresPage.otherAdventures.header.description')
       },
       image: {
         src: '/assets/images/experiences/experiences-header.jpg',
-        alt: 'Rutas de Senderismo - Villa Los Reyes'
+        alt: 'Otras experiencias - Villa Los Reyes'
       },
       objectPosition: 'center center'
     }"
-    [images]="[
-  { src: '/assets/images/adventures/slide-paradise-beach.jpg', title: 'Una playa paradisíaca', path: '/experiences/other/paradise-beach' },
-  { src: '/assets/images/adventures/slide-intense-day.jpg', title: 'Un día intenso', path: '/experiences/other/intense-day' },
-  { src: '/assets/images/adventures/slide-horse-carriage-ride.jpg', title: 'Para todas las edades', path: '/experiences/other/horse-carriage' },
-  { src: '/assets/images/adventures/slide-santo-tomas-caves.jpg', title: 'Gran Caverna de Santo Tomás', path: '/experiences/other/santo-tomas-caves' },
-  { src: '/assets/images/adventures/slide-vinales-day-trip.jpg', title: 'Viñales: day trip', path: '/experiences/other/vinales-day-trip' },
-  { src: '/assets/images/adventures/slide-history-culture-and-nature.jpg', title: 'Historia, cultura y naturaleza', path: '/experiences/other/history-culture-and-nature' }
-]" />
+
+  [title]="'adventuresPage.otherAdventures.sectionTitle'"
+
+  [images]="[
+    {
+      src: '/assets/images/adventures/slide-paradise-beach.jpg',
+      title: ('adventuresPage.otherAdventures.items.0.label'),
+      path: '/experiences/other/paradise-beach'
+    },
+    {
+      src: '/assets/images/adventures/slide-intense-day.jpg',
+      title: ('adventuresPage.otherAdventures.items.1.label'),
+      path: '/experiences/other/intense-day'
+    },
+    {
+      src: '/assets/images/adventures/slide-horse-carriage-ride.jpg',
+      title: ('adventuresPage.otherAdventures.items.2.label'),
+      path: '/experiences/other/horse-carriage'
+    },
+    {
+      src: '/assets/images/adventures/slide-santo-tomas-caves.jpg',
+      title: ('adventuresPage.otherAdventures.items.3.label'),
+      path: '/experiences/other/santo-tomas-caves'
+    },
+    {
+      src: '/assets/images/adventures/slide-vinales-day-trip.jpg',
+      title: ('adventuresPage.otherAdventures.items.4.label'),
+      path: '/experiences/other/vinales-day-trip'
+    },
+    {
+      src: '/assets/images/adventures/slide-history-culture-and-nature.jpg',
+      title: ('adventuresPage.otherAdventures.items.5.label'),
+      path: '/experiences/other/history-culture-and-nature'
+    }
+  ]"
+/>
+

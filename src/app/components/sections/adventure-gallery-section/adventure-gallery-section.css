@@ -14,7 +14,7 @@
   grid-auto-rows: 22rem;
   gap: 1.2rem;
   width: 100%;
-  padding: 4rem 6rem;
+  padding: 1.75rem 5rem 4rem;
 }
 
 .gallery-item {
@@ -84,4 +84,64 @@
 
 .gallery-item:nth-child(5) {
   grid-column: 4 / span 3;
+}
+
+
+.gallery-header {
+  width: 100%;
+  padding: 3rem 1.5rem 0 5rem;
+}
+
+.gallery-header h2 {
+
+  font-family: Poppins;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 2.875rem;
+  margin: 0;
+  color: #D17D00;
+}
+
+@media (max-width: 600px) {
+  :host {
+    border-radius: 1rem 1rem 0 0;
+
+  }
+
+  .horseback-gallery {
+    grid-template-columns: minmax(0, 400px);
+    grid-auto-rows: 18rem;
+    /* Todas las cards del mismo alto */
+    justify-content: center;
+    /* centrar la columna */
+
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+  }
+
+
+  .horseback-gallery .gallery-item {
+    grid-column: 1;
+    /* ocupa toda la fila */
+    height: 100%;
+  }
+
+  .overlay {
+    font-size: 1.35rem;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.25;
+    padding: 1.75rem 1rem;
+  }
+
+  .gallery-header {
+    padding: 2rem 1.5rem 0 1.5rem;
+    /* Centrar y ajustar para móvil */
+  }
+
+  .gallery-header h2 {
+    font-size: 1.75rem;
+    line-height: 1.1;
+    text-align: center;
+  }
 }

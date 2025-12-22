@@ -1,7 +1,15 @@
 <section class="discover-package-section">
   <div class="package-wrapper">
-    <section-header [header]="header()" />
-    <packages-list [packages]="packages()" />
-  </div>
 
+    <section-header
+      class="section-header"
+      [header]="header()">
+    </section-header>
+
+    <packages-list
+      class="packages-list"
+      [packages]="packages()">
+    </packages-list>
+
+  </div>
 </section>

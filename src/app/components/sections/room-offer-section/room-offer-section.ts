@@ -20,11 +20,12 @@ export class RoomOfferSection {
 
   price = input.required<string>();
   currency = input.required<string>();
-  perPerson = input.required<string>();
+  perUnit = input.required<string>();
 
   objectPosition = input<Position>('center center');
   transform = input<Transform>('scale(1)');
   transformOrigin = input<TransformOrigin>('center center');
 
   link = input<{ text: string; url: string }>();
+
 }

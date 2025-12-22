@@ -5,10 +5,11 @@ import { RouterLink } from '@angular/router';
 import { FaIconLibrary, FaIconComponent } from '@fortawesome/angular-fontawesome';
 import { faFacebookF, faInstagram, faFacebookMessenger, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faPhone, faEnvelope, faLocationDot, faCommentDots } from '@fortawesome/free-solid-svg-icons';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'footer-section',
-  imports: [FaIconComponent],
+  imports: [FaIconComponent,TranslatePipe],
   templateUrl: './main-footer.html',
   styleUrl: './main-footer.css'
 })
