@@ -43,7 +43,5 @@ export class GalleryInfoSection {
     return '#ffffff';
   }
 
-  mainHeight = input<UnitString>('45vh');
-  thumbHeight = input<UnitString>('24vh');
 }
 

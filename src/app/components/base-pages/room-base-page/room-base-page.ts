@@ -7,6 +7,7 @@ import { Position, Transform, TransformOrigin } from '../../shared/interfaces/ap
 import { ActivatedRoute } from '@angular/router';
 import { DiscoverServicesDefault } from "../../../presets/discover-services-default/discover-services-default";
 import { GroupNavigatorService } from '../../../services/group-navigator-service';
+import { RoomNavigatorComponent } from "../../shared/room-navigator/room-navigator";
 
 
 
@@ -55,7 +56,7 @@ export interface RoomPageRouteData {
 
 @Component({
   selector: 'app-room-base-page',
-  imports: [MainHeaderSection, GalleryInfoSection, DiscoverExperienceSection, RoomOfferSection, DiscoverServicesDefault],
+  imports: [MainHeaderSection, GalleryInfoSection, DiscoverExperienceSection, RoomOfferSection, DiscoverServicesDefault, RoomNavigatorComponent],
   templateUrl: './room-base-page.html',
   styleUrl: './room-base-page.css'
 })
@@ -82,8 +83,8 @@ export class RoomBasePage {
 
 
   goNext() {
-    this.navigator.next();
-  }
+  this.navigator.next();
+}
 
   goPrev() {
     this.navigator.prev();

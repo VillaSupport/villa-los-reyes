@@ -1,10 +1,11 @@
 import { Component, input } from '@angular/core';
 import { RoomItem } from "../discover-room-section/rooms-gallery/room-item/room-item";
 import { InfoPanel } from "../../shared/info-panel/info-panel";
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'grid-rooms-section',
-  imports: [RoomItem, InfoPanel],
+  imports: [RoomItem,TranslatePipe],
   templateUrl: './grid-rooms-section.html',
   styleUrl: './grid-rooms-section.css'
 })

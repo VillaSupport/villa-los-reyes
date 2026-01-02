@@ -1,0 +1,76 @@
+:host {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+}
+
+.steps-card {
+  background-color: #F5FBF6;
+  border-radius: 1rem;
+  padding: 1.125rem 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.step {
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 1rem;
+  gap: 1.5rem; /* Ajustado para mejor equilibrio visual */
+}
+
+
+.circle {
+  display: flex;
+  width: 3.5rem;
+  height: 3.5rem;
+  justify-content: center;
+  align-items: center;
+  background: #ABABA9;
+  color: #F5FBF6;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 2.4375rem;
+  letter-spacing: 0.01406rem;
+  transition: background 0.3s ease; /* Suaviza el cambio de estado */
+}
+
+
+.step-info {
+  display: flex;
+  flex-direction: column;
+  color: #8E918E;
+}
+.step-info strong {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+}
+
+.step-info p {
+  color: #91918F;
+  font-size: 1.0825rem;
+  line-height: 1.5rem; 
+  letter-spacing: 0.03125rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* --- ESTADOS ACTIVOS --- */
+
+.step.active .circle {
+  background: #1F7A5A;
+  color: #F5FBF6;
+}
+
+
+.step.active .step-info strong {
+  color: #08372A;
+}
+
+.step.active .step-info p {
+  color: #404944;
+}
+

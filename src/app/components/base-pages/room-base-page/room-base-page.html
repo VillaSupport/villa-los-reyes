@@ -6,15 +6,8 @@
     [description]="gallery.description" [featuresTitle]="gallery.featuresTitle" [features]="gallery.features"
     [hasHostBg]="false" />
 
-  <div class="room-navigation">
-    <button (click)="goPrev()" class="nav-btn prev">
-      ← Anterior
-    </button>
-
-    <button (click)="goNext()" class="nav-btn next">
-      Siguiente →
-    </button>
-  </div>
+  <room-navigator (onPrev)="goPrev()" (onNext)="goNext()">
+  </room-navigator>
 
   <room-offer-section [background]="offer.background" [title]="offer.title" [subtitle]="offer.subtitle"
     [duration]="offer.duration" [description]="offer.description" [price]="offer.price" [currency]="offer.currency"

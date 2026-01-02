@@ -6,25 +6,3 @@ gallery-info-section {
   margin-top: -5rem;
 }
 
-.room-navigation {
-  background-color: transparentn;
-  padding: 0 5rem;
-  max-width: 90rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.nav-btn {
-  font-size: 1rem;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;       /* cambia el cursor al pasar sobre el botón */
-  color: #000;           /* color de texto inicial, negro en este ejemplo */
-  transition: color 0.3s ease;
-}
-
-
-.nav-btn:hover {
-  color: #ff0000;        /* color de texto al hacer hover, rojo en este ejemplo */
-}

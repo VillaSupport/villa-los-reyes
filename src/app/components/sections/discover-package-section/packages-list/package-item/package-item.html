@@ -1,12 +1,20 @@
-<div class="package-item">
-  <img [src]="image()" [alt]="alt() | translate" />
+<div class="package-card">
+  <img [src]="image()" [alt]="alt() | translate" loading="lazy" />
 
   <div class="package-overlay">
-    <h2>{{ title() | translate }}</h2>
-    <p class="duration">{{ duration() | translate }}</p>
-    <p class="description">{{ description() | translate }}</p>
-    <p class="price">{{ price() | translate }}</p>
-    <p class="perUnit">{{ perUnit() | translate }}</p>
+    
+    <div class="card-header">
+      <h2>{{ title() | translate }}</h2>
+      <p class="duration">{{ duration() | translate }}</p>
+    </div>
+
+    <div class="card-footer">
+      <p class="description">{{ description() | translate }}</p>
+      <div class="price-row">
+        <span class="price">$ {{ price() | translate }} </span>
+        <span class="per-unit">{{ perUnit() | translate }}</span>
+      </div>
+    </div>
 
   </div>
 </div>

@@ -1,0 +1,61 @@
+<div [formGroup]="form()" class="card stay-step">
+
+  <div class="stay-section">
+    <h2 class="section-title">Fecha de estancia</h2>
+    <div class="dates">
+      <div class="date-field">
+        <label for="checkIn">Fecha de entrada</label>
+        <div class="date-input-wrapper">
+          <span class="material-symbols-outlined date-icon">calendar_month</span>
+          <input id="checkIn" type="date" formControlName="checkIn" required />
+        </div>
+      </div>
+
+      <div class="date-field">
+        <label for="checkOut">Fecha de salida</label>
+        <div class="date-input-wrapper">
+          <span class="material-symbols-outlined date-icon">calendar_month</span>
+          <input id="checkOut" type="date" formControlName="checkOut" [disabled]="true" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stay-section">
+    <h2 class="section-title">Huéspedes</h2>
+
+    <div class="guest-row">
+      <div class="guest-info">
+        <span class="guest-type">Adultos</span>
+        <span class="guest-desc">Mayores de 12 años</span>
+      </div>
+      <div class="counter">
+        <button type="button" (click)="decreaseAdult()">
+          <span class="material-symbols-outlined remove">do_not_disturb_on</span>
+        </button>
+        <span class="count">{{ adults }}</span>
+        <button type="button" (click)="increaseAdult()">
+          <span class="material-symbols-outlined add">add_circle</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="guest-row">
+      <div class="guest-info">
+        <span class="guest-type">Niños</span>
+        <span class="guest-desc">Menores de 12 años</span>
+      </div>
+      <div class="counter">
+        <button type="button" (click)="decreaseChild()">
+          <span class="material-symbols-outlined remove">do_not_disturb_on</span>
+        </button>
+        <span class="count">{{ children}}</span>
+        <button type="button" (click)="increaseChild()">
+          <span class="material-symbols-outlined add">add_circle</span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+

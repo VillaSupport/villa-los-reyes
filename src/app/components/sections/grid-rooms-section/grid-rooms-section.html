@@ -1,21 +1,18 @@
-<div class="rooms-grid">
-  <!-- Primer elemento -->
-  <info-panel
-    [title]="info().title"
-    [description]="info().description"
-    >
-  </info-panel>
+<div class="section-wrapper">
+  <div class="rooms-grid">
+    <div class="grid-header-info">
+      <h2 class="title">{{ info().title | translate }}</h2>
+      <p class="description">{{ info().description | translate }}</p>
+    </div>
 
-  <!-- Otros 5 elementos -->
-  @for (room of rooms(); track room.src) {
-    <room-item
-      [src]="room.src"
-      [alt]="room.alt"
-      [name]="room.name"
-      [details]="room.details"
-      [link] ="room.path"
-
-      >
-    </room-item>
-  }
+    @for (room of rooms(); track room.src) {
+      <room-item
+        [src]="room.src"
+        [alt]="room.alt"
+        [name]="room.name"
+        [details]="room.details"
+        [link]="room.path">
+      </room-item>
+    }
+  </div>
 </div>

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 8px;
+  padding: 0.45rem;
   align-items: flex-start;
   font-family: Poppins, sans-serif;
   height: auto
@@ -63,7 +63,7 @@
 
 
 /* -----------  DESKTOP MEDIO: de 1280px a 1440px  ----------- */
-@media (min-width: 1280px) and (max-width: 1440px) {
+@media (min-width: 1281px) and (max-width: 1440px) {
   .info-panel {
     gap: 0.75rem;
     /* reducción del gap */
@@ -75,10 +75,27 @@
   }
 
   .info-panel p {
-    font-size: 1rem;
-
+    font-size: 1.125rem;
     line-height: 1.75rem;
     letter-spacing: 0.03125rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px){
+  .info-panel {
+    gap: 1rem;
+  }
+
+  .info-panel h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .info-panel p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.03125rem;
+
   }
 }
 

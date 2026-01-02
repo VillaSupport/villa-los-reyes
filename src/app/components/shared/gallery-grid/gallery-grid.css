@@ -8,14 +8,14 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 8px;
-  padding-top: 8px;
+  padding-top: 12px;
 
 }
 
 .main-image-wrapper {
   position: relative;
   border-radius: 16px;
-  aspect-ratio: 2.20 / 1;
+  aspect-ratio: 2;
   grid-column: span 6;
   overflow: hidden;
 }
@@ -24,14 +24,14 @@
   position: relative;
   border-radius: 16px;
   overflow: hidden;
-  aspect-ratio: 1.60 / 1;
+  aspect-ratio: 1.41;
   grid-column: span 2;
 
   /* por defecto 3 thumbs -> 2 columnas c/u */
 }
 
 .gallery-grid:not(:has(.thumb-image-wrapper)) .main-image-wrapper {
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 1.35;
   /* nuevo ratio cuando no hay thumbs */
 }
 
@@ -62,7 +62,7 @@
   pointer-events: none;
 }
 
-@media (min-width: 1024px) and (max-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1439px) {
   .gallery-grid {
     padding: 0;
   }

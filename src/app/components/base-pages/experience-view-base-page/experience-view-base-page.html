@@ -10,8 +10,10 @@
   <gallery-info-section [mainImage]="gallery.mainImage" [thumbImages]="gallery.thumbImages" [title]="gallery.title"
     [description]="gallery.description" [link]="gallery.link" [features]="gallery.features"
     [featuresTitle]="gallery.featuresTitle" [reverse]="gallery.reverse ?? false" [color]="gallery.color"
-    [hasHostBg]="gallery.hasHostBg" [mainHeight]="gallery.mainHeight ?? '45vh'"
-    [thumbHeight]="gallery.thumbHeight ?? '24vh'" />
+    [hasHostBg]="gallery.hasHostBg" />
+
+  <room-navigator (onPrev)="goPrev()" (onNext)="goNext()">
+  </room-navigator>
 
   <!-- OFFER -->
   <room-offer-section [background]="offer.background" [title]="offer.title" [subtitle]="offer.subtitle"
@@ -20,13 +22,8 @@
     [objectPosition]="offer.objectPosition" [transform]="offer.transform" [transformOrigin]="offer.transformOrigin" />
 
   <!-- EXPLORAR HABITACIONES -->
-  <explore-items-section 
-    class="mt-negative" 
-    [title]="'exploreRooms.title'" 
-    [description]="'exploreRooms.description'"
-    [linkText]="'exploreRooms.linkText'" 
-    [items]="rooms.slice(0,5)" 
-    [link]="'/services-facilities/facilities'"
+  <explore-items-section class="mt-negative" [title]="'exploreRooms.title'" [description]="'exploreRooms.description'"
+    [linkText]="'exploreRooms.linkText'" [items]="rooms.slice(0,5)" [link]="'/services-facilities/facilities'"
     [cardTemplate]="roomCardTemplate">
   </explore-items-section>
 
@@ -38,5 +35,3 @@
 <ng-template #roomCardTemplate let-room>
   <room-card [room]="room"></room-card>
 </ng-template>
-
-  

@@ -1,10 +1,10 @@
 .room-offer-section {
   position: relative;
   width: 100%;
+  height: 100vh;
   overflow: hidden;
   font-family: "Poppins", sans-serif;
 }
-
 
 .background-image {
   width: 100%;
@@ -17,172 +17,191 @@
 .offer-overlay {
   position: absolute;
   inset: 0;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  height: 100%;
-  width: 42%;
+  min-width: 400px;
+  width: 45%;
+
 }
 
 .offer-content {
-  display: flex;
-  justify-content: center;
-  height: 100%;
   width: 100%;
-  background-color: rgba(239, 245, 240, 0.80);
-  backdrop-filter: blur(6px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(239, 245, 240, 0.637);
+  backdrop-filter: blur(5px);
   padding: 5rem;
 }
 
 .text-box {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
   gap: 1rem;
 }
 
 
-
 .title {
   color: #D17D00;
-  font-family: Poppins;
   font-size: 2.25rem;
-  font-style: normal;
   font-weight: 700;
-  line-height: 2.875rem;
-  margin-bottom: 0.2rem;
+  line-height: 2.95rem;
 }
 
 .subtitle {
   color: #3C6756;
-  font-family: Poppins;
   font-size: 1.25rem;
-  font-style: normal;
   font-weight: 600;
-  line-height: 1.625rem;
+  line-height: 1.725rem;
   letter-spacing: 0.00938rem;
-  margin-bottom: 0.5rem;
 }
 
-.duration {
+.duration, .description {
   color: #234E3F;
-  font-family: Poppins;
   font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 400;
   line-height: 1.875rem;
   letter-spacing: 0.03125rem;
 }
-
-.description {
-  color: #234E3F;
-  font-family: Poppins;
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.875rem;
-  letter-spacing: 0.03125rem;
-
-}
-
 
 .price {
   display: flex;
   align-items: baseline;
   gap: 0.4rem;
   font-weight: 600;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.amount, .currency {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 2.375rem;
 }
 
 .amount {
-  color: var(--M3-ref-primary-primary40, #3C6756);
-  font-family: Poppins;
-  font-size: 1.75rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 2.375rem;
+  color: #3C6756;
 }
 
 .currency {
-  color: var(--M3-ref-secondary-secondary60, #D17D00);
-  font-family: Poppins;
-  font-size: 1.75rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 2.375rem;
+  color: #D17D00;
 }
 
 .per-person {
   color: #08372A;
-  font-family: Poppins;
   font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 400;
   line-height: 1.875rem;
   letter-spacing: 0.03125rem;
 }
 
 .discover-link {
   display: inline-flex;
-  align-self: flex-start;
-  width: auto;
-  padding: 1rem 2rem;
-  border-radius: 6.25rem;
+  width: fit-content;
+  padding: 0.95rem 2rem;
+  border-radius: 50px;
   border: 1px solid #707974;
-  background: transparent;
   color: #D17D00;
   text-align: center;
-  font-family: Poppins, sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.375rem;
-  letter-spacing: 0.03125rem;
   text-decoration: none;
-
-  transition: background-color .18s ease, color .18s ease, border-color .18s ease,
-    transform .08s ease, box-shadow .18s ease;
+  transition: all 0.3s ease;
 }
 
-.discover-link:hover,
-.discover-link:focus-visible {
+.discover-link:hover {
   background-color: #D17D00;
-  color: #ffffff;
+  color: #fff;
   border-color: transparent;
   box-shadow: 0 0 0 4px rgba(209, 125, 0, 0.12);
-  /* suave halo para foco */
 }
+@media (max-width: 1024px){
+  .offer-content {
+    padding: 3.5rem 4rem;
+    align-items: center;
+  }
+  .offer-overlay {
+  min-width: 400px;
+  width: 49%;
 
+}
+  .title {
+    font-size: 2rem;
+    line-height: 2.95rem;
+  }
+  
+}
+@media (max-width: 768px) {
+  .offer-content {
+    padding: 2rem;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+
+
+  .subtitle {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    letter-spacing: 0.00938rem;
+  }
+
+  .duration, .description {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.031rem;
+  }
+
+  .amount, .currency {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .discover-link{
+    font-size: 1rem;
+  padding: 0.75rem 2rem;
+
+  }
+}
 @media (max-width: 600px) {
   .room-offer-section {
-    height: 42rem;
-    /* opcional, ajusta si quieres más alto */
+    height: 90vh
   }
 
   .offer-overlay {
     width: 100%;
-    /* ocupa todo */
-    inset: 0;
-    /* toda la pantalla */
   }
 
   .offer-content {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(239, 245, 240, 0.521);
     padding: 2rem 1rem;
-
-    display: flex;
     align-items: center;
-    justify-content: center;
-
   }
 
   .text-box {
     max-width: 400px;
-    width: 100%;
-
   }
 
+  .title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 
+  .subtitle {
+    font-size: 1rem;
+    line-height: 1.0625rem;
+    letter-spacing: 0.00625rem;
+  }
+
+  .duration, .description {
+    font-size: 0.75rem;
+    line-height: 1.0625rem;
+    letter-spacing: 0.025rem;
+  }
+
+  .amount, .currency {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .discover-link{
+    font-size: 0.75rem;
+  padding: 0.75rem 2rem;
+
+  }
 }

@@ -1,0 +1,25 @@
+<div class="steps-card">
+  <div class="step" [class.active]="step() >= 1">
+    <span class="circle">1</span>
+    <div class="step-info">
+      <strong>Paso 1</strong>
+      <p>Datos de la reserva</p>
+    </div>
+  </div>
+
+  <div class="step" [class.active]="step() >= 2">
+    <span class="circle">2</span>
+    <div class="step-info">
+      <strong>Paso 2</strong>
+      <p>Detalles del huésped</p>
+    </div>
+  </div>
+
+  <div class="step" [class.active]="step() >= 3">
+    <span class="circle">3</span>
+    <div class="step-info">
+      <strong>Paso 3</strong>
+      <p>Confirmación</p>
+    </div>
+  </div>
+</div>

@@ -20,12 +20,15 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 .info-column {
   flex: 0 1 40%;
   min-width: 20rem;
+  display:flex;
+  flex-direction:column;
+  gap:0.75rem;
 }
 
 /* Galería de imágenes */
@@ -44,7 +47,7 @@
   order: 2;
 }
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1439px) {
   .gallery-info-section {
     padding: 5rem;
     border-radius: 2.5rem 2.5rem 0 0;

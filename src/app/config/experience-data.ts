@@ -37,8 +37,6 @@ export const galleryHorseRiding: GalleryData = {
   hasHostBg: false,
   reverse: false,
   color: "#E4EAE5",
-  mainHeight: "42vh",
-  thumbHeight: "30vh",
 };
 
 export const galleryFascinatingLandscape: GalleryData = {
@@ -63,8 +61,6 @@ export const galleryFascinatingLandscape: GalleryData = {
   hasHostBg: false,
   reverse: false,
   color: "#E4EAE5",
-  mainHeight: "42vh",
-  thumbHeight: "30vh",
 };
 
 export const gallerySunsetRide: GalleryData = {
@@ -89,8 +85,6 @@ export const gallerySunsetRide: GalleryData = {
   hasHostBg: false,
   reverse: false,
   color: "#E4EAE5",
-  mainHeight: "42vh",
-  thumbHeight: "30vh",
 };
 
 export const galleryPenitenceValley: GalleryData = {
@@ -115,8 +109,6 @@ export const galleryPenitenceValley: GalleryData = {
   hasHostBg: false,
   reverse: false,
   color: "#E4EAE5",
-  mainHeight: "42vh",
-  thumbHeight: "30vh",
 };
 
 export const galleryVinalesValley: GalleryData = {
@@ -141,8 +133,6 @@ export const galleryVinalesValley: GalleryData = {
   hasHostBg: false,
   reverse: false,
   color: "#E4EAE5",
-  mainHeight: "42vh",
-  thumbHeight: "30vh",
 };
 
 // --------------------------------------------------
@@ -173,7 +163,6 @@ export const galleryFromHellToParadise: GalleryData = {
   hasHostBg: false,
   reverse: false,
   color: "#E4EAE5",
-  mainHeight: "70vh"
 };
 
 
@@ -209,8 +198,6 @@ export const galleryAmazingSunrise: GalleryData = {
   hasHostBg: false,
   reverse: false,
   color: "#E4EAE5",
-  mainHeight: "42vh",
-  thumbHeight: "32vh"
 };
 
 
@@ -246,8 +233,6 @@ export const galleryEnjoyingTheSunset: GalleryData = {
   hasHostBg: false,
   reverse: false,
   color: "#E4EAE5",
-  mainHeight: "42vh",
-  thumbHeight: "32vh"
 };
 
 
@@ -272,7 +257,6 @@ export const galleryTrueHiking: GalleryData = {
   hasHostBg: false,
   reverse: false,
   color: "#E4EAE5",
-  mainHeight: "70vh"
 };
 
 
@@ -297,7 +281,6 @@ export const galleryAntiquityAndNature: GalleryData = {
   hasHostBg: false,
   reverse: false,
   color: "#E4EAE5",
-  mainHeight: "70vh"
 };
 
 
@@ -333,8 +316,6 @@ export const galleryPureEcology: GalleryData = {
   hasHostBg: false,
   reverse: false,
   color: "#E4EAE5",
-  mainHeight: "42vh",
-  thumbHeight: "32vh"
 };
 
 
@@ -370,8 +351,6 @@ export const galleryTobaccoInside: GalleryData = {
   hasHostBg: false,
   reverse: false,
   color: "#E4EAE5",
-  mainHeight: "42vh",
-  thumbHeight: "32vh"
 };
 
 
@@ -401,7 +380,6 @@ export const galleryTheCalvary: GalleryData = {
   hasHostBg: false,
   reverse: false,
   color: "#E4EAE5",
-  mainHeight: "70vh"
 };
 
 
@@ -426,7 +404,6 @@ export const galleryTheSlipperyOne: GalleryData = {
   hasHostBg: false,
   reverse: false,
   color: "#E4EAE5",
-  mainHeight: "70vh"
 };
 
 
@@ -451,7 +428,6 @@ export const galleryThroughTheValleys: GalleryData = {
   hasHostBg: false,
   reverse: false,
   color: "#E4EAE5",
-  mainHeight: "70vh"
 };
 
 
@@ -476,7 +452,6 @@ export const galleryEcologicalAgriculture: GalleryData = {
   hasHostBg: false,
   reverse: false,
   color: "#E4EAE5",
-  mainHeight: "70vh"
 };
 
 
@@ -501,7 +476,6 @@ export const galleryLakeVisit: GalleryData = {
   hasHostBg: false,
   reverse: false,
   color: "#E4EAE5",
-  mainHeight: "70vh"
 };
 
 // -----------------------------------------------------
@@ -531,7 +505,6 @@ export const galleryParadiseBeach: GalleryData = {
   hasHostBg: false,
   reverse: false,
   color: "#E4EAE5",
-  mainHeight: "70vh"
 };
 
 
@@ -556,7 +529,6 @@ export const galleryIntenseDay: GalleryData = {
   hasHostBg: false,
   reverse: false,
   color: "#E4EAE5",
-  mainHeight: "70vh"
 };
 
 
@@ -581,7 +553,6 @@ export const gallerySantoTomas: GalleryData = {
   hasHostBg: false,
   reverse: false,
   color: "#E4EAE5",
-  mainHeight: "70vh"
 };
 
 
@@ -606,7 +577,6 @@ export const galleryHorseCarriage: GalleryData = {
   hasHostBg: false,
   reverse: false,
   color: "#E4EAE5",
-  mainHeight: "70vh"
 };
 
 export const galleryVinalesDayTrip: GalleryData = {
@@ -630,7 +600,6 @@ export const galleryVinalesDayTrip: GalleryData = {
   hasHostBg: false,
   reverse: false,
   color: "#E4EAE5",
-  mainHeight: "70vh"
 };
 
 
@@ -655,7 +624,6 @@ export const galleryHistoryCultureNature: GalleryData = {
   hasHostBg: false,
   reverse: false,
   color: "#E4EAE5",
-  mainHeight: "70vh"
 };
 
 // -----------------------------------------------------

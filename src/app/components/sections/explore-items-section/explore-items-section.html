@@ -3,23 +3,21 @@
     <h2 [innerHTML]="title() | translate"></h2>
     <p [innerHTML]="description() | translate"></p>
   </div>
-    <!-- <info-panel [title]="title()" [description]="description()"></info-panel> -->
+  <!-- <info-panel [title]="title()" [description]="description()"></info-panel> -->
 
 
   <div class="rooms-grid">
     @for (item of items(); track $index) {
-      @if (cardTemplate()) {
-        <div class="card">
-<ng-container
-          [ngTemplateOutlet]="cardTemplate()"
-          [ngTemplateOutletContext]="{ $implicit: item }">
-        </ng-container>
-        </div>
+    @if (cardTemplate()) {
+    <div class="card">
+      <ng-container [ngTemplateOutlet]="cardTemplate()" [ngTemplateOutletContext]="{ $implicit: item }">
+      </ng-container>
+    </div>
 
-      } @else {
-        <!-- Fallback opcional: puedes eliminarlo si siempre pasas template -->
-        <div>{{ item | json }}</div>
-      }
+    } @else {
+    <!-- Fallback opcional: puedes eliminarlo si siempre pasas template -->
+    <div>{{ item | json }}</div>
+    }
     }
   </div>
 

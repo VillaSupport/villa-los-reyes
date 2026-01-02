@@ -1,3 +1,4 @@
+<div class="experiences-container">
 <div class="gallery-header">
   <h2>{{ title() | translate }}</h2>
 </div>
@@ -12,9 +13,11 @@
           loading="lazy"
         />
         <div class="overlay">
-          <h3>{{ img.title | translate }}</h3>
+          <span>{{ img.title | translate }}</span>
         </div>
       </a>
     }
   </div>
 </section>
+</div>
+

@@ -3,6 +3,7 @@ import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'package-item',
+  standalone: true,
   imports: [TranslatePipe],
   templateUrl: './package-item.html',
   styleUrl: './package-item.css'
@@ -15,5 +16,4 @@ export class PackageItem {
   description = input.required<string>();
   price = input.required<string>();
   perUnit = input.required<string>();
-
 }

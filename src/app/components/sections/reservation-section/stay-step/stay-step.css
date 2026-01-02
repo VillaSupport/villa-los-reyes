@@ -1,0 +1,170 @@
+:host {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  display: flex;
+  padding: 5rem 0;
+  gap: 32px;
+}
+
+/* Step específico */
+.stay-step {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 32px;
+  width: 100%;
+}
+
+/* Secciones internas */
+.stay-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stay-section:first-child {
+  grid-column: 1 / span 2;
+}
+
+.stay-section:last-child {
+  grid-column: 5 / span 2;
+}
+
+/* Títulos */
+.section-title {
+  color: #D17D00;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 2.375rem;
+  /* 135.714% */
+}
+
+/* Fechas */
+.dates {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.date-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.date-input-wrapper{
+  position:relative;
+
+}
+.date-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #1f7a5a;
+  pointer-events: none;
+}
+
+.date-field label {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.date-field input {
+  padding: 0.25rem 4rem 0.25rem 3rem ;
+  height: 3rem;
+  width:100%;
+  border-radius: 0.25rem;
+  border: 1px solid #d1d5db;
+  font-size: 0.9rem;
+}
+
+.date-field input:disabled {
+  background-color: #f3f4f6;
+  color: #9ca3af;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;      /* oculta el icono nativo */
+  display: none;   /* opcional */
+}
+
+
+.stay-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f2933;
+}
+
+.guest-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.guest-row:last-child {
+  border-bottom: none;
+}
+
+.guest-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.guest-type {
+  font-weight: 500;
+  color: #111827;
+}
+
+.guest-desc {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.counter button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter button:hover .material-symbols-outlined {
+  color: #1f7a5a;
+}
+
+.count {
+  font-size: 1rem;
+  min-width: 24px;
+  text-align: center;
+}
+
+.material-symbols-outlined.add {
+  color: #1f7a5a;
+  font-size: 1.6rem;
+}
+
+.material-symbols-outlined.remove {
+  color: #ef4444;
+  font-size: 1.6rem;
+}

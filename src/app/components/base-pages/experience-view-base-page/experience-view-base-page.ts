@@ -1,5 +1,5 @@
 import { rooms } from '../../../config/room-data';
-import { Component, input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { MainHeaderSection } from "../../sections/main-header-section/main-header-section";
 import { GalleryInfoSection } from "../../sections/gallery-info-section/gallery-info-section";
 import { RoomOfferSection } from "../../sections/room-offer-section/room-offer-section";
@@ -11,6 +11,8 @@ import { ExploreItemsSection } from '../../sections/explore-items-section/explor
 import { RoomCard } from "../../sections/explore-items-section/room-card/room-card";
 import { PackageItem } from "../../sections/discover-package-section/packages-list/package-item/package-item";
 import { packages } from '../../../config/packages-data';
+import { RoomNavigatorComponent } from "../../shared/room-navigator/room-navigator";
+import { GroupNavigatorService } from '../../../services/group-navigator-service';
 export interface HeaderData {
   title: string;
   description: string;
@@ -35,19 +37,17 @@ export interface GalleryData {
   reverse?: boolean;
   color: HexColor;
   hasHostBg: boolean;
-  mainHeight?: UnitString;
-  thumbHeight?: UnitString;
 }
 
 @Component({
   selector: 'experience-view-base-page',
-  imports: [MainHeaderSection, GalleryInfoSection, RoomOfferSection, ExploreItemsSection, RoomCard],
+  imports: [MainHeaderSection, GalleryInfoSection, RoomOfferSection, ExploreItemsSection, RoomCard, RoomNavigatorComponent],
   templateUrl: './experience-view-base-page.html',
   styleUrl: './experience-view-base-page.css'
-  
+
 })
 export class ExperienceViewBasePage {
-
+navigator = inject(GroupNavigatorService);
   // 🔸 Cada bloque puede venir por input o por route.data
   _header = input<HeaderData>();
   _gallery = input<GalleryData>();
@@ -68,5 +68,13 @@ export class ExperienceViewBasePage {
 
   get offer(): OfferData {
     return this._offer() ?? this.route.snapshot.data['offer'];
+  }
+
+    goNext() {
+  this.navigator.next();
+}
+
+  goPrev() {
+    this.navigator.prev();
   }
 }

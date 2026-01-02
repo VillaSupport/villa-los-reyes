@@ -5,12 +5,12 @@
 
 .packages-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, minmax(360px, 1fr));
   gap: 1.5rem;
   width: 100%;
   max-width: 1568px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .package-link {
@@ -20,51 +20,47 @@
   text-decoration: none;
 }
 
+
 @media (min-width: 1025px) and (max-width: 1480px) {
   .packages-grid {
-    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
-    justify-content: center;
+    grid-template-columns: repeat(3, minmax(320px, 1fr));
+    gap: 1rem;
   }
-
   .package-link {
-    justify-self: center;
+    max-width: 420px;
   }
 }
-
-
-
 @media (min-width: 769px) and (max-width: 1024px) {
   .packages-grid {
-    grid-template-columns: 1fr;
-    justify-items: center;
+    grid-template-columns: repeat(2, minmax(320px, 1fr));
     gap: 1rem;
+    justify-items: center;
 
   }
-
   .package-link {
-    max-width: 400px;
+    max-width: 460px;
   }
 }
-
 
 @media (min-width: 601px) and (max-width: 768px) {
   .packages-grid {
-    grid-template-columns: 1fr;
-    justify-items: center;
+    grid-template-columns: repeat(1, minmax(320px, 1fr));
     gap: 1rem;
+    justify-items: center;
 
   }
-
   .package-link {
-    max-width: 400px;
+    max-width: 500px;
   }
 }
-
 @media (max-width: 600px) {
   .packages-grid {
     grid-template-columns: 1fr;
+    justify-items: center;
     gap: 1rem;
-    padding: 0.5rem; /* Menos padding en móvil para aprovechar espacio */
+  }
+  .package-link {
+    max-width: 400px;
   }
 }
 

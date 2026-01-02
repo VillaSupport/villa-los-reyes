@@ -1,15 +1,18 @@
-<div class="gallery-header">
-  <h2>{{ title() | translate }}</h2>
-</div>
+<div class="adventure-container">
+  <div class="gallery-header">
+    <h2>{{ title() | translate }}</h2>
+  </div>
 
-<div class="horseback-gallery">
+  <div class="horseback-gallery">
 
-  @for (item of items(); track $index) {
+    @for (item of items(); track $index) {
     <a class="gallery-item" [routerLink]="item.path">
       <img [src]="item.src" [alt]="item.label | translate" />
       <div class="overlay">
         <span>{{ item.label | translate }}</span>
       </div>
     </a>
-  }
+    }
+  </div>
+
 </div>

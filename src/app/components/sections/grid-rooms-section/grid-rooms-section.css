@@ -1,36 +1,179 @@
-:host { display: block; box-sizing: border-box; }
-
-/* grid ya existente (desktop) */
-.rooms-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+:host {
+  display: block;
   width: 100%;
-  align-items: center;
-  background-color: #f7faf7;
-  padding: 5rem;
-  border-radius: 3rem 3rem 0 0;
-  box-sizing: border-box;
-  min-width: 0; /* importante: evita que la grid imponga sizing intrínseco */
 }
 
-/* Asegura que los directos hijos no impongan un min-width extraño */
-/* .rooms-grid > * {
-  min-width: 0;
-  min-height: 0;
-} */
+.section-wrapper {
+  background: #f7faf7;
+  padding: 5rem 2rem;
+  border-radius: 3rem 3rem 0 0;
+}
 
-/* Móvil: forzamos 1 columna y confirmamos que la celda puede crecer */
-@media (max-width: 600px) {
-  .rooms-grid {
-    grid-template-columns: 1fr;
-    justify-items: center;
-    gap: 1rem;
-    padding: 2rem 1rem;
-    border-radius: 1rem 1rem 0 0;
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 1fr));
+  gap: 1.75rem;
+  max-width: 1568px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.grid-header-info {
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.25rem;
+}
+
+.grid-header-info h2 {
+  color: #D17D00;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 2.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.grid-header-info p {
+  color: #234E3F;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  letter-spacing: 0.03125rem;
+}
+
+@media (max-width: 1600px) {
+  .grid-header-info h2 {
+    font-size: 1.85rem;
+    line-height: 2.3rem;
+    margin-bottom: 1.5rem;
   }
 
-  .rooms-grid > * {
-    width: 100%;
+  .grid-header-info p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .section-wrapper {
+    padding:4.5rem;
+  }
+
+  .grid-header-info h2 {
+    font-size: 2.25rem;
+    line-height: 2.875rem;
+  }
+
+  .grid-header-info p {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+  }
+  .rooms-grid {
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  .section-wrapper {
+    padding: 4rem 3rem; /* Ajustamos un poco el padding lateral */
+  }
+
+  .grid-header-info h2 {
+    font-size: 1.85rem;  /* Escala reducida (como en 1600) */
+    line-height: 2.3rem;
+  }
+
+  .grid-header-info p {
+    font-size: 1rem;     /* Escala reducida (como en 1600) */
+    line-height: 1.6rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-wrapper {
+    padding: 3.5rem 4rem; /* Reducimos padding para dar aire a las fotos */
+    border-radius: 2rem 2rem 0 0;
+
+  }
+
+  .grid-header-info{
+    padding:0;
+  }
+
+  .grid-header-info h2 {
+    font-size: 1.40rem;  /* Reducción adicional */
+    line-height: 2rem;
+    margin-bottom:0.35rem;
+  }
+
+
+
+  .grid-header-info p {
+    font-size: 0.9rem;  /* Un poco por debajo del estándar para legibilidad compacta */
+    line-height: 1.5rem;
+    letter-spacing: 0.02rem;
+  }
+
+  .rooms-grid {
+    gap: 1rem; /* Estrechamos un poco el espacio entre fotos */
+  }
+}
+@media (max-width: 800px) {
+  .section-wrapper {
+    padding: 2.5rem; /* Padding más estrecho para móvil */
+    border-radius: 1.5rem 1.5rem 0 0;
+  }
+
+  .rooms-grid {
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+  }
+
+  .grid-header-info {
+    grid-column: span 2;
+    text-align: left;
+    margin-bottom: 0.75rem;
+  }
+
+  .grid-header-info h2 {
+    font-size: 2rem;
+    line-height: 2.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .grid-header-info p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.03125rem;
+  }
+
+}
+@media (max-width: 600px) {
+  .section-wrapper {
+     padding: 2rem 1rem;
+     border-radius: 1rem 1rem 0 0;
+   }
+
+  .rooms-grid {
+    grid-template-columns: minmax(auto, 400px); /* Límite de 400px solicitado */
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .grid-header-info {
+    grid-column: span 1;
+    margin-bottom: 0rem;
+  }
+
+  .grid-header-info h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .grid-header-info p {
+    font-size: 0.75rem;
+    line-height: 1.0625rem;
+    letter-spacing: 0.025rem;
   }
 }

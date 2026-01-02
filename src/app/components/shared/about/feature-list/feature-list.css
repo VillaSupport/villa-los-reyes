@@ -1,20 +1,19 @@
 h2 {
-  padding: 8px;
+  padding: 0 8px 8px ;
   color: #404944;
   font-family: Poppins, sans-serif;
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.625rem;
   letter-spacing: 0.00938rem;
-  margin: 0.3rem 0;
 }
 .feature-list {
   list-style: none;
-  padding: 8px;
+  padding:0 4px;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 0.5rem;
 }
 .feature-list li {
   display: flex;
@@ -25,18 +24,17 @@ h2 {
   font-weight: 400;
   line-height: 1.375rem;
   letter-spacing: 0.03125rem;
-  padding: 0.4rem;
+  padding: 0.35rem;
 }
 
 .feature-list li i {
   color: #186B53;
   font-size: 1.2rem;
-  margin-right: 0.5rem;
+  margin-right: 0.4rem;
 }
 
 
 @media (max-width: 600px) {
-
   h2 {
     font-size: 0.875rem;
     font-weight: 700;

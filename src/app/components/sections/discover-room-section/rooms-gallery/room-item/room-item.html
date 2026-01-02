@@ -1,13 +1,17 @@
 @if (link()) {
   <a class="room-item" [routerLink]="link()" [attr.variant]="variant()">
-    <img [src]="src()" [alt]="alt() | translate" />
-    <p class="room-name">{{ name() | translate }}</p>
-    <p class="room-details">{{ details() | translate }}</p>
+    <ng-container *ngTemplateOutlet="roomContent"></ng-container>
   </a>
 } @else {
   <div class="room-item" [attr.variant]="variant()">
-    <img [src]="src()" [alt]="alt() | translate" />
+    <ng-container *ngTemplateOutlet="roomContent"></ng-container>
+  </div>
+}
+
+<ng-template #roomContent>
+  <img [src]="src()" [alt]="alt() | translate" loading="lazy" />
+  <div class="text-container">
     <p class="room-name">{{ name() | translate }}</p>
     <p class="room-details">{{ details() | translate }}</p>
   </div>
-}
+</ng-template>

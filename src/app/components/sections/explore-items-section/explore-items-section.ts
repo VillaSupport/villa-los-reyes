@@ -2,6 +2,7 @@ import { Component, input, TemplateRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
+import { PackagesList } from "../discover-package-section/packages-list/packages-list";
 
 @Component({
   selector: 'explore-items-section',

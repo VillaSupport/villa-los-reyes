@@ -45,7 +45,65 @@ p {
 strong {
   font-weight: 700;
 }
+@media (min-width: 1122px) and (max-width: 1480px) {
+   .discover-package-section {
+    padding:4rem;
+    gap: 1rem;
+    border-radius: 3rem 3rem 0 0;
+    align-items: center;
+  }
 
+}
+
+@media (min-width: 1090px) and (max-width: 1121px) {
+   .discover-package-section {
+    padding: 3.5rem 3rem;
+    gap: 1rem;
+    border-radius: 2.5rem 2.5rem 0 0;
+    align-items: center;
+  }
+
+}
+@media (min-width: 1058px) and (max-width: 1089px) {
+   .discover-package-section {
+    padding: 3.5rem 2rem;
+    gap: 1rem;
+    border-radius: 2.5rem 2.5rem 0 0;
+    align-items: center;
+  }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1057px) {
+   .discover-package-section {
+    padding: 3.5rem 1rem;
+    gap: 1rem;
+    border-radius: 2.5rem 2.5rem 0 0;
+    align-items: center;
+  }
+
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+   .discover-package-section {
+    padding: 3.5rem 2.5rem;
+    gap: 1rem;
+    border-radius: 2rem 2rem 0 0;
+    align-items: center;
+  }
+
+}
+@media (min-width: 601px) and (max-width: 768px) {
+
+    .discover-package-section {
+    padding: 2.5rem;
+    gap: 1rem;
+    border-radius: 1.5rem 1.5rem 0 0;
+    align-items: center;
+  }
+  .discover-info {
+    max-width: 500px;
+  }
+}
 @media (max-width: 600px) {
 
 
@@ -73,3 +131,4 @@ strong {
     line-height: 1.6rem;
   }
 }
+
