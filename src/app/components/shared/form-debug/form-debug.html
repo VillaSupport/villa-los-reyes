@@ -1,0 +1,86 @@
+<div class="debug-container">
+  <header>
+    <h3>🧪 Inspector de Formulario</h3>
+    <span class="global-status" [attr.data-valid]="formGroup().valid">
+      ESTADO GLOBAL: {{ formGroup().status }}
+    </span>
+  </header>
+
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Ruta</th>
+          
+          <th>Estado 
+            <div class="help-tip" data-text="VALID: Cumple todas las reglas. INVALID: Falla alguna regla. PENDING: Validando asíncronamente.">?</div>
+          </th>
+          
+          <th class="center-text">Touched
+            <div class="help-tip" data-text="True: El usuario puso el foco en el campo y luego salió (Blur). Vital para mostrar errores al perder el foco.">?</div>
+          </th>
+
+          <th class="center-text">Dirty
+            <div class="help-tip" data-text="True: El usuario modificó el valor manualmente. False: El valor no ha cambiado desde que se cargó.">?</div>
+          </th>
+
+          <th class="center-text">Pristine
+            <div class="help-tip" data-text="True: El campo está 'virgen', no ha sido modificado. Es lo opuesto a Dirty.">?</div>
+          </th>
+
+          <th>Errores
+            <div class="help-tip" data-text="Lista de validadores que están fallando (ej: required, email). Null si todo está bien.">?</div>
+          </th>
+          
+          <th>Valor Actual</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (item of allControls; track item.name) {
+          <tr [class.is-group]="item.name.includes('[Grupo]')">
+            
+            <td class="control-name">
+              <code>{{ item.name }}</code>
+            </td>
+
+            <td>
+              <span class="badge" [attr.data-status]="item.ctrl.status">
+                {{ item.ctrl.status }}
+              </span>
+            </td>
+
+            <td class="bool-cell">
+              <span class="bool-indicator" [class.active]="item.ctrl.touched">
+                {{ item.ctrl.touched ? 'Yes' : 'No' }}
+              </span>
+            </td>
+
+            <td class="bool-cell">
+              <span class="bool-indicator" [class.active]="item.ctrl.dirty">
+                {{ item.ctrl.dirty ? 'Yes' : 'No' }}
+              </span>
+            </td>
+
+            <td class="bool-cell">
+              <span class="bool-indicator" [class.active]="item.ctrl.pristine">
+                {{ item.ctrl.pristine ? 'Yes' : 'No' }}
+              </span>
+            </td>
+
+            <td class="error-cell">
+              @if (item.ctrl.errors) {
+                <pre>{{ formatErrors(item.ctrl.errors) }}</pre>
+              } @else {
+                <span class="ok-dash">-</span>
+              }
+            </td>
+
+            <td class="value-cell">
+              <code [title]="item.ctrl.value | json">{{ item.ctrl.value | json }}</code>
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</div>

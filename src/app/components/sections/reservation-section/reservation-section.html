@@ -1,56 +1,11 @@
-<form [formGroup]="form" class="booking">
+<form class="booking">
 
-  <!-- Steps -->
   <steps-card [step]="currentStep"></steps-card>
 
   @switch(currentStep){
-  @case(1){<stay-step [form]="stayForm"></stay-step>}
-  @case(2){<contact-step></contact-step>}
+  @case(1){<stay-step [stepNumber]="0" (next)="nextStep()" (prev)="previousStep()"></stay-step>}
+  @case(2){<contact-step [stepNumber]="1" (next)="nextStep()" (prev)="previousStep()"></contact-step>}
   @case(3){<review-step></review-step>}
   @default{<request-step></request-step>}
   }
-
-  @if (currentStep < 4) { <div class="nav-buttons">
-    <button type="button" (click)="previousStep()" [disabled]="currentStep === 1">Anterior</button>
-    <button type="button" (click)="nextStep()">Siguiente</button>
-    </div>
-    }
-
 </form>
-
-
-
-
-<!-- <div class="card thank-you">
-    <h1>¡Gracias!</h1>
-    <p>Su solicitud de reserva ha sido enviada correctamente.</p>
-  </div>
-  } -->
-
-<!-- <div class="card">
-    <h2>Confirmación</h2>
-    <pre>{{ form.getRawValue() | json }}</pre>
-    <button type="button" (click)="submitReservation()">Solicitar reserva</button>
-  </div> -->
-<!-- <div formGroupName="guest" class="card">
-    <h2>Información del huésped</h2>
-    <div>
-      <input placeholder="Nombre" formControlName="name">
-
-      @if (form.get('guest.name')?.invalid && form.get('guest.name')?.touched) {
-      <div class="error">
-        El nombre es requerido.
-      </div>
-      }
-    </div>
-    <input placeholder="Nombre" formControlName="name">
-    <input placeholder="Apellidos" formControlName="lastName">
-    <input placeholder="País" formControlName="country">
-    <input placeholder="Teléfono" formControlName="phone">
-    <input placeholder="Correo electrónico" formControlName="email">
-    <textarea placeholder="Solicitudes adicionales" formControlName="notes"></textarea>
-    <label class="checkbox">
-      <input type="checkbox" formControlName="acceptTerms">
-      Acepto los términos y condiciones
-    </label>
-  </div> -->

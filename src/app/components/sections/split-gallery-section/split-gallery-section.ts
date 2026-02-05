@@ -3,11 +3,12 @@ import { InfoPanel } from "../../shared/info-panel/info-panel";
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { HexColor } from '../../shared/interfaces/app-interfaces';
+import { AutoImgDirective } from '../../../auto-img.directive';
 
 
 @Component({
   selector: 'split-gallery-section',
-  imports: [InfoPanel,RouterLink,TranslatePipe],
+  imports: [InfoPanel,RouterLink,TranslatePipe,AutoImgDirective],
   templateUrl: './split-gallery-section.html',
   styleUrl: './split-gallery-section.css' // 👈 corregido (plural)
 })

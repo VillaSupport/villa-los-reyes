@@ -3,3 +3,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* ESTADO INICIAL: Todas las imágenes de la web */
+img {
+  /* Fondo gris animado */
+  background-color: #eeeeee !important;
+  background-image: linear-gradient(90deg, #eeeeee 25%, #f5f5f5 50%, #eeeeee 75%) !important;
+  background-size: 200% 100% !important;
+  animation: skeleton-shimmer 1.5s infinite linear !important;
+  
+  /* Escondemos la imagen real pero mantenemos el bloque gris visible */
+  opacity: 0; 
+  transition: opacity 0.75s ease-in;
+  
+  /* IMPORTANTE: Las imágenes deben tener un tamaño mínimo para que el gris se vea */
+  min-height: 1rem;
+  display: block;
+}
+
+/* ESTADO CARGADO: Cuando la directiva detecta que la imagen bajó */
+img.loaded {
+  opacity: 1; /* Mostramos la imagen */
+  background: none !important; /* Quitamos el gris */
+  animation: none !important; /* Paramos la animación */
+}
+
+@keyframes skeleton-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

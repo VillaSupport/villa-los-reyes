@@ -1,1 +1,116 @@
-<p>contact-step works!</p>
+<div class="content-grid">
+
+  <div class="form-container" [formGroup]="contactForm">
+    <div class="form-column">
+      <div class="form-description">
+        <h2 class="section-title">Información de contacto</h2>
+        <p class="section-desc">
+          La información recopilada en esta sección se limita solo a los datos de una única persona responsable de la
+          reserva.
+        </p>
+      </div>
+
+      <div class="inputs-wrapper">
+        <div class="input-container">
+          <input type="text" placeholder="Nombre" formControlName="name">
+          <validation-feedback [triggerControls]="[nameControl]" [messageSources]="[nameControl]">
+          </validation-feedback>
+        </div>
+
+        <div class="input-container">
+          <input type="text" placeholder="Apellidos" formControlName="lastName">
+          <validation-feedback [triggerControls]="[lastNameControl]" [messageSources]="[lastNameControl]">
+          </validation-feedback>
+        </div>
+
+        <div class="phone-group" formGroupName="phoneData">
+          <div class="input-container">
+            <country-selector [countriesList]="countriesList" [codeControl]="isoCodeControl"
+              [countryControl]="countryControl" [dialCodeControl]="dialCodeControl" />
+            <validation-feedback [triggerControls]="[countryControl]" [messageSources]="[countryControl]" />
+          </div>
+
+          <div class="input-container">
+            <div class="phone-number">
+              <input type="text" class="dial-code" formControlName="dialCode" maxlength="4"
+                (keydown)="handleDialKeyDown($event)">
+              <input type="text" class="phone-input" [placeholder]="phonePlaceholder" formControlName="phoneNumber"
+                (keydown)="handlePhoneKeyDown($event)">
+            </div>
+
+            <validation-feedback [triggerControls]="[phoneNumberControl,phoneGroup]"
+              [messageSources]="[phoneNumberControl,phoneGroup]" />
+          </div>
+        </div>
+
+        <div class="input-container">
+          <input type="email" placeholder="Correo electrónico" formControlName="email">
+          <validation-feedback [triggerControls]="[emailControl]" [messageSources]="[emailControl]">
+          </validation-feedback>
+        </div>
+      </div>
+      <div class="notes-wrapper">
+        <div class="form-description">
+          <h2 class="section-title">Detalles adicionales</h2>
+          <p class="section-desc">
+            Puede proporcionar información adicional en relación con su estancia, que deba conocer sus anfitriones.
+          </p>
+        </div>
+
+        <div class="input-container textarea-wrapper">
+          <textarea placeholder="Solicitudes y experiencias" formControlName="notes" (keydown)="handleMaxChars($event)">
+        </textarea>
+          <span class="char-counter" [class.at-limit]="notesControl.value?.length === 500">
+            {{ notesControl.value?.length || 0 }} / 500
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="summary-column">
+      <h2 class="section-title">Resumen del costo</h2>
+
+      <div class="row">
+        <span>{{ adultsCount }} {{ adultsCount === 1 ? 'Adulto' : 'Adultos' }}</span>
+        <span class="price">Pendiente</span>
+      </div>
+
+      <div class="row">
+        <span>{{ childrenCount }} {{ childrenCount === 1 ? 'Niño' : 'Niños' }}</span>
+        <span class="price">Pendiente</span>
+      </div>
+
+      <div class="row discount">
+        <span>Descuento por promoción</span>
+        <span class="price">Pendiente</span>
+      </div>
+
+      <div class="total">
+        <span>Total</span>
+        <strong>Pendiente</strong>
+      </div>
+    </div>
+
+    <!-- <div class="nav-buttons">
+      <button type="button" (click)="onGoBack()" [disabled]="stepNumber() === 0">
+        Anterior
+      </button>
+      <button type="button" (click)="onNextStep()">
+        Siguiente
+      </button>
+    </div> -->
+  </div>
+  <div class="wrapper-nav">
+  <div class="navigation">
+    <button type="button" (click)="onGoBack()" class="nav-btn prev"  [disabled]="stepNumber() === 0">
+      <span class="material-symbols-outlined">arrow_back</span> Anterior
+    </button>
+
+    <button type="button" (click)="onNextStep()" class="nav-btn next">
+      Siguiente <span class="material-symbols-outlined">arrow_forward</span>
+    </button>
+  </div>
+</div>
+
+  <!-- <form-debug [formGroup]="contactForm"></form-debug> -->

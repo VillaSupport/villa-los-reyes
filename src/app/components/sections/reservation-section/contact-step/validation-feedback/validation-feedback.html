@@ -1,0 +1,8 @@
+<div class="message-container" aria-live="polite">
+  <small class="error-msg" 
+         [class.fade-in]="hasErrors" 
+         [class.fade-out]="!hasErrors && wasTouched"
+         role="alert">
+    {{ errorMessage }}
+  </small>
+</div>

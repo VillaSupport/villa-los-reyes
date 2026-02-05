@@ -21,7 +21,7 @@
                   @for (s of stars; track s) {
                   <span class="material-symbols-outlined" [style.color]="review.rating >= s ? '#404944' : '#404944'"
                     [style.font-variation-settings]=" review.rating >= s ? `'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24`: `'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24`">
-                  star
+                    star
                   </span>
 
                   }
@@ -62,57 +62,55 @@
     </section>
 
     <section class="review-form">
+      @if (isAuthLoading()) {
+      <div class="loading-auth">
+        <p>Cargando información de usuario...</p>
+      </div>
+      } @else {
       @if (user()) {
       <div class="form-header">
         <div class="user-block">
-          <img [src]="user()?.photoURL || '/assets/images/avatar/avatar-default.svg'" alt="Avatar del usuario"
+          <img [src]="user()?.photoURL || '/assets/images/avatar/avatar-default.png'" alt="Avatar del usuario"
             class="user-form-avatar">
           <span [ngClass]="user()?.email?.trim() ? 'user-form-email' : 'user-name'">
-            {{user()?.email?.trim()
-            ? user()?.email
-            : (user()?.displayName?.trim()
-            ? user()?.displayName
-            : 'Usuario')}}
+            {{user()?.email?.trim() ? user()?.email : (user()?.displayName?.trim() ? user()?.displayName : 'Usuario')}}
           </span>
-
-
         </div>
       </div>
 
       <div class="form-body">
         <h2 class="form-title">Calificación <br>de los servicios</h2>
-
         <div class="review-stars interactive">
           @for (s of stars; track s) {
-
-
-          <span class="material-symbols-outlined" (click)="rating = s" [style.color]="rating >= s ? '#A3D0BD' : '#ccc'"
-            [style.font-variation-settings]="rating >= s
-        ? `'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24`
-        : `'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24`">
+          <span class="material-symbols-outlined" (click)="rating.set(s)" [style.color]="rating() >= s ? '#A3D0BD' : '#ccc'"
+            [style.font-variation-settings]="rating() >= s
+            ? `'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24`
+            : `'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24` ">
             star
           </span>
-
           }
-
         </div>
 
         <p class="form-subtitle">¡Comparte tu experiencia con nosotros!</p>
-
         <textarea [(ngModel)]="comment" class="form-textarea" placeholder="Describe tu experiencia" maxlength="500"
           rows="4"></textarea>
-        <div class="char-counter">{{ commentLength }}/500 caracteres</div>
-        <p class="form-description">¡Comparte tu experiencia con nosotros! Tu opinión nos ayuda a mejorar y ofrecerte un
-          mejor servicio</p>
+        <div class="char-counter">{{ commentLength() }}/500 caracteres</div>
+        <p class="form-description">¡Comparte tu experiencia con nosotros! Tu opinión nos ayuda a mejorar...</p>
         <div class="form-submit-container">
           <button class="form-submit" (click)="sendReview()">Enviar</button>
         </div>
       </div>
       } @else {
-      <p class="login-hint">Inicia sesión para dejar una reseña.</p>
+      <div class="login-hint">
+        <p>Inicia sesión para dejar una reseña</p>
+        <button class="google-login-btn" (click)="loginWithGoogle()">
+          <img src="/assets/icons/google.svg" alt="Google" />
+          Iniciar sesión con Google
+        </button>
+      </div>
+      }
       }
     </section>
-
   </div>
 
 </div>
