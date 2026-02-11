@@ -1,0 +1,26 @@
+<div class="feature-overview-container">
+    
+    <main-header-section 
+        [head]="header()"
+        [image]="headerImage()"
+        [objectPosition]="headerPosition()">
+    </main-header-section>
+
+    <div class="categories-wrapper">
+        @for (item of items(); track $index) {
+            <category-preview 
+                [mainItem]="item.main" 
+                [previewItems]="item.previews">
+            </category-preview>
+        }
+    </div>
+
+    <div class="packages-area">
+        <ng-content select="[packages]"></ng-content>
+    </div>
+
+    <div class="cross-selling-area">
+        <ng-content select="[crossSelling]"></ng-content>
+    </div>
+
+</div>

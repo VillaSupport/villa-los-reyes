@@ -1,0 +1,25 @@
+<section class="adventure-container">
+  <div class="adventure-category">
+    <h2>{{ categoryTitle() | translate }}</h2>
+  </div>
+
+  <div class="adventure-grid">
+    @for (adventure of adventures()?.adventures; track adventure.slug) {
+      <a class="adventure-card" [routerLink]="[adventure.slug]">
+        <img 
+          [src]="adventure.images[0]?.imageUrl" 
+          [alt]="(adventure.images[0]?.imgDesc || '') | translate"
+          loading="lazy"
+        >
+
+        <div class="overlay">
+          <span>{{ adventure.title | translate }}</span>
+        </div>
+      </a>
+    } @empty {
+      <div class="loading-state">
+        <p>{{ 'LOADING_ADVENTURES' | translate }}...</p>
+      </div>
+    }
+  </div>
+</section>

@@ -14,7 +14,8 @@ import { TranslatePipe } from '@ngx-translate/core';
 export class InfoPanel {
   title = input.required<string>();
   description = input.required<string>();
-  link = input<{text:string,url:string}>();
+  slug = input<string>();
+  linkText = input<string>();
 }
 
 

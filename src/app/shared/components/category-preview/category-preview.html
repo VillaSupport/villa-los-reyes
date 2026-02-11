@@ -1,0 +1,32 @@
+<section class="preview-section" [style.background-color]="color()">
+    <div class="preview-container" [class.is-reversed]="reverse()">
+
+
+        <div class="preview-main">
+            <img [src]="mainItem().imageUrl" [alt]="mainItem().imgDesc" loading="lazy">
+
+            @if (mainItem().title && mainItem().desc) {
+            <info-panel [title]="mainItem().title!" [description]="mainItem().desc!" [slug]="mainItem().slug"
+                [linkText]="mainItem().linkText" />
+            }
+
+        </div>
+
+        <div class="preview-aside">
+            @for (item of previewItems(); track $index) {
+            <div class="preview-card">
+                <a class="card-link" [routerLink]="[mainItem().slug, item.slug]">
+
+                    <img class="card-img" [src]="item.imageUrl" [alt]="item.imgDesc" loading="lazy" />
+
+                    <div class="card-overlay">
+                        <h3 class="card-title">{{ item.label}}</h3>
+                        <p class="card-description">{{ item.description}}</p>
+                    </div>
+                </a>
+            </div>
+            }
+        </div>
+    </div>
+
+</section>

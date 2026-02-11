@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "category": "horseback",
+    "title": "Cabalgata en Viñales: naturaleza, cultura y tradición en cada paso",
+    "linkText": "Descubre todas las cabalgatas",
+    "desc": "Recorrer <strong>Viñales a caballo</strong> es una <strong>experiencia inmersiva</strong> que revela la esencia del <strong>paisaje cubano</strong>. Entre mogotes imponentes y verdes campos de tabaco, el recorrido permite descubrir fincas tradicionales donde se cultivan tabaco y café de forma artesanal. Esta actividad, accesible para todos los niveles, fomenta el turismo sostenible, fortaleciendo el vínculo con las comunidades locales y preservando el entorno natural.",
+    "image": "assets/imgs/categories/horseback-main.jpg",
+    "imgDesc": "Jinete recorriendo los senderos del valle de Viñales con mogotes de fondo",
+    "previewItems": [
+      {
+        "slug": "horse-carriage",
+        "imageUrl": "assets/imgs/adventures/horse-1-thumb.jpg",
+        "imgDesc": "Caballo cruzando un arroyo natural entre la vegetación",
+        "title": "Cruce de Ríos",
+        "description": "Una aventura refrescante."
+      },
+      {
+        "slug": "mirador-del-condor",
+        "imageUrl": "assets/imgs/adventures/horse-2-thumb.jpg",
+        "imgDesc": "Vista desde lo alto de la montaña mostrando la inmensidad del valle",
+        "title": "Mirador del Cóndor",
+        "description": "Vistas panorámicas a 2000 metros."
+      },
+      {
+        "slug": "fogon-criollo",
+        "imageUrl": "assets/imgs/adventures/horse-3-thumb.jpg",
+        "imgDesc": "Preparación de café artesanal en un fogón tradicional cubano",
+        "title": "Fogón Criollo",
+        "description": "Cierre del día con comida típica."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "category": "hiking",
+    "title": "Senderismo en Viñales: entre montañas, valles y tradiciones vivas",
+    "linkText": "Descubre todos los senderismos",
+    "desc": "Adentrarse en los senderos de Viñales es descubrir un entorno vibrante donde la biodiversidad, el aire limpio y los paisajes montañosos marcan el ritmo de la caminata. Las rutas atraviesan valles fértiles y miradores naturales, mientras la interacción con campesinos del lugar revela costumbres agrícolas transmitidas por generaciones. Una experiencia enriquecedora que une aventura, cultura y respeto por el entorno.",
+    "image": "assets/imgs/categories/hiking-main.jpg",
+    "imgDesc": "Grupo de senderistas caminando por un sendero estrecho en el valle",
+    "previewItems": [
+      {
+        "slug": "biodiversidad",
+        "imageUrl": "assets/imgs/adventures/hike-1-thumb.jpg",
+        "imgDesc": "Detalle de flores silvestres y mariposas en el camino",
+        "title": "Biodiversidad",
+        "description": "Explora la flora y fauna local."
+      },
+      {
+        "slug": "cuevas-naturales",
+        "imageUrl": "assets/imgs/adventures/hike-2-thumb.jpg",
+        "imgDesc": "Entrada de una cueva natural esculpida en la roca del mogote",
+        "title": "Cuevas Naturales",
+        "description": "Descubre los secretos geológicos."
+      },
+      {
+        "slug": "vinculo-local",
+        "imageUrl": "assets/imgs/adventures/hike-3-thumb.jpg",
+        "imgDesc": "Encuentro con campesinos trabajando la tierra de forma tradicional",
+        "title": "Vínculo Local",
+        "description": "Aprende de las tradiciones vivas."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "category": "cycletours",
+    "title": "Viñales sobre ruedas: una travesía entre naturaleza y tradición",
+    "linkText": "Descubre todos los ciclotours",
+    "desc": "Recorrer Viñales en bicicleta es una forma dinámica y auténtica de conectar con sus paisajes emblemáticos. Los caminos serpentean entre mogotes, fincas de tabaco y escenarios rurales llenos de vida, permitiendo una inmersión total en el entorno. El contacto con campesinos y sus saberes tradicionales añade un valor cultural a esta experiencia activa, donde el movimiento se convierte en una forma de descubrir.",
+    "image": "assets/imgs/categories/bike-main.jpg",
+    "imgDesc": "Ciclista rodando por un camino rural rodeado de plantaciones de tabaco",
+    "previewItems": [
+      {
+        "slug": "ruta-del-tabaco",
+        "imageUrl": "assets/imgs/adventures/bike-1-thumb.jpg",
+        "imgDesc": "Bicicletas descansando frente a una casa de tabaco tradicional",
+        "title": "Ruta del Tabaco",
+        "description": "Pedalea entre fincas históricas."
+      },
+      {
+        "slug": "senderos-rurales",
+        "imageUrl": "assets/imgs/adventures/bike-2-thumb.jpg",
+        "imgDesc": "Camino de tierra serpenteante entre la formación de mogotes",
+        "title": "Senderos Rurales",
+        "description": "Rutas seguras y escénicas."
+      },
+      {
+        "slug": "hidratacion-natural",
+        "imageUrl": "assets/imgs/adventures/bike-3-thumb.jpg",
+        "imgDesc": "Parada técnica para disfrutar de un jugo de frutas naturales",
+        "title": "Hidratación Natural",
+        "description": "Frutas frescas del campo."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "category": "others",
+    "title": "Más allá del valle: experiencias únicas en Viñales",
+    "linkText": "Descubre otras experiencias",
+    "desc": "Viñales sorprende con una diversidad de propuestas que van mucho más allá de sus paisajes montañosos. A pocos kilómetros, Cayo Jutías invita al descanso entre aguas turquesas y arenas blancas, perfectas para nadar, bucear o simplemente desconectar. En tierra firme, las fincas agroecológicas abren sus puertas al visitante con prácticas sostenibles y sabores auténticos. Un destino que combina naturaleza, sabor local y momentos de auténtica serenidad.",
+    "image": "assets/imgs/categories/others-main.jpg",
+    "imgDesc": "Playa paradisíaca de Cayo Jutías con manglares y aguas cristalinas",
+    "previewItems": [
+      {
+        "slug": "cayo-jutias",
+        "imageUrl": "assets/imgs/adventures/beach-1-thumb.jpg",
+        "imgDesc": "Estrellas de mar en el fondo poco profundo de la costa",
+        "title": "Cayo Jutías",
+        "description": "Aguas turquesas y relax total."
+      },
+      {
+        "slug": "fincas-organicas",
+        "imageUrl": "assets/imgs/adventures/farm-1-thumb.jpg",
+        "imgDesc": "Huerto orgánico en una finca agroecológica local",
+        "title": "Fincas Orgánicas",
+        "description": "Sabor auténtico y sostenible."
+      },
+      {
+        "slug": "atardeceres",
+        "imageUrl": "assets/imgs/adventures/sunset-1-thumb.jpg",
+        "imgDesc": "Atardecer pintoresco sobre el horizonte del valle",
+        "title": "Atardeceres",
+        "description": "Momentos de serenidad única."
+      }
+    ]
+  }
+]

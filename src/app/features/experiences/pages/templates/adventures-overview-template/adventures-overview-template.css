@@ -1,0 +1,8 @@
+.page-content {
+  padding-top: 10rem; /* 160px = 10rem; más semántico y adaptable */
+}
+
+.mt-negative {
+  margin-top: -7.5rem;
+
+}

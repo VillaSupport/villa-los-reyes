@@ -25,7 +25,16 @@ import { groupNavigatorProvider } from './services/group-navigator.provider';
 import { ReservationSection } from './components/sections/reservation-section/reservation-section';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+
+
+  {
+    path: 'NewExperiences',
+    loadChildren: () => import('./features/experiences/experiences.routes').then(m => m.EXPERIENCE_ROUTES)
+  },
+
+
+
+  // { path: '', redirectTo: 'home', pathMatch: 'full' },
 
   { path: 'home', component: HomePage },
   { path: 'about', component: AboutPage },
@@ -75,6 +84,8 @@ export const routes: Routes = [
     ]
   },
   { path: 'services-facilities/services', component: ServicesPage },
+  
+  
   { path: 'experiences', component: ExperiencesPage, },
 
 
@@ -451,5 +462,5 @@ export const routes: Routes = [
     path: 'form',
     component: ReservationSection
   },
-  { path: '**', redirectTo: '/home' }
+  // { path: '**', redirectTo: '/home' }
 ];

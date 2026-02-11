@@ -1,0 +1,68 @@
+{
+  "category": "hiking",
+  "adventures": [
+    {
+      "id": 1,
+      "title": "Del infierno al paraíso",
+      "desc": "La experiencia comienza saliendo del bullicio de la ciudad, donde el ruido, el tráfico y la prisa marcan el ritmo diario, una especie de infierno moderno. Poco a poco, el camino se abre paso hacia el <strong>Valle de Viñales</strong>, donde el <strong>silencio</strong>, el <strong>verde intenso</strong> y el <strong>aire limpio</strong> transforman el entorno en un <strong>paraíso auténtico</strong>. A pie, se recorren <strong>senderos</strong> que conducen a un <strong>mirador con vistas a Viñales y Palmarito</strong>. En el trayecto, se visita la <strong>comunidad de Los Acuáticos</strong>, donde los habitantes comparten sus <strong>tradiciones y modo de vida</strong>. La jornada concluye con un <strong>regreso en coche de caballos</strong>, cerrando un viaje que va, literalmente, <strong>del caos urbano a la paz del valle.</strong>",
+      "imgs": [],
+      "tips": []
+    },
+    {
+      "id": 2,
+      "title": "Amanecer increíble",
+      "desc": "Madrugue para vivir un <strong>amanecer inolvidable en el Valle de Viñales</strong>, ascendiendo a la cumbre del <strong>Parque Nacional</strong> para admirar el <strong>sol naciente</strong> sobre los <strong>mogotes y la rica biodiversidad cubana</strong>. En el trayecto, tendrá la oportunidad de visitar la singular <strong>comunidad de Los Acuáticos</strong>, conocida por sus creencias tradicionales ligadas al <strong>poder curativo del agua</strong> y su modo de vida en <strong>armonía con la naturaleza</strong>. Disfrute de un <strong>café artesanal con lugareños</strong> antes de <strong>descender hasta el Mural de la Prehistoria</strong>, donde finalizará esta experiencia única en contacto con el <strong>entorno natural.</strong>",
+      "imgs": [],
+      "tips": []
+    },
+    {
+      "id": 3,
+      "title": "Disfrutando del ocaso",
+      "desc": "Disfruta el <strong>Valle del Silencio</strong>, descubre el <strong>proceso del tabaco desde la plantación hasta la confección de puros criollos.</strong> Finaliza la experiencia <strong>relajándote en una casa campesina</strong>, disfrutando de un <strong>Mojito Criollo</strong> y un <strong>puro natural</strong> mientras contemplas la <strong>puesta de sol.</strong>",
+      "imgs": [],
+      "tips": []
+    },
+    {
+      "id": 4,
+      "title": "Un verdadero hiking",
+      "desc": "Descubre <strong>Viñales</strong> en un tour ideal para los amantes del <strong>ejercicio al aire libre</strong>, ascendiendo por un antiguo <strong>bosque de galerías</strong> y descendiendo hacia el <strong>Valle del Palmarito</strong>. Disfruta de <strong>vistas impresionantes</strong>, interactúa con <strong>pobladores locales</strong> y aprende sobre el <strong>cultivo del tabaco.</strong>",
+      "imgs": [],
+      "tips": []
+    },
+    {
+      "id": 5,
+      "title": "Antigüedad y naturaleza",
+      "desc": "Explora el <strong>antiguo cañón fluvial del Valle de Viñales</strong> en una <strong>caminata</strong> de tres horas, un <strong>refugio de biodiversidad y agricultura ecológica</strong>. Observa <strong>aves endémicas</strong> como el <strong>tocororo y el carpintero verde</strong> mientras disfrutas de <strong>vistas impresionantes de montañas y campos</strong>. Una <strong>experiencia única</strong> para <strong>amantes de la naturaleza y la aventura.</strong>",
+      "imgs": [],
+      "tips": []
+    },
+    {
+      "id": 6,
+      "title": "100% ecología",
+      "desc": "Disfrute de un recorrido exclusivo por una <strong>finca privada dedicada a la agricultura ecológica</strong>, donde <strong>degustará frutas y jugos naturales</strong> mientras <strong>aprende sobre las tradiciones y cultivos locales.</strong> Los recidentes locales, compartirán detalles sobre las <strong>prácticas sostenibles</strong> de la finca, y la visita culminará con un <strong>recorrido a la Cueva de la Vaca</strong>, ofreciendo vistas impresionantes del <strong>entorno natural.</strong>",
+      "imgs": [],
+      "tips": []
+    },
+    {
+      "id": 7,
+      "title": "Tabaco inside",
+      "desc": "Descubre la <strong>tradición del cultivo del tabaco</strong> con la experiencia \"TABACO IN SIDE\", explorando sus <strong>raíces aborígenes y su legado campesino</strong>. Durante la temporada de cultivo (noviembre a marzo), recorrerás <strong>plantaciones</strong>, participarás en el <strong>proceso de despalillo</strong> y aprenderás la <strong>elaboración artesanal de puros criollos</strong> de la mano de <strong>guías locales.</strong> Una experiencia auténtica que te conectará con la <strong>historia y cultura del tabaco en Cuba.</strong>",
+      "imgs": [],
+      "tips": []
+    },
+    {
+      "id": 8,
+      "title": "Viñales: day trip",
+      "desc": "",
+      "imgs": [],
+      "tips": []
+    },
+    {
+      "id": 9,
+      "title": "Historia, cultura y naturaleza",
+      "desc": "",
+      "imgs": [],
+      "tips": []
+    }
+  ]
+}

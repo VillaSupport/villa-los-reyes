@@ -1,0 +1,126 @@
+{
+    "category": "stay-benefits",
+    "benefits": [
+        {
+            "id": 1,
+            "slug": "gastronomy",
+            "title": "Gastronomía",
+            "desc": "En nuestro <strong>restaurante y bar</strong>, disfrutarás de la auténtica <strong>comida cubana</strong>, junto a opciones <strong>vegetarianas, italianas</strong> y <strong>mediterráneas</strong>. Ofrecemos desde <strong>desayunos</strong> hasta <strong>cenas</strong>, con <strong>aperitivos</strong> y <strong>meriendas</strong> para llevar si estás en movimiento. No te pierdas nuestra <strong>coctelería cubana</strong>, donde cada bebida refleja el <strong>sabor auténtico de Cuba</strong>. ¡Ven y saborea lo mejor de nuestra cocina!",
+            "images": [
+                {
+                    "imageUrl": "assets/imgs/services/gastronomy-main.jpg",
+                    "imgDesc": "Mesa servida con variedad de platos criollos y frutas"
+                },
+                {
+                    "imageUrl": "assets/imgs/services/bar-cocktails.jpg",
+                    "imgDesc": "Bartender preparando coctelería clásica cubana"
+                }
+            ],
+            "highlights": [
+                "Desayunos",
+                "Cenas",
+                "Coctelería",
+                "Snacks",
+                "Para llevar",
+                "Wifi"
+            ]
+        },
+        {
+            "id": 2,
+            "slug": "mobility",
+            "title": "Movilidad",
+            "desc": "Facilitamos tu acceso a los mejores destinos con <strong>taxis locales</strong>, <strong>colectivos</strong>, <strong>renta de bicicletas y motocross</strong>. También contamos con <strong>transfers</strong> cómodos y seguros desde y hacia el aeropuerto y otras localidades. ¡Tu comodidad es nuestra prioridad!",
+            "images": [
+                {
+                    "imageUrl": "assets/imgs/services/gastronomy-main.jpg",
+                    "imgDesc": "Mesa servida con variedad de platos criollos y frutas"
+                },
+                {
+                    "imageUrl": "assets/imgs/services/bar-cocktails.jpg",
+                    "imgDesc": "Bartender preparando coctelería clásica cubana"
+                }
+            ],
+            "highlights": [
+                "Taxis privados",
+                "Taxis colectivos",
+                "Transfer",
+                "Renta de Motos y Bicicletas"
+            ]
+        },
+        {
+            "id": 3,
+            "slug": "trip-planner",
+            "title": "Trip Planner",
+            "desc": "Ofrecemos <strong>asesoramiento personalizado</strong> para organizar tu viaje a Viñales o cualquier destino en <strong>Cuba</strong>. Nos encargamos de <strong>gestionar alojamiento, transporte</strong> y <strong>actividades</strong>, asegurando una experiencia cómoda e inolvidable. ¡Déjanos hacer tu estancia grata e inolvidable!",
+            "images": [
+                {
+                    "imageUrl": "assets/imgs/services/gastronomy-main.jpg",
+                    "imgDesc": "Mesa servida con variedad de platos criollos y frutas"
+                },
+                {
+                    "imageUrl": "assets/imgs/services/bar-cocktails.jpg",
+                    "imgDesc": "Bartender preparando coctelería clásica cubana"
+                }
+            ],
+            "highlights": [
+                "Hospedaje",
+                "Transporte",
+                "Gastronomía",
+                "Experiencias y aventuras"
+            ]
+        },
+        {
+            "id": 4,
+            "slug": "laundry",
+            "title": "Lavandería",
+            "desc": "Nuestro servicio de lavandería incluye <strong>lavado</strong> y <strong>planchado de ropa</strong>, fregado de <strong>zapatos</strong> y <strong>bolsos</strong>. Así, siempre tendrás todo impecable y listo para disfrutar al máximo. Contamos con un espacio dedicado al lavado a mano, ideal para quienes prefieren realizar el proceso por sí mismos en lugar de optar por el servicio de lavandería.",
+            "images": [
+                {
+                    "imageUrl": "assets/imgs/services/gastronomy-main.jpg",
+                    "imgDesc": "Mesa servida con variedad de platos criollos y frutas"
+                },
+                {
+                    "imageUrl": "assets/imgs/services/bar-cocktails.jpg",
+                    "imgDesc": "Bartender preparando coctelería clásica cubana"
+                }
+            ],
+            "highlights": [
+                "Lavado",
+                "Planchado"
+            ]
+        },
+        {
+            "id": 5,
+            "slug": "massages",
+            "title": "Masajes",
+            "desc": "Ofrecemos un servicio de <strong>Masajes</strong> diseñado para brindarle el <strong>máximo confort</strong> y <strong>relajación</strong> durante su estancia. Nuestros masajistas profesionales están capacitados en diversas <strong>técnicas de masaje</strong>, asegurando que cada sesión sea personalizada según sus necesidades y preferencias. Descubre una experiencia rejuvenecedora en un entorno tranquilo. Puede solicitar su reservación con al menos 30 minutos de antelación en nuestra Villa.",
+            "images": [
+                {
+                    "imageUrl": "assets/imgs/services/gastronomy-main.jpg",
+                    "imgDesc": "Mesa servida con variedad de platos criollos y frutas"
+                },
+                {
+                    "imageUrl": "assets/imgs/services/bar-cocktails.jpg",
+                    "imgDesc": "Bartender preparando coctelería clásica cubana"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "slug": "dance-classes",
+            "title": "Clases de baile",
+            "desc": "Ofrecemos <strong>clases de bailes tradicionales cubanos</strong> para que te sumerjas en la rica <strong>cultura de Cuba</strong>. Con instructores calificados y apasionados, disfrutarás de una experiencia <strong>educativa</strong> y <strong>divertida</strong>. Elige entre clases <strong>individuales o en grupo</strong>, adaptadas a tu nivel y tiempo. ¡No pierdas la oportunidad de enriquecer tu estancia con el sabor de Cuba!",
+            "images": [
+                {
+                    "imageUrl": "assets/imgs/services/gastronomy-main.jpg",
+                    "imgDesc": "Mesa servida con variedad de platos criollos y frutas"
+                },
+                {
+                    "imageUrl": "assets/imgs/services/bar-cocktails.jpg",
+                    "imgDesc": "Bartender preparando coctelería clásica cubana"
+                }
+            ]
+        }
+    ]
+}
+

@@ -1,0 +1,179 @@
+{
+  "category": "facilities",
+  "spaces": [
+    {
+      "id": 1,
+      "slug": "habitaciones",
+      "type": "rooms",
+      "title": "Espacios diseñados para tu descanso y bienestar",
+      "desc": "Las habitaciones están pensadas para ofrecer privacidad, confort y tranquilidad desde el primer momento. Con acceso independiente, buena ventilación y altos niveles de limpieza, cada detalle contribuye a una estancia placentera. Además, las zonas comunes como los jardines, la terraza y el restaurante-bar complementan la experiencia con opciones para relajarte y disfrutar del entorno.",
+      "items": [
+        {
+          "title": "Habitación 1",
+          "desc": "Disfruta de una <strong>estancia cómoda</strong> y <strong>relajante</strong> en nuestra amplia habitación, ideal para <strong>parejas, familias</strong> o <strong>grupos</strong>. Equipada con <strong>cómodas camas</strong>, <strong>aire acondicionado</strong>, <strong>baño privado</strong> y una <strong>decoración cálida</strong> con toques <strong>coloniales</strong>, esta habitación ofrece el equilibrio perfecto entre <strong>confort</strong> y <strong>autenticidad cubana</strong>.",
+          "capacity": "2 camas / baño privado / 4 personas",
+          "images": [
+            {
+              "imageUrl": "assets/imgs/services/gastronomy-main.jpg",
+              "imgDesc": "Mesa servida con variedad de platos criollos y frutas"
+            },
+            {
+              "imageUrl": "assets/imgs/services/bar-cocktails.jpg",
+              "imgDesc": "Bartender preparando coctelería clásica cubana"
+            }
+          ],
+          "features": [
+            "2 camas matrimoniales",
+            "Ropa de cama",
+            "Split",
+            "Ventilador",
+            "Caja fuerte",
+            "Baño privado",
+            "Agua fría y caliente",
+            "Secadora de pelo"
+          ]
+        },
+        {
+          "title": "Habitación 2",
+          "desc": "Descubre nuestra <strong>amplia</strong> y <strong>luminosa habitación</strong>, ideal para <strong>familias</strong> o <strong>grupos</strong>. Con <strong>tres cómodas camas</strong>, esta habitación ofrece el ambiente perfecto para <strong>relajarse</strong>. Disfruta de la <strong>luz natural</strong> que entra por la gran <strong>ventana corrediza</strong> y de la hermosa <strong>vista al jardín</strong> exterior.",
+          "capacity": "3 camas / baño privado / 4 personas",
+          "images": [
+            {
+              "imageUrl": "assets/imgs/services/gastronomy-main.jpg",
+              "imgDesc": "Mesa servida con variedad de platos criollos y frutas"
+            },
+            {
+              "imageUrl": "assets/imgs/services/bar-cocktails.jpg",
+              "imgDesc": "Bartender preparando coctelería clásica cubana"
+            }
+          ],
+          "features": [
+            "2 camas matrimoniales",
+            "1 cama personal",
+            "Ropa de cama",
+            "Split",
+            "Ventilador",
+            "Caja fuerte",
+            "Baño privado",
+            "Agua fría y caliente",
+            "Secadora de pelo"
+          ]
+        },
+        {
+          "title": "Habitación 3",
+          "desc": "<strong>Habtación</strong> ideal para <strong>relajarse</strong> tras un día de exploración. Esta <strong>habitación</strong> ofrece lo <strong>esencial</strong> para una <strong>estancia cómoda</strong>. Disfruta de la <strong>luz natural</strong> que <strong>ilumina</strong> el espacio y la <strong>tranquilidad</strong> que ofrece.",
+          "capacity": "2 camas / baño privado / 4 personas",
+          "images": [
+            {
+              "imageUrl": "assets/imgs/services/gastronomy-main.jpg",
+              "imgDesc": "Mesa servida con variedad de platos criollos y frutas"
+            },
+            {
+              "imageUrl": "assets/imgs/services/bar-cocktails.jpg",
+              "imgDesc": "Bartender preparando coctelería clásica cubana"
+            }
+          ],
+          "features": [
+            "2 camas matrimoniales",
+            "Ropa de cama",
+            "Split",
+            "Ventilador",
+            "Caja fuerte",
+            "Baño privado",
+            "Agua fría y caliente",
+            "Secadora de pelo"
+          ]
+        },
+        {
+          "title": "Habitación 4",
+          "desc": "Relájate en esta <strong>acogedora habitación</strong> en Viñales, ideal para tu <strong>estadía</strong>. Con <strong>dos cómodas camas individuales</strong> y una decoración en <strong>tonos cálidos</strong>, este espacio ofrece todo lo necesario para una <strong>estancia placentera</strong>.",
+          "capacity": "2 camas / baño privado / 4 personas",
+          "images": [
+            {
+              "imageUrl": "assets/imgs/services/gastronomy-main.jpg",
+              "imgDesc": "Mesa servida con variedad de platos criollos y frutas"
+            },
+            {
+              "imageUrl": "assets/imgs/services/bar-cocktails.jpg",
+              "imgDesc": "Bartender preparando coctelería clásica cubana"
+            }
+          ],
+          "features": [
+            "2 camas personales",
+            "Ropa de cama",
+            "Split",
+            "Ventilador",
+            "Caja fuerte",
+            "Baño privado",
+            "Agua fría y caliente",
+            "Secadora de pelo"
+          ]
+        },
+        {
+          "title": "Habitación 5 — Suite",
+          "desc": "Sumérgete en una <strong>suite</strong> única, diseñada para ofrecerte el equilibrio perfecto entre <strong>confort</strong> y <strong>estilo</strong>. Pensada para <strong>parejas</strong>, su atmósfera <strong>acogedora</strong> y su <strong>decoración elegante</strong> crean el entorno ideal para el <strong>descanso</strong>. La <strong>luz natural</strong> que inunda el espacio realza su <strong>calidez</strong>, invitándote a <strong>relajarte</strong> tras un día de exploración en Viñales.",
+          "capacity": "1 cama king size / baño privado / 2 personas",
+          "images": [
+            {
+              "imageUrl": "assets/imgs/services/gastronomy-main.jpg",
+              "imgDesc": "Mesa servida con variedad de platos criollos y frutas"
+            },
+            {
+              "imageUrl": "assets/imgs/services/bar-cocktails.jpg",
+              "imgDesc": "Bartender preparando coctelería clásica cubana"
+            }
+          ],
+          "features": [
+            "1 cama king size",
+            "Ropa de cama",
+            "Split",
+            "Ventilador",
+            "Caja fuerte",
+            "Baño privado",
+            "Agua fría y caliente",
+            "Secadora de pelo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "bar-restaurant",
+      "type": "common",
+      "title": "Bar-Restaurante",
+      "desc": "Nuestro restaurante es amplio y acoge a varios comensales, ofreciendo un ambiente climatizado o, si lo prefieres, con acceso al jardín para disfrutar de las vistas. El bar, ubicado junto a una piscina en una pequeña terraza, te invita a relajarte mientras saboreas exquisitos cócteles. Un lugar ideal para disfrutar de una experiencia única.",
+      "images": [
+        {
+          "imageUrl": "assets/imgs/facilities/restaurant-main.jpg",
+          "imgDesc": "Área de bar y mesas exteriores"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "garden-pool",
+      "type": "common",
+      "title": "Jardines y piscina",
+      "desc": "Nuestro jardín está ambientado con plantas locales que resaltan el verdor y la naturaleza cubana. Disfruta de un clima agradable, con abundante exposición al sol, perfecto para relajarte. Además, cuenta con una piscina para que disfrutes de un refrescante baño en un entorno único y tranquilo.",
+      "images": [
+        {
+          "imageUrl": "assets/imgs/facilities/pool-main.jpg",
+          "imgDesc": "Piscina rodeada de vegetación tropical"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "terrace",
+      "type": "common",
+      "title": "Terraza",
+      "desc": "Nuestra terraza en la azotea ofrece vistas impresionantes que te permitirán disfrutar de momentos únicos. Con varios espacios cómodos, es el lugar ideal para relajarte, tomar el desayuno o disfrutar de una comida mientras contemplas el paisaje. Un rincón perfecto para un rato agradable en plena naturaleza.",
+      "images": [
+        {
+          "imageUrl": "assets/imgs/facilities/terrace-view.jpg",
+          "imgDesc": "Vistas a los mogotes desde la azotea"
+        }
+      ]
+    }
+  ]
+}

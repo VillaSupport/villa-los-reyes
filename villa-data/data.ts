@@ -243,3 +243,15 @@ let experiences: Experience[] = [
 //   hasHostBg: boolean;
 // }
 
+
+// └── data
+//     ├── categorys
+//     │   └── horseback 
+              // └── es.json
+              // └── en.json
+              // └── fr.json
+
+//     └── experiences.es.json
+//     └── experiences.en.json
+//     └── experiences.fr.json
+

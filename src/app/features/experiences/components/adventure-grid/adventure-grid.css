@@ -1,0 +1,154 @@
+:host {
+  display: block;
+  background: #E4EAE5;
+  position: relative;
+  z-index: 2;
+  border-radius: 3rem 3rem 0 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Contenedor principal (equivalente a experiences-container) */
+.adventure-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.5rem 5rem 5rem;
+}
+
+/* Header y Grid (ancho máximo) */
+.adventure-category,
+.adventure-grid {
+  width: 100%;
+  max-width: 1568px;
+}
+
+/* Estilo del Título (h2) */
+.adventure-category h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 2.875rem;
+  margin: 0;
+  color: #D17D00;
+}
+
+/* Grid de Tarjetas */
+.adventure-grid {
+  display: grid;
+ grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 20rem;
+  padding-top: 1.75rem;
+  gap: 1rem;
+}
+.adventure-card {
+  position: relative;
+  grid-column: span 2;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  display: block; /* Asegura que el enlace ocupe todo el espacio */
+  text-decoration: none;
+}
+.adventure-card:last-child:nth-child(3n+1) {
+  grid-column: 1 / -1; /* Ocupa las 3 columnas */
+}
+.adventure-card:nth-child(3n+1):nth-last-child(2),
+.adventure-card:nth-child(3n+1):nth-last-child(2) + .adventure-card {
+  grid-column: span 3; /* Esto es conceptual, abajo la solución real con grid-column */
+}
+
+/* Tarjeta Individual (adventure-card) */
+
+
+.adventure-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s ease;
+}
+
+.adventure-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Overlay de texto */
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.75rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  color: #fff;
+  transition: background .3s ease;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 2.375rem;
+}
+
+.adventure-card:hover .overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
+}
+
+/* --- MEDIA QUERIES --- */
+
+@media(max-width:1560px) {
+  .adventure-grid { grid-auto-rows: 18rem; padding-top: 1.5rem; }
+}
+
+@media(max-width:1440px) {
+  .adventure-grid { grid-auto-rows: 17rem; }
+  .overlay { font-size: 1.5rem; }
+}
+
+@media (max-width: 1280px) {
+  :host { border-radius: 2.5rem 2.5rem 0 0; }
+  .adventure-container { padding: 2.75rem 5rem 5rem; }
+  .adventure-grid { grid-auto-rows: 14rem; padding-top: 1.25rem; }
+  .overlay { font-size: 1.2rem; }
+}
+
+@media (max-width: 1025px) {
+  :host { border-radius: 2rem 2rem 0 0; }
+  .adventure-container { padding: 2.75rem 4rem 4rem; }
+  .adventure-grid { 
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 17rem;
+  }
+  .adventure-card { grid-column: span 1; }
+
+  .adventure-card:last-child:nth-child(2n+1) { grid-column: 1 / -1;}
+  
+  .overlay { font-size: 1.35rem; line-height: 1.25; }
+  .adventure-category h2 { font-size: 1.75rem; line-height: 1.1; }
+}
+
+@media (max-width: 768px) {
+  :host { border-radius: 1.5rem 1.5rem 0 0; }
+  .adventure-container { padding: 2.5rem; }
+  .adventure-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 16rem;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+  .adventure-card { grid-column: span 1; }
+  .overlay { font-size: 1.35rem; justify-content: center; line-height: 1.25; }
+}
+
+@media (max-width: 600px) {
+  :host { border-radius: 1rem 1rem 0 0; }
+  .adventure-grid {
+    grid-template-columns: minmax(0, 400px);
+    grid-auto-rows: 15.5rem;
+    justify-content: center;
+  }
+  .adventure-container { padding: 1.5rem 1rem; }
+  .overlay {
+    font-size: 1.35rem;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.25;
+  }
+  .adventure-category { max-width: 400px; }
+  .adventure-category h2 { font-size: 1.5rem; line-height: 2rem; }
+}
