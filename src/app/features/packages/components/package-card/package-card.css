@@ -1,0 +1,154 @@
+:host {
+  display: block;
+
+  --cards-per-view: 3;
+  --card-width: calc((100% - (var(--cards-per-view) - 1) * var(--card-spacing)) / var(--cards-per-view));
+  font-family: 'Poppins', sans-serif;
+
+  flex: 0 0 var(--card-width);
+  min-width: 380px;
+
+}
+
+.pkg-container {
+  width: 100%;
+  scroll-snap-align: start;
+}
+
+/* --- DISEÑO VISUAL DE LA CARTA (Intacto, esto está perfecto) --- */
+.pkg-link {
+  text-decoration: none;
+  display: block;
+}
+
+.pkg-card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 0.85;
+  border-radius: 1rem;
+  overflow: hidden;
+  /* box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5); */
+  box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 0;
+}
+
+.pkg-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+}
+
+.pkg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.pkg-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  padding: 1.75rem;
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.95) 10%,
+      rgba(0, 0, 0, 0.3) 50%,
+      transparent 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+}
+
+.pkg-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.pkg-duration {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.pkg-summary {
+  display: -webkit-box;
+  font-size: 1rem;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  line-height: 1.375rem;
+  letter-spacing: 0.03125rem;
+  margin: 0.5rem 0 0.75rem;
+  opacity: 0.9;
+}
+
+.pkg-summary:hover {
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+}
+
+.pkg-price-row {
+  display: flex;
+  align-items: baseline;
+  /* Para que el texto se alinee por la base */
+  gap: 0.25rem;
+  /* Esto crea un espacio real de unos 4px entre el precio y la unidad */
+}
+
+.pkg-price {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.pkg-unit {
+  display: inline-block;
+  vertical-align: 2px;
+  font-size: 1rem;
+  letter-spacing: 0.0325rem;
+}
+
+@media (max-width: 600px) {
+  :host {
+    min-width: unset;
+    width: 100%;
+    aspect-ratio: 5 / 6;
+  }
+
+  .pkg-overlay {
+    padding: 1rem;
+  }
+
+  .pkg-title {
+    font-size: 1.145rem;
+    line-height: 1.05rem;
+    letter-spacing: 0.00625rem
+  }
+
+  .pkg-duration {
+    font-size: 0.75rem;
+    line-height: 0.85rem;
+    letter-spacing: 0.02rem;
+  }
+
+  .pkg-summary {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 0.025rem;
+  }
+
+  .pkg-price {
+    font-size: 1.145rem;
+    line-height: 1.05rem;
+    letter-spacing: 0.00625rem;
+  }
+
+  .pkg-unit {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 0.025rem;
+  }
+}

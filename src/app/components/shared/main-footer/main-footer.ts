@@ -6,11 +6,10 @@ import { FaIconLibrary, FaIconComponent } from '@fortawesome/angular-fontawesome
 import { faFacebookF, faInstagram, faFacebookMessenger, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faPhone, faEnvelope, faLocationDot, faCommentDots } from '@fortawesome/free-solid-svg-icons';
 import { TranslatePipe } from '@ngx-translate/core';
-import { AutoImgDirective } from '../../../auto-img.directive';
 
 @Component({
   selector: 'footer-section',
-  imports: [FaIconComponent,TranslatePipe,AutoImgDirective],
+  imports: [FaIconComponent,TranslatePipe],
   templateUrl: './main-footer.html',
   styleUrl: './main-footer.css'
 })

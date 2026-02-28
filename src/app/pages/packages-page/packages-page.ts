@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { MainHeaderSection } from "../../components/sections/main-header-section/main-header-section";
 import { Position } from '../../components/shared/interfaces/app-interfaces';
 import { DiscoverPackageDefaultAll } from "../../presets/discover-package-default-all/discover-package-default-all";
+import { PageHeader } from "../../shared/components/page-header/page-header";
 
 @Component({
   selector: 'app-packages',
   standalone: true,
-  imports: [MainHeaderSection, DiscoverPackageDefaultAll],
+  imports: [DiscoverPackageDefaultAll, PageHeader],
   templateUrl: './packages-page.html',
   styleUrls: ['./packages-page.css']
 })

@@ -1,16 +1,49 @@
 :host {
+
+  --bg-color: #E4EAE5;
+  --bg-white: #f7faf7;
+
+  --text-color-light: #ffffff;
+
+  --gradient-main-img: linear-gradient(to bottom,
+      transparent 0%,
+      rgba(0, 0, 0, 0) 40%,
+      rgba(0, 0, 0, 0.2) 60%,
+      rgba(0, 0, 0, 0.5) 80%,
+      rgba(0, 0, 0, 0.8) 100%);
+  --gradient-overlay-base: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.25) 40%, transparent 100%);
+  --gradient-overlay-hover: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, transparent 70%);
+
   display: block;
   position: relative;
-  z-index: 2;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-main, sans-serif);
+  background-color: var(--bg-white);
 }
 
+
+:host:has(.white-bg) {
+  background-color: var(--bg-color);
+}
+
+:host.is-overlapping,
+:host.is-overlapping:has(.white-bg) {
+  background-color: transparent;
+}
+
+/* =========================================
+  LAYOUT PRINCIPAL 
+========================================= */
 .preview-section {
   display: flex;
   justify-content: center;
   padding: 5rem;
   border-radius: 3rem 3rem 0 0;
+  z-index: 10;
+  background-color: var(--bg-color);
+}
 
+.preview-section.white-bg {
+  background-color: var(--bg-white);
 }
 
 .preview-container {
@@ -25,6 +58,9 @@
   flex-direction: row-reverse;
 }
 
+/* =========================================
+   BLOQUE MAIN (70%)
+========================================= */
 .preview-main {
   flex: 1 1 70%;
   display: flex;
@@ -33,13 +69,45 @@
   overflow: hidden;
 }
 
-.preview-main img {
+.main-box {
   width: 100%;
   aspect-ratio: 16 / 9;
-  object-fit: cover;
   border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
   flex: none;
+  isolation: isolate;
 }
+
+.main-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-main-img);
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+div.main-box:not(.skeleton)::after {
+  opacity: 1;
+}
+
+.main-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+/* =========================================
+  BLOQUE ASIDE (30%)
+========================================= */
 
 .preview-aside {
   flex: 1 1 30%;
@@ -49,99 +117,138 @@
   overflow: hidden;
 }
 
-.preview-card {
+.aside-item {
   position: relative;
-  flex: 1 1 0;
+  flex: 1 0 0;
   aspect-ratio: 16 / 9;
   border-radius: 1rem;
   overflow: hidden;
+
 }
 
-.card-link {
+.item-wrap {
   display: block;
   width: 100%;
   height: 100%;
   color: inherit;
   text-decoration: none;
   cursor: pointer;
+  isolation: isolate
 }
-.card-link.is-static {
+
+.item-wrap.is-static {
   cursor: default;
 }
 
-.card-img {
+.item-img-box {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.item-img-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.4s ease;
+  display: block;
 }
 
-.card-link:not(.is-static):hover .card-img {
+.item-wrap:not(.is-static):hover img {
   transform: scale(1.05);
 }
 
-.card-overlay {
+.text-overlay {
   position: absolute;
   inset: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 1.5rem;
-  color: #fff;
-  background: linear-gradient(to top,
-      rgba(0, 0, 0, 0.65) 0%,
-      rgba(0, 0, 0, 0.25) 40%,
-      transparent 100%);
+  color: var(--text-color-light);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.text-overlay.has-image {
+  background: var(--gradient-overlay-base);
   transition: background 0.3s ease;
-  pointer-events: none; /* El click pasa al link */
 }
 
-.card-link:not(.is-static):hover .card-overlay {
-  background: linear-gradient(to top,
-      rgba(0, 0, 0, 0.65),
-      transparent 70%);
+.item-wrap:not(.is-static):hover .text-overlay {
+  background: var(--gradient-overlay-hover);
 }
 
-/* .overlay h3 {
-  margin: 0;
+.item-title {
   font-size: 1.75rem;
   font-weight: 600;
-  line-height: 2.375rem;
-  color: #fff;
-} */
- .card-title {
-  margin: 0;
-  font-size: 1.75rem;
-  font-weight: 600;
-  line-height: 1.3;
 }
-.card-description {
-  margin: 0.2rem 0 0;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.4;
-  opacity: 0.85;
-  letter-spacing: 0.03rem;
-}
-/* .overlay p {
-  margin: 0.2rem 0 0;
-  opacity: 0.85;
-  font-family: Poppins;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.375rem;
-  letter-spacing: 0.03125rem;
-  color: #fff;
-} */
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+.item-description {
+  margin: 0.2rem 0 0;
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+/* Contenedor para dar aire */
+.skeleton-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1rem 0;
+}
+
+/* Título: Grueso y con personalidad */
+.skeleton-title {
+  height: 1.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+}
+
+/* Estilo base para todas las líneas de párrafo */
+.skeleton-para {
+  height: 1rem;
+  border-radius: 4px;
+}
+
+.skeleton-main-title {
+  height: 2.1rem;
+  margin-bottom: 0.25rem;
+  border-radius: 6px;
+}
+
+/* Estilo base para todas las líneas de párrafo */
+.skeleton-main-para {
+  height: 1.2rem;
+  border-radius: 4px;
+}
+
+/* Variaciones de ancho para simular lectura real */
+.full   { width: 99%; }
+.long   { width: 92%;  }
+.medium { width: 85%;  }
+.base    { width: 65%; }
+.short  { width: 45%;  }
+
+/* Grupo de párrafos con menos espacio entre ellos que con el título */
+.skeleton-paragraph-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+
+@media (max-width: 1280px) {
 
   .preview-section {
     padding: 5rem;
     border-radius: 2.5rem 2.5rem 0 0;
   }
 
-  .preview-container, 
+  .preview-container,
   .preview-container.is-reversed {
     flex-direction: column;
     height: auto;
@@ -154,44 +261,31 @@
     gap: 1.25rem;
   }
 
-  .preview-main img {
-    flex: none;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    border-radius: 1rem;
-  }
-
   .preview-aside {
+    flex: none;
     flex-direction: row;
     overflow-x: auto;
-    flex: none;
     padding-bottom: 0.75rem;
+    gap: 1rem;
+    scrollbar-width: none;
   }
 
   .preview-aside::-webkit-scrollbar {
     display: none;
   }
-  
-  .preview-card {
-    flex: 1 1 auto;
+
+  .aside-item {
+    flex: 0 0 auto;
     min-width: 350px;
     aspect-ratio: 16 / 11;
-    border-radius: 1rem;
   }
 
-  .card-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-
-  .card-title {
+  .item-title {
     font-size: 1.7rem;
     line-height: 2.25rem;
   }
 
-  .card-description {
+  .item-description {
     font-size: 1rem;
     line-height: 1.5rem;
     letter-spacing: 0.03rem;
@@ -199,122 +293,49 @@
 
 
 }
-@media (min-width: 769px) and (max-width: 1024px) {
+
+@media (max-width: 1024px) {
   .preview-section {
     padding: 3.5rem 4rem;
     border-radius: 2rem 2rem 0 0;
   }
 
-  .preview-container,
-  .preview-container.is-reversed {
-    flex-direction: column;
-    height: auto;
-    max-width: 100%;
-    gap: 1.5rem;
-  }
-
-  .preview-main {
-    flex: none;
-    gap: 1.25rem;
-  }
-
-  .preview-main img {
-    flex: none;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    border-radius: 1rem;
-  }
-
-  .preview-aside {
-    flex-direction: row;
-    overflow-x: auto;
-    padding-bottom: 0.75rem;
-  }
-
-  .preview-aside::-webkit-scrollbar {
-    display: none;
-  }
-
-  .preview-card {
-    flex: 1 1 auto;
+  .aside-item {
     min-width: 360px;
-    aspect-ratio: 16 / 11;
-    border-radius: 1rem;
   }
 
-  .card-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .card-title {
+  .item-title {
     font-size: 1.6rem;
     line-height: 2rem;
   }
 
-  .card-description {
+  .item-description {
     font-size: 0.95rem;
     line-height: 1.45rem;
     letter-spacing: 0.028rem;
   }
 }
 
-@media (min-width: 601px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .preview-section {
     padding: 2.5rem;
     border-radius: 1.5rem 1.5rem 0 0;
   }
 
-  .preview-container,
-  .preview-container.is-reversed {
-    flex-direction: column;
-    height: auto;
-    max-width: 100%;
+  .preview-container {
     gap: 1rem;
   }
 
   .preview-main {
-    flex: none;
     gap: 1rem;
   }
 
-  .preview-main img {
-    flex: none;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    border-radius: 1rem;
-  }
-
-  .preview-aside {
-    flex-direction: row;
-    overflow-x: auto;
-    padding-bottom: 0.75rem;
-  }
-
-  .preview-aside::-webkit-scrollbar {
-    display: none;
-  }
-
-  .preview-card {
-    flex: 1 1 auto;
-    min-width: 360px;
-    aspect-ratio: 16 / 11;
-    border-radius: 1rem;
-  }
-
-  .card-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .card-title {
+  .item-title {
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
 
-  .card-description {
+  .item-description {
     font-size: 0.9125rem;
     line-height: 1.375rem;
     letter-spacing: 0.025rem;
@@ -327,48 +348,36 @@
     border-radius: 1rem 1rem 0 0;
   }
 
-  .preview-container,
-  .preview-container.is-reversed {
-    flex-direction: column;
-    height: auto;
-    gap: 1rem;
-    align-items: center; /* Centrado para móviles */
+  .preview-container {
+    align-items: center;
   }
 
   .preview-main,
   .preview-aside {
     max-width: 400px;
     width: 100%;
-    flex: none;
   }
 
-  .preview-main img {
-    flex: none;
+  .preview-aside {
+    flex-direction: column;
+    overflow-x: visible;
+  }
+
+  .main-box {
+    aspect-ratio: 8 / 5;
+  }
+
+  .aside-item {
+    min-width: 100%;
     width: 100%;
-    aspect-ratio: 8/5;
-    object-fit: cover;
+    aspect-ratio: 17 / 10;
   }
 
-  .preview-card {
-    flex: none;
-    width: 100%;
-    aspect-ratio: 17/10;
-  }
-
-  .card-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .card-title {
+  .item-title {
     font-size: 1.25rem;
-    line-height: 1.5rem;
   }
 
-  .card-description {
+  .item-description {
     font-size: 0.8rem;
-    line-height: 1.375rem;
-    letter-spacing: 0.025rem;
   }
 }

@@ -1,23 +1,29 @@
 import { Component, input } from '@angular/core';
-import { MainHeaderSection } from "../../../components/sections/main-header-section/main-header-section";
 import { CategoryPreview } from "../../components/category-preview/category-preview";
-import { Position } from '../../../components/shared/interfaces/app-interfaces';
-import { MainContent, PreviewContent } from '../../interfaces/feature-overview.interface';
+import { AdventurePreview, CategoryDetail,} from '../../interfaces/feature-overview.interface';
+import { PageHeader } from "../../components/page-header/page-header";
+import { TranslatePipe } from '@ngx-translate/core';
 
 export interface FeatureTemplateItem {
-  main: MainContent;
-  previews: PreviewContent[];
+  main: CategoryDetail;
+  previews: AdventurePreview[];
+}
+
+export interface HeaderConfig {
+  titleKey: string;
+  descKey: string;
+  img: string;
+  altKey: string;
 }
 
 @Component({
   selector: 'feature-overview-template',
-  imports: [MainHeaderSection, CategoryPreview],
+  imports: [CategoryPreview, PageHeader,TranslatePipe],
   templateUrl: './feature-overview-template.html',
   styleUrl: './feature-overview-template.css',
 })
 export class FeatureOverviewTemplate {
-  header = input.required<{ title: string; description: string }>();
-  headerImage = input<{ src: string; alt: string }>();
-  headerPosition = input<Position>("center");
+  header = input.required<HeaderConfig>();
   items = input.required<FeatureTemplateItem[]>();
+  featureSlug = input.required<string>()
 }

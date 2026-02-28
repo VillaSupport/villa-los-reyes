@@ -1,10 +1,9 @@
 import { Component, input } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
-import { AutoImgDirective } from '../../../../../auto-img.directive';
 
 @Component({
   selector: 'experience-item',
-  imports: [TranslatePipe,AutoImgDirective],
+  imports: [TranslatePipe],
   templateUrl: './experience-item.html',
   styleUrls: ['./experience-item.css']
 })

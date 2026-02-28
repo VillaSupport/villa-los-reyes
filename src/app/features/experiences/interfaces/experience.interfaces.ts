@@ -7,9 +7,10 @@ export interface CategoryDetail {
 export interface Adventure {
   id: string | number;
   slug: string;
+  relatedPackageSlug: string,
   title: string;
   desc: string;
-  images: { imageUrl: string; imgDesc: string }[]; // Cambiado de string[] a objeto
+  imgs: { src: string; alt: string }[]; // Cambiado de string[] a objeto
   tips: string[];
 }
 

@@ -1,40 +1,106 @@
 {
   "category": "cycletours",
+  "title":"Todos nuestros ciclotour",
   "adventures": [
     {
       "id": 1,
+      "slug": "el-calvario-ride",
+      "relatedPackageSlug": "natural-adventure",
       "title": "El Calvario",
-      "desc": "Explora la belleza de <strong>Viñales</strong> con la excursión “<strong>El Calvario</strong>”, un <strong>recorrido lleno de paisajes impresionantes</strong>, desde <strong>valles intramontanos</strong> hasta <strong>cultivos de café y tabaco</strong>. Visita el <strong>Mural de la Prehistoria</strong> y finaliza con un <strong>refrescante baño en el río El Calvario</strong>. Ideal <strong>para amantes del ciclismo</strong> y la naturaleza, esta experiencia combina <strong>aventura, ejercicio e inmersión cultural.</strong>",
-      "imgs": [],
-      "tips": []
+      "desc": "Explora la belleza de <strong>Viñales</strong> con la excursión <strong>“El Calvario”</strong>, un recorrido lleno de <strong>paisajes</strong> <strong>impresionantes</strong>, desde <strong>valles</strong> <strong>intramontanos</strong> hasta <strong>cultivos</strong> <strong>de</strong> <strong>café</strong> y <strong>tabaco</strong>. Visita el <strong>Mural</strong> <strong>de</strong> <strong>la</strong> <strong>Prehistoria</strong> y finaliza con un refrescante baño en el <strong>río El Calvario</strong>. Ideal para amantes del <strong>ciclismo</strong> y la <strong>naturaleza</strong>, esta experiencia combina <strong>aventura</strong>, <strong>ejercicio</strong> e <strong>inmersión cultural</strong>.",
+      "imgs": [
+        {
+          "url": "assets/imgs/adventures/cycletours/el-calvario-ride/calvario-scenic-drive.webp",
+          "alt": "Carretera asfaltada que serpentea entre majestuosos mogotes verdes bajo un cielo azul con nubes blancas."
+        }
+      ],
+      "tips": [
+        "Calzado cerrado",
+        "Pantalones largos",
+        "Botella de agua",
+        "Repelente para mosquitos",
+        "Protector solar"
+      ]
     },
     {
       "id": 2,
+      "slug": "resbaloso-river-tour",
+      "relatedPackageSlug": "natural-adventure",
       "title": "El Resbaloso",
-      "desc": "Embárcate en una <strong>experiencia única</strong> que combina <strong>deporte, cultura e historia en Viñales.</strong> Explora el <strong>Palenque de los Cimarrones</strong> para conocer la rica <strong>cultura afrocubana</strong>, navega por el <strong>río subterráneo de la Cueva del Indio</strong> y disfruta de un baño refrescante en el <strong>Río Resbaloso</strong>, rodeado de naturaleza. Culmina tu aventura con una visita a la primera <strong>Cooperativa de Producción Agropecuaria fundada por Fidel Castro</strong>, donde conocerás la <strong>historia agrícola de Cuba.</strong> Una excursión ideal para quienes buscan una mezcla de <strong>actividad física y enriquecimiento cultural.</strong>",
-      "imgs": [],
-      "tips": []
+      "desc": "Embárcate en una <strong>experiencia única</strong> que combina <strong>deporte, cultura e historia</strong> en <strong>Viñales</strong>. Explora el <strong>Palenque de los Cimarrones</strong> para conocer la rica <strong>cultura afrocubana</strong>, navega por el río subterráneo de la <strong>Cueva del Indio</strong> y disfruta de un baño refrescante en el <strong>Río Resbaloso</strong>, rodeado de naturaleza. Culmina tu aventura con una visita a la primera <strong>Cooperativa de Producción Agropecuaria</strong> fundada por <strong>Fidel Castro</strong>, donde conocerás la <strong>historia agrícola de Cuba</strong>. Una excursión ideal para quienes buscan una mezcla de <strong>actividad física</strong> y <strong>enriquecimiento cultural</strong>.",
+      "imgs": [
+        {
+          "url": "assets/imgs/adventures/cycletours/resbaloso-river-tour/resbaloso-natural-pool.webp",
+          "alt": "Poza natural de aguas cristalinas alimentada por un pequeño salto de agua en el río Resbaloso."
+        }
+      ],
+      "tips": [
+        "Calzado cerrado",
+        "Pantalones largos",
+        "Botella de agua",
+        "Repelente para mosquitos",
+        "Protector solar"
+      ]
     },
     {
       "id": 3,
+      "slug": "valley-explorer",
+      "relatedPackageSlug": "natural-adventure",
       "title": "Recorriendo valles",
-      "desc": "Disfruta de una excursión de tres horas por el <strong>Valle de la Penitencia</strong>, explorando <strong>mogotes, valles intramontanos y el Mural de la Prehistoria</strong>. Haz una <strong>parada en un mirador natural</strong> y finaliza el recorrido en el <strong>Valle de Viñales</strong>, visitando <strong>secaderos de tabaco</strong> y una <strong>plantación de café</strong>. Una experiencia ideal para los <strong>amantes del ciclismo y la naturaleza.</strong>",
-      "imgs": [],
-      "tips": []
+      "desc": "Disfruta de una excursión de tres horas por el <strong>Valle de la Penitencia</strong>, explorando <strong>mogotes</strong>, <strong>valles intramontanos</strong> y el <strong>Mural de la Prehistoria</strong>. Haz una parada en un <strong>mirador natural</strong> y finaliza el recorrido en el <strong>Valle de Viñales</strong>, visitando <strong>secaderos de tabaco</strong> y una <strong>plantación de café</strong>. Una experiencia ideal para los <strong>amantes del ciclismo</strong> y la <strong>naturaleza</strong>.",
+      "imgs": [
+        {
+          "url": "assets/imgs/adventures/cycletours/valley-explorer/prehistory-mural-vinales.webp",
+          "alt": "Enorme pintura rupestre moderna sobre la ladera de un mogote en el Valle de la Penitencia."
+        }
+      ],
+      "tips": [
+        "Calzado cerrado",
+        "Pantalones largos",
+        "Botella de agua",
+        "Repelente para mosquitos",
+        "Protector solar"
+      ]
     },
     {
       "id": 4,
+      "slug": "eco-farming-trip",
+      "relatedPackageSlug": "natural-adventure",
       "title": "Agricultura ecológica",
-      "desc": "Explora el fascinante <strong>ecosistema de las Pizarras del Sur</strong> en un recorrido de tres horas, que te llevará a un <strong>lago</strong> para un refrescante chapuzón y luego a la <strong>Finca Agroecológica El Paraíso</strong>, donde aprenderás sobre la <strong>agricultura ecológica en Cuba</strong>. Ideal para quienes buscan <strong>naturaleza, aventura y aprendizaje</strong>, esta excursión ofrece una experiencia completa y única en el corazón de las <strong>Pizarras del Sur.</strong>",
-      "imgs": [],
-      "tips": []
+      "desc": "Explora el fascinante <strong>ecosistema</strong> de las <strong>Pizarras del Sur</strong> en un recorrido de tres horas, que te llevará a un <strong>lago</strong> para un refrescante chapuzón y luego a la <strong>Finca Agroecológica El Paraíso</strong>, donde aprenderás sobre la <strong>agricultura ecológica</strong> en <strong>Cuba</strong>. Ideal para quienes buscan <strong>naturaleza</strong>, <strong>aventura</strong> y <strong>aprendizaje</strong>, esta excursión ofrece una experiencia completa y única en el corazón de las <strong>Pizarras del Sur</strong>.",
+      "imgs": [
+        {
+          "url": "assets/imgs/adventures/cycletours/eco-farming-trip/organic-farming-vinales.webp",
+          "alt": "Hileras de cultivos sostenibles en una finca agroecológica con las montañas del Valle de Viñales al fondo."
+        }
+      ],
+      "tips": [
+        "Calzado cerrado",
+        "Pantalones largos",
+        "Botella de agua",
+        "Repelente para mosquitos",
+        "Protector solar"
+      ]
     },
     {
       "id": 5,
+      "slug": "pizarras-lake-trail",
+      "relatedPackageSlug": "natural-adventure",
       "title": "Visita al lago",
-      "desc": "Descubre el encanto de las <strong>Pizarras del Sur</strong>, un <strong>paisaje fascinante y poco conocido.</strong> El recorrido te llevará a través de estas formaciones hasta un <strong>lago</strong>, donde podrás disfrutar de un refrescante chapuzón, y luego descenderás al <strong>Valle de Viñales</strong>, un lugar lleno de <strong>verdor, cultura y tradiciones campesinas.</strong> Esta excursión ofrece una experiencia única, combinando <strong>naturaleza y cultura</strong> para una jornada inolvidable en <strong>Viñales.</strong>",
-      "imgs": [],
-      "tips": []
+      "desc": "Descubre el encanto de las <strong>Pizarras del Sur</strong>, un <strong>paisaje fascinante</strong> y poco conocido. El recorrido te llevará a través de estas formaciones hasta un <strong>lago</strong>, donde podrás disfrutar de un refrescante chapuzón, y luego descenderás al <strong>Valle de Viñales</strong>, un lugar lleno de <strong>verdor</strong>, <strong>cultura</strong> y <strong>tradiciones campesinas</strong>. Esta excursión ofrece una <strong>experiencia única</strong>, combinando <strong>naturaleza</strong> y <strong>cultura</strong> para una jornada inolvidable en <strong>Viñales</strong>.",
+      "imgs": [
+        {
+          "url": "assets/imgs/adventures/cycletours/pizarras-lake-trail/pizarras-mirror-lake.webp",
+          "alt": "Montaña reflejada en la superficie tranquila de un lago al atardecer en las Pizarras del Sur."
+        }
+      ],
+      "tips": [
+        "Calzado cerrado",
+        "Pantalones largos",
+        "Botella de agua",
+        "Repelente para mosquitos",
+        "Protector solar"
+      ]
     }
   ]
 }

@@ -1,6 +1,6 @@
-import { GalleryData, HeaderData } from "../components/base-pages/experience-view-base-page/experience-view-base-page";
+import { GalleryData, HeaderDataDeprecatedT } from "../components/base-pages/experience-view-base-page/experience-view-base-page";
 
-export const headerExperience: HeaderData = {
+export const headerExperience: HeaderDataDeprecatedT = {
   title: "headerExperience.title",
   description: "headerExperience.description",
   image: {

@@ -1,10 +1,11 @@
 import { Component, input } from '@angular/core';
 import { ExperiencesGallery } from "./experiences-gallery/experiences-gallery";
 import { SectionHeader } from "../../shared/section-header/section-header";
+import { DiscoveryHeader } from "../../../shared/components/discovery-header/discovery-header";
 
 @Component({
   selector: 'discover-experiences-section',
-  imports: [ExperiencesGallery, SectionHeader],
+  imports: [ExperiencesGallery, DiscoveryHeader],
   templateUrl: './discover-experience-section.html',
   styleUrls: ['./discover-experience-section.css']
 })

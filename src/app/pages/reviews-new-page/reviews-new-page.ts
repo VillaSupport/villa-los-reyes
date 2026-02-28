@@ -4,14 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { AuthService } from '../../services/auth-service';
 import { Review, ReviewsService } from '../../services/reviews-service';
-import { MainHeaderSection } from "../../components/sections/main-header-section/main-header-section";
-import { tap } from 'rxjs';
-import { AutoImgDirective } from '../../auto-img.directive';
+import { PageHeader } from "../../shared/components/page-header/page-header";
 
 @Component({
   selector: 'reviews-new-page',
   standalone: true,
-  imports: [CommonModule, FormsModule, DatePipe, MainHeaderSection, AutoImgDirective],
+  imports: [CommonModule, FormsModule, DatePipe, PageHeader],
   templateUrl: './reviews-new-page.html',
   styleUrls: ['./reviews-new-page.css'],
 })

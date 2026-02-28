@@ -1,0 +1,140 @@
+:host {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 0.5rem;
+    align-items: flex-start;
+}
+
+.info-title {
+    color: #D17D00;
+    font-size: 2.1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    white-space: pre-line;
+}
+
+.info-desc {
+    color: #234E3F;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.65;
+    letter-spacing: 0.03rem;
+}
+
+.info-desc strong {
+    font-weight: 700;
+}
+
+
+.feature-title {
+    padding: 0 0.25rem 0.25rem ;
+    color: #404944;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.625rem;
+}
+
+
+.feature-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.175rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    color: #404944;
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+
+
+}
+
+.feature-icon {
+    color: #186B53;
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+/* --- Botón / Link de Acción --- */
+.action-link {
+    display: inline-flex;
+    padding: 1rem 2rem;
+    border-radius: 6.25rem;
+    border: 1px solid #707974;
+    color: #D17D00;
+    background: transparent;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.action-link:hover {
+    background-color: #D17D00;
+    color: #ffffff;
+    border-color: transparent;
+    box-shadow: 0 0 0 4px rgba(209, 125, 0, 0.12);
+}
+
+
+
+
+@media (max-width: 600px) {
+    .info-block {
+        width: 100%;
+        align-items: flex-start;
+        max-width: 400px;
+        gap: 0.5rem;
+    }
+
+    .info-title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .info-desc {
+        font-size: 0.75rem;
+        line-height: 1.25rem;
+        letter-spacing: 0.00625rem;
+    }
+
+    .action-link {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.875rem;
+    }
+
+    .feature-title {
+        font-size: 0.875rem;
+        font-weight: 700;
+        line-height: 1.125rem;
+        letter-spacing: 0.00625rem;
+    }
+
+    .feature-list {
+        padding: 4px;
+        gap: 0.4rem;
+    }
+
+    .feature-item {
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 1.1rem;
+        letter-spacing: 0.00625rem;
+        padding: 4px;
+    }
+
+    .feature-icon {
+        color: #186B53;
+        font-size: 0.875rem;
+        margin-right: 0.4rem;
+    }
+}

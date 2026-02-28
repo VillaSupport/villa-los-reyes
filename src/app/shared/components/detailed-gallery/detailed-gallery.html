@@ -1,0 +1,12 @@
+<section class="split-layout" [class.white-bg] = "whiteBg()" [class.reverse]="reverse()"  >
+    <div class="split-wrapper">
+        <div class="media-side">
+            <gallery-thumbnails [mainImage]="main()" [thumbImages]="thumbs()" />
+        </div>
+
+        <div class="info-side">
+            <info-block [data]="info()" />
+        </div>
+    </div>
+</section>
+

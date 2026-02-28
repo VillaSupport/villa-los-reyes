@@ -1,0 +1,24 @@
+import { Component, EventEmitter, input, Input, output, Output } from '@angular/core';
+
+@Component({
+  selector: 'section-nav',
+  imports: [],
+  templateUrl: './section-nav.html',
+  styleUrl: './section-nav.css',
+})
+export class SectionNav {
+  prevDisabled = input<boolean>(false);
+  nextDisabled = input<boolean>(false);
+
+  onPrev = output<void>();
+  onNext = output<void>()
+
+  handlePrev() {
+    if (!this.prevDisabled) this.onPrev.emit();
+  }
+
+  handleNext() {
+    if (!this.nextDisabled) this.onNext.emit();
+  }
+}
+

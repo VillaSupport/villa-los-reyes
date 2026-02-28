@@ -1,0 +1,9 @@
+
+<discovery-offering-list 
+    [header]="header" 
+    [data]="cardData()">
+
+    <ng-template let-item>
+        <package-card [data]="item"></package-card>
+    </ng-template>
+</discovery-offering-list>

@@ -1,0 +1,11 @@
+<section class="gallery-grid">
+  <figure class="main-view">
+    <img [src]="mainImage().src" [alt]="mainImage().alt" />
+  </figure>
+
+  @for (image of thumbImages(); track $index) {
+    <figure class="thumb-item">
+      <img [src]="image.src" [alt]="image.alt" />
+    </figure>
+  }
+</section>

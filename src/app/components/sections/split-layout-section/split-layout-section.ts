@@ -3,7 +3,6 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { InfoPanel } from "../../shared/info-panel/info-panel";
 import { TranslatePipe } from '@ngx-translate/core';
 import { FeatureList } from "../../shared/about/feature-list/feature-list";
-import { AutoImgDirective } from '../../../auto-img.directive';
 
 type HexColor = `#${string}`;
 type Image = { src: string; alt: string };
@@ -13,7 +12,7 @@ type Image = { src: string; alt: string };
   selector: 'split-layout-section',
   templateUrl: './split-layout-section.html',
   styleUrls: ['./split-layout-section.css'],
-  imports: [InfoPanel, TranslatePipe, FeatureList,AutoImgDirective],
+  imports: [InfoPanel, TranslatePipe, FeatureList],
 })
 export class SplitLayoutSection implements OnInit {
   info = input.required<{ title: string; description: string }>();

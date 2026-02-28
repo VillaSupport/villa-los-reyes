@@ -1,8 +1,6 @@
 :host {
   display: block;
   position: relative;
-  overflow: hidden;
-  z-index: 3;
 }
 
 .gallery-info-section {
@@ -11,6 +9,8 @@
   padding: 5rem;
   justify-content: center;
   border-radius: 3rem 3rem 0 0;
+  z-index: 5;
+
 }
 
 .gallery-wrapper {

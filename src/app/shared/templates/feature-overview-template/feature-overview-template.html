@@ -1,17 +1,24 @@
 <div class="feature-overview-container">
-    
-    <main-header-section 
-        [head]="header()"
-        [image]="headerImage()"
-        [objectPosition]="headerPosition()">
-    </main-header-section>
+    <page-header [head]="{ 
+        title: header().titleKey | translate, 
+        description: header().descKey | translate 
+      }" [image]="{ 
+        src: header().img, 
+        alt: header().altKey | translate 
+      }" />
 
     <div class="categories-wrapper">
-        @for (item of items(); track $index) {
-            <category-preview 
-                [mainItem]="item.main" 
-                [previewItems]="item.previews">
-            </category-preview>
+        @for (item of items(); track $index; let isFirst = $first; let isEven = $even) {
+        <category-preview 
+            [category]="item.main"
+            [items]="item.previews" 
+            [overlap]="isFirst" 
+            [reverse]="isEven"
+            [whiteBg]="isEven" 
+            [basePath]="featureSlug()">
+            
+        </category-preview>
+
         }
     </div>
 

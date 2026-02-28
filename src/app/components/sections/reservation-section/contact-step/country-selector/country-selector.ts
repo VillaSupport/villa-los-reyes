@@ -1,11 +1,9 @@
 import { Component, input } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import * as countries from 'i18n-iso-countries';
 import { CountryInfo } from '../contact-step'
-import { AutoImgDirective } from '../../../../../auto-img.directive';
 @Component({
   selector: 'country-selector',
-  imports: [AutoImgDirective],
+  imports: [],
   templateUrl: './country-selector.html',
   styleUrl: './country-selector.css',
 })
@@ -15,8 +13,6 @@ export class CountrySelector {
   codeControl = input.required<FormControl>();
   countryControl = input.required<FormControl>();
   dialCodeControl = input.required<FormControl>();
-
-
 
   filteredCountries: CountryInfo[] = [];
   isOpen: boolean = false;

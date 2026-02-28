@@ -1,32 +1,68 @@
-<section class="preview-section" [style.background-color]="color()">
+<section class="preview-section" [class.white-bg]="whiteBg()">
     <div class="preview-container" [class.is-reversed]="reverse()">
 
-
         <div class="preview-main">
-            <img [src]="mainItem().imageUrl" [alt]="mainItem().imgDesc" loading="lazy">
+            @if (category(); as data) {
 
-            @if (mainItem().title && mainItem().desc) {
-            <info-panel [title]="mainItem().title!" [description]="mainItem().desc!" [slug]="mainItem().slug"
-                [linkText]="mainItem().linkText" />
+            <div class="main-box" [class.skeleton]="!mainImageLoaded()">
+                <img [src]="data.image.src" [alt]="data.image.alt" (load)="onMainImageLoad()" loading="lazy">
+            </div>
+
+            <info-block [data]="infoData()" />
+            }
+            @else {
+            <div class="skeleton main-box"></div>
+            <div class="skeleton-container">
+                <div class="skeleton skeleton-main-title"></div>
+
+                <div class="skeleton-paragraph-group">
+                    <div class="skeleton skeleton-main-para full"></div>
+                    <div class="skeleton skeleton-main-para medium"></div>
+                    <div class="skeleton skeleton-main-para long"></div>
+                    <div class="skeleton skeleton-main-para full"></div>
+                    <div class="skeleton skeleton-main-para short"></div>
+                </div>
+            </div>
+
             }
 
         </div>
 
         <div class="preview-aside">
-            @for (item of previewItems(); track $index) {
-            <div class="preview-card">
-                <a class="card-link" [routerLink]="[mainItem().slug, item.slug]">
+            @for (item of limitedItems(); track $index) {
+            <div class="aside-item">
 
-                    <img class="card-img" [src]="item.imageUrl" [alt]="item.imgDesc" loading="lazy" />
+                @if (category(); as cat) {
+                <a class="item-wrap" [class.is-static]="!loadedPreviewIndices().has($index)"
+                    [routerLink]="loadedPreviewIndices().has($index) ? ['/', basePath(), cat.slug, item.slug] : null">
 
-                    <div class="card-overlay">
-                        <h3 class="card-title">{{ item.label}}</h3>
-                        <p class="card-description">{{ item.description}}</p>
+                    <div class="item-img-box" [class.skeleton]="!loadedPreviewIndices().has($index)">
+                        <img [src]="item.image.src" (load)="onPreviewImageLoad($index)"
+                            [style.opacity]="loadedPreviewIndices().has($index) ? 1 : 0">
+                    </div>
+
+                    <div class="text-overlay" [class.has-image]="loadedPreviewIndices().has($index)">
+                        @if (loadedPreviewIndices().has($index) ) {
+                        <h3 class="item-title">{{ item.title }}</h3>
+                        <p class="item-description">{{ item.description }}</p>
+                        } @else {
+                        <div class="skeleton skeleton-text skeleton-title medium"></div>
+                        <div class="skeleton skeleton-text skeleton-para short"></div>
+                        }
                     </div>
                 </a>
+                } @else {
+                <div class="item-wrap is-static">
+                    <div class="item-img-box skeleton"></div>
+                    <div class="text-overlay">
+                        <div class="skeleton skeleton-text skeleton-title medium"></div>
+                        <div class="skeleton skeleton-text skeleton-para base"></div>
+                    </div>
+                </div>
+
+                }
             </div>
             }
         </div>
     </div>
-
 </section>

@@ -1,11 +1,10 @@
 import { Component, input } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
-import { AutoImgDirective } from '../../../../../auto-img.directive';
 
 @Component({
   selector: 'package-item',
   standalone: true,
-  imports: [TranslatePipe,AutoImgDirective],
+  imports: [TranslatePipe],
   templateUrl: './package-item.html',
   styleUrl: './package-item.css'
 })

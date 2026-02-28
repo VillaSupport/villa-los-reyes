@@ -1,13 +1,13 @@
 import { Position } from './../../shared/interfaces/app-interfaces';
 import { Component, input } from '@angular/core';
-import { MainHeaderSection } from "../../sections/main-header-section/main-header-section";
+import { PageHeader } from "../../../shared/components/page-header/page-header";
 import { AdventureGallerySection } from "../../sections/adventure-gallery-section/adventure-gallery-section";
 import { DiscoverPackageDefaultOne } from "../../../presets/discover-package-default-one/discover-package-default-one";
 import { DiscoverServicesDefault } from "../../../presets/discover-services-default/discover-services-default";
 
 @Component({
   selector: 'adventure-base-page',
-  imports: [MainHeaderSection, AdventureGallerySection, DiscoverPackageDefaultOne, DiscoverServicesDefault],
+  imports: [AdventureGallerySection, DiscoverPackageDefaultOne, DiscoverServicesDefault, PageHeader],
   templateUrl: './adventure-base-page.html',
   styleUrl: './adventure-base-page.css'
 })

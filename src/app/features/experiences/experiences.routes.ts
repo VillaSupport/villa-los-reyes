@@ -1,28 +1,29 @@
 import { Routes } from '@angular/router';
-import { galleryHorseCarriage, headerExperience } from '../../config/experience-data';
-import { packages } from '../../config/packages-data';
+import { ExperiencesMainPage } from './pages/experience-main-page';
+import { SectionNavService } from '../../shared/services/section-nav.service';
 
 export const EXPERIENCE_ROUTES: Routes = [
-  // {
-  //   path: '', // Esto significa que cuando cargue el archivo, mostrará este componente
-  //   component: ExperienceMain
-  // },
-  // {
-  //   path: ':category',
-  //   loadComponent: () =>
-  //     import('./pages/feature-detail-viewer/feature-detail-viewer')
-  //       .then(m => m.FeatureDetailViewer),
-  // },
   {
-    path: ':category',
-    loadComponent: () =>
-      import('./pages/templates/adventures-overview-template/adventures-overview-template') // El grid de "Todas las cabalgatas"
-        .then(m => m.AdventuresOverviewTemplate),
+    path: '',
+    component: ExperiencesMainPage
   },
   {
-    path: ':category/:adventureSlug',
-    loadComponent: () =>
-      import('./components/adventure-grid/adventure-grid') // El detalle de "Cruce de Ríos"
-        .then(m => m.AdventureGrid),
+    path: ':category',
+    // Proveedor a nivel de rama de ruta: instancia única para esta categoría
+    providers: [SectionNavService], 
+    children: [
+      {
+        path: '', // El grid de la categoría
+        loadComponent: () =>
+          import('./pages/templates/adventures-overview-template/adventures-overview-template')
+            .then(m => m.AdventuresOverviewTemplate),
+      },
+      {
+        path: ':adventureSlug', // El detalle de la aventura
+        loadComponent: () =>
+          import('./pages/templates/adventure-detail-template/adventure-detail-template')
+            .then(m => m.AdventureDetailTemplate),
+      }
+    ]
   }
-]
+];

@@ -1,0 +1,25 @@
+<div>
+    <page-header [head]="{
+    title: 'Lorem ipsum, dolor sit amet',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita qui velit eligendi ad esse?'}" />
+
+    @if (mainData()) {
+    <detailed-gallery [info]="mainData()!.info" [images]="mainData()!.images"></detailed-gallery>
+    }
+
+
+    <section-nav [prevDisabled]="nav()?.isFirst ?? true" [nextDisabled]="nav()?.isLast ?? true" (onPrev)="goPrev()"
+        (onNext)="goNext()">
+    </section-nav>
+
+    <!-- @if (relatedPackage()) {
+    <package-promo-card [data]="relatedPackage()!"></package-promo-card>
+    } -->
+
+    <feature-discovery [title]="''" [description]="''"></feature-discovery>
+
+</div>
+
+<ng-template #roomCardTemplate let-room>
+    <room-card [room]="room"></room-card>
+</ng-template>

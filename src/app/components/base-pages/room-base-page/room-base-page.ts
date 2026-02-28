@@ -1,5 +1,5 @@
 import { Component, inject, input, signal } from '@angular/core';
-import { MainHeaderSection } from "../../sections/main-header-section/main-header-section";
+import {  PageHeader } from "../../../shared/components/page-header/page-header";
 import { GalleryInfoSection } from "../../sections/gallery-info-section/gallery-info-section";
 import { DiscoverExperienceSection } from "../../sections/discover-experiences-section/discover-experience-section";
 import { RoomOfferSection } from '../../sections/room-offer-section/room-offer-section';
@@ -12,7 +12,7 @@ import { RoomNavigatorComponent } from "../../shared/room-navigator/room-navigat
 
 
 // --- Tipos de datos compartidos ---
-export interface HeaderData {
+export interface HeaderDataDeprecated {
   head: { title: string; description: string };
   image: { src: string; alt: string };
   objectPosition: Position;
@@ -49,14 +49,14 @@ export interface OfferData {
 }
 
 export interface RoomPageRouteData {
-  header: HeaderData;
+  header: HeaderDataDeprecated;
   gallery: GalleryData;
   offer: OfferData;
 }
 
 @Component({
   selector: 'app-room-base-page',
-  imports: [MainHeaderSection, GalleryInfoSection, DiscoverExperienceSection, RoomOfferSection, DiscoverServicesDefault, RoomNavigatorComponent],
+  imports: [GalleryInfoSection, DiscoverExperienceSection, RoomOfferSection, DiscoverServicesDefault, RoomNavigatorComponent, PageHeader],
   templateUrl: './room-base-page.html',
   styleUrl: './room-base-page.css'
 })
@@ -64,14 +64,14 @@ export class RoomBasePage {
 
    navigator = inject(GroupNavigatorService);
 
-  _header = input<HeaderData>();
+  _header = input<HeaderDataDeprecated>();
   _gallery = input<GalleryData>();
   _offer = input<OfferData>();
 
   constructor(private route: ActivatedRoute) {}
 
   // TODO: Lo que sale del  data['______'] no necesariamente es del tipo que esta delante , quizas hay formas de validar esto en tiempo de compilacion
-  get header(): HeaderData {
+  get header(): HeaderDataDeprecated {
     return this._header() ?? this.route.snapshot.data['header'];
   }
   get gallery(): GalleryData {

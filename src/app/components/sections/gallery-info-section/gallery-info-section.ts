@@ -24,24 +24,6 @@ export class GalleryInfoSection {
   reverse = input<boolean>(false);
 
   color = input<HexColor>('#E4EAE5');
-  hasHostBg = input<boolean>(true);
-
-   @HostBinding('style.background')
-  hostBg: string = '';
-
-  ngOnInit(): void {
-    const color = this.color();
-    const hasBg = this.hasHostBg();
-    this.hostBg = this.getHostColor(color, hasBg);
-
-  }
-
-  private getHostColor(color: string, active: boolean): string {
-    if (!active) return '';
-    if (color === '#E4EAE5') return '#f7faf7';
-    if (color === '#f7faf7') return '#E4EAE5';
-    return '#ffffff';
-  }
 
 }
 

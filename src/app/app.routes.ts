@@ -23,14 +23,24 @@ import { ExperienceViewBasePage } from './components/base-pages/experience-view-
 import { aventuraNatural, headerAdventureNature, headerNatureAndTradition, headerRelaxAndBeach, headerRomanceInVinales, headerVinales360, headerVinalesExpress, headerVinalesFamily, naturalezaYTradicion, relaxYPlaya, romanceEnVinales, vinales360, vinalesEnFamilia, vinalesExpress } from './config/plans-details-data';
 import { groupNavigatorProvider } from './services/group-navigator.provider';
 import { ReservationSection } from './components/sections/reservation-section/reservation-section';
+import { DetailedGalleryTest } from './mock-test/detailed-gallery-test/detailed-gallery-test';
 
 export const routes: Routes = [
 
+  {
+    path: 'test-gallery',
+    component: DetailedGalleryTest,
+  },
 
+  {
+    path: 'lab',
+    loadChildren: () => import('./mock-test/lab.routes').then(m => m.LAB_ROUTES)
+  },
   {
     path: 'NewExperiences',
     loadChildren: () => import('./features/experiences/experiences.routes').then(m => m.EXPERIENCE_ROUTES)
   },
+
 
 
 
@@ -84,8 +94,8 @@ export const routes: Routes = [
     ]
   },
   { path: 'services-facilities/services', component: ServicesPage },
-  
-  
+
+
   { path: 'experiences', component: ExperiencesPage, },
 
 

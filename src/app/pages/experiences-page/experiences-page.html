@@ -1,10 +1,10 @@
 <div class="page-content">
 
-  <main-header-section
-    [head]="{ title: header.title, description: header.description }"
-    [image]="header.image"
-    [objectPosition]="header.objectPosition"
-  ></main-header-section>
+  <page-header 
+  [head]="{ title: titleKey | translate, description: descKey | translate }" 
+  [image]="{ src: imgPath, alt: altKey | translate }" 
+  style="--header-img-pos: center center" />
+  
   <div class="gallery-wrapper">
   @for (section of gallerySections; track $index) {
     <split-gallery-section

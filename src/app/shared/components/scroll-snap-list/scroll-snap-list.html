@@ -1,0 +1,15 @@
+<div 
+  #scrollContainer
+  class="scroll-container"
+  (mousedown)="startDragging($event)"
+  (mousemove)="moveEvent($event)"
+  (mouseup)="stopDragging()"
+  (mouseleave)="stopDragging()"
+  (click)="handleGlobalClick($event)"
+  (dragstart)="preventNativeDrag($event)">
+  
+  @for (item of data(); track $index) {
+      <ng-container [ngTemplateOutlet]="cardTemplate()" [ngTemplateOutletContext]="{ $implicit: item }">
+      </ng-container>
+  }
+</div>

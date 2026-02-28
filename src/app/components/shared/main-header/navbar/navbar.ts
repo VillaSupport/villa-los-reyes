@@ -2,14 +2,12 @@ import { Component, HostListener } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { LangSelector } from './lang-selector/lang-selector';
-import { AutoImgDirective } from '../../../../auto-img.directive';
-// import { LanguageSelector } from "../language-selector/language-selector";
 
 @Component({
   selector: 'navbar',
   templateUrl: './navbar.html',
   styleUrls: ['./navbar.css'],
-  imports: [LangSelector, TranslatePipe, RouterLink, RouterLinkActive,AutoImgDirective]
+  imports: [LangSelector, TranslatePipe, RouterLink, RouterLinkActive]
 })
 export class Navbar {
 

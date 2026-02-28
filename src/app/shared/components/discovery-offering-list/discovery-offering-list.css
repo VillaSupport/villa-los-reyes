@@ -1,0 +1,28 @@
+:host {
+    display: block;
+    background: #E4EAE5;
+    /* El fondo que se ve "atrás" de los bordes redondeados */
+    width: 100%;
+}
+
+.offering-container {
+    display: flex;
+    justify-content: center;
+    background: #f7faf7;
+    width: 100%;
+}
+
+.inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+@media(max-width:600px) {
+
+    .inner-wrapper {
+        gap: 1rem;
+        max-width: 480x;
+    }
+}

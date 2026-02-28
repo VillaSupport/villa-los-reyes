@@ -1,10 +1,9 @@
 import { Component, input, signal, computed } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
-import { AutoImgDirective } from '../../../auto-img.directive';
 
 @Component({
   selector: 'carousel-section',
-  imports: [TranslatePipe,AutoImgDirective],
+  imports: [TranslatePipe],
   templateUrl: './carousel-section.html',
   styleUrls: ['./carousel-section.css'],
 })

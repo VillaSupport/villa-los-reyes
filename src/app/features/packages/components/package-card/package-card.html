@@ -1,0 +1,29 @@
+<div class="pkg-container">
+  @if(data(); as pkg){
+  <a [routerLink]="pkg.route" class="pkg-link">
+
+    <div class="pkg-card">
+      <img [src]="pkg.image.src" [alt]="pkg.image.alt " loading="lazy" class="pkg-image" />
+
+      <div class="pkg-overlay">
+
+        <div class="pkg-info">
+          <h2 class="pkg-title">{{ pkg.title }}</h2>
+          <span class="pkg-duration">{{ pkg.duration }}</span>
+        </div>
+
+        <div class="pkg-details">
+          <p class="pkg-summary">{{ pkg.desc }}</p>
+          <div class="pkg-price-row">
+            <span class="pkg-price">$ {{ pkg.price.toFixed(2) }}</span>
+            <span class="pkg-unit"> {{ pkg.unit }}</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </a>
+  }
+
+</div>

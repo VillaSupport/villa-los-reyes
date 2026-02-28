@@ -1,10 +1,10 @@
 <div class="page-content">
 
-  <main-header-section [head]="header.head" [image]="header.image" [objectPosition]="header.objectPosition" />
+  <page-header [head]="header.head" [image]="header.image" />
 
   <gallery-info-section [mainImage]="gallery.mainImage" [thumbImages]="gallery.thumbImages" [title]="gallery.title"
     [description]="gallery.description" [featuresTitle]="gallery.featuresTitle" [features]="gallery.features"
-    [hasHostBg]="false" />
+     />
 
   <room-navigator (onPrev)="goPrev()" (onNext)="goNext()">
   </room-navigator>
