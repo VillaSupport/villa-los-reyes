@@ -1,7 +1,7 @@
 :host {
 
-  --bg-color: #E4EAE5;
-  --bg-white: #f7faf7;
+  --bg-color: var(--primary-bg-color, #E4EAE5);
+  --bg-white: var(--secondary-bg-color, #f7faf7);
 
   --text-color-light: #ffffff;
 

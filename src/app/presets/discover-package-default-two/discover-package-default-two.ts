@@ -18,7 +18,7 @@ export class DiscoverPackageDefaultTwo {
   header = {
     title: 'packages.title',
     description: 'packages.description',
-    link: { text: 'packages.linkText', url: '/packages' }// TODO: update this path
+    link: { label: 'packages.linkText', route: '/packages' }// TODO: update this path
   };
 
   packages = packages.slice(3, 6);

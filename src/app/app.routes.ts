@@ -19,7 +19,6 @@ import { PackagesPage } from './pages/packages-page/packages-page';
 import { PackageBasePage } from './components/base-pages/package-base-page/package-base-page';
 import { ReviewsNewPage } from './pages/reviews-new-page/reviews-new-page';
 import { packages } from './config/packages-data';
-import { ExperienceViewBasePage } from './components/base-pages/experience-view-base-page/experience-view-base-page';
 import { aventuraNatural, headerAdventureNature, headerNatureAndTradition, headerRelaxAndBeach, headerRomanceInVinales, headerVinales360, headerVinalesExpress, headerVinalesFamily, naturalezaYTradicion, relaxYPlaya, romanceEnVinales, vinales360, vinalesEnFamilia, vinalesExpress } from './config/plans-details-data';
 import { groupNavigatorProvider } from './services/group-navigator.provider';
 import { ReservationSection } from './components/sections/reservation-section/reservation-section';
@@ -37,11 +36,14 @@ export const routes: Routes = [
     loadChildren: () => import('./mock-test/lab.routes').then(m => m.LAB_ROUTES)
   },
   {
-    path: 'NewExperiences',
+    path: 'v2/experiences',
     loadChildren: () => import('./features/experiences/experiences.routes').then(m => m.EXPERIENCE_ROUTES)
   },
 
-
+  {
+    path: 'v2/services-facilities',
+    loadChildren: () => import('./features/services-facilities/services-facilities.routes').then(m => m.SERVICES_FACILITIES_ROUTES)
+  },
 
 
   // { path: '', redirectTo: 'home', pathMatch: 'full' },

@@ -10,6 +10,7 @@ import { Component, contentChild, input, TemplateRef, ElementRef, ViewChild, Inj
 })
 export class ScrollSnapList {
   data = input.required<any[]>();
+  mobileRow = input<boolean>(false);
   cardTemplate = contentChild.required(TemplateRef);
   
   @ViewChild('scrollContainer') scrollContainer!: ElementRef<HTMLElement>;

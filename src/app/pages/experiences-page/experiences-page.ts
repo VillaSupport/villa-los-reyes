@@ -4,9 +4,9 @@ import { DiscoverPackageDefaultOne } from "../../presets/discover-package-defaul
 import { DiscoverServicesDefault } from "../../presets/discover-services-default/discover-services-default";
 import { HexColor } from '../../components/shared/interfaces/app-interfaces';
 import { PageHeader } from "../../shared/components/page-header/page-header";
-import { TranslatePipe } from '@ngx-translate/core';
+import { HeaderData } from '../../shared/interfaces/common.interface';
 
-interface Image {
+interface ImageWithData {
   src: string;
   alt: string;  // aquí será la key del JSON
   name?: string; // aquí será la key del JSON
@@ -20,23 +20,29 @@ interface SectionInfo {
   link: { text: string; url: string }; // text será key JSON, url sigue estático
 }
 
+export const experienceHeaderData: HeaderData = {
+  title: 'HEADER.EXPERIENCES.TITLE',
+  description: 'HEADER.EXPERIENCES.DESCRIPTION',
+  img: {
+    src: '/assets/images/experiences/experiences-header.jpg',
+    alt: 'HEADER.EXPERIENCES.ALT'
+  }
+}
+
 @Component({
   selector: 'experiences',
-  imports: [SplitGallerySection, DiscoverPackageDefaultOne, TranslatePipe, DiscoverServicesDefault, PageHeader],
+  imports: [SplitGallerySection, DiscoverPackageDefaultOne, DiscoverServicesDefault, PageHeader],
   templateUrl: './experiences-page.html',
   styleUrl: './experiences-page.css'
 })
 export class ExperiencesPage {
-  readonly titleKey = 'HEADER.EXPERIENCES.TITLE';
-  readonly descKey = 'HEADER.EXPERIENCES.DESCRIPTION';
-  readonly altKey = 'HEADER.EXPERIENCES.ALT';
-  readonly imgPath = '/assets/images/experiences/experiences-header.jpg';
 
+  readonly header = experienceHeaderData;
 
   gallerySections: {
-    leftImage: Image;
+    leftImage: ImageWithData;
     info: SectionInfo;
-    rightImages: Image[];
+    rightImages: ImageWithData[];
     color: HexColor;
     reverse?: boolean;
     hasHostBg?: boolean;

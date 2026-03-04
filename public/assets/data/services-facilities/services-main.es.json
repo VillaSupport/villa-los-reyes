@@ -5,29 +5,37 @@
         "title": "Conoce nuestras instalaciones",
         "linkText": "Descubre nuestras instalaciones",
         "desc": "Ofrecemos una experiencia única con nuestras <strong>habitaciones independientes</strong>, proporcionando privacidad y comodidad. Disfruta de vistas panorámicas desde nuestras <strong>terrazas</strong>, perfectas para relajarse. Pasea por nuestros exuberantes <strong>jardines</strong> y sumérgete en la tranquilidad de la naturaleza. Además, contamos con una refrescante <strong>piscina</strong> para tu disfrute. Ven y vive una estancia inolvidable.",
-        "image": "assets/images/outdoor-areas/gardens-03.jpg",
-        "imgDesc": "Vistas panorámicas de los jardines y la estructura de la Villa",
+        "image": {
+            "src": "assets/images/outdoor-areas/gardens-03.jpg",
+            "alt": "Vistas panorámicas de los jardines y la estructura de la Villa"
+        },
         "previewItems": [
             {
-                "slug": "habitaciones",
-                "imageUrl": "assets/images/rooms/room-main-thumb.jpg",
-                "imgDesc": "Interior de una de nuestras habitaciones independientes",
-                "title": "Habitaciones",
-                "description": "Privacidad y confort total."
+                "title": "Habitación 1",
+                "description": "2 camas / baño privado / 4 personas",
+                "slug": "",
+                "image": {
+                    "src": "",
+                    "alt": ""
+                }
             },
             {
-                "slug": "restaurante-bar",
-                "imageUrl": "assets/images/restaurant/bar-thumb.jpg",
-                "imgDesc": "Área de bar junto a la piscina",
-                "title": "Bar-Restaurante",
-                "description": "Ambiente climatizado o al aire libre."
+                "title": "Habitación 2",
+                "description": "3 camas / baño privado / 4 personas",
+                "slug": "",
+                "image": {
+                    "src": "",
+                    "alt": ""
+                }
             },
             {
-                "slug": "terrazas-jardines",
-                "imageUrl": "assets/images/outdoor-areas/terrace-thumb.jpg",
-                "imgDesc": "Terraza con vistas a los mogotes",
-                "title": "Terrazas y Jardines",
-                "description": "Vistas únicas al Valle."
+                "title": "Habitación 3",
+                "description": "2 camas / baño privado / 4 personas",
+                "slug": "",
+                "image": {
+                    "src": "",
+                    "alt": ""
+                }
             }
         ]
     },
@@ -37,29 +45,34 @@
         "title": "Conoce nuestros servicios",
         "linkText": "Descubre nuestros servicios",
         "desc": "Disfruta de una deliciosa <strong>gastronomía cubana</strong> preparada por chefs locales, <strong>transporte</strong> para explorar la región, y la asistencia de nuestro <strong>gestor de viajes</strong> para que aproveches al máximo tu estancia. Además, contamos con servicio de <strong>lavandería, masajes</strong> relajantes para recargar energías y <strong>clases de baile</strong> para sumergirte en la cultura cubana.",
-        "image": "assets/images/restaurant/slide-dining-area-01.jpg",
-        "imgDesc": "Mesa servida con platos tradicionales cubanos",
+        "image": {
+            "src": "assets/images/restaurant/slide-dining-area-01.jpg",
+            "alt": "Mesa servida con platos tradicionales cubanos"
+        },
         "previewItems": [
             {
-                "slug": "gastronomia",
-                "imageUrl": "assets/images/services/gastronomy-thumb.jpg",
-                "imgDesc": "Variedad de frutas y platos criollos",
+                "slug": "gastronomy",
                 "title": "Gastronomía",
-                "description": "Sabor auténtico de Cuba."
+                "image":  {
+                    "src": "assets/New/gastronomy/villa-los-reyes-dining-area-interior.webp",
+                    "alt": "Vista acogedora del interior del restaurante Villa Los Reyes con mesas de madera dispuestas y decoración rústica"
+                }
+            },
+            {
+                "slug": "mobility",
+                "title": "Movilidad",
+                "image": {
+                    "src": "assets/New/mobility/classic-red-desoto-car-vinales.webp",
+                    "alt": "Auto clásico americano de color rojo (DeSoto) parqueado frente a Villa Los Reyes, disponible para traslados y tours."
+                }
             },
             {
                 "slug": "trip-planner",
-                "imageUrl": "assets/images/services/planner-thumb.jpg",
-                "imgDesc": "Mapa y guía de planificación de viajes",
                 "title": "Trip Planner",
-                "description": "Asesoría personalizada 24/7."
-            },
-            {
-                "slug": "bienestar-masajes",
-                "imageUrl": "assets/images/services/massage-thumb.jpg",
-                "imgDesc": "Sesión de masajes en ambiente relajante",
-                "title": "Bienestar",
-                "description": "Masajes y clases de baile."
+                "image": {
+                    "src": "assets/New/trip-planner/trip-planner-map-camera-coffee.webp",
+                    "alt": "Vista superior de manos señalando un mapa sobre una mesa de madera con café, una cámara antigua y un pasaporte"
+                }
             }
         ]
     }

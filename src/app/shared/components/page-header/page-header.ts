@@ -1,25 +1,19 @@
 import { Component, input, signal } from '@angular/core';
+import { HeaderData } from '../../interfaces/common.interface';
+import { TranslatePipe } from '@ngx-translate/core';
 
-export interface HeaderText {
-  title: string;
-  description: string;
-}
 
-export interface HeaderImage {
-  src: string;
-  alt: string;
-}
 
 @Component({
   selector: 'page-header',
   templateUrl: './page-header.html',
   styleUrls: ['./page-header.css'],
-  imports: []
+  imports: [TranslatePipe]
 })
 export class PageHeader {
 
-  head = input<HeaderText>();
-  image = input<HeaderImage>();
+  header = input<HeaderData>();
+
   reserveSpace = input<boolean>(true);
 
   isLoaded = signal(false);

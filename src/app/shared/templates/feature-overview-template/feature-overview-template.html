@@ -1,11 +1,5 @@
 <div class="feature-overview-container">
-    <page-header [head]="{ 
-        title: header().titleKey | translate, 
-        description: header().descKey | translate 
-      }" [image]="{ 
-        src: header().img, 
-        alt: header().altKey | translate 
-      }" />
+    <page-header [header]="header()" />
 
     <div class="categories-wrapper">
         @for (item of items(); track $index; let isFirst = $first; let isEven = $even) {

@@ -10,11 +10,11 @@
       "desc": "La experiencia comienza saliendo del bullicio de la ciudad, donde el ruido, el tráfico y la prisa marcan el ritmo diario, una especie de infierno moderno. Poco a poco, el camino se abre paso hacia el <strong>Valle de Viñales</strong>, donde el <strong>silencio</strong>, el <strong>verde</strong> intenso y el <strong>aire</strong> limpio transforman el entorno en un auténtico <strong>paraíso</strong>. A pie, se recorren <strong>senderos</strong> que conducen a un <strong>mirador</strong> con vistas a <strong>Viñales y Palmarito</strong>. En el trayecto, se visita la comunidad de <strong>Los Acuáticos</strong>, donde los habitantes comparten sus <strong>tradiciones</strong> y modo de vida. La jornada concluye con un regreso en <strong>coche de caballos</strong>, cerrando un viaje que va, literalmente, del caos urbano a la <strong>paz del valle</strong>.",
       "imgs": [
         {
-          "url": "assets/imgs/adventures/hiking/hell-to-paradise/vinales-traditional-tobacco-hut.webp",
+          "src": "assets/imgs/adventures/hiking/hell-to-paradise/vinales-traditional-tobacco-hut.webp",
           "alt": "Cabaña tradicional de campesinos con techo de paja en un valle verde y exuberante en Viñales."
         },
         {
-          "url": "assets/imgs/adventures/hiking/hell-to-paradise/vinales-valley-hiking-panorama.webp",
+          "src": "assets/imgs/adventures/hiking/hell-to-paradise/vinales-valley-hiking-panorama.webp",
           "alt": "Vista panorámica de la vegetación tropical y las montañas del Valle de Viñales bajo un cielo nublado."
         }
       ],
@@ -34,15 +34,15 @@
       "desc": "Madrugue para vivir un <strong>amanecer</strong> inolvidable en el <strong>Valle de Viñales</strong>, ascendiendo a la cumbre del <strong>Parque Nacional</strong> para admirar el <strong>sol</strong> naciente sobre los <strong>mogotes</strong> y la rica <strong>biodiversidad cubana</strong>. En el trayecto, tendrá la oportunidad de visitar la singular <strong>comunidad de Los Acuáticos</strong>, conocida por sus creencias tradicionales ligadas al <strong>poder curativo del agua</strong> y su modo de vida en armonía con la <strong>naturaleza</strong>. Disfrute de un <strong>café artesanal</strong> con lugareños antes de descender hasta el <strong>Mural de la Prehistoria</strong>, donde finalizará esta experiencia única en contacto con el <strong>entorno natural</strong>.",
       "imgs": [
         {
-          "url": "assets/imgs/adventures/hiking/amazing-sunrise/vinales-sunrise-sea-of-clouds.webp",
+          "src": "assets/imgs/adventures/hiking/amazing-sunrise/vinales-sunrise-sea-of-clouds.webp",
           "alt": "Amanecer dorado sobre el mar de nubes y los mogotes del Valle de Viñales, Cuba."
         },
         {
-          "url": "assets/imgs/adventures/hiking/amazing-sunrise/tourists-watching-sunrise-vinales.webp",
+          "src": "assets/imgs/adventures/hiking/amazing-sunrise/tourists-watching-sunrise-vinales.webp",
           "alt": "Turistas disfrutando de la vista del amanecer desde un porche de madera tradicional en Viñales."
         },
         {
-          "url": "assets/imgs/adventures/hiking/amazing-sunrise/cuban-hat-silhouette-sunrise.webp",
+          "src": "assets/imgs/adventures/hiking/amazing-sunrise/cuban-hat-silhouette-sunrise.webp",
           "alt": "Silueta de un sombrero tradicional cubano frente al amanecer en las montañas de Viñales."
         }
       ],
@@ -62,15 +62,15 @@
       "desc": "Disfruta el <strong>Valle del Silencio</strong>, descubre el <strong>proceso del tabaco</strong> desde la <strong>plantación</strong> hasta la <strong>confección de puros criollos</strong>. Finaliza la experiencia relajándote en una <strong>casa campesina</strong>, disfrutando de un <strong>Mojito Criollo</strong> y un <strong>puro natural</strong> mientras contemplas la <strong>puesta de sol</strong>.",
       "imgs": [
         {
-          "url": "assets/imgs/adventures/hiking/enjoying-sunset/vinales-valley-sunset-landscape.webp",
+          "src": "assets/imgs/adventures/hiking/enjoying-sunset/vinales-valley-sunset-landscape.webp",
           "alt": "Cálida luz del atardecer iluminando los campos de tabaco y los mogotes del Valle de Viñales."
         },
         {
-          "url": "assets/imgs/adventures/hiking/enjoying-sunset/traditional-tobacco-rolling-process.webp",
+          "src": "assets/imgs/adventures/hiking/enjoying-sunset/traditional-tobacco-rolling-process.webp",
           "alt": "Campesino local enrollando expertamente un puro cubano tradicional a mano en una casa de secado."
         },
         {
-          "url": "assets/imgs/adventures/hiking/enjoying-sunset/cuban-cigar-experience-vinales.webp",
+          "src": "assets/imgs/adventures/hiking/enjoying-sunset/cuban-cigar-experience-vinales.webp",
           "alt": "Primer plano de una mano sosteniendo un puro natural con las montañas de Viñales al fondo."
         }
       ],
@@ -90,7 +90,7 @@
       "desc": "Descubre <strong>Viñales</strong> en un tour ideal para los amantes del <strong>ejercicio al aire libre</strong>, ascendiendo por un antiguo <strong>bosque de galerías</strong> y descendiendo hacia el <strong>Valle del Palmarito</strong>. Disfruta de <strong>vistas impresionantes</strong>, interactúa con pobladores <strong>locales</strong> y aprende sobre el <strong>cultivo del tabaco</strong>.",
       "imgs": [
         {
-          "url": "assets/imgs/adventures/hiking/true-hiking/hiking-adventure-crossing-river-vinales.webp",
+          "src": "assets/imgs/adventures/hiking/true-hiking/hiking-adventure-crossing-river-vinales.webp",
           "alt": "Senderistas cruzando con cuidado un pequeño río usando un tronco caído como puente cerca de una cascada en el bosque de Viñales."
         }
       ],
@@ -110,7 +110,7 @@
       "desc": "Explora el <strong>antiguo cañón fluvial</strong> del <strong>Valle de Viñales</strong> en una <strong>caminata</strong> de tres horas, un refugio de <strong>biodiversidad</strong> y <strong>agricultura ecológica</strong>. Observa <strong>aves endémicas</strong> como el <strong>tocororo</strong> y el <strong>carpintero verde</strong> mientras disfrutas de <strong>vistas impresionantes</strong> de <strong>montañas y campos</strong>. Una experiencia única para <strong>amantes de la naturaleza</strong> y la <strong>aventura</strong>.",
       "imgs": [
         {
-          "url": "assets/imgs/adventures/hiking/antiquity-nature/vinales-ancient-river-canyon.webp",
+          "src": "assets/imgs/adventures/hiking/antiquity-nature/vinales-ancient-river-canyon.webp",
           "alt": "Vista desde el interior de una cueva en un antiguo cañón fluvial hacia la exuberante vegetación del Valle de Viñales."
         }
       ],
@@ -130,15 +130,15 @@
       "desc": "Disfrute de un recorrido exclusivo por una <strong>finca privada</strong> dedicada a la <strong>agricultura ecológica</strong>, donde degustará <strong>frutas y jugos naturales</strong> mientras aprende sobre las <strong>tradiciones y cultivos locales</strong>. Los residentes locales compartirán detalles sobre las <strong>prácticas sostenibles</strong> de la finca, y la visita culminará con un recorrido a la <strong>Cueva de la Vaca</strong>, ofreciendo vistas impresionantes del <strong>entorno natural</strong>.",
       "imgs": [
         {
-          "url": "assets/imgs/adventures/hiking/vinales-eco-tour/sustainable-organic-farm-vinales.webp",
+          "src": "assets/imgs/adventures/hiking/vinales-eco-tour/sustainable-organic-farm-vinales.webp",
           "alt": "Hileras de cultivos en una finca de agricultura ecológica con las montañas de Viñales al fondo."
         },
         {
-          "url": "assets/imgs/adventures/hiking/vinales-eco-tour/vinales-eco-trail-cueva-vaca.webp",
+          "src": "assets/imgs/adventures/hiking/vinales-eco-tour/vinales-eco-trail-cueva-vaca.webp",
           "alt": "Sendero de tierra roja con un cartel de madera señalizando el camino hacia la Cueva de la Vaca."
         },
         {
-          "url": "assets/imgs/adventures/hiking/vinales-eco-tour/farmers-harvesting-tobacco-vinales.webp",
+          "src": "assets/imgs/adventures/hiking/vinales-eco-tour/farmers-harvesting-tobacco-vinales.webp",
           "alt": "Campesinos locales recolectando hojas frescas en una plantación de tabaco durante un tour ecológico."
         }
       ],
@@ -158,15 +158,15 @@
       "desc": "Descubre la tradición del <strong>cultivo del tabaco</strong> con la experiencia \"TABACO IN SIDE\", explorando sus <strong>raíces aborígenes</strong> y su <strong>legado campesino</strong>. Durante la temporada de <strong>cultivo</strong> (noviembre a marzo), recorrerás <strong>plantaciones</strong>, participarás en el proceso de <strong>despalillo</strong> y aprenderás la <strong>elaboración artesanal de puros criollos</strong> de la mano de <strong>guías locales</strong>. Una experiencia auténtica que te conectará con la <strong>historia y cultura del tabaco en Cuba</strong>.",
       "imgs": [
         {
-          "url": "assets/imgs/adventures/hiking/tobacco-inside/vinales-tobacco-farmer-field.webp",
+          "src": "assets/imgs/adventures/hiking/tobacco-inside/vinales-tobacco-farmer-field.webp",
           "alt": "Campesino cubano con sombrero tradicional y puro trabajando en una plantación de tabaco con los mogotes al fondo."
         },
         {
-          "url": "assets/imgs/adventures/hiking/tobacco-inside/tobacco-leaves-drying-house.webp",
+          "src": "assets/imgs/adventures/hiking/tobacco-inside/tobacco-leaves-drying-house.webp",
           "alt": "Hileras de hojas de tabaco verde colgadas para secar dentro de una casa de tabaco tradicional."
         },
         {
-          "url": "assets/imgs/adventures/hiking/tobacco-inside/hand-rolling-cuban-cigar-detail.webp",
+          "src": "assets/imgs/adventures/hiking/tobacco-inside/hand-rolling-cuban-cigar-detail.webp",
           "alt": "Primer plano de las manos de un campesino enrolando un puro cubano tradicional sobre una mesa de madera rústica."
         }
       ],

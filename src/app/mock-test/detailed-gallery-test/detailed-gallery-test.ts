@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { DetailedGallery } from "../../shared/components/detailed-gallery/detailed-gallery";
 import { InfoData } from '../../shared/components/info-block/info-block';
-import { ImgData } from '../../shared/interfaces/common.interface';
+import { HeaderData, ImgData } from '../../shared/interfaces/common.interface';
 import { Position } from '../../components/shared/interfaces/app-interfaces';
 import { PageHeader } from "../../shared/components/page-header/page-header";
 
@@ -10,8 +10,7 @@ import { PageHeader } from "../../shared/components/page-header/page-header";
   imports: [DetailedGallery, PageHeader],
   template: `
     <page-header
-    [head]="{ title: header.title, description: header.description }"
-    [image]="header.image"
+    [header]="header"
     
   ></page-header>
     <div style="margin-top: -100px;"> <detailed-gallery 
@@ -34,11 +33,10 @@ import { PageHeader } from "../../shared/components/page-header/page-header";
   styleUrl: './detailed-gallery-test.css',
 })
 export class DetailedGalleryTest {
-  header: { title: string; description: string; image: { src: string; alt: string }; objectPosition: Position } = {
+  header:HeaderData = {
     title: 'experiencesContent.header.title',
     description: 'experiencesContent.header.description',
-    image: { src: '/assets/images/experiences/experiences-header.jpg', alt: 'experiencesContent.header.alt' },
-    objectPosition: 'center center'
+    img: { src: '/assets/images/experiences/experiences-header.jpg', alt: 'experiencesContent.header.alt' },
   };
 
   mockImages: ImgData[] = [

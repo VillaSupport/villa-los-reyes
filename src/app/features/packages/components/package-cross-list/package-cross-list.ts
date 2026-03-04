@@ -5,6 +5,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { PackageCard } from "../package-card/package-card";
 import { HeaderData } from '../../../../shared/interfaces/common.interface';
 import { DiscoveryOfferingList } from "../../../../shared/components/discovery-offering-list/discovery-offering-list";
+import { map } from 'rxjs';
 
 @Component({
    selector: 'package-cross-list',
@@ -21,15 +22,18 @@ export class PackageCrossList {
       title: 'SECTION_HEADER.PACKAGE.TITLE',
       description: 'SECTION_HEADER.PACKAGE.DESCRIPTION',
       link: {
-         text: 'SECTION_HEADER.PACKAGE.LINK_TEXT',
-         url: '/packages' // Esta es la ruta de tu aplicación
+         label: 'SECTION_HEADER.PACKAGE.LINK_TEXT',
+         route: '/packages' // Esta es la ruta de tu aplicación
       }
    };
 
-   packages = toSignal(this.packageService.getAllPackages(), { initialValue: [] });
+ 
 
-   cardData = computed(() =>
-      this.packages().map(pkg => mapToPackageCardData(pkg))
+   packageCardsData = toSignal(
+      this.packageService.getAllPackages().pipe(
+         map(packages => packages?.map(pkg => mapToPackageCardData(pkg)) ?? [])
+      ),
+      { initialValue: [] }
    );
 
 }

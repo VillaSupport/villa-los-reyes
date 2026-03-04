@@ -2,7 +2,7 @@
   display: block;
 
   --cards-per-view: 3;
-  --card-width: calc((100% - (var(--cards-per-view) - 1) * var(--card-spacing)) / var(--cards-per-view));
+  --card-width: calc((100% - (var(--cards-per-view) - 1) * var(--local-spacing)) / var(--cards-per-view));
   font-family: 'Poppins', sans-serif;
 
   flex: 0 0 var(--card-width);

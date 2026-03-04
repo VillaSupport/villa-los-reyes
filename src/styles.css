@@ -9,9 +9,12 @@
 
   --sk-shimmer-color: #ffffff;
   /* Color del destello */
-  --sk-shimmer-opacity: 0.4;
+  --sk-shimmer-opacity: 0.6;
   /* Intensidad del destello (0 a 1) */
   --sk-animation-speed: 2.6s;
+
+  --primary-bg-color: #E4EAE5;   /* Tu verde/gris base */
+  --secondary-bg-color: #f7faf7
 }
 
 @keyframes shimmer {
@@ -51,6 +54,10 @@
   height: 1rem;
   margin-bottom: 0.5rem;
   border-radius: 4px;
+}
+
+.mt-negative {
+  margin-top: -7.5rem;
 }
 
 .full {

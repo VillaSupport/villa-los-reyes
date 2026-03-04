@@ -1,8 +1,6 @@
-<discovery-offering-list 
-    [header]="header" 
-    [data]="cardData()">
+<discovery-offering-list [header]="header" [data]="benefitCardsData()" [mobileRow]="true">
 
     <ng-template let-item>
-        <!-- <service-card [data]="item"></service-card> -->
+        <service-card [data]="item"></service-card>
     </ng-template>
 </discovery-offering-list>

@@ -14,12 +14,20 @@
           "capacity": "2 camas / baño privado / 4 personas",
           "images": [
             {
-              "imageUrl": "assets/imgs/services/gastronomy-main.jpg",
-              "imgDesc": "Mesa servida con variedad de platos criollos y frutas"
+              "src": "room-01/bathroom-blue-yellow-tiles.webp",
+              "alt": "Bathroom with blue and yellow tiles"
             },
             {
-              "imageUrl": "assets/imgs/services/bar-cocktails.jpg",
-              "imgDesc": "Bartender preparando coctelería clásica cubana"
+              "src": "room-01/cozy-beds-rustic-decor.webp",
+              "alt": "Cozy beds with rustic decor"
+            },
+            {
+              "src": "room-01/double-bedroom-air-conditioning.webp",
+              "alt": "Double bedroom with air conditioning"
+            },
+            {
+              "src": "room-01/room-view-garden-safe-box.webp",
+              "alt": "Room view of the garden and safe box"
             }
           ],
           "features": [
@@ -39,12 +47,20 @@
           "capacity": "3 camas / baño privado / 4 personas",
           "images": [
             {
-              "imageUrl": "assets/imgs/services/gastronomy-main.jpg",
-              "imgDesc": "Mesa servida con variedad de platos criollos y frutas"
+              "src": "room-02/bedside-table-lamp-detail.webp",
+              "alt": "Detail of bedside table lamp"
             },
             {
-              "imageUrl": "assets/imgs/services/bar-cocktails.jpg",
-              "imgDesc": "Bartender preparando coctelería clásica cubana"
+              "src": "room-02/blue-bedroom-night-lighting.webp",
+              "alt": "Blue bedroom with night lighting"
+            },
+            {
+              "src": "room-02/triple-room-blue-wall-garden-view.webp",
+              "alt": "Triple room with blue wall and garden view"
+            },
+            {
+              "src": "room-02/view-from-bed-to-patio.webp",
+              "alt": "View from bed looking out to the patio"
             }
           ],
           "features": [
@@ -65,12 +81,28 @@
           "capacity": "2 camas / baño privado / 4 personas",
           "images": [
             {
-              "imageUrl": "assets/imgs/services/gastronomy-main.jpg",
-              "imgDesc": "Mesa servida con variedad de platos criollos y frutas"
+              "src": "room-03/bedroom-sunset-lighting.webp",
+              "alt": "Bedroom with sunset lighting"
             },
             {
-              "imageUrl": "assets/imgs/services/bar-cocktails.jpg",
-              "imgDesc": "Bartender preparando coctelería clásica cubana"
+              "src": "room-03/decorative-lighting-golden-hour.webp",
+              "alt": "Decorative lighting during golden hour"
+            },
+            {
+              "src": "room-03/double-room-black-headboards.webp",
+              "alt": "Double room with black headboards"
+            },
+            {
+              "src": "room-03/grey-marble-bathroom-pink-towel.webp",
+              "alt": "Grey marble bathroom with pink towel"
+            },
+            {
+              "src": "room-03/red-honeycomb-lamp-detail.webp",
+              "alt": "Detail of red honeycomb lamp"
+            },
+            {
+              "src": "room-03/room-safe-and-shelving-detail.webp",
+              "alt": "Detail of room safe and shelving"
             }
           ],
           "features": [
@@ -90,12 +122,20 @@
           "capacity": "2 camas / baño privado / 4 personas",
           "images": [
             {
-              "imageUrl": "assets/imgs/services/gastronomy-main.jpg",
-              "imgDesc": "Mesa servida con variedad de platos criollos y frutas"
+              "src": "room-04/private-patio-white-wrought-iron-chairs.webp",
+              "alt": "Private patio with white wrought iron chairs"
             },
             {
-              "imageUrl": "assets/imgs/services/bar-cocktails.jpg",
-              "imgDesc": "Bartender preparando coctelería clásica cubana"
+              "src": "room-04/twin-beds-red-white-decor.webp",
+              "alt": "Twin beds with red and white decor"
+            },
+            {
+              "src": "room-04/twin-room-maroon-accent-wall.webp",
+              "alt": "Twin room with maroon accent wall"
+            },
+            {
+              "src": "room-04/window-view-to-yellow-villa.webp",
+              "alt": "Window view looking towards a yellow villa"
             }
           ],
           "features": [
@@ -115,12 +155,24 @@
           "capacity": "1 cama king size / baño privado / 2 personas",
           "images": [
             {
-              "imageUrl": "assets/imgs/services/gastronomy-main.jpg",
-              "imgDesc": "Mesa servida con variedad de platos criollos y frutas"
+              "src": "room-05/bathroom-sink-tiled-walls.webp",
+              "alt": "Bathroom sink and tiled walls"
             },
             {
-              "imageUrl": "assets/imgs/services/bar-cocktails.jpg",
-              "imgDesc": "Bartender preparando coctelería clásica cubana"
+              "src": "room-05/bedroom-terrace-access-view.webp",
+              "alt": "Bedroom view with terrace access"
+            },
+            {
+              "src": "room-05/bedroom-view-tropical-garden.webp",
+              "alt": "Bedroom view of tropical garden"
+            },
+            {
+              "src": "room-05/cozy-bedroom-queen-bed-red-walls.webp",
+              "alt": "Cozy bedroom with queen bed and red walls"
+            },
+            {
+              "src": "room-05/sbedside-view-red-pillows.webp",
+              "alt": "Bedside view with red pillows"
             }
           ],
           "features": [

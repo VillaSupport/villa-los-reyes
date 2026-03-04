@@ -5,10 +5,10 @@
         "title": "Aventura Natural",
         "desc": "Sumérgete en paisajes únicos, explora los mogotes, y disfruta de actividades al aire libre que te conectarán con  la esencia rural de Cuba. Ideal para parejas, grupos pequeños o viajeros solitarios.",
         "duration": "2 noches / 3 días",
-        "image": {
-            "src": "assets/imgs/adventures/cycletours/vinales-cycling-group-hero.webp",
-            "alt": "Grupo de ciclistas recorriendo un sendero de tierra roja con vistas panorámicas a los mogotes del Valle de Viñales."
-        },
+        "image":{
+                    "src": "assets/imgs/adventures/horseback/mountain-ride/horseback-mountain-path-vinales.webp",
+                    "alt": "Turistas cabalgando por un sendero con vistas a los mogotes de Viñales"
+                },
         "price": 0,
         "currency": "USD",
         "billingType": "por persona",
@@ -40,8 +40,8 @@
         "desc": "Diseñado especialmente para familias con niños, este paquete combina actividades educativas y recreativas  que permitirán a todos disfrutar de una experiencia inolvidable en Viñales.",
         "duration": "3 noches / 4 días",
         "image": {
-            "src": "assets/imgs/adventures/cycletours/vinales-cycling-group-hero.webp",
-            "alt": "Grupo de ciclistas recorriendo un sendero de tierra roja con vistas panorámicas a los mogotes del Valle de Viñales."
+          "src": "assets/imgs/adventures/others/cayo-jutias-beach-paradise/aerial-view-cayo-jutias-beach-paradise.webp",
+          "alt": "Vista aérea de la paradisíaca playa de Cayo Jutías con aguas color turquesa y arenas blancas en Cuba"
         },
         "price": 0,
         "currency": "USD",
@@ -68,15 +68,116 @@
             ]
         }
     },
+    
     {
         "id": 3,
+        "slug": "romance-vinales",
+        "title": "Romance en Viñales",
+        "desc": "Déjate envolver por la magia de Viñales con un viaje romántico entre paisajes espectaculares, cenas íntimas y momentos de relajación inolvidables.",
+        "duration": "2 noches / 3 días",
+        "image": {
+            "src": "assets/imgs/packages/romance-vinales/romantic-sunset-vinales-valley.webp",
+            "alt": "Una pareja sentada en sillas de madera mirando el atardecer sobre los brumosos mogotes del Valle de Viñales."
+        },
+        "price": 0,
+        "currency": "USD",
+        "billingType": "por persona",
+        "itinerary": [
+            "Llegada a la casa de hospedaje. Cóctel de bienvenida con detalles románticos. Experiencias y aventuras: \"Viñales: historia, cultura y naturaleza\". Cena especial en el restaurante \"Los Reyes\" con ambiente íntimo.",
+            "Senderismo: \"Amanecer increíble\". Desayuno en el restaurante \"Los Reyes\". Tarde libre o masajes opcionales. Cena bajo las estrellas en la terraza del restaurante.",
+            "Desayuno en la terraza con vistas a los mogotes. Tiempo libre para pasear por el pueblo antes de la salida."
+        ],
+        "includes": {
+            "activities": [
+                "Senderismo por los lugares más emblemáticos de Viñales",
+                "Cabalgata al amanecer"
+            ],
+            "gastronomy": [
+                "2 desayunos",
+                "1 almuerzo",
+                "2 cenas"
+            ],
+            "transportation": [
+                "Traslados para excursiones privadas"
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "slug": "nature-tradition",
+        "title": "Naturaleza y Tradición",
+        "desc": "Vive una experiencia única en Viñales, donde la naturaleza y la tradición se fusionan en momentos de romance, aventura y relajación inolvidables.",
+        "duration": "2 noches / 3 días",
+        "image": {
+            "src": "assets/imgs/packages/nature-tradition/cuban-tobacco-farmer-vinales.webp",
+            "alt": "Campesino con sombrero fumando un puro en una plantación de tabaco en Cuba."
+        },
+        "price": 0,
+        "currency": "USD",
+        "billingType": "por persona",
+        "itinerary": [
+            "Llegada a la casa de hospedaje. Cóctel de bienvenida con bebida refrescante local. Tarde libre o paseo por el pueblo. Cena en el restaurante \"Los Reyes\".",
+            "Desayuno en el restaurante \"Los Reyes\". Cabalgata: \"La Penitencia\". Visita a una finca de tabaco con almuerzo incluido. Experiencias y aventuras: \"Disfrutando del ocaso\". Cena con música tradicional.",
+            "Desayuno en el restaurante \"Los Reyes\". Tiempo libre para compras o visitar el Jardín Botánico. Salida hacia el próximo destino."
+        ],
+        "includes": {
+            "activities": [
+                "Senderismo por el Valle de La Penitencia",
+                "Visita a una finca de tabaco"
+            ],
+            "gastronomy": [
+                "2 desayunos",
+                "1 almuerzo",
+                "2 cenas"
+            ],
+            "transportation": [
+                "Traslados para las excursiones incluidas"
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "slug": "vinales-360",
+        "title": "Viñales 360",
+        "desc": "Una escapada intensa para vivir la esencia de Viñales en solo un día. Sumérgete en la historia, cultura y naturaleza del Valle de Viñales en esta experiencia compacta pero inolvidable. Descubre paisajes de ensueño, sitios emblemáticos y sabores auténticos en un recorrido que te conecta con lo mejor del occidente cubano.",
+        "duration": "3 noches / 4 días",
+        "image": {
+            "src": "assets/imgs/packages/vinales-360/slide-vinales-360.webp",
+            "alt": "Grupo de ciclistas recorriendo un sendero de tierra roja con vistas panorámicas a los mogotes del Valle de Viñales."
+        },
+        "price": 0,
+        "currency": "USD",
+        "billingType": "por persona",
+        "itinerary": [
+            "Llegada a la casa de hospedaje. Cóctel de bienvenida. Cena en el restaurante \"Los Reyes\".",
+            "Desayuno. Cabalgata: \"El más famoso\" por el Valle de Viñales. Almuerzo en el restaurante. Tarde libre. Cena con platos tradicionales.",
+            "Desayuno. Ciclotour: \"Recorriendo Valles\". Almuerzo en ruta. Visita a la Gran Caverna de Santo Tomás. Cena con música en vivo.",
+            "Desayuno. Mañana libre para actividades opcionales. Salida hacia el próximo destino."
+        ],
+        "includes": {
+            "activities": [
+                "Cabalgata por el Valle de Viñales",
+                "Ciclotour por los alrededores",
+                "Visita a la Cueva de Santo Tomás"
+            ],
+            "gastronomy": [
+                "3 desayunos",
+                "2 almuerzo",
+                "3 cenas"
+            ],
+            "transportation": [
+                "Traslados para las excursiones incluidas"
+            ]
+        }
+    },{
+        "id": 6,
         "slug": "vinales-families",
         "title": "Viñales en Familia",
         "desc": "Diseñado especialmente para familias con niños, este paquete combina actividades educativas y recreativas  que permitirán a todos disfrutar de una experiencia inolvidable en Viñales.",
         "duration": "4 noches / 5 días",
         "image": {
-            "src": "assets/imgs/adventures/cycletours/vinales-cycling-group-hero.webp",
-            "alt": "Grupo de ciclistas recorriendo un sendero de tierra roja con vistas panorámicas a los mogotes del Valle de Viñales."
+          "src": "assets/imgs/adventures/hiking/amazing-sunrise/tourists-watching-sunrise-vinales.webp",
+          "alt": "Turistas disfrutando de la vista del amanecer desde un porche de madera tradicional en Viñales."
         },
         "price": 0,
         "currency": "USD",
@@ -105,114 +206,13 @@
         }
     },
     {
-        "id": 4,
-        "slug": "romance-vinales",
-        "title": "Romance en Viñales",
-        "desc": "Déjate envolver por la magia de Viñales con un viaje romántico entre paisajes espectaculares, cenas íntimas y momentos de relajación inolvidables.",
-        "duration": "2 noches / 3 días",
-        "image": {
-            "src": "assets/imgs/adventures/cycletours/vinales-cycling-group-hero.webp",
-            "alt": "Grupo de ciclistas recorriendo un sendero de tierra roja con vistas panorámicas a los mogotes del Valle de Viñales."
-        },
-        "price": 0,
-        "currency": "USD",
-        "billingType": "por persona",
-        "itinerary": [
-            "Llegada a la casa de hospedaje. Cóctel de bienvenida con detalles románticos. Experiencias y aventuras: \"Viñales: historia, cultura y naturaleza\". Cena especial en el restaurante \"Los Reyes\" con ambiente íntimo.",
-            "Senderismo: \"Amanecer increíble\". Desayuno en el restaurante \"Los Reyes\". Tarde libre o masajes opcionales. Cena bajo las estrellas en la terraza del restaurante.",
-            "Desayuno en la terraza con vistas a los mogotes. Tiempo libre para pasear por el pueblo antes de la salida."
-        ],
-        "includes": {
-            "activities": [
-                "Senderismo por los lugares más emblemáticos de Viñales",
-                "Cabalgata al amanecer"
-            ],
-            "gastronomy": [
-                "2 desayunos",
-                "1 almuerzo",
-                "2 cenas"
-            ],
-            "transportation": [
-                "Traslados para excursiones privadas"
-            ]
-        }
-    },
-    {
-        "id": 5,
-        "slug": "nature-tradition",
-        "title": "Naturaleza y Tradición",
-        "desc": "Vive una experiencia única en Viñales, donde la naturaleza y la tradición se fusionan en momentos de romance, aventura y relajación inolvidables.",
-        "duration": "2 noches / 3 días",
-        "image": {
-            "src": "assets/imgs/adventures/cycletours/vinales-cycling-group-hero.webp",
-            "alt": "Grupo de ciclistas recorriendo un sendero de tierra roja con vistas panorámicas a los mogotes del Valle de Viñales."
-        },
-        "price": 0,
-        "currency": "USD",
-        "billingType": "por persona",
-        "itinerary": [
-            "Llegada a la casa de hospedaje. Cóctel de bienvenida con bebida refrescante local. Tarde libre o paseo por el pueblo. Cena en el restaurante \"Los Reyes\".",
-            "Desayuno en el restaurante \"Los Reyes\". Cabalgata: \"La Penitencia\". Visita a una finca de tabaco con almuerzo incluido. Experiencias y aventuras: \"Disfrutando del ocaso\". Cena con música tradicional.",
-            "Desayuno en el restaurante \"Los Reyes\". Tiempo libre para compras o visitar el Jardín Botánico. Salida hacia el próximo destino."
-        ],
-        "includes": {
-            "activities": [
-                "Senderismo por el Valle de La Penitencia",
-                "Visita a una finca de tabaco"
-            ],
-            "gastronomy": [
-                "2 desayunos",
-                "1 almuerzo",
-                "2 cenas"
-            ],
-            "transportation": [
-                "Traslados para las excursiones incluidas"
-            ]
-        }
-    },
-    {
-        "id": 6,
-        "slug": "vinales-360",
-        "title": "Viñales 360",
-        "desc": "Una escapada intensa para vivir la esencia de Viñales en solo un día. Sumérgete en la historia, cultura y naturaleza del Valle de Viñales en esta experiencia compacta pero inolvidable. Descubre paisajes de ensueño, sitios emblemáticos y sabores auténticos en un recorrido que te conecta con lo mejor del occidente cubano.",
-        "duration": "3 noches / 4 días",
-        "image": {
-            "src": "assets/imgs/adventures/cycletours/vinales-cycling-group-hero.webp",
-            "alt": "Grupo de ciclistas recorriendo un sendero de tierra roja con vistas panorámicas a los mogotes del Valle de Viñales."
-        },
-        "price": 0,
-        "currency": "USD",
-        "billingType": "por persona",
-        "itinerary": [
-            "Llegada a la casa de hospedaje. Cóctel de bienvenida. Cena en el restaurante \"Los Reyes\".",
-            "Desayuno. Cabalgata: \"El más famoso\" por el Valle de Viñales. Almuerzo en el restaurante. Tarde libre. Cena con platos tradicionales.",
-            "Desayuno. Ciclotour: \"Recorriendo Valles\". Almuerzo en ruta. Visita a la Gran Caverna de Santo Tomás. Cena con música en vivo.",
-            "Desayuno. Mañana libre para actividades opcionales. Salida hacia el próximo destino."
-        ],
-        "includes": {
-            "activities": [
-                "Cabalgata por el Valle de Viñales",
-                "Ciclotour por los alrededores",
-                "Visita a la Cueva de Santo Tomás"
-            ],
-            "gastronomy": [
-                "3 desayunos",
-                "2 almuerzo",
-                "3 cenas"
-            ],
-            "transportation": [
-                "Traslados para las excursiones incluidas"
-            ]
-        }
-    },
-    {
         "id": 7,
         "slug": "vinales-express",
         "title": "Viñales Exprés",
         "desc": "Descubre la esencia de Viñales en un recorrido único entre valles, tradiciones y sabores auténticos, con actividades que te conectarán con su naturaleza y cultura.",
         "duration": "1 noches / 2 días",
         "image": {
-            "src": "assets/imgs/adventures/cycletours/vinales-cycling-group-hero.webp",
+            "src": "assets/imgs/packages/vinales-express/test-image.webp",
             "alt": "Grupo de ciclistas recorriendo un sendero de tierra roja con vistas panorámicas a los mogotes del Valle de Viñales."
         },
         "price": 0,

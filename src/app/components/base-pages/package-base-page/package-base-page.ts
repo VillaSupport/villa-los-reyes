@@ -1,10 +1,11 @@
 import { Component, input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {  PageHeader } from "../../../shared/components/page-header/page-header";
+import { PageHeader } from "../../../shared/components/page-header/page-header";
 import { HeaderDataDeprecated } from '../room-base-page/room-base-page';
 import { TranslatePipe } from '@ngx-translate/core';
 import { PackageItem } from "../../sections/discover-package-section/packages-list/package-item/package-item";
 import { ExploreItemsSection } from "../../sections/explore-items-section/explore-items-section";
+import { HeaderData } from '../../../shared/interfaces/common.interface';
 
 export interface PackageDetails {
   title: string;
@@ -47,8 +48,14 @@ export class PackageBasePage {
 
   constructor(private route: ActivatedRoute) { }
 
-  get header(): HeaderDataDeprecated {
+  get head(): HeaderDataDeprecated {
     return this._header() ?? this.route.snapshot.data['header'];
+  }
+
+  header: HeaderData = {
+    title: this.head.head.title,
+    description: this.head.head.description,
+    img: this.head.image,
   }
 
   get packageDetails(): PackageDetails {

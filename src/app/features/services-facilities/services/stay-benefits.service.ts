@@ -8,7 +8,7 @@ import { Benefit, StayBenefitsDetail } from '../interfaces/services-facilities.i
 })
 export class StayBenefitsService {
     private http = inject(HttpClient);
-    private readonly PATH = 'assets/data/services-facilities/stay-benefits';
+    private readonly PATH = 'assets/data/services-facilities/categories/stay-benefits';
 
     getStayBenefits = (lang = 'es'): Observable<StayBenefitsDetail | undefined> =>
         this.http.get<StayBenefitsDetail>(`${this.PATH}/${lang}.json`).pipe(

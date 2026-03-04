@@ -1,12 +1,13 @@
 <div class="page-content">
   <!-- 🟩 Header principal -->
-  <page-header [head]="{
+  <page-header [header]="{
       title: 'servicesFacilities.header.title' ,
-      description: 'servicesFacilities.header.description'
-    }" [image]="{
+      description: 'servicesFacilities.header.description',
+      img:{
       src: 'assets/images/restaurant/slide-bar-area.jpg',
       alt: 'Restaurante Bar de Villa Los Reyes'
-    }"  />
+    }
+    }"   />
 
   <!-- 🟦 Sección 1: Instalaciones -->
   <split-gallery-section class="mt-negative" [leftImage]="{

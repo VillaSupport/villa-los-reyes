@@ -9,10 +9,13 @@ import { catchError, of, tap } from 'rxjs';
 import { SectionNavService } from '../../../../../shared/services/section-nav.service';
 import { PageHeader } from "../../../../../shared/components/page-header/page-header";
 import { PackageCrossList } from "../../../../packages/components/package-cross-list/package-cross-list";
+import { ServiceCrossList } from "../../../../services-facilities/components/service-cross-list/service-cross-list";
+import { HeaderData } from '../../../../../shared/interfaces/common.interface';
+import { experienceHeaderData } from '../../../../../pages/experiences-page/experiences-page';
 
 @Component({
   selector: 'adventures-overview-template',
-  imports: [DiscoverPackageDefaultOne, DiscoverServicesDefault, AdventureGrid, PageHeader, PackageCrossList],
+  imports: [AdventureGrid, PageHeader, PackageCrossList, ServiceCrossList],
   templateUrl: './adventures-overview-template.html',
   styleUrl: './adventures-overview-template.css',
 })
@@ -22,8 +25,11 @@ export class AdventuresOverviewTemplate {
   private router = inject(Router);
   private navService = inject(SectionNavService);
 
-  private params = toSignal(this.route.paramMap);
+  header:HeaderData = experienceHeaderData;
 
+
+
+  private params = toSignal(this.route.paramMap);
   public slug = computed(() => this.params()?.get('category') || '');
 
   public category = toSignal(

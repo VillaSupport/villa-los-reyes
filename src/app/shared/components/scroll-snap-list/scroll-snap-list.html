@@ -1,6 +1,7 @@
 <div 
   #scrollContainer
   class="scroll-container"
+  [class.is-mobile-row]="mobileRow()"
   (mousedown)="startDragging($event)"
   (mousemove)="moveEvent($event)"
   (mouseup)="stopDragging()"

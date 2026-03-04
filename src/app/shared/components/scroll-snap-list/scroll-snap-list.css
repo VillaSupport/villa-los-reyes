@@ -1,21 +1,22 @@
 :host {
   display: block;
   width: 100%;
-  --card-spacing: 1.5rem; 
+  --local-spacing: var(--card-spacing, 1.5rem);
 }
 
 .scroll-container {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  gap: var(--card-spacing);
+  gap: var(--local-spacing);
   width: 100%;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   cursor: grab;
-  user-select: none; /* Evita que se seleccione texto del template al arrastrar */
+  user-select: none;
+  /* Evita que se seleccione texto del template al arrastrar */
   -webkit-user-select: none;
   touch-action: pan-y;
 }
@@ -33,14 +34,16 @@
   display: none;
 }
 
-@media (max-width: 1340px){
-  :host{--card-spacing: 1rem; }
+@media (max-width: 1340px) {
+  :host {
+    --local-spacing: var(--card-spacing, 1rem);
+  }
 }
 
 
 @media(max-width: 600px) {
 
-  .scroll-container {
+  .scroll-container:not(.is-mobile-row){
     flex-direction: column;
     align-items: center;
     padding: 0;

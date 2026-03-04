@@ -8,8 +8,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
   imports: [PageHeader],
   template: `
     <page-header 
-      [head]="headerInfo().head" 
-      [image]="headerInfo().image"
+      [header]="headerInfo()" 
       [reserveSpace]="true">
     </page-header>
   `,

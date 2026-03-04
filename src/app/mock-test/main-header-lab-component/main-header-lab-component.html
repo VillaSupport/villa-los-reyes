@@ -11,8 +11,7 @@
     <p class="description">Reserva el espacio de la imagen por defecto para evitar saltos.</p>
     <div class="preview shadow">
       <page-header 
-        [head]="isLoading() ? undefined : mockData.head" 
-        [image]="isLoading() ? undefined : mockData.image" />
+         />
     </div>
   </section>
 
@@ -30,8 +29,8 @@
     <p class="description">Probando el control de la imagen desde fuera ('bottom').</p>
     <div class="preview shadow">
       <page-header 
-        [head]="mockData.head" 
-        [image]="mockData.image"
+        [header]="mockData" 
+        
         objectPosition="bottom" />
     </div>
   </section>

@@ -11,6 +11,11 @@
       "TITLE": "Paquetes en oferta",
       "DESCRIPTION": "Vive la magia de Viñales con nuestros paquetes exclusivos: <strong>alojamiento acogedor</strong>, <strong>paisajes inolvidables</strong> y <strong>experiencias auténticas</strong>. ¡Reserva hoy!",
       "LINK_TEXT": "VER TODOS LOS PAQUETES EN OFERTA"
+    },
+    "STAY_BENEFITS": {
+      "TITLE": "Servicios e Instalaciones",
+      "DESCRIPTION": "Disfruta de servicios excepcionales: <strong>gastronomía local, traslados y más.</strong>\n¡Todo para una estancia inolvidable!",
+      "LINK_TEXT": "CONOCE NUESTROS SERVICIOS E INSTALACIONES"
     }
   },
 

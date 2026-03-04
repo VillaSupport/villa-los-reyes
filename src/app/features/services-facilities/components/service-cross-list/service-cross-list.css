@@ -1,0 +1,9 @@
+:host {
+    --card-spacing: 0rem;
+
+}
+
+discovery-offering-list {
+    --outer-bg-color: var(--secondary-bg-color, #f7faf7);
+    --inner-bg-color: var(--primary-bg-color, #E4EAE5);
+}

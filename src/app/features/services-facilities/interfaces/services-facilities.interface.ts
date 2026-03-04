@@ -11,34 +11,29 @@ export interface Benefit {
 
 export interface BenefitCardData {
   title: string;
-  images: ImgData;
+  image: ImgData;
   route: string;
   fragment: string;
 }
 
 
 
-const mapToBenefitCard = (benefit: Benefit, baseRoute: string): BenefitCardData => {
-  
+export const mapToBenefitCard = (benefit: Benefit, category: string, baseRoute: string = '/services-facilities'): BenefitCardData => {
+
+  const hasImage = benefit.images && benefit.images.length > 0;
+
+  if (!hasImage) {
+    console.warn(`⚠️ Warning: El beneficio con ID ${benefit.id} ("${benefit.title}") no tiene imágenes en la posición 0.`);
+  }
+
   return {
     title: benefit.title,
-    images: benefit.images && benefit.images.length > 0 ? benefit.images[0] : {} as ImgData,
-    route: `${baseRoute}/${benefit.slug}`,
+    image: hasImage ? benefit.images[0] : { src: '', alt: '' },
+    route: `${baseRoute}/${category}`,
     fragment: benefit.slug
   };
 };
 
-
-let a:Benefit[] = [{
-  id: "",
-  slug: "",
-  title: "",
-  desc: "",
-  images: [],
-  highlights: []
-}] 
-
-let img:ImgData  = a[0].images[0];
 
 export interface StayBenefitsDetail {
   category: string;

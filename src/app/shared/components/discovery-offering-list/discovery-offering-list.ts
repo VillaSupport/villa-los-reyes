@@ -13,6 +13,7 @@ import { NgTemplateOutlet } from '@angular/common';
 export class DiscoveryOfferingList {
   header = input.required<HeaderData>();
   data = input.required<any[]>()
+  mobileRow = input<boolean>(false)
   cardTemplate = contentChild.required(TemplateRef);
 
 }

@@ -1,11 +1,6 @@
 <div class="page-content">
-
-  <page-header
-    [head]="{title:'Esto es una prueba',description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima odio et dolorem quibusdam repellendus explicabo doloribus recusandae, ut voluptatem quae molestias quis! Aliquam nobis earum doloribus voluptatum. Laboriosam, hic odit!'}"
-    [image]="" />
-
-  <adventure-grid [category] = "category()"></adventure-grid>
-
-  <package-cross-list/>
-  <discover-services-default />
+  <page-header [header]="header"/>
+  <adventure-grid class="mt-negative" [category]="category()"></adventure-grid>
+  <package-cross-list />
+  <service-cross-list />
 </div>
