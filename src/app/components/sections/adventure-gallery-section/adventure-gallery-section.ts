@@ -8,8 +8,7 @@ import { TranslatePipe } from '@ngx-translate/core';
   templateUrl: './adventure-gallery-section.html',
   styleUrl: './adventure-gallery-section.css'
 })
-export class AdventurekGallerySection {
-
+export class AdventureGallerySection {
   title = input.required<string>();   
   items = input.required<{ src: string; label: string; path: string }[]>();
 }

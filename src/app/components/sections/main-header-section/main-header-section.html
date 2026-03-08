@@ -1,9 +1,0 @@
-<section class="header-section">
-  <h1>{{ head().title | translate }}</h1>
-  <p [innerHTML]="head().description | translate"></p>
-  @if(image()){
-
-  <img [src]="image()!.src" [alt]="image()!.alt | translate" [style.object-position]="objectPosition()" />
-  }
-
-</section>

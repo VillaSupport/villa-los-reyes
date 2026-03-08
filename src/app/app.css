@@ -1,0 +1,11 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Asegura que el footer siempre esté abajo */
+}
+
+.content-area {
+    flex: 1;
+    padding-top: 160px;
+}

@@ -1,0 +1,59 @@
+<div class="test-container">
+  <header>
+    <h1>Laboratorio de Skeletons</h1>
+    <button (click)="toggleLoading()">
+      {{ isLoading() ? 'Mostrar Datos' : 'Simular Carga' }}
+    </button>
+  </header>
+
+  <div class="grid-lab">
+    
+    <div class="test-card">
+      <h3>1. Perfil Circular</h3>
+      <div class="avatar-container">
+        @if (isLoading()) {
+          <div class="skeleton"></div>
+        } @else {
+          <img src="https://i.pravatar.cc/150?u=1" alt="avatar">
+        }
+      </div>
+    </div>
+
+    <div class="test-card">
+      <h3>2. Card de Aventura</h3>
+      <div class="adventure-preview">
+        <div class="image-box">
+          @if (isLoading()) {
+            <div class="skeleton"></div>
+          } @else {
+            <img src="https://picsum.photos/seed/picsum/600/250" alt="landscape">
+          }
+        </div>
+        
+        <div class="text-box">
+          @if (isLoading()) {
+            <div class="skeleton skeleton-text" style="width: 70%; height: 1.5rem;"></div>
+            <div class="skeleton skeleton-text" style="width: 100%;"></div>
+            <div class="skeleton skeleton-text" style="width: 40%;"></div>
+          } @else {
+            <h2>Paseo por el Valle</h2>
+            <p>Descubre los secretos de la naturaleza con guías locales expertos.</p>
+            <span class="badge">Desde $25</span>
+          }
+        </div>
+      </div>
+    </div>
+
+    <div class="test-card full-width">
+      <h3>3. Banner Responsivo</h3>
+      <div class="banner-box">
+        @if (isLoading()) {
+          <div class="skeleton"></div>
+        } @else {
+          <img src="https://picsum.photos/seed/vinales/1200/300" alt="banner">
+        }
+      </div>
+    </div>
+
+  </div>
+</div>

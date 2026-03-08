@@ -1,17 +1,15 @@
 import { Component, input } from '@angular/core';
 import { ExperiencesGallery } from "./experiences-gallery/experiences-gallery";
-import { SectionHeader } from "../../shared/section-header/section-header";
+import { DiscoveryHeader } from "../../../shared/components/discovery-header/discovery-header";
+import { HeaderData } from '../../../shared/interfaces/common.interface';
 
 @Component({
   selector: 'discover-experiences-section',
-  imports: [ExperiencesGallery, SectionHeader],
+  imports: [ExperiencesGallery, DiscoveryHeader],
   templateUrl: './discover-experience-section.html',
   styleUrls: ['./discover-experience-section.css']
 })
 export class DiscoverExperienceSection {
-
-  header = input.required<{ title: string, description: string, link: { text: string, url: string } }>()
-
+  header = input.required<HeaderData>()
   experienceImages = input.required<{ src: string, alt: string, title: string, link: string}[]>()
-
 }

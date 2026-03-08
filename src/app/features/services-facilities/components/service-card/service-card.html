@@ -1,0 +1,7 @@
+<div class="service-card">
+    @if(data(); as service){
+    <a class="service-link" [routerLink]="service.route" [fragment]="service.fragment">
+        <img [src]="service.image.src" [alt]="service.image.alt" />
+        <h2>{{ service.title }}</h2>
+    </a>}
+</div>

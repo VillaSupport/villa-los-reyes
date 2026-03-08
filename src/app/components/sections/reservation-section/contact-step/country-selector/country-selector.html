@@ -1,0 +1,38 @@
+<div class="vlr-select-container">
+  <div class="vlr-selected-item" (click)="toggleDropdown()" [class.has-value]="selectedCode">
+
+    @if (selectedCode) {
+    <img [src]="'https://flagcdn.com/w40/' + selectedCode.toLowerCase() + '.png'" class="flag">
+    }
+
+    <span class="vlr-display-text" [class.invalid-text]="countryControl().value === 'INVALID'">
+      @if (countryControl().value === 'INVALID') {
+      Cód. de país inválido
+      } @else {
+      {{ selectedCountryName || 'País' }}
+      }
+    </span>
+    <span class="arrow" [class.open]="isOpen">▼</span>
+  </div>
+
+  <div class="vlr-dropdown" [class.is-open]="isOpen">
+    @if (isOpen) {
+    <div class="search-box">
+      <input #searchInput type="text" placeholder="Escribe para filtrar..." (input)="filterCountries($event)"
+        (click)="$event.stopPropagation()">
+    </div>
+
+    <ul class="options-list">
+      @for (country of filteredCountries; track country.isoCode) {
+      <li (click)="selectCountry(country)">
+        <img [src]="'https://flagcdn.com/w40/' + country.isoCode.toLowerCase() + '.png'" class="flag">
+        <span>{{ country.name }}</span>
+        <span class="dial-code">{{ country.dialCode }}</span>
+      </li>
+      }
+      @if (filteredCountries.length === 0) {
+      <li class="no-results">No se encontraron coincidencias</li>
+      }
+    </ul>}
+  </div>
+</div>

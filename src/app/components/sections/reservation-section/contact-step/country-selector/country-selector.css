@@ -1,0 +1,153 @@
+:host {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* --- Contenedor Principal --- */
+.vlr-select-container {
+  position: relative;
+  width: 100%;
+}
+
+/* El "botón" principal del selector */
+.vlr-selected-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+   border: 1px solid #707974;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+
+.vlr-selected-item:hover {
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.1);
+}
+
+
+.vlr-display-text {
+    font-size: 1.125rem;
+    color: #404944;
+      line-height: 1.35rem;
+    letter-spacing: 0.02125rem; /* Color para cuando no hay valor o es inválido */
+}
+
+.arrow {
+  margin-left: auto;
+  font-size: 12px;
+  color: #292929;
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.vlr-dropdown {
+  display: none; /* Se activa con la clase .is-open */
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Estado Abierto */
+.vlr-dropdown.is-open {
+  display: block;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Caja de búsqueda interna */
+.search-box {
+  padding: 12px;
+  background: #fcfcfc;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.search-box input {
+  width: 100%;
+  padding:12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-box input:focus {
+  border-color: #F49516; /* Color de acento de la marca */
+}
+
+/* Lista de opciones */
+.options-list {
+  max-height: 250px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 4px;
+  list-style: none;
+}
+
+/* Personalización del scrollbar */
+.options-list::-webkit-scrollbar { width: 5px; }
+.options-list::-webkit-scrollbar-thumb { background: #ccc; border-radius: 10px; }
+
+.options-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.15s;
+}
+
+.options-list li:hover {
+  background: #f5f5f5;
+  color: #F49516;
+}
+
+.flag {
+  width: 24px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+.dial-code {
+  margin-left: auto;
+  color: #888;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.no-results {
+  padding: 20px;
+  text-align: center;
+  color: #999;
+  font-size: 13px;
+}
+
+.options-list li:hover .dial-code {
+  color: #F49516;
+}

@@ -1,0 +1,46 @@
+<div class="lab-container">
+  <div class="lab-controls">
+    <h1>🧪 Main Header Lab</h1>
+    <button (click)="toggleLoading()" [class.active]="!isLoading()">
+      {{ isLoading() ? 'Simular: Datos Cargados' : 'Simular: Cargando' }}
+    </button>
+  </div>
+
+  <section class="test-case">
+    <h2>1. Estado Inicial (Cargando / Skeleton)</h2>
+    <p class="description">Reserva el espacio de la imagen por defecto para evitar saltos.</p>
+    <div class="preview shadow">
+      <page-header 
+         />
+    </div>
+  </section>
+
+  <section class="test-case">
+    <h2>2. Sin Imagen + ReserveSpace: False</h2>
+    <p class="description">El componente termina tras el texto. Ideal para páginas simples.</p>
+    <div class="preview shadow">
+      <page-header 
+        [reserveSpace]="true" />
+    </div>
+  </section>
+
+  <section class="test-case">
+    <h2>3. Imagen con Object Position (Variable CSS)</h2>
+    <p class="description">Probando el control de la imagen desde fuera ('bottom').</p>
+    <div class="preview shadow">
+      <page-header 
+        [header]="mockData" 
+        
+        objectPosition="bottom" />
+    </div>
+  </section>
+
+  <section class="test-case">
+    <h2>4. Solo Skeleton (Sin reservar espacio)</h2>
+    <p class="description">Útil cuando no sabemos si habrá imagen o no.</p>
+    <div class="preview shadow">
+      <page-header 
+        [reserveSpace]="false" />
+    </div>
+  </section>
+</div>

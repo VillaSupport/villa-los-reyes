@@ -1,6 +1,6 @@
 import { rooms } from '../../../config/room-data';
 import { Component, inject, input } from '@angular/core';
-import { MainHeaderSection } from "../../sections/main-header-section/main-header-section";
+import { PageHeader } from "../../../shared/components/page-header/page-header";
 import { GalleryInfoSection } from "../../sections/gallery-info-section/gallery-info-section";
 import { RoomOfferSection } from "../../sections/room-offer-section/room-offer-section";
 import { ActivatedRoute } from '@angular/router';
@@ -13,7 +13,10 @@ import { PackageItem } from "../../sections/discover-package-section/packages-li
 import { packages } from '../../../config/packages-data';
 import { RoomNavigatorComponent } from "../../shared/room-navigator/room-navigator";
 import { GroupNavigatorService } from '../../../services/group-navigator-service';
-export interface HeaderData {
+
+
+
+export interface HeaderDataDeprecatedT {
   title: string;
   description: string;
   image?: { src: string; alt: string };
@@ -41,7 +44,7 @@ export interface GalleryData {
 
 @Component({
   selector: 'experience-view-base-page',
-  imports: [MainHeaderSection, GalleryInfoSection, RoomOfferSection, ExploreItemsSection, RoomCard, RoomNavigatorComponent],
+  imports: [GalleryInfoSection, RoomOfferSection, ExploreItemsSection, RoomCard, RoomNavigatorComponent, PageHeader],
   templateUrl: './experience-view-base-page.html',
   styleUrl: './experience-view-base-page.css'
 
@@ -49,7 +52,7 @@ export interface GalleryData {
 export class ExperienceViewBasePage {
 navigator = inject(GroupNavigatorService);
   // 🔸 Cada bloque puede venir por input o por route.data
-  _header = input<HeaderData>();
+  _header = input<HeaderDataDeprecatedT>();
   _gallery = input<GalleryData>();
   _offer = input<OfferData>();
   rooms = roomsData;
@@ -57,7 +60,7 @@ navigator = inject(GroupNavigatorService);
   packages = packages
   constructor(private route: ActivatedRoute) {}
 
-  get header(): HeaderData {
+  get header(): HeaderDataDeprecatedT {
     return this._header() ?? this.route.snapshot.data['header'];
   }
 

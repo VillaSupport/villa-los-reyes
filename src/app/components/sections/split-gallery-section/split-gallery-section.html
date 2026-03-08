@@ -8,7 +8,8 @@
     <info-panel
       [title]="info().title"
       [description]="info().description"
-      [link]="info().link"
+      [slug]="info().link?.url"
+      [linkText]="info().link?.text"
     />
   </div>
 

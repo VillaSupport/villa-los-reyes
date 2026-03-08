@@ -1,4 +1,26 @@
 {
+  "HEADER": {
+    "EXPERIENCES": {
+      "TITLE": "Experiencias y aventuras",
+      "DESCRIPTION": "Descubre aventuras inolvidables y experiencias únicas en Viñales.",
+      "ALT": "CAMPESINO TRABAJANDO LA TIERRA CON BUEYES FRENTE A LOS MOGOTES DE VIÑALES"
+    }
+  },
+  "SECTION_HEADER": {
+    "PACKAGE": {
+      "TITLE": "Paquetes en oferta",
+      "DESCRIPTION": "Vive la magia de Viñales con nuestros paquetes exclusivos: <strong>alojamiento acogedor</strong>, <strong>paisajes inolvidables</strong> y <strong>experiencias auténticas</strong>. ¡Reserva hoy!",
+      "LINK_TEXT": "VER TODOS LOS PAQUETES EN OFERTA"
+    },
+    "STAY_BENEFITS": {
+      "TITLE": "Servicios e Instalaciones",
+      "DESCRIPTION": "Disfruta de servicios excepcionales: <strong>gastronomía local, traslados y más.</strong>\n¡Todo para una estancia inolvidable!",
+      "LINK_TEXT": "CONOCE NUESTROS SERVICIOS E INSTALACIONES"
+    }
+  },
+
+
+  
   "carousel": {
     "slide1": {
       "alt": "Villa Los Reyes — alojamiento rural en Viñales, fachada principal con jardín y entrada",
@@ -406,7 +428,7 @@
       "title": "Nuestras instalaciones",
       "description": "Descubre los diferentes espacios que hacen única la experiencia en Villa Los Reyes."
     },
-    "rooms":{
+    "rooms": {
       "title": "Espacios diseñados para tu descanso y bienestar",
       "description": "Las habitaciones están pensadas para ofrecer privacidad, confort y tranquilidad desde el primer momento. Con acceso independiente, buena ventilación y altos niveles de limpieza, cada detalle contribuye a una estancia placentera. Además, las zonas comunes como los jardines, la terraza y el restaurante-bar complementan la experiencia con opciones para relajarte y disfrutar del entorno."
     },
@@ -1169,13 +1191,12 @@
       "unit": "por persona"
     }
   },
-
-    "footer": {
-      "contacts_title": "Contactos",
-      "chat_title": "¡Comunícate con nosotros!",
-      "chat_description": "Envíenos sus comentarios, preguntas o inquietudes. Estaremos encantados de atenderle y ponernos en contacto con usted.",
-      "chat_button": "Chat en línea",
-      "rights": "Todos los derechos reservados",
-      "villa": "Villa Los Reyes"
-    }
+  "footer": {
+    "contacts_title": "Contactos",
+    "chat_title": "¡Comunícate con nosotros!",
+    "chat_description": "Envíenos sus comentarios, preguntas o inquietudes. Estaremos encantados de atenderle y ponernos en contacto con usted.",
+    "chat_button": "Chat en línea",
+    "rights": "Todos los derechos reservados",
+    "villa": "Villa Los Reyes"
+  }
 }

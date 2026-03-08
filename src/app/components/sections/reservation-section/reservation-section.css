@@ -3,44 +3,13 @@
   padding-top: 160px;
   min-height:80vh;
   background: #E9EFEA;
-  padding: 10.75rem 5rem 5rem;
+  padding: 15rem 5rem 5rem;
 
 }
 
 .booking {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
-}
-
-/* .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 12px;
-  border-radius: 8px;
-  border: 1px solid #cfd8d3;
-}
-
-.counter {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 12px;
-
-  button {
-    width: 32px;
-    height: 32px;
-  }
-}
-
-.checkbox {
-  display: flex;
-  gap: 8px;
 }
 
 .nav-buttons {
@@ -48,6 +17,4 @@ input, textarea {
   justify-content: space-between;
 }
 
-.thank-you {
-  text-align: center;
-} */
+

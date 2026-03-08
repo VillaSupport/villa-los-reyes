@@ -1,0 +1,32 @@
+<section class="adventure-container">
+  <div class="adventure-category">
+    @if (title()) {
+    <h2>{{ title() }}</h2>
+    } @else {
+    <div class="skeleton skeleton-title short"></div>
+    }
+  </div>
+
+  <div class="adventure-grid">
+    @for (adventure of adventures(); track $index) {
+
+    @if (adventure; as adv) {
+    <a class="adventure-card" [class.is-loading]="!loadedImages().has($index)" [class.skeleton]="!loadedImages().has($index)"
+      [routerLink]="loadedImages().has($index) ? [adv.slug] : null">
+      <img [src]="adv.imgs[0].src" [alt]="adv.imgs[0].alt" loading="lazy" [class.ready]="loadedImages().has($index)"
+        (load)="onImageLoad($index)">
+      <div class="overlay">
+        <span>{{ adv.title }}</span>
+      </div>
+    </a>
+    } @else {
+    <div class="adventure-card is-loading skeleton">
+      <div class="skeleton-image"></div>
+      <div class="overlay">
+        <div class="skeleton skeleton-text skeleton-overlay-text base"></div>
+      </div>
+    </div>
+    }
+    }
+  </div>
+</section>

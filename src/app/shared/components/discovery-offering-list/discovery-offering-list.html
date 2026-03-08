@@ -1,0 +1,15 @@
+<div class="offering-container section-outer">
+    <div class="inner-wrapper section-inner">
+        <discovery-header [header]="header()" />
+
+        <scroll-snap-list [data]="data()" [mobileRow]="mobileRow()">
+            <ng-template let-item>
+                <ng-container 
+                    [ngTemplateOutlet]="cardTemplate() || null" 
+                    [ngTemplateOutletContext]="{ $implicit: item }">
+                </ng-container>
+            </ng-template>
+        </scroll-snap-list>
+    </div>
+
+</div>

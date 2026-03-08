@@ -1,0 +1,79 @@
+[
+    {
+        "id": 1,
+        "category": "facilities",
+        "title": "Conoce nuestras instalaciones",
+        "linkText": "Descubre nuestras instalaciones",
+        "desc": "Ofrecemos una experiencia única con nuestras <strong>habitaciones independientes</strong>, proporcionando privacidad y comodidad. Disfruta de vistas panorámicas desde nuestras <strong>terrazas</strong>, perfectas para relajarse. Pasea por nuestros exuberantes <strong>jardines</strong> y sumérgete en la tranquilidad de la naturaleza. Además, contamos con una refrescante <strong>piscina</strong> para tu disfrute. Ven y vive una estancia inolvidable.",
+        "image": {
+            "src": "assets/images/outdoor-areas/gardens-03.jpg",
+            "alt": "Vistas panorámicas de los jardines y la estructura de la Villa"
+        },
+        "previewItems": [
+            {
+                "title": "Habitación 1",
+                "description": "2 camas / baño privado / 4 personas",
+                "slug": "",
+                "image": {
+                    "src": "",
+                    "alt": ""
+                }
+            },
+            {
+                "title": "Habitación 2",
+                "description": "3 camas / baño privado / 4 personas",
+                "slug": "",
+                "image": {
+                    "src": "",
+                    "alt": ""
+                }
+            },
+            {
+                "title": "Habitación 3",
+                "description": "2 camas / baño privado / 4 personas",
+                "slug": "",
+                "image": {
+                    "src": "",
+                    "alt": ""
+                }
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "category": "stay-benefits",
+        "title": "Conoce nuestros servicios",
+        "linkText": "Descubre nuestros servicios",
+        "desc": "Disfruta de una deliciosa <strong>gastronomía cubana</strong> preparada por chefs locales, <strong>transporte</strong> para explorar la región, y la asistencia de nuestro <strong>gestor de viajes</strong> para que aproveches al máximo tu estancia. Además, contamos con servicio de <strong>lavandería, masajes</strong> relajantes para recargar energías y <strong>clases de baile</strong> para sumergirte en la cultura cubana.",
+        "image": {
+            "src": "assets/images/restaurant/slide-dining-area-01.jpg",
+            "alt": "Mesa servida con platos tradicionales cubanos"
+        },
+        "previewItems": [
+            {
+                "slug": "gastronomy",
+                "title": "Gastronomía",
+                "image":  {
+                    "src": "assets/New/gastronomy/villa-los-reyes-dining-area-interior.webp",
+                    "alt": "Vista acogedora del interior del restaurante Villa Los Reyes con mesas de madera dispuestas y decoración rústica"
+                }
+            },
+            {
+                "slug": "mobility",
+                "title": "Movilidad",
+                "image": {
+                    "src": "assets/New/mobility/classic-red-desoto-car-vinales.webp",
+                    "alt": "Auto clásico americano de color rojo (DeSoto) parqueado frente a Villa Los Reyes, disponible para traslados y tours."
+                }
+            },
+            {
+                "slug": "trip-planner",
+                "title": "Trip Planner",
+                "image": {
+                    "src": "assets/New/trip-planner/trip-planner-map-camera-coffee.webp",
+                    "alt": "Vista superior de manos señalando un mapa sobre una mesa de madera con café, una cámara antigua y un pasaporte"
+                }
+            }
+        ]
+    }
+]

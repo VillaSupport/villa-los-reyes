@@ -1,0 +1,51 @@
+:host {
+  display: block;
+  width: 100%;
+  --local-spacing: var(--card-spacing, 1.5rem);
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: var(--local-spacing);
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  cursor: grab;
+  user-select: none;
+  /* Evita que se seleccione texto del template al arrastrar */
+  -webkit-user-select: none;
+  touch-action: pan-y;
+}
+
+.scroll-container:active {
+  cursor: grabbing;
+}
+
+.scroll-container ::ng-deep img {
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 1340px) {
+  :host {
+    --local-spacing: var(--card-spacing, 1rem);
+  }
+}
+
+
+@media(max-width: 600px) {
+
+  .scroll-container:not(.is-mobile-row){
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+}

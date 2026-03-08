@@ -1,0 +1,31 @@
+:host {
+    display: block;
+    width: 100%;
+    
+    --outer-bg-color: var(--primary-bg-color, #E4EAE5);
+    --inner-bg-color: var(--secondary-bg-color, #f7faf7);
+
+    background: var(--outer-bg-color);
+}
+
+.offering-container {
+    display: flex;
+    justify-content: center;
+    background: var(--inner-bg-color);
+    width: 100%;
+}
+
+.inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+@media(max-width:600px) {
+
+    .inner-wrapper {
+        gap: 1rem;
+        max-width: 480x;
+    }
+}

@@ -2,7 +2,6 @@ import { Component, HostListener } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { LangSelector } from './lang-selector/lang-selector';
-// import { LanguageSelector } from "../language-selector/language-selector";
 
 @Component({
   selector: 'navbar',

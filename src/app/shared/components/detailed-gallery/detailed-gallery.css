@@ -1,0 +1,161 @@
+:host {
+    display: block;
+    position: relative;
+    width: 100%;
+    background-color: #f7faf7;
+}
+
+:host.is-overlapping {
+    background-color: transparent;
+}
+
+.split-layout {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5rem;
+    border-radius: 3rem 3rem 0 0;
+    z-index: 5;
+    background-color: #E4EAE5;
+}
+
+.split-layout.white-bg {
+    background-color: #f7faf7;
+}
+
+:host:has(.white-bg) {
+    background-color: #E4EAE5;
+}
+
+.split-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1568px;
+    gap: 1.25rem;
+}
+
+.info-side {
+    flex: 0 1 40%;
+    min-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+/* Galería de imágenes */
+.media-side {
+    flex: 1 1 60%;
+    min-width: 0;
+    overflow: hidden;
+}
+
+
+@media (min-width: 1440px) {
+    .split-layout.reverse .split-wrapper {
+        flex-direction: row-reverse;
+    }
+}
+
+@media (max-width: 1439px) {
+    .split-layout {
+        padding: 5rem;
+        border-radius: 2.5rem 2.5rem 0 0;
+    }
+
+    .split-wrapper {
+        flex-direction: column;
+        align-content: center;
+        gap: 1rem;
+    }
+
+    .info-side, .media-side {
+        width: 100%;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    .info-side {
+        order: 1;
+    }
+
+    .media-side {
+        order: 2;
+    }
+
+    /* .info-side {
+        min-width: 0;
+        margin-inline: auto;
+    }
+
+    .media-side {
+        min-width: unset;
+    } */
+}
+
+/* ==========================
+   DESKTOP PEQUEÑO – 1024px
+   ========================== */
+
+@media (max-width: 1024px) {
+
+    .split-layout {
+        padding: 3.5rem 4rem;
+        border-radius: 2rem 2rem 0 0;
+    }
+
+}
+
+
+/* ==========================
+   TABLET 768px
+   ========================== */
+
+@media (max-width: 768px) {
+
+    .split-layout {
+        padding: 2.5rem;
+        border-radius: 1.5rem 1.5rem 0 0;
+    }
+
+    .split-wrapper {
+        /* max-width: 900px; */
+        gap: 0.75rem;
+    }
+
+
+}
+
+/* ==========================
+   MÓVIL 600px
+   ========================== */
+@media (max-width: 600px) {
+
+    .split-layout {
+        padding: 2rem 1rem;
+        border-radius: 1rem 1rem 0 0;
+        justify-content: center;
+    }
+
+    .split-wrapper {
+        gap: 0.5rem;
+        max-width: 400px;
+        width: 100%;
+    }
+
+    /* .info-side {
+        order: 1;
+        flex: 1 1 auto;
+        width: 100%;
+        min-width: 0;
+        margin-inline: auto;
+    }
+
+    .media-side {
+        order: 2;
+        flex: 1 1 auto;
+        width: 100%;
+        min-width: unset;
+    } */
+}

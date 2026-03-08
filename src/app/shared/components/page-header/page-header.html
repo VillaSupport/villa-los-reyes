@@ -1,0 +1,21 @@
+<section class="header-section">
+  <div class="text-content">
+    @if (header(); as head) {
+    <h1>{{ head!.title | translate}}</h1>
+    <p [innerHTML]="head!.description | translate"></p>
+    }
+    @else {
+    <div class="skeleton skeleton-text skeleton-title"></div>
+    <div class="skeleton skeleton-text skeleton-para"></div>
+    <div class="skeleton skeleton-text skeleton-para short"></div>
+    }
+  </div>
+
+  @if (reserveSpace()) {
+  <div class=" image-wrapper" [class.skeleton]="!header()?.img || !isLoaded()">
+    @if (header()?.img; as image ) {
+    <img [src]="image!.src" [alt]="image!.alt | translate" (load)="onImageLoad()" loading="lazy" />
+    }
+  </div>
+  }
+</section>

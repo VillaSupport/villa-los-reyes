@@ -17,7 +17,7 @@ export class DiscoverPackageDefaultOne {
   header = {
     title: 'packages.title',
     description: 'packages.description',
-    link: { text: 'packages.linkText', url: '/packages' }
+    link: { label: 'packages.linkText', route: '/packages' }
   };
 
   packages = packages.slice(0, 3);

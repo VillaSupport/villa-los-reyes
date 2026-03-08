@@ -1,0 +1,68 @@
+<section class="preview-section" [class.white-bg]="whiteBg()">
+    <div class="preview-container" [class.is-reversed]="reverse()">
+
+        <div class="preview-main">
+            @if (category(); as data) {
+
+            <div class="main-box" [class.skeleton]="!mainImageLoaded()">
+                <img [src]="data.image.src" [alt]="data.image.alt" (load)="onMainImageLoad()" loading="lazy">
+            </div>
+
+            <info-block [data]="infoData()" />
+            }
+            @else {
+            <div class="skeleton main-box"></div>
+            <div class="skeleton-container">
+                <div class="skeleton skeleton-main-title"></div>
+
+                <div class="skeleton-paragraph-group">
+                    <div class="skeleton skeleton-main-para full"></div>
+                    <div class="skeleton skeleton-main-para medium"></div>
+                    <div class="skeleton skeleton-main-para long"></div>
+                    <div class="skeleton skeleton-main-para full"></div>
+                    <div class="skeleton skeleton-main-para short"></div>
+                </div>
+            </div>
+
+            }
+
+        </div>
+
+        <div class="preview-aside">
+            @for (item of limitedItems(); track $index) {
+            <div class="aside-item">
+
+                @if (category(); as cat) {
+                <a class="item-wrap" [class.is-static]="!loadedPreviewIndices().has($index)"
+                    [routerLink]="loadedPreviewIndices().has($index) ? ['/', basePath(), cat.slug, item.slug] : null">
+
+                    <div class="item-img-box" [class.skeleton]="!loadedPreviewIndices().has($index)">
+                        <img [src]="item.image.src" (load)="onPreviewImageLoad($index)"
+                            [style.opacity]="loadedPreviewIndices().has($index) ? 1 : 0">
+                    </div>
+
+                    <div class="text-overlay" [class.has-image]="loadedPreviewIndices().has($index)">
+                        @if (loadedPreviewIndices().has($index) ) {
+                        <h3 class="item-title">{{ item.title }}</h3>
+                        <p class="item-description">{{ item.description }}</p>
+                        } @else {
+                        <div class="skeleton skeleton-text skeleton-title medium"></div>
+                        <div class="skeleton skeleton-text skeleton-para short"></div>
+                        }
+                    </div>
+                </a>
+                } @else {
+                <div class="item-wrap is-static">
+                    <div class="item-img-box skeleton"></div>
+                    <div class="text-overlay">
+                        <div class="skeleton skeleton-text skeleton-title medium"></div>
+                        <div class="skeleton skeleton-text skeleton-para base"></div>
+                    </div>
+                </div>
+
+                }
+            </div>
+            }
+        </div>
+    </div>
+</section>

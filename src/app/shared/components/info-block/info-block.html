@@ -1,0 +1,22 @@
+<section class="info-block">
+    <h1 class="info-title">{{ data().title }}</h1>
+    <p class="info-desc" [innerHTML]="data().desc"></p>
+
+    <div class="feature-group">
+        <h2 class="feature-title">{{ data().featureTitle }}</h2>
+        <ul class="feature-list">
+            @for (feature of data().features; track $index) {
+            <li class="feature-item">
+                <i class="fa-solid fa-check feature-icon"></i>
+                {{ feature }}
+            </li>
+            }
+        </ul>
+    </div>
+
+    @if (data().slug && data().linkText) {
+    <a [routerLink]="data().slug" class="action-link">
+        {{ data().linkText }}
+    </a>
+    }
+</section>

@@ -3,9 +3,9 @@
 
   <p [innerHTML]="description() | translate"></p>
 
-  @if (link()) {
-    <a [routerLink]="link()?.url" class="info-button">
-      {{ link()?.text | translate }}
-    </a>
+  @if (slug() && linkText()) {
+  <a [routerLink]="slug()" class="info-button">
+    {{ linkText() | translate }}
+  </a>
   }
 </div>

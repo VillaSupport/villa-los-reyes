@@ -9,7 +9,6 @@ import { TranslatePipe } from '@ngx-translate/core';
   styleUrl: './gallery-experience-section.css'
 })
 export class GalleryExperienceSection {
-
   images = input.required<{ src: string; title: string; path: string }[]>();
   title = input.required<string>();
 

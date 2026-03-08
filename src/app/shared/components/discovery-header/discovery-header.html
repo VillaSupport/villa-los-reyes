@@ -1,0 +1,11 @@
+<div class="section-header">
+    <h1 [innerHTML]="header().title | translate"></h1>
+
+    <p [appMarkdownLinks]="header().description | translate"></p>
+
+    @if (header().link; as link) {
+        <a [routerLink]="link.route">
+            {{ link.label | translate }}
+        </a>
+    }
+</div>

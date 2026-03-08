@@ -1,0 +1,108 @@
+:host {
+  --header-img-height: 520px;
+  --header-img-pos: center;
+  --header-title-color: #d17d00;
+  --header-text-color: #186b53;
+
+  font-family: var(--font-main, sans-serif);
+  display: block;
+  width: 100%;
+}
+
+.header-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.text-content h1 {
+  color: var(--header-title-color);
+  font-size: 4.25rem;
+  font-weight: 700;
+  letter-spacing: -0.017rem;
+}
+
+.text-content p {
+  color: var(--header-text-color);
+  font-size: 1.295rem;
+  max-width: 1024px;
+  letter-spacing: 0.00625rem;
+}
+
+.text-content p strong {
+  color: inherit;
+  font-weight: 700;
+}
+
+.skeleton-title {
+  width: 60%;
+  height: 4rem;
+  margin: 1rem 0;
+}
+
+.skeleton-para {
+  width: 80%;
+  height: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.skeleton-para.short { width: 40%; }
+
+
+.header-section p strong {
+  color: #186b53;
+  font-weight: 700;
+}
+
+.image-wrapper {
+  width: 100%;
+  min-height: var(--header-img-height);
+  margin: 1.275rem auto 0;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  display: block;
+  width: 100%;
+  height: var(--header-img-height);
+  object-fit: cover;
+  object-position: var(--header-img-pos, center);
+}
+
+
+@media (max-width: 1280px) {
+  :host { --header-img-height: 500px; }
+  .text-content h1 { font-size: 3.75rem; }
+  .header-section p { font-size: 1.1875rem; }
+}
+
+
+@media (max-width: 1024px) {
+  :host { --header-img-height: 460px; }
+  .text-content h1 { font-size: 3.25rem; }
+  .text-content p { font-size: 1.125rem; }
+}
+
+
+@media (max-width: 768px) {
+  :host { --header-img-height: 420px; }
+  .text-content h1 { font-size: 2.5rem; }
+  .text-content p { font-size: 1.0625rem; }
+}
+
+
+@media (max-width: 600px) {
+  :host { --header-img-height: 400px; }
+  .text-content h1 { font-size: 1.875rem; }
+  .text-content p { font-size: 1rem; }
+}

@@ -1,7 +1,7 @@
 <div class="page-content">
 
   <!-- HEADER -->
-  <main-header-section [head]="{
+  <page-header [header]="{
       title: header.title,
       description: header.description
     }" />
@@ -9,8 +9,7 @@
   <!-- GALLERY -->
   <gallery-info-section [mainImage]="gallery.mainImage" [thumbImages]="gallery.thumbImages" [title]="gallery.title"
     [description]="gallery.description" [link]="gallery.link" [features]="gallery.features"
-    [featuresTitle]="gallery.featuresTitle" [reverse]="gallery.reverse ?? false" [color]="gallery.color"
-    [hasHostBg]="gallery.hasHostBg" />
+    [featuresTitle]="gallery.featuresTitle" [reverse]="gallery.reverse ?? false" [color]="gallery.color" />
 
   <room-navigator (onPrev)="goPrev()" (onNext)="goNext()">
   </room-navigator>
@@ -26,9 +25,6 @@
     [linkText]="'exploreRooms.linkText'" [items]="rooms.slice(0,5)" [link]="'/services-facilities/facilities'"
     [cardTemplate]="roomCardTemplate">
   </explore-items-section>
-
-
-
 </div>
 
 

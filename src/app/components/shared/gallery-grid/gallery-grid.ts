@@ -20,6 +20,5 @@ export class GalleryGrid {
   // === Inputs obligatorios ===
   mainImage = input.required<{ src: string; alt: string }>();
   thumbImages = input<{ src: string; alt: string }[]>();
-
 }
 

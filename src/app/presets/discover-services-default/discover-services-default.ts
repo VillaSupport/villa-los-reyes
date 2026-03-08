@@ -21,7 +21,7 @@ export class DiscoverServicesDefault {
   header = {
     title: 'discoverServices.header.title',
     description: 'discoverServices.header.description',
-    link: { text: 'discoverServices.header.linkText', url: '/services-facilities' }
+    link: { label: 'discoverServices.header.linkText', route: '/services-facilities' }
   };
 
 

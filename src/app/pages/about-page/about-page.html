@@ -1,20 +1,19 @@
 <div class="page-content">
 
-  <main-header-section [head]="{
+  <page-header [header]="{
     title: 'about.mainHeader.title',
-    description: 'about.mainHeader.description'
-  }" [image]="{
-    src: '/assets/images/header/slide-facade.jpg',
-    alt: 'about.mainHeader.imageAlt'
-  }" [objectPosition]="'50% 75%'" />
+    description: 'about.mainHeader.description',
+    img:{src: '/assets/images/header/slide-facade.jpg',
+    alt: 'about.mainHeader.imageAlt'}
+  }" />
 
-  <gallery-info-section
+  <gallery-info-section class='gallery-info'
     [mainImage]="{ src: 'assets/images/gallery/slide-terrace.jpg', alt: 'images.aboutSection.mainAlt' }" [thumbImages]="[
     { src: 'assets/images/gallery/slide-room.jpg', alt: 'images.aboutSection.thumb1Alt' },
     { src: 'assets/images/gallery/slide-restaurant.jpg', alt: 'images.aboutSection.thumb2Alt' },
     { src: 'assets/images/gallery/slide-solar-panels.jpg', alt: 'images.aboutSection.thumb3Alt' }
   ]" [title]="'about.info.title'" [description]="'about.info.description'"
-    [link]="{ text: 'about.info.button', url: '/about' }" [hasHostBg]="false" />
+    [link]="{ text: 'about.info.button', url: '/about' }" />
 
   <!-- Sección Ubicación -->
   <split-layout-section class="location-section" [info]="{

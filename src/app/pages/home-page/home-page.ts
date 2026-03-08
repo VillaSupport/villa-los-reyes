@@ -78,7 +78,7 @@ export class HomePage {
   experienceHeader = {
     title: 'experiences.header.title',
     description: 'experiences.header.description',
-    link: { text: 'experiences.header.linkText', url: '/experiences' }
+    link: { label: 'experiences.header.linkText', route: '/experiences' }
   };
 
   experienceImages = [
