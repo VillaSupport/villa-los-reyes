@@ -1,7 +1,7 @@
 <a class="room-card" [routerLink]="room().path">
-  <img [src]="room().src" [alt]="room().name | translate" />
+  <img [src]="room().image.src" [alt]="room().image.alt| translate" />
   <div class="overlay">
-    <h3>{{ room().name | translate }}</h3>
+    <h3>{{ room().title | translate }}</h3>
     <p>{{ room().details | translate }}</p>
   </div>
 </a>

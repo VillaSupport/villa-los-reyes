@@ -10,11 +10,6 @@
 }
 
 .split-layout {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 5rem;
-    border-radius: 3rem 3rem 0 0;
     z-index: 5;
     background-color: #E4EAE5;
 }
@@ -29,10 +24,9 @@
 
 .split-wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    width: 100%;
-    max-width: 1568px;
     gap: 1.25rem;
 }
 
@@ -59,10 +53,6 @@
 }
 
 @media (max-width: 1439px) {
-    .split-layout {
-        padding: 5rem;
-        border-radius: 2.5rem 2.5rem 0 0;
-    }
 
     .split-wrapper {
         flex-direction: column;
@@ -98,26 +88,12 @@
    DESKTOP PEQUEÑO – 1024px
    ========================== */
 
-@media (max-width: 1024px) {
-
-    .split-layout {
-        padding: 3.5rem 4rem;
-        border-radius: 2rem 2rem 0 0;
-    }
-
-}
-
 
 /* ==========================
    TABLET 768px
    ========================== */
 
 @media (max-width: 768px) {
-
-    .split-layout {
-        padding: 2.5rem;
-        border-radius: 1.5rem 1.5rem 0 0;
-    }
 
     .split-wrapper {
         /* max-width: 900px; */
@@ -131,17 +107,13 @@
    MÓVIL 600px
    ========================== */
 @media (max-width: 600px) {
-
     .split-layout {
-        padding: 2rem 1rem;
-        border-radius: 1rem 1rem 0 0;
+
         justify-content: center;
     }
 
     .split-wrapper {
         gap: 0.5rem;
-        max-width: 400px;
-        width: 100%;
     }
 
     /* .info-side {

@@ -12,6 +12,11 @@ export const LAB_ROUTES: Routes = [
           .then(m => m.SkeletonTestComponent)
       },
       {
+        path:'test-gallery-component',
+         loadComponent: () => import('./test-gallery-component/test-gallery-component') 
+          .then(m => m.TestGalleryComponent)
+      },
+      {
         path: 'header',
         loadComponent: () => import('./main-header-lab-component/main-header-lab-component') 
           .then(m => m.MainHeaderLabComponent)
@@ -20,11 +25,6 @@ export const LAB_ROUTES: Routes = [
         path: 'header-test',
         loadComponent: () => import('./header-componente-test/header-componente-test') 
           .then(m => m.HeaderComponenteTest)
-      },
-      {
-        path: 'category-test',
-        loadComponent: () => import('./category-test/category-test') 
-          .then(m => m.CategoryPreviewTestComponent)
       },
       {
         path: 'adeventure-grid-test',

@@ -1,11 +1,11 @@
 {
   "category": "cycletours",
-  "title":"Todos nuestros ciclotour",
+  "title":"Todos los ciclotours",
   "adventures": [
     {
       "id": 1,
       "slug": "el-calvario-ride",
-      "relatedPackageSlug": "natural-adventure",
+      "relatedPackageSlug": "relaxing-beach",
       "title": "El Calvario",
       "desc": "Explora la belleza de <strong>Viñales</strong> con la excursión <strong>“El Calvario”</strong>, un recorrido lleno de <strong>paisajes</strong> <strong>impresionantes</strong>, desde <strong>valles</strong> <strong>intramontanos</strong> hasta <strong>cultivos</strong> <strong>de</strong> <strong>café</strong> y <strong>tabaco</strong>. Visita el <strong>Mural</strong> <strong>de</strong> <strong>la</strong> <strong>Prehistoria</strong> y finaliza con un refrescante baño en el <strong>río El Calvario</strong>. Ideal para amantes del <strong>ciclismo</strong> y la <strong>naturaleza</strong>, esta experiencia combina <strong>aventura</strong>, <strong>ejercicio</strong> e <strong>inmersión cultural</strong>.",
       "imgs": [
@@ -25,7 +25,7 @@
     {
       "id": 2,
       "slug": "resbaloso-river-tour",
-      "relatedPackageSlug": "natural-adventure",
+      "relatedPackageSlug": "vinales-360",
       "title": "El Resbaloso",
       "desc": "Embárcate en una <strong>experiencia única</strong> que combina <strong>deporte, cultura e historia</strong> en <strong>Viñales</strong>. Explora el <strong>Palenque de los Cimarrones</strong> para conocer la rica <strong>cultura afrocubana</strong>, navega por el río subterráneo de la <strong>Cueva del Indio</strong> y disfruta de un baño refrescante en el <strong>Río Resbaloso</strong>, rodeado de naturaleza. Culmina tu aventura con una visita a la primera <strong>Cooperativa de Producción Agropecuaria</strong> fundada por <strong>Fidel Castro</strong>, donde conocerás la <strong>historia agrícola de Cuba</strong>. Una excursión ideal para quienes buscan una mezcla de <strong>actividad física</strong> y <strong>enriquecimiento cultural</strong>.",
       "imgs": [
@@ -45,7 +45,7 @@
     {
       "id": 3,
       "slug": "valley-explorer",
-      "relatedPackageSlug": "natural-adventure",
+      "relatedPackageSlug": "vinales-families",
       "title": "Recorriendo valles",
       "desc": "Disfruta de una excursión de tres horas por el <strong>Valle de la Penitencia</strong>, explorando <strong>mogotes</strong>, <strong>valles intramontanos</strong> y el <strong>Mural de la Prehistoria</strong>. Haz una parada en un <strong>mirador natural</strong> y finaliza el recorrido en el <strong>Valle de Viñales</strong>, visitando <strong>secaderos de tabaco</strong> y una <strong>plantación de café</strong>. Una experiencia ideal para los <strong>amantes del ciclismo</strong> y la <strong>naturaleza</strong>.",
       "imgs": [
@@ -65,7 +65,7 @@
     {
       "id": 4,
       "slug": "eco-farming-trip",
-      "relatedPackageSlug": "natural-adventure",
+      "relatedPackageSlug": "romance-vinales",
       "title": "Agricultura ecológica",
       "desc": "Explora el fascinante <strong>ecosistema</strong> de las <strong>Pizarras del Sur</strong> en un recorrido de tres horas, que te llevará a un <strong>lago</strong> para un refrescante chapuzón y luego a la <strong>Finca Agroecológica El Paraíso</strong>, donde aprenderás sobre la <strong>agricultura ecológica</strong> en <strong>Cuba</strong>. Ideal para quienes buscan <strong>naturaleza</strong>, <strong>aventura</strong> y <strong>aprendizaje</strong>, esta excursión ofrece una experiencia completa y única en el corazón de las <strong>Pizarras del Sur</strong>.",
       "imgs": [

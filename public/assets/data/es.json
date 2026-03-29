@@ -1,11 +1,44 @@
 {
+  "LABELS": {
+    "OFFERS": "Paquetes en Oferta",
+    "ROOM_FEATURES": "Esta habitación incluye:",
+    "RECOMMENDATION": "Se recomienda llevar:",
+    "EXPLORE": "Descubre más"
+  },
+
   "HEADER": {
     "EXPERIENCES": {
       "TITLE": "Experiencias y aventuras",
       "DESCRIPTION": "Descubre aventuras inolvidables y experiencias únicas en Viñales.",
-      "ALT": "CAMPESINO TRABAJANDO LA TIERRA CON BUEYES FRENTE A LOS MOGOTES DE VIÑALES"
+      "ALT": "Campesino trabajando la tierra con bueyes frente a los mogotes de viñales"
+    },
+    "SERVICES": {
+      "TITLE": "Servicios e instalaciones",
+      "DESCRIPTION": "Descubre los servicios que harán de tu estancia una experiencia inolvidable",
+      "ALT": "Letrero de madera de Villa Los Reyes Bar Restaurante en una pared de piedra con copas de vino colgadas."
+    },
+    "STAY_BENEFITS": {
+      "TITLE": "Nuestros servicios",
+      "DESCRIPTION": "Descubre servicios que harán de tu estancia una experiencia inolvidable.",
+      "ALT": "Mesa de madera preparada para el almuerzo con vajilla blanca, flores frescas y sillas de madera en el restaurante de la villa."
+    },
+
+    "FACILITIES": {
+      "TITLE": "Nuestras instalaciones",
+      "DESCRIPTION": "Descubre los diferentes espacios que hacen única la experiencia en Villa Los Reyes.",
+      "ALT": "Vista detallada de flores rojas vibrantes y vegetación exuberante junto a la zona de piscina"
+    },
+    "ROOMS": {
+      "TITLE": "Nuestras habitaciones",
+      "DESCRIPTION": "Disfruta de espacios diseñados para tu descanso y una estancia inolvidable en Viñales."
+    },
+    "ABOUT": {
+      "TITLE": "Conoce Villa Los Reyes",
+      "DESCRIPTION": "Descubre nuestra casa de huéspedes con más de <strong>20 años de experiencia</strong>",
+      "ALT": "Fachada exterior de Villa Los Reyes con habitaciones de planta baja."
     }
   },
+
   "SECTION_HEADER": {
     "PACKAGE": {
       "TITLE": "Paquetes en oferta",
@@ -16,11 +49,27 @@
       "TITLE": "Servicios e Instalaciones",
       "DESCRIPTION": "Disfruta de servicios excepcionales: <strong>gastronomía local, traslados y más.</strong>\n¡Todo para una estancia inolvidable!",
       "LINK_TEXT": "CONOCE NUESTROS SERVICIOS E INSTALACIONES"
+    },
+    "EXPERIENCES": {
+      "TITLE": "Experiencias y Aventuras",
+      "DESCRIPTION": "Descubre Viñales con nuestras emocionantes excursiones: [cabalgatas](/experiences/horseback-riding), [senderismo](/experiences/hiking), [ciclotours](/experiences/cycle-tours) y [más](/experiences/other).\n¡Aventuras inolvidables en un entorno natural único te esperan!",
+      "LINK_TEXT": "VER TODAS LAS EXPERIENCIAS Y AVENTURAS"
+    },
+    
+    "ROOMS_HOME": {
+      "TITLE": "Nuestras\nhabitaciones",
+      "DESCRIPTION": "Nuestras cinco habitaciones independientes ofrecen privacidad, baños privados y acceso a diversas áreas comunes, todo en un entorno rodeado de jardines exuberantes y con vistas a los imponentes mogotes del Valle de Viñales.",
+      "LINK_TEXT": "DESCUBRE MÁS"
+    },
+    "ROOMS": {
+      "TITLE": "Te puede interesar",
+      "DESCRIPTION": "Descubre <strong>Viñales</strong> con nuestras emocionantes <strong>excursiones</strong>.\n¡<strong>Aventuras inolvidables</strong> en un entorno natural único te esperan!",
+      "LINK_TEXT": "Descubre más"
     }
   },
 
 
-  
+
   "carousel": {
     "slide1": {
       "alt": "Villa Los Reyes — alojamiento rural en Viñales, fachada principal con jardín y entrada",
@@ -407,10 +456,7 @@
         "description": "Nuestro servicio de lavandería incluye <strong>lavado</strong> y <strong>planchado de ropa</strong>, fregado de <strong>zapatos</strong> y <strong>bolsos</strong>. Así, siempre tendrás todo impecable y listo para disfrutar al máximo. Contamos con un espacio dedicado al lavado a mano, ideal para quienes prefieren realizar el proceso por sí mismos en lugar de optar por el servicio de lavandería.",
         "features": {
           "title": "Servicios:",
-          "items": [
-            "Lavado",
-            "Planchado"
-          ]
+          "items": ["Lavado", "Planchado"]
         }
       },
       {
@@ -1002,18 +1048,9 @@
     "includes": {
       "lodging": "Incluido",
       "duration": "2 noches / 3 días",
-      "activities": [
-        "Senderismo",
-        "Ciclotour por los alrededores (opcional)"
-      ],
-      "gastronomy": [
-        "2 desayunos",
-        "1 almuerzo",
-        "2 cenas"
-      ],
-      "transportation": [
-        "Traslados para todas las excursiones"
-      ]
+      "activities": ["Senderismo", "Ciclotour por los alrededores (opcional)"],
+      "gastronomy": ["2 desayunos", "1 almuerzo", "2 cenas"],
+      "transportation": ["Traslados para todas las excursiones"]
     },
     "pricing": {
       "unit": "por persona"
@@ -1036,14 +1073,8 @@
         "Caminata al amanecer",
         "Visita a una cueva"
       ],
-      "gastronomy": [
-        "3 desayunos",
-        "2 almuerzo",
-        "3 cenas"
-      ],
-      "transportation": [
-        "Traslados a Cayo Jutías y excursiones locales"
-      ]
+      "gastronomy": ["3 desayunos", "2 almuerzo", "3 cenas"],
+      "transportation": ["Traslados a Cayo Jutías y excursiones locales"]
     },
     "pricing": {
       "unit": "por persona"
@@ -1067,14 +1098,8 @@
         "Excursión a una cueva",
         "Día completo en la playa"
       ],
-      "gastronomy": [
-        "4 desayunos",
-        "3 almuerzo",
-        "4 cenas"
-      ],
-      "transportation": [
-        "Traslados para excursiones y día de playa"
-      ]
+      "gastronomy": ["4 desayunos", "3 almuerzo", "4 cenas"],
+      "transportation": ["Traslados para excursiones y día de playa"]
     },
     "pricing": {
       "unit": "por persona"
@@ -1095,14 +1120,8 @@
         "Senderismo por los lugares más emblemáticos de Viñales",
         "Cabalgata al amanecer"
       ],
-      "gastronomy": [
-        "2 desayunos",
-        "1 almuerzo",
-        "2 cenas"
-      ],
-      "transportation": [
-        "Traslados para excursiones privadas"
-      ]
+      "gastronomy": ["2 desayunos", "1 almuerzo", "2 cenas"],
+      "transportation": ["Traslados para excursiones privadas"]
     },
     "pricing": {
       "unit": "por persona"
@@ -1123,14 +1142,8 @@
         "Senderismo por el Valle de La Penitencia",
         "Visita a una finca de tabaco"
       ],
-      "gastronomy": [
-        "2 desayunos",
-        "1 almuerzo",
-        "2 cenas"
-      ],
-      "transportation": [
-        "Traslados para las excursiones incluidas"
-      ]
+      "gastronomy": ["2 desayunos", "1 almuerzo", "2 cenas"],
+      "transportation": ["Traslados para las excursiones incluidas"]
     },
     "pricing": {
       "unit": "por persona"
@@ -1153,14 +1166,8 @@
         "Ciclotour por los alrededores",
         "Visita a la Cueva de Santo Tomás"
       ],
-      "gastronomy": [
-        "3 desayunos",
-        "2 almuerzo",
-        "3 cenas"
-      ],
-      "transportation": [
-        "Traslados para las excursiones incluidas"
-      ]
+      "gastronomy": ["3 desayunos", "2 almuerzo", "3 cenas"],
+      "transportation": ["Traslados para las excursiones incluidas"]
     },
     "pricing": {
       "unit": "por persona"
@@ -1176,16 +1183,9 @@
     "includes": {
       "lodging": "Incluido",
       "duration": "1 noches / 2 días",
-      "activities": [
-        "Historia, cultura y naturaleza"
-      ],
-      "gastronomy": [
-        "1 desayunos",
-        "1 almuerzo"
-      ],
-      "transportation": [
-        "Recogida en La Habana"
-      ]
+      "activities": ["Historia, cultura y naturaleza"],
+      "gastronomy": ["1 desayunos", "1 almuerzo"],
+      "transportation": ["Recogida en La Habana"]
     },
     "pricing": {
       "unit": "por persona"

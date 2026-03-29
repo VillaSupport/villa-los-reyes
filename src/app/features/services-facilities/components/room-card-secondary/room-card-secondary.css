@@ -1,0 +1,58 @@
+:host {
+  display: block;
+  width: 100%;
+  font-family: Poppins, sans-serif;
+}
+
+.room-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  scroll-snap-align: start;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.room-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.room-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10.5;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  display: block;
+}
+
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.55), transparent 50%);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  text-align: left;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
+  background-blend-mode: multiply;
+}
+
+.overlay h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.overlay p {
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: 0.03125rem;
+}

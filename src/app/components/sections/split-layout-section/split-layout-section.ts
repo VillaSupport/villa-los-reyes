@@ -3,10 +3,9 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { InfoPanel } from "../../shared/info-panel/info-panel";
 import { TranslatePipe } from '@ngx-translate/core';
 import { FeatureList } from "../../shared/about/feature-list/feature-list";
+import { ImgData } from '../../../shared/interfaces/common.interface';
 
 type HexColor = `#${string}`;
-type Image = { src: string; alt: string };
-
 
 @Component({
   selector: 'split-layout-section',
@@ -16,7 +15,7 @@ type Image = { src: string; alt: string };
 })
 export class SplitLayoutSection implements OnInit {
   info = input.required<{ title: string; description: string }>();
-  images = input<[Image] | [Image, Image] | null>(null);
+  images = input<[ImgData] | [ImgData, ImgData] | null>(null);
 
   map = input<{ url: string } | null>(null);
   reverse = input<boolean>(false);

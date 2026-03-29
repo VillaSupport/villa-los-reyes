@@ -1,0 +1,7 @@
+
+.fragment-anchor {
+  display: block;
+  position: relative;
+  top: -200px; /* desplaza 80px hacia arriba */
+  visibility: hidden; /* no se ve */
+}

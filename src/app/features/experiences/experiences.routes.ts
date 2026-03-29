@@ -5,24 +5,25 @@ import { SectionNavService } from '../../shared/services/section-nav.service';
 export const EXPERIENCE_ROUTES: Routes = [
   {
     path: '',
-    component: ExperiencesMainPage
-  },
-  {
-    path: ':category',
-    // Proveedor a nivel de rama de ruta: instancia única para esta categoría
+    // Al ponerlo aquí, TODAS las rutas hijas comparten la misma instancia
     providers: [SectionNavService], 
     children: [
       {
-        path: '', // El grid de la categoría
-        loadComponent: () =>
-          import('./pages/templates/adventures-overview-template/adventures-overview-template')
-            .then(m => m.AdventuresOverviewTemplate),
+        path: '',
+        component: ExperiencesMainPage
       },
       {
-        path: ':adventureSlug', // El detalle de la aventura
-        loadComponent: () =>
-          import('./pages/templates/adventure-detail-template/adventure-detail-template')
-            .then(m => m.AdventureDetailTemplate),
+        path: ':category',
+        children: [
+          {
+            path: '',
+            loadComponent: () => import('./pages/templates/adventures-overview-template/adventures-overview-template').then(m => m.AdventuresOverviewTemplate),
+          },
+          {
+            path: ':adventureSlug',
+            loadComponent: () => import('./pages/templates/adventure-detail-template/adventure-detail-template').then(m => m.AdventureDetailTemplate),
+          }
+        ]
       }
     ]
   }

@@ -1,0 +1,20 @@
+<section class="explore-rooms-section section-outer">
+  <div class="explore-rooms-container section-inner">
+    <div class="header">
+      <h2 [innerHTML]="header.title | translate"></h2>
+      <p [innerHTML]="header.description | translate"></p>
+    </div>
+
+    <div class="rooms-grid">
+      @for (room of rooms(); track $index) {
+        <div class="card">
+          <room-card-secondary [room]="room"></room-card-secondary>
+        </div>
+      }
+    </div>
+
+    <a [routerLink]="header.link?.route" class="discover-link">{{
+      header.link?.label | translate
+    }}</a>
+  </div>
+</section>

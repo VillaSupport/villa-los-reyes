@@ -33,8 +33,13 @@
             <div class="aside-item">
 
                 @if (category(); as cat) {
-                <a class="item-wrap" [class.is-static]="!loadedPreviewIndices().has($index)"
-                    [routerLink]="loadedPreviewIndices().has($index) ? ['/', basePath(), cat.slug, item.slug] : null">
+                    @let routeInfo = getRouteInfo(cat.slug, item.slug);
+                <a class="item-wrap" 
+                    [class.is-static]="!loadedPreviewIndices().has($index)"
+                    [routerLink]="loadedPreviewIndices().has($index) ? routeInfo.commands : null"
+                    [fragment]="routeInfo.fragment"
+                    [relativeTo]="route()"
+                    >
 
                     <div class="item-img-box" [class.skeleton]="!loadedPreviewIndices().has($index)">
                         <img [src]="item.image.src" (load)="onPreviewImageLoad($index)"

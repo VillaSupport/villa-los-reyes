@@ -1,0 +1,14 @@
+<div class="rooms-section section-outer">
+  <div class="rooms-container section-inner">
+    <div class="grid-header-info">
+      <h2 class="title" [innerHTML]="info().title | translate"></h2>
+      <p class="description" [innerHTML]="info().desc | translate"></p>
+    </div>
+
+    @for (room of rooms(); track $index) {
+      <room-card 
+        [room]="room"
+      ></room-card>
+    }
+  </div>
+</div>

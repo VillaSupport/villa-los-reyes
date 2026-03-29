@@ -1,1 +1,30 @@
-<p>room-page works!</p>
+<div class="page-content">
+  <page-header [header]="headerData()" />
+
+  @if (room()) {
+    <gallery-split-view
+      class="mt-negative"
+      [mainImage]="mainImage()!"
+      [thumbImages]="thumbnails()"
+      [info]="galleryInfo()"
+      [overlap] = "true"
+    />
+
+    <section-nav
+      [prevDisabled]="nav()?.isFirst ?? false"
+      [nextDisabled]="nav()?.isLast ?? false"
+      (onPrev)="goPrev()"
+      (onNext)="goNext()"
+    />
+
+    @if (packageConfig().hasPackage) {
+      <package-offer
+        [slug]="packageConfig().slug"
+        [subtitle]="packageConfig().subtitle"
+        [baseRoute]="packageConfig().baseRoute"
+      />
+    }
+  }
+  <experiences-cross-sell />
+  <service-cross-list />
+</div>

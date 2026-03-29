@@ -1,5 +1,6 @@
 :host {
   --header-img-height: 520px;
+  --header-bottom-padding: 0.5rem;
   --header-img-pos: center;
   --header-title-color: #d17d00;
   --header-text-color: #186b53;
@@ -23,6 +24,7 @@
   width: 100%;
   text-align: center;
   padding: 0.5rem;
+  padding-bottom: var(--header-bottom-padding);
 }
 
 .text-content h1 {

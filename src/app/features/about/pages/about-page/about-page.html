@@ -1,0 +1,26 @@
+<div class="page-content">
+  <page-header [header]="headerData" />
+
+  @let sections = aboutData();
+
+  @let otherSections = sections?.slice(1);
+
+
+  <about-view></about-view>
+  @for (
+    section of otherSections;
+    track $index;
+    let isEven = $even;
+    let isOdd = $odd
+  ) {
+    @let images = section.images;
+    @let map = section.map;
+    <split-view
+      [images]="images"
+      [map]="map"
+      [info]="{ title: section?.title ?? '', desc: section?.description ?? '' }"
+      [reverse]="isOdd"
+      [whiteBg]="isEven"
+    />
+  }
+</div>

@@ -1,0 +1,143 @@
+:host {
+  display: block;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  position: relative;  
+}
+
+.rooms-section {
+  background: #E4EAE5;
+}
+
+.rooms-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 1fr));
+  gap: 1.75rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.grid-header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 0.75rem;
+  gap: 1.2rem;
+}
+
+.grid-header-info h2 {
+  color: #d17d00;
+  font-size: 2.125rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.grid-header-info p {
+  color: #234e3f;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  letter-spacing: 0.03rem;
+}
+
+@media (max-width: 1600px) {
+  .grid-header-info {
+    gap: 1rem;
+    padding: 1rem 0.75rem;
+  }
+  .grid-header-info h2 {
+    font-size: 1.75rem;
+  }
+
+  .grid-header-info p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .grid-header-info {
+    gap: 0.5rem;
+  }
+
+  .grid-header-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .grid-header-info p {
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 1200px) {
+  .grid-header-info h2 {
+    font-size: 2rem;
+  }
+
+  .grid-header-info p {
+    font-size: 1.1rem;
+  }
+  .rooms-container {
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    gap: 1.75rem;
+  }
+
+  .grid-header-info {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .grid-header-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .grid-header-info p {
+    font-size: 0.90rem; /* Un poco por debajo del estándar para legibilidad compacta */
+  }
+
+  .rooms-container {
+    gap: 1rem; /* Estrechamos un poco el espacio entre fotos */
+  }
+}
+@media (max-width: 800px) {
+  .rooms-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .grid-header-info {
+    grid-column: span 2;
+    text-align: left;
+  }
+
+  .grid-header-info h2 {
+    font-size: 1.80rem;
+  }
+  .grid-header-info p {
+    font-size: 0.95rem;
+  }
+
+  /* .grid-header-info p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.03125rem;
+  } */
+}
+@media (max-width: 600px) {
+  .rooms-container {
+    grid-template-columns: minmax(auto, 480px); 
+    justify-content: center;
+
+    gap: 1rem;
+  }
+
+  .grid-header-info {
+    padding: 0 0.5rem;
+    grid-column: span 1;
+  }
+
+  .grid-header-info h2 {
+    font-size: 1.5rem;
+  }
+  .grid-header-info p {
+    font-size: 0.75rem;
+  }
+}

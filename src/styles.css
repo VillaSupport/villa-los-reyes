@@ -14,7 +14,8 @@
   --sk-animation-speed: 2.6s;
 
   --primary-bg-color: #E4EAE5;   /* Tu verde/gris base */
-  --secondary-bg-color: #f7faf7
+  --secondary-bg-color: #f7faf7;
+  --content-padding-top:160px;
 }
 
 @keyframes shimmer {
@@ -59,7 +60,9 @@
 .mt-negative {
   margin-top: -7.5rem;
 }
-
+.mt-negative-160{
+  margin-top: -160px;
+}
 .full {
   width: 99%;
 }
@@ -133,10 +136,12 @@
   width: 100%;
   max-width: 1728px;
   /* 1568px de contenido + 160px de padding lateral */
+  overflow: hidden;
   padding-left: 5rem;
   padding-right: 5rem;
 
 }
+
 
 @media (max-width: 1280px) {
   .section-outer {
@@ -181,8 +186,8 @@
 
 @media (max-width: 600px) {
   .section-outer {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
     border-radius: 1rem 1rem 0 0;
   }
 

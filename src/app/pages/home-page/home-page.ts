@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { rooms as roomData } from './../../config/room-data';
 
 import { GalleryInfoSection } from "../../components/sections/gallery-info-section/gallery-info-section";
-import { CarouselSection } from "../../components/sections/carousel-section/carousel-section";
+import { CarouselSection } from "../../features/home/components/carousel-section/carousel-section";
 import { DiscoverExperienceSection } from "../../components/sections/discover-experiences-section/discover-experience-section";
 import { DiscoverRoomSection } from "../../components/sections/discover-room-section/discover-room-section";
 import { DiscoverServicesDefault } from "../../presets/discover-services-default/discover-services-default";
@@ -76,9 +76,9 @@ export class HomePage {
   // 3. EXPERIENCES
   // =====================================
   experienceHeader = {
-    title: 'experiences.header.title',
-    description: 'experiences.header.description',
-    link: { label: 'experiences.header.linkText', route: '/experiences' }
+    title: 'SECTION_HEADER.EXPERIENCES.TITLE',
+    description: 'SECTION_HEADER.EXPERIENCES.DESCRIPTION',
+    link: { label: 'SECTION_HEADER.EXPERIENCES.LINK_TEXT', route: '/experiences' }
   };
 
   experienceImages = [

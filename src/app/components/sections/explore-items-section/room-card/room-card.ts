@@ -1,6 +1,7 @@
 import { Component, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
+import { ImgData } from '../../../../shared/interfaces/common.interface';
 
 @Component({
   selector: 'room-card',
@@ -12,11 +13,10 @@ import { TranslatePipe } from '@ngx-translate/core';
 export class RoomCard {
 
   room = input.required<{
-    src: string;
-    alt: string;
-    name: string;
+    image:ImgData;
+    title: string;
     details: string;
-    path: string;
+    path?: string;
   }>();
 
 }

@@ -1,0 +1,71 @@
+[
+  {
+    "id": "1",
+    "slug": "about-villa",
+    "title": "Conoce\nVilla Los Reyes",
+    "description": "Bienvenido a <strong>Villa Los Reyes</strong> en <strong>Viñales</strong>. Con más de <strong>20 años de experiencia</strong>, ofrecemos servicios hoteleros y extrahoteleros adaptados a tus necesidades. Nos dedicamos a garantizar tu <strong>máxima comodidad</strong>, asegurando que disfrutes de un <strong>resort ecológico</strong> con <strong>disponibilidad eléctrica las 24 horas</strong>. Ven y disfruta de una experiencia única en un entorno incomparable.",
+    "images": [
+      {
+        "src": "assets/imgs/shared/garden-terrace.webp",
+        "alt": "Jardín interior con senderos rojizos y terraza elevada rodeada de vegetación tropical."
+      },
+      {
+        "src": "assets/imgs/rooms/room-05/cozy-bedroom-queen-bed-red-walls.webp",
+        "alt": "Habitación acogedora con cama queen y paredes rojas"
+      },
+      {
+        "src": "assets/imgs/services/gastronomy/villa-los-reyes-bar-restaurant.webp",
+        "alt": ": Barra rústica del bar Villa Los Reyes con copas de cristal colgadas y botellas de vino sobre paredes de piedra clara"
+      },
+      {
+        "src": "assets/imgs/shared/solar-panels.webp",
+        "alt": "Paneles solares instalados en la terraza de Villa Los Reyes con vista a los mogotes de Viñales."
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "slug": "location",
+    "title": "Ubicación privilegiada",
+    "description": "Ubicada en un entorno privilegiado, <strong>Villa Los Reyes</strong> se encuentra en el pintoresco pueblo de Viñales, ofreciendo un <strong>acceso fácil y rápido</strong> a todas las atracciones locales mientras se disfruta de la <strong>tranquilidad y belleza natural</strong> de la región.",
+    "map": {
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12646.181147372738!2d-83.71814470930195!3d22.613867528379853!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88cb51356c77abad%3A0xce15618536e54315!2sVilla%20los%20reyes%20Casa%20Yarelis%20y%20Yoan!5e1!3m2!1ses-419!2sus!4v1760252195741!5m2!1ses-419!2sus"
+    }
+  },
+  {
+    "id": "3",
+    "slug": "nature",
+    "title": "Belleza natural",
+    "description": "En Villa Los Reyes, además de encontrar un lugar de <strong>descanso</strong>, podrá acceder a una variedad de <strong>experiencias y aventuras</strong>. Ofrecemos <strong>ecoactividades guiadas</strong> por expertos locales que le permitirán explorar la <strong>belleza natural y cultural de Viñales</strong>, desde <strong>excursiones</strong> a pie, a caballo, en coche y en bicicleta hasta visitas a <strong>plantaciones de tabaco y cuevas</strong>.",
+    "images": [
+      {
+        "src": "assets/imgs/shared/vinales-valley-view.webp",
+        "alt": "Vista panorámica del valle de Viñales y sus mogotes bajo un cielo despejado."
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "slug": "comfort",
+    "title": "Confort",
+    "description": "Villa Los Reyes es un <strong>resort ecológico privado</strong> de <strong>construcción moderna</strong>, equipado con <strong>paneles solares</strong> para garantizar <strong>electricidad las 24 horas</strong>. Ofrece <strong>cinco cómodas habitaciones</strong>, un <strong>restaurante</strong> con platos locales e internacionales y un <strong>bar con exquisita coctelería cubana</strong>. También dispone de una <strong>piscina</strong> perfecta para los días calurosos y accesibilidad para sillas de ruedas. Desde sus terrazas se disfruta una <strong>majestuosa vista a los mogotes</strong>, completando una experiencia única de confort y naturaleza.",
+    "images": [
+      {
+        "src": "assets/imgs/outdoor/gardens/lush-garden-red-flowers-pool.webp",
+        "alt": "Vista detallada de flores rojas vibrantes y vegetación exuberante junto a la zona de piscina"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "slug": "green",
+    "title": "Sostenibilidad",
+    "description": "Nos enorgullece decir que nuestra villa es <strong>sostenible</strong>, ya que la <strong>energía eléctrica</strong> que utilizamos es administrada mediante <strong>paneles solares</strong>, contribuyendo así al <strong>cuidado del medio ambiente</strong>. Además, hemos implementado <strong>prácticas de reciclaje</strong> y <strong>uso eficiente del agua</strong>, asegurando que cada aspecto de nuestra operación minimice el impacto ecológico y promueva un <strong>futuro más verde y saludable</strong>.",
+    "images": [
+      {
+        "src": "assets/imgs/shared/solar-panels.webp",
+        "alt": "Paneles solares instalados en la terraza de Villa Los Reyes con vista a los mogotes de Viñales."
+      }
+    ]
+  }
+]

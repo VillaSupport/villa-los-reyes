@@ -1,25 +1,33 @@
 <div>
-    <page-header [header]="{
-    title: 'Lorem ipsum, dolor sit amet',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita qui velit eligendi ad esse?'}" />
+    <page-header 
+    [header]="header" 
+    [reserveSpace]="false"
+    style="--header-bottom-padding: 2.5rem;"
+    />
 
+    <!-- TODO:Este componente deberia auto manejar la nulidad de sus valores -->
     @if (mainData()) {
-    <detailed-gallery [info]="mainData()!.info" [images]="mainData()!.images"></detailed-gallery>
+    <detailed-gallery 
+        [overlap] = "true" 
+        [info]="mainData()!.info" 
+        [images]="mainData()!.images"
+    />
     }
 
-
-    <section-nav [prevDisabled]="nav()?.isFirst ?? true" [nextDisabled]="nav()?.isLast ?? true" (onPrev)="goPrev()"
+    <section-nav [prevDisabled]="nav()?.isFirst ?? false" [nextDisabled]="nav()?.isLast ?? false" (onPrev)="goPrev()"
         (onNext)="goNext()">
     </section-nav>
 
-    <!-- @if (relatedPackage()) {
-    <package-promo-card [data]="relatedPackage()!"></package-promo-card>
-    } -->
-
-    <feature-discovery [title]="''" [description]="''"></feature-discovery>
+    
+    @if (packageConfig().hasPackage) {
+      <package-offer
+        [slug]="packageConfig().slug"
+        [subtitle]="packageConfig().subtitle"
+        [baseRoute]="packageConfig().baseRoute"
+      />
+    }
+    
+    <room-cross-sell></room-cross-sell>
 
 </div>
 
-<ng-template #roomCardTemplate let-room>
-    <room-card [room]="room"></room-card>
-</ng-template>

@@ -1,12 +1,11 @@
 .room-item {
-  font-family: 'Poppins', sans-serif;
   display: block;
-  /* Cambiado de flex para mejor control de posición */
+  position: relative;
+  overflow: hidden;
+
   width: 100%;
   aspect-ratio: 1.0265;
-  position: relative;
-  border-radius: 1.25rem;
-  overflow: hidden;
+  border-radius: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
   isolation: isolate;
@@ -40,9 +39,6 @@
 }
 
 .text-container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
   padding: 2.8rem;
   /* El espacio interno de la carta */

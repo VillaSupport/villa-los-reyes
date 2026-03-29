@@ -1,0 +1,18 @@
+@let data = aboutData();
+
+@let images = data?.images;
+@let firstImage = images?.[0];
+@let otherImages = images?.slice(1);
+
+<gallery-split-view
+  class="mt-negative"
+  [mainImage]="firstImage"
+  [thumbImages]="otherImages"
+  [overlap]="true"
+  [info]="{
+    title: data?.title ?? '',
+    desc: data?.description ?? '',
+    slug: '/about',
+    linkText: 'LABELS.EXPLORE',
+  }"
+/>

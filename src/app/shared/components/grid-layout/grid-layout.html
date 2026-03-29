@@ -1,0 +1,10 @@
+<section class="main-grid">
+      @for (item of items(); track item.id || $index) {
+        <div class="grid-cell">
+          <ng-container 
+            [ngTemplateOutlet]="cardTemplate()" 
+            [ngTemplateOutletContext]="{ $implicit: item }">
+          </ng-container>
+        </div>
+      }
+    </section>

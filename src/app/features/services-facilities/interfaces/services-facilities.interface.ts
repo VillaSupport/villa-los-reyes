@@ -47,7 +47,12 @@ interface BaseSpace {
   desc: string;
 }
 
-export interface RoomItem {
+export interface RoomData {
+  id: string | number;
+  relatedPackageSlug: string,
+  headerIndex: number,
+  cardIndex: number,
+  slug:string;
   title: string;
   desc: string;
   capacity: string;
@@ -57,7 +62,7 @@ export interface RoomItem {
 
 export interface RoomSpace extends BaseSpace {
   type: 'rooms'; // Etiqueta obligatoria
-  items: RoomItem[];
+  items: RoomData[];
 }
 
 export interface CommonSpace extends BaseSpace {

@@ -1,9 +1,9 @@
-import { Component, input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { CategoryPreview } from "../../components/category-preview/category-preview";
 import { AdventurePreview, CategoryDetail,} from '../../interfaces/feature-overview.interface';
 import { PageHeader } from "../../components/page-header/page-header";
-import { TranslatePipe } from '@ngx-translate/core';
 import { HeaderData } from '../../interfaces/common.interface';
+import { ActivatedRoute } from '@angular/router';
 
 export interface FeatureTemplateItem {
   main: CategoryDetail;
@@ -14,10 +14,9 @@ export interface FeatureTemplateItem {
   selector: 'feature-overview-template',
   imports: [CategoryPreview, PageHeader],
   templateUrl: './feature-overview-template.html',
-  styleUrl: './feature-overview-template.css',
 })
 export class FeatureOverviewTemplate {
+  public route = inject(ActivatedRoute);
   header = input.required<HeaderData>();
   items = input.required<FeatureTemplateItem[]>();
-  featureSlug = input.required<string>()
 }

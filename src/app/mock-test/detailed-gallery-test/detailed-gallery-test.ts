@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { DetailedGallery } from "../../shared/components/detailed-gallery/detailed-gallery";
-import { InfoData } from '../../shared/components/info-block/info-block';
-import { HeaderData, ImgData } from '../../shared/interfaces/common.interface';
+import { HeaderData, ImgData, InfoData } from '../../shared/interfaces/common.interface';
 import { Position } from '../../components/shared/interfaces/app-interfaces';
 import { PageHeader } from "../../shared/components/page-header/page-header";
 

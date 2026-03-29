@@ -1,0 +1,12 @@
+<section class="split-view-section section-outer" [class.white-bg]="whiteBg()">
+  <div class="split-view-container section-inner" [class.is-reversed]="reverse()">
+    <gallery-thumbs-grid class="gallery-grid" [mainImage]="mainImage()" [thumbImages]="thumbImages()" />
+
+    <div class="info-column">
+      <info-block [data]="info()" />
+
+    </div>
+  </div>
+</section>
+
+

@@ -6,28 +6,33 @@
       "slug": "habitaciones",
       "type": "rooms",
       "title": "Espacios diseñados para tu descanso y bienestar",
-      "desc": "Las habitaciones están pensadas para ofrecer privacidad, confort y tranquilidad desde el primer momento. Con acceso independiente, buena ventilación y altos niveles de limpieza, cada detalle contribuye a una estancia placentera. Además, las zonas comunes como los jardines, la terraza y el restaurante-bar complementan la experiencia con opciones para relajarte y disfrutar del entorno.",
+      "desc": "Las <strong>habitaciones</strong> están pensadas para ofrecer <strong>privacidad, confort y tranquilidad</strong> desde el primer momento. Con <strong>acceso independiente</strong>, buena <strong>ventilación</strong> y altos niveles de <strong>limpieza</strong>, cada detalle contribuye a una estancia placentera. Además, las zonas comunes como los <strong>jardines, la terraza y el restaurante-bar</strong> complementan la experiencia con opciones para relajarte y disfrutar del entorno.",
       "items": [
         {
+          "id": "1",
+          "slug": "rooms/1",
+          "relatedPackageSlug": "natural-adventure",
+          "headerIndex": 2,
+          "cardIndex": 0,
           "title": "Habitación 1",
           "desc": "Disfruta de una <strong>estancia cómoda</strong> y <strong>relajante</strong> en nuestra amplia habitación, ideal para <strong>parejas, familias</strong> o <strong>grupos</strong>. Equipada con <strong>cómodas camas</strong>, <strong>aire acondicionado</strong>, <strong>baño privado</strong> y una <strong>decoración cálida</strong> con toques <strong>coloniales</strong>, esta habitación ofrece el equilibrio perfecto entre <strong>confort</strong> y <strong>autenticidad cubana</strong>.",
           "capacity": "2 camas / baño privado / 4 personas",
           "images": [
             {
-              "src": "room-01/bathroom-blue-yellow-tiles.webp",
-              "alt": "Bathroom with blue and yellow tiles"
+              "src": "assets/imgs/rooms/room-01/double-bedroom-air-conditioning.webp",
+              "alt": "Habitación doble con aire acondicionado"
             },
             {
-              "src": "room-01/cozy-beds-rustic-decor.webp",
-              "alt": "Cozy beds with rustic decor"
+              "src": "assets/imgs/rooms/room-01/cozy-beds-rustic-decor.webp",
+              "alt": "Camas acogedoras con decoración rústica"
             },
             {
-              "src": "room-01/double-bedroom-air-conditioning.webp",
-              "alt": "Double bedroom with air conditioning"
+              "src": "assets/imgs/rooms/room-01/room-view-garden-safe-box.webp",
+              "alt": "Habitación con vista al jardín y caja fuerte"
             },
             {
-              "src": "room-01/room-view-garden-safe-box.webp",
-              "alt": "Room view of the garden and safe box"
+              "src": "assets/imgs/rooms/room-01/bathroom-blue-yellow-tiles.webp",
+              "alt": "Baño con azulejos azules y amarillos"
             }
           ],
           "features": [
@@ -42,25 +47,31 @@
           ]
         },
         {
+          "id": "2",
+          "slug": "rooms/2",
+          "relatedPackageSlug": "romance-vinales",
+          "headerIndex": 2,
+          "cardIndex": 0,
           "title": "Habitación 2",
           "desc": "Descubre nuestra <strong>amplia</strong> y <strong>luminosa habitación</strong>, ideal para <strong>familias</strong> o <strong>grupos</strong>. Con <strong>tres cómodas camas</strong>, esta habitación ofrece el ambiente perfecto para <strong>relajarse</strong>. Disfruta de la <strong>luz natural</strong> que entra por la gran <strong>ventana corrediza</strong> y de la hermosa <strong>vista al jardín</strong> exterior.",
           "capacity": "3 camas / baño privado / 4 personas",
           "images": [
             {
-              "src": "room-02/bedside-table-lamp-detail.webp",
-              "alt": "Detail of bedside table lamp"
+              "src": "assets/imgs/rooms/room-02/triple-room-blue-wall-garden-view.webp",
+              "alt": "Habitación triple con pared azul y vista al jardín"
+            },
+
+            {
+              "src": "assets/imgs/rooms/room-02/blue-bedroom-night-lighting.webp",
+              "alt": "Habitación azul con iluminación nocturna"
             },
             {
-              "src": "room-02/blue-bedroom-night-lighting.webp",
-              "alt": "Blue bedroom with night lighting"
+              "src": "assets/imgs/rooms/room-02/view-from-bed-to-patio.webp",
+              "alt": "Vista desde la cama hacia el patio"
             },
             {
-              "src": "room-02/triple-room-blue-wall-garden-view.webp",
-              "alt": "Triple room with blue wall and garden view"
-            },
-            {
-              "src": "room-02/view-from-bed-to-patio.webp",
-              "alt": "View from bed looking out to the patio"
+              "src": "assets/imgs/rooms/room-02/bedside-table-lamp-detail.webp",
+              "alt": "Detalle de la lámpara en la mesa de noche"
             }
           ],
           "features": [
@@ -76,33 +87,38 @@
           ]
         },
         {
+          "id": "3",
+          "slug": "rooms/3",
+          "relatedPackageSlug": "relaxing-beach",
+          "headerIndex": 5,
+          "cardIndex": 0,
           "title": "Habitación 3",
           "desc": "<strong>Habtación</strong> ideal para <strong>relajarse</strong> tras un día de exploración. Esta <strong>habitación</strong> ofrece lo <strong>esencial</strong> para una <strong>estancia cómoda</strong>. Disfruta de la <strong>luz natural</strong> que <strong>ilumina</strong> el espacio y la <strong>tranquilidad</strong> que ofrece.",
           "capacity": "2 camas / baño privado / 4 personas",
           "images": [
             {
-              "src": "room-03/bedroom-sunset-lighting.webp",
-              "alt": "Bedroom with sunset lighting"
+              "src": "assets/imgs/rooms/room-03/double-room-black-headboards.webp",
+              "alt": "Habitación doble con cabeceros negros"
             },
             {
-              "src": "room-03/decorative-lighting-golden-hour.webp",
-              "alt": "Decorative lighting during golden hour"
+              "src": "assets/imgs/rooms/room-03/bedroom-sunset-lighting.webp",
+              "alt": "Habitación con iluminación al atardecer"
             },
             {
-              "src": "room-03/double-room-black-headboards.webp",
-              "alt": "Double room with black headboards"
+              "src": "assets/imgs/rooms/room-03/room-safe-and-shelving-detail.webp",
+              "alt": "Detalle de la caja fuerte y estantería de la habitación"
             },
             {
-              "src": "room-03/grey-marble-bathroom-pink-towel.webp",
-              "alt": "Grey marble bathroom with pink towel"
+              "src": "assets/imgs/rooms/room-03/grey-marble-bathroom-pink-towel.webp",
+              "alt": "Baño de mármol gris con toalla rosa"
             },
             {
-              "src": "room-03/red-honeycomb-lamp-detail.webp",
-              "alt": "Detail of red honeycomb lamp"
+              "src": "assets/imgs/rooms/room-03/decorative-lighting-golden-hour.webp",
+              "alt": "Iluminación decorativa durante la hora dorada"
             },
             {
-              "src": "room-03/room-safe-and-shelving-detail.webp",
-              "alt": "Detail of room safe and shelving"
+              "src": "assets/imgs/rooms/room-03/red-honeycomb-lamp-detail.webp",
+              "alt": "Detalle de lámpara roja de panal"
             }
           ],
           "features": [
@@ -117,25 +133,30 @@
           ]
         },
         {
+          "id": "4",
+          "slug": "rooms/4",
+          "relatedPackageSlug": "nature-tradition",
+          "headerIndex": 0,
+          "cardIndex": 0,
           "title": "Habitación 4",
           "desc": "Relájate en esta <strong>acogedora habitación</strong> en Viñales, ideal para tu <strong>estadía</strong>. Con <strong>dos cómodas camas individuales</strong> y una decoración en <strong>tonos cálidos</strong>, este espacio ofrece todo lo necesario para una <strong>estancia placentera</strong>.",
           "capacity": "2 camas / baño privado / 4 personas",
           "images": [
             {
-              "src": "room-04/private-patio-white-wrought-iron-chairs.webp",
-              "alt": "Private patio with white wrought iron chairs"
+              "src": "assets/imgs/rooms/room-04/twin-beds-red-white-decor.webp",
+              "alt": "Camas gemelas con decoración en rojo y blanco"
             },
             {
-              "src": "room-04/twin-beds-red-white-decor.webp",
-              "alt": "Twin beds with red and white decor"
+              "src": "assets/imgs/rooms/room-04/twin-room-maroon-accent-wall.webp",
+              "alt": "Habitación doble con pared de acento granate"
             },
             {
-              "src": "room-04/twin-room-maroon-accent-wall.webp",
-              "alt": "Twin room with maroon accent wall"
+              "src": "assets/imgs/rooms/room-04/window-view-to-yellow-villa.webp",
+              "alt": "Vista por la ventana hacia una villa amarilla"
             },
             {
-              "src": "room-04/window-view-to-yellow-villa.webp",
-              "alt": "Window view looking towards a yellow villa"
+              "src": "assets/imgs/rooms/room-04/private-patio-white-wrought-iron-chairs.webp",
+              "alt": "Patio privado con sillas de hierro forjado blanco"
             }
           ],
           "features": [
@@ -150,29 +171,34 @@
           ]
         },
         {
+          "id": "5",
+          "slug": "rooms/5",
+          "relatedPackageSlug": "vinales-families",
+          "headerIndex": 4,
+          "cardIndex": 0,
           "title": "Habitación 5 — Suite",
           "desc": "Sumérgete en una <strong>suite</strong> única, diseñada para ofrecerte el equilibrio perfecto entre <strong>confort</strong> y <strong>estilo</strong>. Pensada para <strong>parejas</strong>, su atmósfera <strong>acogedora</strong> y su <strong>decoración elegante</strong> crean el entorno ideal para el <strong>descanso</strong>. La <strong>luz natural</strong> que inunda el espacio realza su <strong>calidez</strong>, invitándote a <strong>relajarte</strong> tras un día de exploración en Viñales.",
           "capacity": "1 cama king size / baño privado / 2 personas",
           "images": [
             {
-              "src": "room-05/bathroom-sink-tiled-walls.webp",
-              "alt": "Bathroom sink and tiled walls"
+              "src": "assets/imgs/rooms/room-05/cozy-bedroom-queen-bed-red-walls.webp",
+              "alt": "Habitación acogedora con cama queen y paredes rojas"
             },
             {
-              "src": "room-05/bedroom-terrace-access-view.webp",
-              "alt": "Bedroom view with terrace access"
+              "src": "assets/imgs/rooms/room-05/sbedside-view-red-pillows.webp",
+              "alt": "Vista junto a la cama con almohadas rojas"
             },
             {
-              "src": "room-05/bedroom-view-tropical-garden.webp",
-              "alt": "Bedroom view of tropical garden"
+              "src": "assets/imgs/rooms/room-05/bedroom-view-tropical-garden.webp",
+              "alt": "Vista de la habitación al jardín tropical"
             },
             {
-              "src": "room-05/cozy-bedroom-queen-bed-red-walls.webp",
-              "alt": "Cozy bedroom with queen bed and red walls"
+              "src": "assets/imgs/rooms/room-05/bathroom-sink-tiled-walls.webp",
+              "alt": "Lavabo del baño y paredes de azulejos"
             },
             {
-              "src": "room-05/sbedside-view-red-pillows.webp",
-              "alt": "Bedside view with red pillows"
+              "src": "assets/imgs/rooms/room-05/bedroom-terrace-access-view.webp",
+              "alt": "Vista de la habitación con acceso a la terraza"
             }
           ],
           "features": [
@@ -193,11 +219,23 @@
       "slug": "bar-restaurant",
       "type": "common",
       "title": "Bar-Restaurante",
-      "desc": "Nuestro restaurante es amplio y acoge a varios comensales, ofreciendo un ambiente climatizado o, si lo prefieres, con acceso al jardín para disfrutar de las vistas. El bar, ubicado junto a una piscina en una pequeña terraza, te invita a relajarte mientras saboreas exquisitos cócteles. Un lugar ideal para disfrutar de una experiencia única.",
+      "desc": "Nuestro <strong>restaurante</strong> es <strong>amplio</strong> y acoge a <strong>varios comensales</strong>, ofreciendo un <strong>ambiente climatizado</strong> o, si lo prefieres, con acceso al <strong>jardín</strong> para disfrutar de las vistas. El <strong>bar</strong>, ubicado junto a una <strong>piscina</strong> en una <strong>pequeña terraza</strong>, te invita a relajarte mientras saboreas exquisitos cócteles. Un lugar ideal para disfrutar de una experiencia única.",
       "images": [
         {
-          "imageUrl": "assets/imgs/facilities/restaurant-main.jpg",
-          "imgDesc": "Área de bar y mesas exteriores"
+          "src": "assets/imgs/services/gastronomy/dining-table-setup-villa-los-reyes.webp",
+          "alt": "Mesa de madera preparada para el almuerzo con vajilla blanca, flores frescas y sillas de madera en el restaurante de la villa."
+        },
+        {
+          "src": "assets/imgs/services/gastronomy/villa-los-reyes-bar-sign-rustic.webp",
+          "alt": "Letrero de madera de Villa Los Reyes Bar Restaurante en una pared de piedra con copas de vino colgadas."
+        },
+        {
+          "src": "assets/imgs/services/gastronomy/villa-los-reyes-bar-restaurant.webp",
+          "alt": ": Barra rústica del bar Villa Los Reyes con copas de cristal colgadas y botellas de vino sobre paredes de piedra clara"
+        },
+        {
+          "src": "assets/imgs/services/gastronomy/villa-los-reyes-dining-area-interior.webp",
+          "alt": "Vista acogedora del interior del restaurante Villa Los Reyes con mesas de madera dispuestas y decoración rústica"
         }
       ]
     },
@@ -206,11 +244,23 @@
       "slug": "garden-pool",
       "type": "common",
       "title": "Jardines y piscina",
-      "desc": "Nuestro jardín está ambientado con plantas locales que resaltan el verdor y la naturaleza cubana. Disfruta de un clima agradable, con abundante exposición al sol, perfecto para relajarte. Además, cuenta con una piscina para que disfrutes de un refrescante baño en un entorno único y tranquilo.",
+      "desc": "Nuestro <strong>jardín</strong> está ambientado con <strong>plantas locales</strong> que resaltan el <strong>verdor</strong> y la <strong>naturaleza cubana</strong>. Disfruta de un <strong>clima agradable</strong>, con abundante <strong>exposición al sol</strong>, perfecto para <strong>relajarte</strong>. Además, cuenta con una <strong>piscina</strong> para que disfrutes de un refrescante baño en un entorno único y tranquilo.",
       "images": [
         {
-          "imageUrl": "assets/imgs/facilities/pool-main.jpg",
-          "imgDesc": "Piscina rodeada de vegetación tropical"
+          "src": "assets/imgs/outdoor/gardens/tropical-garden-pool-mountain-view.webp",
+          "alt": "Jardín tropical con piscina, sombrillas rojas y palmeras con vistas a las montañas"
+        },
+        {
+          "src": "assets/imgs/outdoor/gardens/courtyard-lawn-outdoor-seating.webp",
+          "alt": "Patio soleado con caminos de césped, sillas de hierro blancas y fachadas de color amarillo"
+        },
+        {
+          "src": "assets/imgs/outdoor/gardens/lush-garden-red-flowers-pool.webp",
+          "alt": "Vista detallada de flores rojas vibrantes y vegetación exuberante junto a la zona de piscina"
+        },
+        {
+          "src": "assets/imgs/outdoor/gardens/porch-view-green-backyard.webp",
+          "alt": "Paisaje del jardín con césped verde y palmeras visto desde la sombra de un porche"
         }
       ]
     },
@@ -219,11 +269,23 @@
       "slug": "terrace",
       "type": "common",
       "title": "Terraza",
-      "desc": "Nuestra terraza en la azotea ofrece vistas impresionantes que te permitirán disfrutar de momentos únicos. Con varios espacios cómodos, es el lugar ideal para relajarte, tomar el desayuno o disfrutar de una comida mientras contemplas el paisaje. Un rincón perfecto para un rato agradable en plena naturaleza.",
+      "desc": "Nuestra <strong>terraza en la azotea</strong> ofrece <strong>vistas impresionantes</strong> que te permitirán disfrutar de <strong>momentos únicos</strong>. Con varios <strong>espacios cómodos</strong>, es el lugar ideal para relajarte, tomar el <strong>desayuno</strong> o disfrutar de una <strong>comida</strong> mientras contemplas el paisaje. Un rincón perfecto para un rato agradable en plena naturaleza.",
       "images": [
         {
-          "imageUrl": "assets/imgs/facilities/terrace-view.jpg",
-          "imgDesc": "Vistas a los mogotes desde la azotea"
+          "src": "assets/imgs/outdoor/terraces/white-wrought-iron-furniture-terrace.webp",
+          "alt": "Mesa y sillas de hierro forjado blanco en una terraza."
+        },
+        {
+          "src": "assets/imgs/outdoor/terraces/panoramic-terrace-red-gazebo.webp",
+          "alt": "Vista amplia de la terraza con suelos de terracota, barandilla blanca y un kiosko de techo rojo"
+        },
+        {
+          "src": "assets/imgs/outdoor/terraces/white-garden-bench-palm-trees.webp",
+          "alt": "Banco de jardín blanco de estilo clásico rodeado de palmeras y flores rojas en macetas"
+        },
+        {
+          "src": "assets/imgs/outdoor/terraces/ornate-outdoor-table-detail.webp",
+          "alt": "Primer plano de una mesa de centro de hierro labrado blanco en una terraza al atardecer"
         }
       ]
     }

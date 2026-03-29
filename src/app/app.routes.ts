@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router';
 
-import { HomePage } from './pages/home-page/home-page';
-import { AboutPage } from './pages/about-page/about-page';
+// import { HomePage } from './pages/home-page/home-page';
 import { ServicesFacilitiesPage } from './pages/services-facilities-page/services-facilities-page';
 
 import { FacilitiesPage } from './pages/facilities-page/facilities-page';
@@ -23,6 +22,9 @@ import { aventuraNatural, headerAdventureNature, headerNatureAndTradition, heade
 import { groupNavigatorProvider } from './services/group-navigator.provider';
 import { ReservationSection } from './components/sections/reservation-section/reservation-section';
 import { DetailedGalleryTest } from './mock-test/detailed-gallery-test/detailed-gallery-test';
+// import { AboutPage } from './pages/about-page/about-page';
+import { AboutPage } from './features/about/pages/about-page/about-page';
+import { HomePage } from './features/home/pages/home-page/home-page';
 
 export const routes: Routes = [
 
@@ -48,8 +50,15 @@ export const routes: Routes = [
 
   // { path: '', redirectTo: 'home', pathMatch: 'full' },
 
-  { path: 'home', component: HomePage },
-  { path: 'about', component: AboutPage },
+  // { path: 'home', component: HomePage },
+  { path: 'v2/home', component: HomePage },
+
+  // { path: 'about', component: AboutPage },
+
+  { path: 'v2/about', component:AboutPage },
+
+
+
   { path: 'services-facilities', component: ServicesFacilitiesPage },
   { path: 'services-facilities/facilities', component: FacilitiesPage },
   {

@@ -2,6 +2,8 @@
   {
     "id": 1,
     "category": "horseback",
+    "name":"Cabalgatas",
+
     "title": "Cabalgata en Viñales: naturaleza, cultura y tradición en cada paso",
     "linkText": "Descubre todas las cabalgatas",
     "desc": "Recorrer <strong>Viñales a caballo</strong> es una <strong>experiencia inmersiva</strong> que revela la esencia del <strong>paisaje cubano</strong>. Entre mogotes imponentes y verdes campos de tabaco, el recorrido permite descubrir fincas tradicionales donde se cultivan tabaco y café de forma artesanal. Esta actividad, accesible para todos los niveles, fomenta el turismo sostenible, fortaleciendo el vínculo con las comunidades locales y preservando el entorno natural.",
@@ -39,6 +41,8 @@
   {
     "id": 2,
     "category": "hiking",
+    "name":"Senderismos",
+
     "title": "Senderismo en Viñales: entre montañas, valles y tradiciones vivas",
     "linkText": "Descubre todos los senderismos",
     "desc": "Adentrarse en los senderos de Viñales es descubrir un entorno vibrante donde la biodiversidad, el aire limpio y los paisajes montañosos marcan el ritmo de la caminata. Las rutas atraviesan valles fértiles y miradores naturales, mientras la interacción con campesinos del lugar revela costumbres agrícolas transmitidas por generaciones. Una experiencia enriquecedora que une aventura, cultura y respeto por el entorno.",
@@ -76,6 +80,7 @@
   {
     "id": 3,
     "category": "cycletours",
+    "name":"Ciclotours",
     "title": "Viñales sobre ruedas: una travesía entre naturaleza y tradición",
     "linkText": "Descubre todos los ciclotours",
     "desc": "Recorrer Viñales en bicicleta es una forma dinámica y auténtica de conectar con sus paisajes emblemáticos. Los caminos serpentean entre mogotes, fincas de tabaco y escenarios rurales llenos de vida, permitiendo una inmersión total en el entorno. El contacto con campesinos y sus saberes tradicionales añade un valor cultural a esta experiencia activa, donde el movimiento se convierte en una forma de descubrir.",
@@ -113,6 +118,7 @@
   {
     "id": 4,
     "category": "others",
+    "name":"Otros",
     "title": "Más allá del valle: experiencias únicas en Viñales",
     "linkText": "Descubre otras experiencias",
     "desc": "Viñales sorprende con una diversidad de propuestas que van mucho más allá de sus paisajes montañosos. A pocos kilómetros, Cayo Jutías invita al descanso entre aguas turquesas y arenas blancas, perfectas para nadar, bucear o simplemente desconectar. En tierra firme, las fincas agroecológicas abren sus puertas al visitante con prácticas sostenibles y sabores auténticos. Un destino que combina naturaleza, sabor local y momentos de auténtica serenidad.",

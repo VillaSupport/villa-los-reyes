@@ -1,0 +1,24 @@
+<div class="split-section section-outer" [class.white-bg]="whiteBg()">
+  <div class="split-container section-inner" [class.is-reversed]="reverse()">
+    <div class="text-container">
+      <info-block [data]="info()"></info-block>
+    </div>
+
+    <div class="visual-container">
+      @if (images()) {
+        @for (image of images()?.slice(0, 2); track $index) {
+          <img [src]="image.src" [alt]="image.alt" />
+        }
+      } @else if (map()) {
+        <iframe
+          class="map-frame"
+          [src]="safeMapUrl"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      }
+    </div>
+  </div>
+</div>

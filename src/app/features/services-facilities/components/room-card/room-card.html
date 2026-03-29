@@ -1,1 +1,30 @@
-<p>room-card works!</p>
+@let content = roomContent;
+@if (routeInfo()) {
+  <a class="room-card" 
+  [attr.variant]="variant()"
+  [routerLink]="routeInfo()!.commands"
+  [relativeTo]="route"
+  [fragment] = "routeInfo()!.fragment"
+  >
+    <ng-container *ngTemplateOutlet="content"></ng-container>
+  </a>
+} @else {
+  <div class="room-card" [attr.variant]="variant()">
+    <ng-container *ngTemplateOutlet="content"></ng-container>
+  </div>
+}
+
+<ng-template #roomContent>
+  @let img = mainImage();
+    <img 
+    [src]="img.src" 
+    [alt]="img.alt" 
+    loading="lazy" />
+
+  <div class="overlay-text">
+    <h3 class="room-title">{{ room().title | translate }}</h3>
+    <p class="room-capacity">{{ room().capacity | translate }}</p>
+  </div>
+</ng-template>
+
+

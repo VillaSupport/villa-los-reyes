@@ -1,7 +1,8 @@
 import { Component, input } from '@angular/core';
-import { RoomItem } from "../discover-room-section/rooms-gallery/room-item/room-item";
 import { InfoPanel } from "../../shared/info-panel/info-panel";
 import { TranslatePipe } from '@ngx-translate/core';
+import { RoomData } from '../../../features/services-facilities/interfaces/services-facilities.interface';
+import { RoomItem } from '../discover-room-section/rooms-gallery/room-item/room-item';
 
 @Component({
   selector: 'grid-rooms-section',
@@ -16,7 +17,6 @@ export class GridRoomsSection {
     link?: { text: string; url: string };
   }>();
 
-  rooms = input<
-    { src: string; alt: string; name: string; details: string; path?: string }[]
-  >([]);
+  
+  rooms = input<RoomData[]>([]);
 }

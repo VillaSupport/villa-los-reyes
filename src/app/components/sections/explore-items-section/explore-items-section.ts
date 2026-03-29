@@ -15,6 +15,7 @@ export class ExploreItemsSection {
   description = input.required<string>();
   linkText = input<string>();
   link = input<string>();
+  
   items = input<any[]>([]);
   cardTemplate = input<TemplateRef<any> | undefined>(); 
 }

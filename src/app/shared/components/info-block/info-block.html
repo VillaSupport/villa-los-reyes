@@ -1,9 +1,9 @@
 <section class="info-block">
-    <h1 class="info-title">{{ data().title }}</h1>
-    <p class="info-desc" [innerHTML]="data().desc"></p>
+    <h1 class="info-title">{{ data().title|translate}}</h1>
+    <p class="info-desc" [innerHTML]="data().desc|translate"></p>
 
     <div class="feature-group">
-        <h2 class="feature-title">{{ data().featureTitle }}</h2>
+        <h2 class="feature-title">{{ data().featureTitle |translate}}</h2>
         <ul class="feature-list">
             @for (feature of data().features; track $index) {
             <li class="feature-item">
@@ -16,7 +16,7 @@
 
     @if (data().slug && data().linkText) {
     <a [routerLink]="data().slug" class="action-link">
-        {{ data().linkText }}
+        {{ data().linkText |translate}}
     </a>
     }
 </section>

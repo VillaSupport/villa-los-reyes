@@ -1,8 +1,9 @@
-import { FeatureTemplateItem } from "../templates/feature-overview-template/feature-overview-template";
+import { FeatureTemplateItem } from '../templates/feature-overview-template/feature-overview-template';
+import { ImgData } from './common.interface';
 
 export interface CategoryDetail {
   slug: string;
-  image: { src: string, alt: string }
+  image: { src: string; alt: string };
 
   title: string;
   desc: string;
@@ -11,18 +12,18 @@ export interface CategoryDetail {
 
 export interface AdventurePreview {
   slug: string;
-  image: { src: string, alt: string }
+  image: { src: string; alt: string };
   title?: string;
   description?: string;
 }
 
-
 export interface FeatureItem {
   id: string | number;
+  name: string;
   category: string;
   title: string;
   desc: string;
-  image: { src: string, alt: string }
+  image: { src: string; alt: string };
 
   linkText: string;
 
@@ -30,17 +31,17 @@ export interface FeatureItem {
 }
 
 
-
-
-export const mapToFeatureTemplateItem = (item: FeatureItem): FeatureTemplateItem => {
+export const mapToFeatureTemplateItem = (
+  item: FeatureItem,
+): FeatureTemplateItem => {
   return {
     main: {
       slug: String(item.category), // O item.category según prefieras para la ruta
       image: item.image,
       title: item.title,
       desc: item.desc,
-      linkText: item.linkText
+      linkText: item.linkText,
     },
-    previews: item.previewItems
+    previews: item.previewItems,
   };
 };

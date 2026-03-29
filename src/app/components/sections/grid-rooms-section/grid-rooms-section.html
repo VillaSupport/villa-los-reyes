@@ -1,17 +1,17 @@
-<div class="section-wrapper">
-  <div class="rooms-grid">
+<div class="rooms-section section-outer">
+  <div class="rooms-container section-inner">
     <div class="grid-header-info">
       <h2 class="title">{{ info().title | translate }}</h2>
       <p class="description">{{ info().description | translate }}</p>
     </div>
 
-    @for (room of rooms(); track room.src) {
+    @for (room of rooms(); track $index) {
       <room-item
-        [src]="room.src"
-        [alt]="room.alt"
-        [name]="room.name"
-        [details]="room.details"
-        [link]="room.path">
+        [src]="room.images[0].src"
+        [alt]="room.images[0].alt"
+        [name]="room.title"
+        [details]="room.capacity"
+        [link]="''">
       </room-item>
     }
   </div>

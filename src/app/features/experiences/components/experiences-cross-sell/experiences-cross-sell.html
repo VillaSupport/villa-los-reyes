@@ -1,0 +1,16 @@
+<div class="category-section section-outer">
+  <div class="category-container section-inner">
+    <discovery-header [header]="header" />
+
+    <grid-layout [items]="experienceCards()">
+      <ng-template let-item>
+        <experience-card
+          [image]="item.image"
+          [title]="item.title"
+          [route]="item.route"
+        >
+        </experience-card>
+      </ng-template>
+    </grid-layout>
+  </div>
+</div>

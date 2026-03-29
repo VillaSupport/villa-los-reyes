@@ -1,1 +1,37 @@
-<p>services-page works!</p>
+<div class="page-content">
+  <page-header
+    [header]= "headerData"
+  />
+  <!-- TODO:Ver como arreglar para que gallery-split-view pueda manejar la nulidad y los skeletons -->
+  @if (benefitsData(); as benefits) {
+    @if (benefits.length > 0) {
+      @let first = benefits[0];
+      @let info = first.info;
+      @let images = first.images;
+      @let firstImage = images[0];
+      @let otherImages = images.slice(1);
+      @let otherBenefits = benefits.slice(1);
+
+      <div [id]="info.slug?.replace('#', '')" class="fragment-anchor"></div>
+      
+      <gallery-split-view class = "mt-negative"
+        [mainImage]="firstImage"
+        [thumbImages]="otherImages"
+        [overlap]="true"
+         [info]="info"
+      />
+
+      @for (benefit of otherBenefits ;track $index ;let isEven = $even;let isOdd = $odd) {
+        @let info = benefit.info;
+        @let images = benefit.images;
+        <div [id]="info.slug?.replace('#', '')" class="fragment-anchor"></div>
+        <split-view 
+        [images]="images" 
+        [info]="info"
+        [reverse]="isOdd"
+        [whiteBg]="isEven" 
+        />
+      }
+    }
+  }
+

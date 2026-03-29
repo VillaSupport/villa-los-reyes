@@ -15,7 +15,7 @@ import { HeaderData } from '../../../shared/interfaces/common.interface';
     template: `
     <feature-overview-template 
       [header]="header" 
-      [items]="items()" [featureSlug]="'NewExperiences'">
+      [items]="items()">
       <package-cross-list packages />
       <service-cross-list crossSelling />
     </feature-overview-template>

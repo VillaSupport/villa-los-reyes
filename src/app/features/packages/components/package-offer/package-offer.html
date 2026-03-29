@@ -1,0 +1,37 @@
+<div class="package-offer-section">
+@if (package(); as pack) {
+  <img class="background-image" 
+  [src]="pack.image.src" 
+  [alt]="pack.image.alt"
+  loading="lazy"
+  />
+  <div class="offer-overlay">
+    <div class="offer-content">
+      <div class="text-box">
+        <header class="offer-header">
+          <h2 class="title">{{ pack.title}}</h2>
+          <h3 class="subtitle">{{ subtitle() | translate }}</h3>
+        </header>
+
+        <section class="offer-description">
+          <p class="duration">{{ pack.duration }}</p>
+          <p class="description">{{ pack.desc }}</p>
+        </section>
+
+        <p class="price">
+          <span class="amount">{{ pack.price }}</span>
+          <span class="currency">{{pack.currency}}</span>
+          <span class="per-person">{{pack.billingType }}</span>
+        </p>
+
+        @if (route()) {
+        <a [routerLink]="route()?.url" class="discover-link">
+          {{ route()?.text| translate }}
+        </a>
+        }
+      </div>
+
+    </div>
+  </div>
+}
+</div>

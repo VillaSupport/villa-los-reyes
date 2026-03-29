@@ -11,13 +11,13 @@ import { FeatureItem, mapToFeatureTemplateItem } from '../../../shared/interface
 import { HeaderData } from '../../../shared/interfaces/common.interface';
 
 @Component({
-    selector: 'app-services-main',
+    selector: 'services-main',
     standalone: true,
     imports: [CommonModule, FeatureOverviewTemplate],
     template: `
     <feature-overview-template 
       [header]="header" 
-      [items]="items()" [featureSlug]="'service'">
+      [items]="items()" >
     </feature-overview-template>
   `
 })
@@ -28,12 +28,14 @@ export class ServicesFacilitiesMainPage {
         initialValue: [] as FeatureItem[]
     });
 
-    header:HeaderData = {
-        title: 'Servicios y Facilidades',
-        description: 'Todo lo que necesitas para una estancia perfecta. Desde instalaciones modernas hasta servicios personalizados de gastronomía y bienestar.',
-
-    }
-    
+    readonly header:HeaderData = {
+        title: 'HEADER.SERVICES.TITLE',
+        description: 'HEADER.SERVICES.DESCRIPTION',
+        img:{
+            src: '/assets/imgs/services/gastronomy/villa-los-reyes-bar-sign-rustic.webp',
+            alt: 'HEADER.SERVICES.ALT'
+        }
+    }; 
 
     items = computed<FeatureTemplateItem[]>(() =>
         this.servicesData()?.map(item => mapToFeatureTemplateItem(item)) ?? []

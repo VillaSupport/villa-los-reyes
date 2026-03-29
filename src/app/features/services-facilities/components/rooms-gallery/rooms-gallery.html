@@ -1,0 +1,7 @@
+<div class="rooms-gallery">
+  @for (room of rooms(); track $index) {
+    <div class="card-container">
+      <room-card variant="discover" [room]="room"> </room-card>
+    </div>
+  }
+</div>

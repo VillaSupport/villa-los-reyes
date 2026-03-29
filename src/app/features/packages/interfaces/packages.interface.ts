@@ -3,9 +3,10 @@ import { ImgData } from "../../../shared/interfaces/common.interface";
 /**
  * Representa la entidad completa del Paquete (Modelo de Datos)
  */
-export interface Package {
+export interface PackageData {
     id: number | string;
     slug: string;
+
     title: string;
     desc: string;
     duration: string;
@@ -41,7 +42,7 @@ export interface PackageCardData {
  * Ideal para limpiar la data antes de enviarla a componentes de presentación.
  */
 export const mapToPackageCardData = (
-    pkg: Package,
+    pkg: PackageData,
     baseRoute: string = '/packages'): PackageCardData =>
 ({
     id: pkg.id,

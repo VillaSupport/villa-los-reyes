@@ -7,5 +7,5 @@
 
 .content-area {
     flex: 1;
-    padding-top: 160px;
+    padding-top: var(--content-padding-top);
 }

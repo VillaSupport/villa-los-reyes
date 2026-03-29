@@ -8,20 +8,20 @@
             "desc": "En nuestro <strong>restaurante y bar</strong>, disfrutarás de la auténtica <strong>comida cubana</strong>, junto a opciones <strong>vegetarianas, italianas</strong> y <strong>mediterráneas</strong>. Ofrecemos desde <strong>desayunos</strong> hasta <strong>cenas</strong>, con <strong>aperitivos</strong> y <strong>meriendas</strong> para llevar si estás en movimiento. No te pierdas nuestra <strong>coctelería cubana</strong>, donde cada bebida refleja el <strong>sabor auténtico de Cuba</strong>. ¡Ven y saborea lo mejor de nuestra cocina!",
             "images": [
                 {
-                    "src": "assets/New/gastronomy/dining-table-setup-villa-los-reyes.webp",
+                    "src": "assets/imgs/services/gastronomy/dining-table-setup-villa-los-reyes.webp",
                     "alt": "Mesa de madera preparada para el almuerzo con vajilla blanca, flores frescas y sillas de madera en el restaurante de la villa."
                 },
                 {
-                    "src": "assets/New/gastronomy/villa-los-reyes-bar-sign-rustic.webp",
+                    "src": "assets/imgs/services/gastronomy/villa-los-reyes-bar-sign-rustic.webp",
                     "alt":"Letrero de madera de Villa Los Reyes Bar Restaurante en una pared de piedra con copas de vino colgadas."
                    
                 },
                 {
-                    "src": "assets/New/gastronomy/villa-los-reyes-bar-restaurant.webp",
+                    "src": "assets/imgs/services/gastronomy/villa-los-reyes-bar-restaurant.webp",
                      "alt": ": Barra rústica del bar Villa Los Reyes con copas de cristal colgadas y botellas de vino sobre paredes de piedra clara"
                 },
                 {
-                    "src": "assets/New/gastronomy/villa-los-reyes-dining-area-interior.webp",
+                    "src": "assets/imgs/services/gastronomy/villa-los-reyes-dining-area-interior.webp",
                     "alt": "Vista acogedora del interior del restaurante Villa Los Reyes con mesas de madera dispuestas y decoración rústica"
                 }
             ],
@@ -41,11 +41,11 @@
             "desc": "Facilitamos tu acceso a los mejores destinos con <strong>taxis locales</strong>, <strong>colectivos</strong>, <strong>renta de bicicletas y motocross</strong>. También contamos con <strong>transfers</strong> cómodos y seguros desde y hacia el aeropuerto y otras localidades. ¡Tu comodidad es nuestra prioridad!",
             "images": [
                 {
-                    "src": "assets/New/mobility/classic-red-desoto-car-vinales.webp",
+                    "src": "assets/imgs/services/mobility/classic-red-desoto-car-vinales.webp",
                     "alt": "Auto clásico americano de color rojo (DeSoto) parqueado frente a Villa Los Reyes, disponible para traslados y tours."
                 },
                 {
-                    "src": "assets/New/mobility/modern-red-taxi-transfer.webp",
+                    "src": "assets/imgs/services/mobility/modern-red-taxi-transfer.webp",
                     "alt": "Auto moderno de color rojo disponible para servicios de taxi y traslados privados en la zona de Viñales."
                 }
             ],
@@ -63,7 +63,7 @@
             "desc": "Ofrecemos <strong>asesoramiento personalizado</strong> para organizar tu viaje a Viñales o cualquier destino en <strong>Cuba</strong>. Nos encargamos de <strong>gestionar alojamiento, transporte</strong> y <strong>actividades</strong>, asegurando una experiencia cómoda e inolvidable. ¡Déjanos hacer tu estancia grata e inolvidable!",
             "images": [
                 {
-                    "src": "assets/New/trip-planner/trip-planner-map-camera-coffee.webp",
+                    "src": "assets/imgs/services/trip-planner/trip-planner-map-camera-coffee.webp",
                     "alt": "Vista superior de manos señalando un mapa sobre una mesa de madera con café, una cámara antigua y un pasaporte"
                 }
                
@@ -82,7 +82,7 @@
             "desc": "Nuestro servicio de lavandería incluye <strong>lavado</strong> y <strong>planchado de ropa</strong>, fregado de <strong>zapatos</strong> y <strong>bolsos</strong>. Así, siempre tendrás todo impecable y listo para disfrutar al máximo. Contamos con un espacio dedicado al lavado a mano, ideal para quienes prefieren realizar el proceso por sí mismos en lugar de optar por el servicio de lavandería.",
             "images": [
                 {
-                    "src": "assets/New/laundry/laundry-service-fresh-clothes.webp",
+                    "src": "assets/imgs/services/laundry/laundry-service-fresh-clothes.webp",
                     "alt": "Persona sosteniendo una pila de ropa limpia, doblada y planchada, servicio de lavandería de villa los reyes"
                 }
             ],
@@ -95,10 +95,10 @@
             "id": 5,
             "slug": "massages",
             "title": "Masajes",
-            "desc": "Ofrecemos un servicVista acogedora del interior del restaurante Villa Los Reyes con mesas de madera dispuestas y decoración rústicaio de <strong>Masajes</strong> diseñado para brindarle el <strong>máximo confort</strong> y <strong>relajación</strong> durante su estancia. Nuestros masajistas profesionales están capacitados en diversas <strong>técnicas de masaje</strong>, asegurando que cada sesión sea personalizada según sus necesidades y preferencias. Descubre una experiencia rejuvenecedora en un entorno tranquilo. Puede solicitar su reservación con al menos 30 minutos de antelación en nuestra Villa.",
+            "desc": "Ofrecemos un servicio de <strong>Masajes</strong> diseñado para brindarle el <strong>máximo confort</strong> y <strong>relajación</strong> durante su estancia. Nuestros masajistas profesionales están capacitados en diversas <strong>técnicas de masaje</strong>, asegurando que cada sesión sea personalizada según sus necesidades y preferencias. Descubre una experiencia rejuvenecedora en un entorno tranquilo. Puede solicitar su reservación con al menos 30 minutos de antelación en nuestra Villa.",
             "images": [
                 {
-                    "src": "assets/New/massages/massage-therapy-relaxation-vinales.webp",
+                    "src": "assets/imgs/services/massages/massage-therapy-relaxation-vinales.webp",
                     "alt": "Primer plano de manos profesionales realizando un masaje de relajación en la espalda de un cliente."
                 }
             ]
@@ -110,7 +110,7 @@
             "desc": "Ofrecemos <strong>clases de bailes tradicionales cubanos</strong> para que te sumerjas en la rica <strong>cultura de Cuba</strong>. Con instructores calificados y apasionados, disfrutarás de una experiencia <strong>educativa</strong> y <strong>divertida</strong>. Elige entre clases <strong>individuales o en grupo</strong>, adaptadas a tu nivel y tiempo. ¡No pierdas la oportunidad de enriquecer tu estancia con el sabor de Cuba!",
             "images": [
                 {
-                    "src": "assets/New/dance-classes/cuban-dance-classes-feet-closeup.webp",
+                    "src": "assets/imgs/services/dance-classes/cuban-dance-classes-feet-closeup.webp",
                     "alt": "Primer plano de los pies de varios bailarines con zapatos de baile durante una clase de ritmos tradicionales cubanos."
                 }
             ]

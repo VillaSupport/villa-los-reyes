@@ -3,16 +3,13 @@
 
     <div class="categories-wrapper">
         @for (item of items(); track $index; let isFirst = $first; let isEven = $even) {
-        <category-preview 
+        <category-preview [class.mt-negative] = "isFirst"
             [category]="item.main"
             [items]="item.previews" 
             [overlap]="isFirst" 
             [reverse]="isEven"
-            [whiteBg]="isEven" 
-            [basePath]="featureSlug()">
-            
-        </category-preview>
-
+            [whiteBg]="isEven" [route]="route" 
+/> 
         }
     </div>
 

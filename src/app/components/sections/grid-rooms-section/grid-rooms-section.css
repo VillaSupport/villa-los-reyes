@@ -3,177 +3,137 @@
   width: 100%;
 }
 
-.section-wrapper {
+.rooms-section {
   background: #f7faf7;
-  padding: 5rem 2rem;
-  border-radius: 3rem 3rem 0 0;
 }
 
-.rooms-grid {
+.rooms-container {
   display: grid;
   grid-template-columns: repeat(3, minmax(280px, 1fr));
   gap: 1.75rem;
-  max-width: 1568px;
   width: 100%;
   margin: 0 auto;
 }
 
 .grid-header-info {
   display: flex;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   flex-direction: column;
   justify-content: center;
-  padding: 1.25rem;
+  padding: 1.125rem 0.75rem;
+  gap: 1.2rem;
 }
 
 .grid-header-info h2 {
-  color: #D17D00;
+  color: #d17d00;
   font-size: 2.25rem;
+  line-height: 1.2;
   font-weight: 700;
-  line-height: 2.875rem;
-  margin-bottom: 1.5rem;
 }
 
 .grid-header-info p {
-  color: #234E3F;
-  font-size: 1.125rem;
-  line-height: 1.875rem;
-  letter-spacing: 0.03125rem;
+  color: #234e3f;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+  letter-spacing: 0.03rem;
 }
 
 @media (max-width: 1600px) {
+  .grid-header-info {
+    gap: 0.5rem;
+    padding: 1rem 0.75rem;
+  }
   .grid-header-info h2 {
-    font-size: 1.85rem;
-    line-height: 2.3rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
   }
 
   .grid-header-info p {
     font-size: 1rem;
-    line-height: 1.6rem;
   }
 }
 
 @media (max-width: 1400px) {
-  .section-wrapper {
-    padding:4.5rem;
+  .grid-header-info {
+    gap: 0.5rem;
   }
 
   .grid-header-info h2 {
-    font-size: 2.25rem;
-    line-height: 2.875rem;
+    font-size: 1.5rem;
   }
 
   .grid-header-info p {
-    font-size: 1.125rem;
-    line-height: 1.875rem;
-  }
-  .rooms-grid {
-    grid-template-columns: repeat(2, minmax(280px, 1fr));
-    gap: 1.5rem;
+    font-size: 0.85rem;
   }
 }
 @media (max-width: 1200px) {
-  .section-wrapper {
-    padding: 4rem 3rem; /* Ajustamos un poco el padding lateral */
-  }
-
   .grid-header-info h2 {
-    font-size: 1.85rem;  /* Escala reducida (como en 1600) */
-    line-height: 2.3rem;
+    font-size: 2rem;
   }
 
   .grid-header-info p {
-    font-size: 1rem;     /* Escala reducida (como en 1600) */
-    line-height: 1.6rem;
+    font-size: 1.1rem;
+  }
+  .rooms-container {
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    gap: 1.75rem;
+  }
+
+  .grid-header-info {
+    gap: 0.5rem;
   }
 }
 
 @media (max-width: 1024px) {
-  .section-wrapper {
-    padding: 3.5rem 4rem; /* Reducimos padding para dar aire a las fotos */
-    border-radius: 2rem 2rem 0 0;
-
-  }
-
-  .grid-header-info{
-    padding:0;
-  }
-
   .grid-header-info h2 {
-    font-size: 1.40rem;  /* Reducción adicional */
-    line-height: 2rem;
-    margin-bottom:0.35rem;
+    font-size: 1.5rem; /* Reducción adicional */
   }
-
-
 
   .grid-header-info p {
-    font-size: 0.9rem;  /* Un poco por debajo del estándar para legibilidad compacta */
-    line-height: 1.5rem;
-    letter-spacing: 0.02rem;
+    font-size: 0.9rem; /* Un poco por debajo del estándar para legibilidad compacta */
   }
 
-  .rooms-grid {
+  .rooms-container {
     gap: 1rem; /* Estrechamos un poco el espacio entre fotos */
   }
 }
 @media (max-width: 800px) {
-  .section-wrapper {
-    padding: 2.5rem; /* Padding más estrecho para móvil */
-    border-radius: 1.5rem 1.5rem 0 0;
-  }
-
-  .rooms-grid {
-    grid-template-columns: repeat(2,1fr);
+  .rooms-container {
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
 
   .grid-header-info {
     grid-column: span 2;
     text-align: left;
-    margin-bottom: 0.75rem;
   }
 
   .grid-header-info h2 {
-    font-size: 2rem;
-    line-height: 2.75rem;
-    margin-bottom: 1rem;
+    font-size: 1.85rem;
   }
 
-  .grid-header-info p {
+  /* .grid-header-info p {
     font-size: 1rem;
     line-height: 1.75rem;
     letter-spacing: 0.03125rem;
-  }
-
+  } */
 }
 @media (max-width: 600px) {
-  .section-wrapper {
-     padding: 2rem 1rem;
-     border-radius: 1rem 1rem 0 0;
-   }
-
-  .rooms-grid {
-    grid-template-columns: minmax(auto, 400px); /* Límite de 400px solicitado */
+  .rooms-container {
+    grid-template-columns: minmax(auto, 480px); 
     justify-content: center;
+
     gap: 1rem;
   }
 
   .grid-header-info {
+    padding: 0 0.5rem;
     grid-column: span 1;
-    margin-bottom: 0rem;
   }
 
   .grid-header-info h2 {
     font-size: 1.5rem;
-    line-height: 2rem;
-    margin-bottom: 1rem;
   }
-
   .grid-header-info p {
     font-size: 0.75rem;
-    line-height: 1.0625rem;
-    letter-spacing: 0.025rem;
   }
 }

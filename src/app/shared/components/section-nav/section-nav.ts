@@ -14,11 +14,13 @@ export class SectionNav {
   onNext = output<void>()
 
   handlePrev() {
-    if (!this.prevDisabled) this.onPrev.emit();
+    console.log('handlePrev ejecutado, emitiendo onNext...');
+    if (!this.prevDisabled()) this.onPrev.emit();
   }
 
   handleNext() {
-    if (!this.nextDisabled) this.onNext.emit();
+    console.log('handleNext ejecutado, emitiendo onNext...');
+    if (!this.nextDisabled()) this.onNext.emit();
   }
 }
 

@@ -1,3 +1,6 @@
+import { ImgData } from "../../../shared/interfaces/common.interface";
+import { FeatureItem } from "../../../shared/interfaces/feature-overview.interface";
+
 export interface CategoryDetail {
   category: string;
   title: string;
@@ -14,3 +17,21 @@ export interface Adventure {
   tips: string[];
 }
 
+
+export interface ExperienceCardData {
+  title: string;
+  image: ImgData;
+  route: string;
+}
+
+
+export const mapFeatureToExperience = (
+  feature: FeatureItem,
+  baseRoute: string = '/experiences',
+): ExperienceCardData => {
+  return {
+    title: feature.name,
+    image: feature.image,
+    route: `${baseRoute}/${feature.category.toLowerCase().trim().replace(/\s+/g, '-')}`,
+  };
+};

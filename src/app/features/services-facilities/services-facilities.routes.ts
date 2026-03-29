@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { SectionNavService } from '../../shared/services/section-nav.service';
 
 export const SERVICES_FACILITIES_ROUTES: Routes = [
   {
@@ -8,13 +9,13 @@ export const SERVICES_FACILITIES_ROUTES: Routes = [
                           .then(m => m.ServicesFacilitiesMainPage)
   },
   {
-    path: 'stayBenefits',
+    path: 'stay-benefits',
     loadComponent: () => import('./pages/services-page/services-page')
                           .then(m => m.ServicesPage)
   },
   {
     path: 'facilities',
-    // providers: [SectionNavService],
+    providers: [SectionNavService],
     children: [
       {
         path: '',
@@ -22,10 +23,16 @@ export const SERVICES_FACILITIES_ROUTES: Routes = [
                               .then(m => m.FacilitiesPage)
       },
       {
-        path: 'room/:id', 
-        loadComponent: () => import('./pages/room-page/room-page')
-                              .then(m => m.RoomPage)
-      }
+      path: 'rooms', // Agrupador semántico
+      children: [
+        {
+          path: ':id', 
+          loadComponent: () => import('./pages/room-page/room-page')
+                              .then(m => m.RoomPage) // Detalle de la habitación
+        }
+      ]
+    },
+      
     ]
   }
 ];

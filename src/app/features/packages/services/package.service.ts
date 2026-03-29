@@ -1,7 +1,7 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, catchError, map, of } from 'rxjs';
-import { Package } from '../interfaces/packages.interface';
+import { PackageData } from '../interfaces/packages.interface';
 
 
 
@@ -13,12 +13,12 @@ export class PackageService {
     private readonly PATH = 'assets/data/packages';
 
    
-    getAllPackages = (lang = 'es'): Observable<Package[]> =>
-        this.http.get<Package[]>(`${this.PATH}/${lang}.json`).pipe(
+    getAllPackages = (lang = 'es'): Observable<PackageData[]> =>
+        this.http.get<PackageData[]>(`${this.PATH}/${lang}.json`).pipe(
             catchError(() => of([]))
         );
    
-    getPackageBySlug = (slug: string, lang = 'es'): Observable<Package | undefined> =>
+    getPackageBySlug = (slug: string, lang = 'es'): Observable<PackageData | undefined> =>
         this.getAllPackages(lang).pipe(
             map(packages => packages.find(p => p.slug === slug))
         );

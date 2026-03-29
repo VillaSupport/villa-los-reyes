@@ -1,7 +1,7 @@
 import { Component, computed, HostBinding, input } from '@angular/core';
 import { GalleryThumbnails } from "../gallery-thumbnails/gallery-thumbnails";
-import { InfoBlock, InfoData } from "../info-block/info-block";
-import { ImgData } from '../../interfaces/common.interface';
+import { InfoBlock } from "../info-block/info-block";
+import { ImgData, InfoData } from '../../interfaces/common.interface';
 
 @Component({
   selector: 'detailed-gallery',
@@ -22,7 +22,9 @@ export class DetailedGallery {
   overlap = input<boolean>(false);
 
   main = computed(() => this.images()[0]);
-  thumbs = computed(() => this.images().slice(1));
-
+  thumbs = computed(() => {
+    const allImages = this.images();
+    return allImages.length > 2 ? allImages.slice(1) : [];
+  });
 
 }

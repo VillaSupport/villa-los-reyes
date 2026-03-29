@@ -1,0 +1,35 @@
+<div class="gallery-grid">
+  @if (mainImage(); as main) {
+    <div class="main-image-wrapper" [class.skeleton]="!mainImageLoaded()">
+      <img
+        [src]="main.src"
+        [alt]="main.alt"
+        (load)="onMainImageLoad()"
+        [style.opacity]="mainImageLoaded() ? 1 : 0"
+        loading="eager"
+      />
+    </div>
+  } @else {
+    <div class="main-image-wrapper skeleton"></div>
+  }
+
+  @if (isActive()) {
+    @if (thumbImages() === undefined || thumbImages()?.length === 0) {
+      @for (item of [1, 2, 3]; track $index) {
+        <div class="thumb-image-wrapper skeleton"></div>
+      }
+    } @else {
+      @for (image of thumbImages(); track $index) {
+        <div class="thumb-image-wrapper" [class.skeleton]="!allThumbsLoaded()">
+          <img
+            [src]="image.src"
+            [alt]="image.alt"
+            (load)="onThumbsImageLoad()"
+            [style.opacity]="allThumbsLoaded() ? 1 : 0"
+            loading="lazy"
+          />
+        </div>
+      }
+    }
+  }
+</div>

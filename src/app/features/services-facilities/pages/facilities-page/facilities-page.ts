@@ -1,11 +1,45 @@
-import { Component } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
+import { PageHeader } from '../../../../shared/components/page-header/page-header';
+import { GridRoomsSection } from '../../../../components/sections/grid-rooms-section/grid-rooms-section';
+import { FacilitiesService } from '../../services/facilities.service';
+import { toSignal } from '@angular/core/rxjs-interop';
+import {
+  HeaderData,
+  InfoData,
+} from '../../../../shared/interfaces/common.interface';
+import { RoomData } from '../../interfaces/services-facilities.interface';
+import { GallerySplitView } from '../../../../shared/components/gallery-split-view/gallery-split-view';
+import { RoomsDetailsGrid } from '../../components/rooms-details-grid/rooms-details-grid';
 
 @Component({
-  selector: 'app-facilities-page',
-  imports: [],
+  selector: 'facilities-page',
+  imports: [PageHeader, GallerySplitView, RoomsDetailsGrid],
   templateUrl: './facilities-page.html',
   styleUrl: './facilities-page.css',
 })
 export class FacilitiesPage {
+  private facilitiesService = inject(FacilitiesService);
 
+  public readonly header: HeaderData = {
+    title: 'HEADER.FACILITIES.TITLE',
+    description: 'HEADER.FACILITIES.DESCRIPTION',
+    img: {
+      src: 'assets/imgs/outdoor/gardens/lush-garden-red-flowers-pool.webp',
+      alt: 'HEADER.FACILITIES.ALT',
+    },
+  };
+  // toSignal convierte el Observable directamente en un Signal público
+  public roomsData = toSignal(this.facilitiesService.getRoomSpaces());
+
+  spacesData = toSignal(this.facilitiesService.getCommonSpaces(), {
+    initialValue: [],
+  });
+
+  public readonly info = computed<InfoData>(() => {
+    const data = this.roomsData();
+    return {
+      title: data?.title ?? '', // Provee un string vacío si es undefined
+      desc: data?.desc ?? '',
+    };
+  });
 }

@@ -1,9 +1,9 @@
 import { Component, computed, input, signal } from '@angular/core';
-import { InfoPanel } from "../../../components/shared/info-panel/info-panel";
-import { RouterLink } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { CategoryDetail, AdventurePreview as CategoryItemPreview } from '../../interfaces/feature-overview.interface';
-import { InfoBlock, InfoData } from "../info-block/info-block";
+import { InfoBlock } from "../info-block/info-block";
+import { InfoData } from '../../interfaces/common.interface';
 
 
 @Component({
@@ -21,7 +21,7 @@ export class CategoryPreview {
 
   category = input<CategoryDetail>();
   items = input<CategoryItemPreview[]>([]); // Es buena práctica dar un valor inicial []
-  basePath = input.required<string>();
+  route = input.required<ActivatedRoute>();
 
   limitedItems = computed(() => {
     const originalItems = this.items() || [];
@@ -34,6 +34,7 @@ export class CategoryPreview {
 
     return sliced;
   });
+
 
   infoData = computed<InfoData>(() => {
     const cat = this.category();
@@ -60,6 +61,17 @@ export class CategoryPreview {
   onPreviewImageLoad(index: number) {
     this.loadedPreviewIndices.update(prev => new Set(prev).add(index));
   }
+
+ getRouteInfo(catSlug: string, itemSlug: string) {
+  const [pathPart, fragment] = itemSlug.split('#');
+  const pathSegments = [catSlug, ...pathPart.split('/').filter(s => s !== '')];
+
+  return {
+    commands: pathSegments,
+    // Cambiamos 'null' por 'undefined' para que coincida con el tipo de RouterLink
+    fragment: fragment || undefined 
+  };
+}
 }
 
 

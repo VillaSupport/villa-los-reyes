@@ -1,11 +1,11 @@
 {
     "category": "horseback",
-    "title":"Todas nuestras cabalgatas",
+    "title":"Todas las cabalgatas",
     "adventures": [
         {
             "id": 1,
             "slug": "mountain-ride",
-            "relatedPackageSlug": "natural-adventure",
+            "relatedPackageSlug": "romance-vinales",
             "title": "Cabalgando a la montaña",
             "desc": "Descubre <strong>Los Acuáticos</strong>, una <strong>comunidad</strong> de <strong>montaña</strong> en <strong>Viñales</strong> conocida por su <strong>fe en las propiedades curativas del agua</strong>. Sumérgete en sus <strong>tradiciones</strong>, comparte con los residentes y disfruta de su <strong>hospitalidad</strong>, mientras admiras las <strong>impresionantes vistas</strong> de los <strong>Valles de Viñales</strong> y <strong>Palmarito</strong>. Una experiencia única que combina <strong>naturaleza</strong>, <strong>cultura</strong> y <strong>tradición</strong>.",
             "imgs": [
@@ -33,7 +33,7 @@
         {
             "id": 2,
             "slug": "amazing-landscape",
-            "relatedPackageSlug": "natural-adventure",
+            "relatedPackageSlug": "relaxing-beach",
             "title": "Un paisaje fascinante",
             "desc": "Explora el <strong>Valle del Palmarito</strong>, un paisaje impresionante donde el contraste entre <strong>tierras rojas</strong> y <strong>vegetación exuberante</strong> refleja la esencia <strong>rural cubana</strong>. Disfruta de <strong>vistas panorámicas</strong>, conoce las <strong>tradiciones campesinas</strong> y aprende sobre el <strong>cultivo del tabaco</strong> de la mano de <strong>agricultores locales</strong>.",
             "imgs": [
@@ -41,13 +41,14 @@
                     "src": "assets/imgs/adventures/horseback/amazing-landscape/amazing-landscape-red-soil-riders.webp",
                     "alt": "Jinetes recorriendo los senderos de tierra roja característicos del Valle del Palmarito"
                 },
-                {
-                    "src": "assets/imgs/adventures/horseback/amazing-landscape/amazing-landscape-lush-countryside.webp",
-                    "alt": "Vista panorámica de la vegetación exuberante y el entorno rural de la zona de Palmarito"
-                },
+                
                 {
                     "src": "assets/imgs/adventures/horseback/amazing-landscape/amazing-landscape-tobacco-farm-hut.webp",
                     "alt": "Casa de tabaco tradicional donde se aprenden las técnicas de cultivo de los agricultores locales"
+                },
+                {
+                    "src": "assets/imgs/adventures/horseback/amazing-landscape/amazing-landscape-lush-countryside.webp",
+                    "alt": "Vista panorámica de la vegetación exuberante y el entorno rural de la zona de Palmarito"
                 }
             ],
             "tips": [
@@ -61,7 +62,7 @@
         {
             "id": 3,
             "slug": "sunset-ride",
-            "relatedPackageSlug": "natural-adventure",
+            "relatedPackageSlug": "nature-tradition",
             "title": "El sol poniente",
             "desc": "Un paseo a <strong>caballo</strong> por <strong>Viñales</strong> permite recorrer montañas y valles rodeados de naturaleza viva. En el camino, agricultores locales comparten su trabajo en los <strong>cultivos de tabaco</strong>, mientras se disfruta de un <strong>puro criollo</strong> y un <strong>Saoco Viñalero</strong> al atardecer en el tranquilo <strong>Valle del Silencio</strong>. La jornada concluye con un baño refrescante en un <strong>lago</strong> cercano, mientras contemplan la <strong>puesta de sol</strong>.",
             "imgs": [
@@ -89,10 +90,14 @@
         {
             "id": 4,
             "slug": "la-penitencia",
-            "relatedPackageSlug": "natural-adventure",
+            "relatedPackageSlug": "vinales-families",
             "title": "Valle de La Penitencia",
             "desc": "Explora el <strong>Valle de La Penitencia</strong>, un pequeño pero impresionante destino con <strong>paisajes agrícolas</strong> y gran <strong>belleza natural</strong>. En esta excursión, disfrutarás de su riqueza <strong>agrícola</strong> y visitarás el <strong>Mural de la Prehistoria</strong>, una de las <strong>pinturas al fresco</strong> más <strong>grandes</strong> al <strong>aire libre</strong>, que representa la evolución geológica de Viñales.",
             "imgs": [
+                {
+                    "src": "assets/imgs/adventures/horseback/la-penitencia/la-penitencia-valley-overlook.webp",
+                    "alt": "Vista panorámica de la belleza natural y los paisajes agrícolas del valle"
+                },
                 {
                     "src": "assets/imgs/adventures/horseback/la-penitencia/la-penitencia-prehistory-mural.webp",
                     "alt": "El Mural de la Prehistoria en Viñales, una de las pinturas al fresco más grandes al aire libre"
@@ -100,10 +105,6 @@
                 {
                     "src": "assets/imgs/adventures/horseback/la-penitencia/la-penitencia-farmers-work.webp",
                     "alt": "Agricultores locales trabajando en los cultivos tradicionales del Valle de La Penitencia"
-                },
-                {
-                    "src": "assets/imgs/adventures/horseback/la-penitencia/la-penitencia-valley-overlook.webp",
-                    "alt": "Vista panorámica de la belleza natural y los paisajes agrícolas del valle"
                 }
             ],
             "tips": [
@@ -117,7 +118,7 @@
         {
             "id": 5,
             "slug": "classic-vinales",
-            "relatedPackageSlug": "natural-adventure",
+            "relatedPackageSlug": "vinales-360",
             "title": "El más famoso",
             "desc": "Descubra el impresionante <strong>Valle de Viñales</strong>, un destino de renombre mundial por su magnitud, belleza y riqueza cultural. En un recorrido de aproximadamente dos horas, podrá admirar sus <strong>paisajes únicos</strong> y sumergirse en la <strong>auténtica vida campesina</strong>, interactuando con los <strong>habitantes locales</strong> y conociendo sus <strong>tradiciones</strong>. Una experiencia enriquecedora que combina <strong>naturaleza</strong>, <strong>historia</strong> y la esencia <strong>cultural</strong> de <strong>Viñales</strong>.",
             "imgs": [
@@ -126,12 +127,12 @@
                     "alt": "Impresionante vista panorámica del Valle de Viñales, Patrimonio de la Humanidad"
                 },
                 {
-                    "src": "assets/imgs/adventures/horseback/classic-vinales/classic-vinales-traditional-farmhouse.webp",
-                    "alt": "Casa campesina tradicional rodeada de cultivos en el corazón del valle"
-                },
-                {
                     "src": "assets/imgs/adventures/horseback/classic-vinales/classic-vinales-agricultural-fields.webp",
                     "alt": "Extensos campos de cultivo que muestran la auténtica vida agrícola de la región"
+                },
+                {
+                    "src": "assets/imgs/adventures/horseback/classic-vinales/classic-vinales-traditional-farmhouse.webp",
+                    "alt": "Casa campesina tradicional rodeada de cultivos en el corazón del valle"
                 }
             ],
             "tips": [

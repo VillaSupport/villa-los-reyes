@@ -1,18 +1,22 @@
 import { Component, computed, inject } from '@angular/core';
-import { DetailedGallery } from "../../../../../shared/components/detailed-gallery/detailed-gallery";
-import { SectionNav } from "../../../../../shared/components/section-nav/section-nav";
+import { DetailedGallery } from '../../../../../shared/components/detailed-gallery/detailed-gallery';
+import { SectionNav } from '../../../../../shared/components/section-nav/section-nav';
 // import { PackagePromoCard } from "../../../../packages/components/package-promo-card/package-promo-card";
-import { RoomCard } from "../../../../../components/sections/explore-items-section/room-card/room-card";
-import { FeatureDiscovery } from "../../../../../shared/components/feature-discovery/feature-discovery";
+import { RoomCard } from '../../../../../components/sections/explore-items-section/room-card/room-card';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ExperiencesService } from '../../../services/experience.service';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { map, of, switchMap, tap } from 'rxjs';
-import { ImgData } from '../../../../../shared/interfaces/common.interface';
-import { InfoData } from '../../../../../shared/components/info-block/info-block';
+import {
+  HeaderData,
+  ImgData,
+  InfoData,
+} from '../../../../../shared/interfaces/common.interface';
 import { PackageService } from '../../../../packages/services/package.service';
 import { SectionNavService } from '../../../../../shared/services/section-nav.service';
-import { PageHeader } from "../../../../../shared/components/page-header/page-header";
+import { PageHeader } from '../../../../../shared/components/page-header/page-header';
+import { PackagesOffer } from '../../../../packages/components/package-offer/package-offer';
+import { RoomCrossSell } from '../../../../services-facilities/components/room-cross-sell/room-cross-sell';
 
 interface AdventureData {
   images: ImgData[];
@@ -20,10 +24,16 @@ interface AdventureData {
 }
 
 @Component({
-  selector: 'app-adventure-detail-template.html',
+  selector: 'adventure-detail-template.html',
   templateUrl: './adventure-detail-template.html',
   styleUrl: './adventure-detail-template.css',
-  imports: [RoomCard, FeatureDiscovery, DetailedGallery, SectionNav, PageHeader],
+  imports: [
+    DetailedGallery,
+    SectionNav,
+    PageHeader,
+    PackagesOffer,
+    RoomCrossSell,
+  ],
 })
 export class AdventureDetailTemplate {
   private route = inject(ActivatedRoute);
@@ -34,72 +44,82 @@ export class AdventureDetailTemplate {
 
   public nav = this.navService.currentState;
 
+  readonly header: HeaderData = {
+    title: 'HEADER.EXPERIENCES.TITLE',
+    description: 'HEADER.EXPERIENCES.DESCRIPTION',
+  };
   adventureResource = toSignal(
     this.route.paramMap.pipe(
-      switchMap(params => {
+      switchMap((params) => {
         const category = params.get('category') || '';
         const slug = params.get('adventureSlug') || '';
 
         return this.expService.getAdventureBySlug(category, slug).pipe(
-          tap(adventure => {
+          tap((adventure) => {
             if (!adventure) {
               this.redirectToParent();
               return;
             }
 
             if (!this.navService.currentState()) {
-              this.expService.getCategoryDetails(category).subscribe(res => {
+              this.expService.getCategoryDetails(category).subscribe((res) => {
                 if (res) {
                   this.navService.initStates(res.adventures);
                   this.navService.setCurrentBySlug(slug);
                 }
               });
             } else {
-              // Si ya tiene estados, solo movemos el puntero al slug actual
               this.navService.setCurrentBySlug(slug);
             }
           }),
-          switchMap(adventure => {
-            if (!adventure) return of(null);
-            // Si hay un paquete relacionado, lo buscamos. Si no, devolvemos solo la aventura.
-            if (adventure.relatedPackageSlug) {
-              return this.pkgService.getPackageBySlug(adventure.relatedPackageSlug).pipe(
-                map(pkg => ({ adventure, pkg }))
-              );
-            }
-
-            return of({ adventure, pkg: null });
-          })
         );
-      })
-    )
+      }),
+    ),
   );
-
-
-
 
   mainData = computed<AdventureData | null>(() => {
     const data = this.adventureResource();
     if (!data) return null;
 
     return {
-      // Aquí TypeScript ya sabe que images debe ser ImgData[]
-      images: data.adventure.imgs,
+      images: data.imgs,
       info: {
-        title: data.adventure.title,
-        desc: data.adventure.desc,
-        features: data.adventure.tips
-      }
+        title: data.title,
+        desc: data.desc,
+        featureTitle: 'LABELS.RECOMMENDATION',
+        features: data.tips,
+      },
     };
   });
 
-  relatedPackage = computed(() => this.adventureResource()?.pkg || null);
+  private relatedPackage = computed(
+    () => this.adventureResource()?.relatedPackageSlug || null,
+  );
+
+  public readonly packageConfig = computed(() => {
+    const slug = this.relatedPackage();
+
+    return {
+      slug: slug ?? '',
+      subtitle: 'LABELS.OFFERS',
+      // 1. Añadimos la propiedad baseRoute aquí:
+      baseRoute: {
+        text: 'LABELS.EXPLORE',
+        url: '/package/',
+      },
+      // 2. Mantenemos el flag para el control de la vista
+      hasPackage: !!slug,
+    };
+  });
 
   redirectToParent() {
     this.router.navigate(['../'], { relativeTo: this.route });
   }
 
-  goPrev() { this.navService.goPrev(this.route); }
-  goNext() { this.navService.goNext(this.route); }
-
+  goPrev() {
+    this.navService.goPrev(this.route);
+  }
+  goNext() {
+    this.navService.goNext(this.route);
+  }
 }

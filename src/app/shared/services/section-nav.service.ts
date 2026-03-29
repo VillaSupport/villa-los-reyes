@@ -12,7 +12,6 @@ export interface NavigationState<> {
   isLast: boolean;
 }
 
-
 @Injectable()
 export class SectionNavService<T extends { slug: string }> {
   private router = inject(Router);
@@ -42,6 +41,7 @@ export class SectionNavService<T extends { slug: string }> {
       this.allStates.set(item.slug, newState);
       prevState = newState
     })
+
   }
 
   setCurrentBySlug(slug: string) {
@@ -68,7 +68,6 @@ export class SectionNavService<T extends { slug: string }> {
   }
 
   private handleNavigation(state: NavigationState, relativeTo?: ActivatedRoute) {
-    // Si pasamos relativeTo, la navegación es más robusta
     const commands = relativeTo ? ['../', state.slug] : [state.slug];
     this.router.navigate(commands, { relativeTo });
     this.state.set(state)

@@ -63,7 +63,6 @@
 
 }
 
-
 /* Comportamiento flexible: 1 imagen → 100%, 2 imágenes → 50% */
 .visual-container img:only-child {
   flex: 1 1 100%;

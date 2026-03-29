@@ -1,0 +1,7 @@
+<a class="room-card" [routerLink]="room().slug">
+  <img [src]="room().images[room().cardIndex].src" [alt]="room().images[room().cardIndex].alt" />
+  <div class="overlay">
+    <h3>{{ room().title | translate }}</h3>
+    <p>{{ room().capacity| translate }}</p>
+  </div>
+</a>
