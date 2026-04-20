@@ -24,10 +24,10 @@ import { TranslatePipe } from '@ngx-translate/core';
   styleUrl: './reviews-page.css',
 })
 export class ReviewsPage {
-  header = {
-    title: 'Reseñas y comentarios',
-    description:
-      'Lee las reseñas de nuestros huéspedes y descubre por qué Villa Los Reyes es el lugar perfecto para tu estancia. ¡Tu opinión también cuenta!.',
+
+  public header = {
+    title: 'HEADER.REVIEWS.TITLE',
+    description:'HEADER.REVIEWS.DESCRIPTION',
   };
 
   readonly isLoading = signal(true);

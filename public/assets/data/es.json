@@ -46,7 +46,13 @@
     "ITINERARY": {
       "TITLE": "Paquetes promocionales",
       "DESCRIPTION": "Aquí conocerás las mejores ofertas para tu estadía en Viñales."
+    },
+    "REVIEWS":{
+      "TITLE": "Reseñas y comentarios",
+      "DESCRIPTION": "Lee las reseñas de nuestros huéspedes y descubre por qué Villa Los Reyes es el lugar perfecto para tu estancia. ¡Tu opinión también cuenta!."
     }
+
+
   },
 
   "SECTION_HEADER": {
@@ -231,6 +237,14 @@
       "DESCRIPTION": "¡Descubra Viñales con nosotros!.\nAventuras naturales, bellas vistas y tranquilidad."
     }
   },
+
+
+
+
+
+
+
+
 
 
   "promo": {
