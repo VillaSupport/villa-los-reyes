@@ -22,22 +22,25 @@
       <h3>{{ 'FOOTER.CONTACTS_TITLE' | translate }} </h3>
 
       <ul>
-        @for (c of contacts; track c.label ?? c.url) {
-        <li class="hover-line" [class.click-to-copy]="c.copy" (click)="c.copy && copyNumber(c.value)"
-          [class.copied]="copiedNumber() === c.value">
+        
+        @for (c of contacts; track $any(c).label ?? $any(c).url) {
+          <li class="hover-line" 
+              [class.click-to-copy]="$any(c).copy" 
+              (click)="$any(c).copy && copyNumber($any(c).value)"
+              [class.copied]="copiedNumber() === $any(c).value">
 
-          <span class="material-symbols-outlined">{{ c.icon }}</span>
+            <span class="material-symbols-outlined">{{ c.icon }}</span>
 
-          @if (c.url) {
-          <a [href]="c.url" target="_blank">{{ c.label }}</a>
-          } @else {
-          {{ c.label }}
-          }
+            @if ($any(c).url) {
+              <a [href]="$any(c).url" target="_blank">{{ c.label }}</a>
+            } @else {
+              {{ c.label }}
+            }
 
-          @if (c.copy) {
-          <span class="tooltip">Copiado</span>
-          }
-        </li>
+            @if ($any(c).copy) {
+              <span class="tooltip">{{ 'FOOTER.COPIED' | translate }}</span>
+            }
+          </li>
         }
       </ul>
 

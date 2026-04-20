@@ -241,11 +241,11 @@
   },
 
   "FOOTER": {
-  "CONTACTS_TITLE": "Contacts",
-  "CHAT_TITLE": "Contact us!",
-  "CHAT_DESCRIPTION": "Send us your comments, questions, or concerns. We will be happy to assist you and get in touch with you.",
-  "CHAT_BUTTON": "Online Chat",
-  "RIGHTS": "All rights reserved",
-  "VILLA": "Villa Los Reyes"
-}
+    "CONTACTS_TITLE": "Contacts",
+    "CHAT_TITLE": "Contact us!",
+    "CHAT_DESCRIPTION": "Send us your comments, questions, or concerns. We will be happy to assist you and get in touch with you.",
+    "CHAT_BUTTON": "Online Chat",
+    "RIGHTS": "All rights reserved",
+    "COPIED": "Copied"
+  }
 }
