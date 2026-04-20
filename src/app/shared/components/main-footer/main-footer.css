@@ -30,7 +30,7 @@
 }
 
 .brand {
-  align-items: flex-start;
+  align-items: center;
 }
 .brand-wrapper{
   align-items: center;
@@ -146,6 +146,7 @@
   text-decoration: none;
   font-size: 1.25rem;
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 .chat-btn:hover {
