@@ -39,7 +39,7 @@ export class FacilitiesPage {
       ...data,
       items: data.items.map((item) => ({
         ...item,
-        slug: `/services-facilites/facilites/${item.slug}`, // Aquí es donde vive el slug
+        slug: `/services-facilities/facilities/${item.slug}`, // Aquí es donde vive el slug
       })),
     };
   });
