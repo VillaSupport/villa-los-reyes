@@ -17,7 +17,7 @@ export class RequestStep {
   hasError = input<boolean>(false);
 
   // Acceso a los datos centralizados del negocio
-  business = environment.business;
+  business = environment.contactBusiness;
 
   completed = output<void>();
 

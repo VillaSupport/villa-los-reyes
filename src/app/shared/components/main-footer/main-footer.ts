@@ -1,67 +1,98 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, PLATFORM_ID, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 // FontAwesome Imports
-import { FaIconLibrary, FaIconComponent } from '@fortawesome/angular-fontawesome';
-import { faFacebookF, faInstagram, faFacebookMessenger, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faPhone, faEnvelope, faLocationDot, faCommentDots } from '@fortawesome/free-solid-svg-icons';
+import {
+  FaIconLibrary,
+  FaIconComponent,
+} from '@fortawesome/angular-fontawesome';
+import {
+  faFacebookF,
+  faInstagram,
+  faFacebookMessenger,
+  faWhatsapp,
+} from '@fortawesome/free-brands-svg-icons';
+import {
+  faPhone,
+  faEnvelope,
+  faLocationDot,
+  faCommentDots,
+} from '@fortawesome/free-solid-svg-icons';
 import { TranslatePipe } from '@ngx-translate/core';
+import { environment } from '../../../../environments/environment';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'footer-section',
-  imports: [FaIconComponent,TranslatePipe],
+  imports: [FaIconComponent, TranslatePipe],
   templateUrl: './main-footer.html',
-  styleUrl: './main-footer.css'
+  styleUrl: './main-footer.css',
 })
 export class FooterSection {
-  currentYear = new Date().getFullYear();
+  private platformId = inject(PLATFORM_ID);
+  private readonly config = environment.contactBusiness;
 
-  // 🔥 Social links centralizados
   socialLinks = [
-    { icon: 'facebook-f', url: 'https://facebook.com' },
-    { icon: 'instagram', url: 'https://instagram.com' },
-    { icon: 'facebook-messenger', url: 'https://m.me/' },
-    { icon: 'whatsapp', url: 'https://wa.me/5352741734' }
+    { icon: 'facebook-f', url: this.config.social.facebook },
+    { icon: 'instagram', url: this.config.social.instagram },
+    { icon: 'facebook-messenger', url: this.config.social.messenger },
+    { icon: 'whatsapp', url: `https://wa.me/${this.config.whatsapp.number}` },
   ];
 
   contacts = [
-    // Teléfonos
-    { type: 'contact', icon: 'phone', label: '(+53) 48 793317', value: '+53 48 793317', copy: true },
-    { type: 'contact', icon: 'smartphone', label: '(+53) 5 2741734', value: '+53 5 2741734', copy: true },
-
-    // Email
-    { type: 'contact', icon: 'mail', label: 'joanmanuel2008@yahoo.es', url: 'mailto:joanmanuel2008@yahoo.es' },
-
-    // Dirección
+    ...this.config.phones.map((p) => ({
+      type: 'contact',
+      icon: 'phone',
+      label: p.label,
+      value: p.value,
+      copy: true,
+    })),
     {
-      type: 'address', icon: 'location_on', label: 'Calle Salvador Cisneros #206-C, Viñales, Pinar del Río, Cuba',
-      url: 'https://maps.app.goo.gl/ocppjEAutwcchVzGA'
-    }
+      type: 'contact',
+      icon: 'mail',
+      label: this.config.email,
+      url: `mailto:${this.config.email}`,
+    },
+    {
+      type: 'address',
+      icon: 'location_on',
+      label: this.config.address.label,
+      url: this.config.address.mapUrl,
+    },
   ];
 
-
-  copiedNumber = signal<string | null>(null)
+  currentYear = new Date().getFullYear();
+  copiedNumber = signal<string | null>(null);
 
   constructor(library: FaIconLibrary) {
     // Registrar solo los iconos usados
     library.addIcons(
-      faFacebookF, faInstagram, faFacebookMessenger, faWhatsapp,
-      faPhone, faEnvelope, faLocationDot, faCommentDots
+      faFacebookF,
+      faInstagram,
+      faFacebookMessenger,
+      faWhatsapp,
+      faPhone,
+      faEnvelope,
+      faLocationDot,
+      faCommentDots,
     );
   }
 
   openWhatsApp() {
-    const message = encodeURIComponent(
-      '¡Hola!.Me gustaría recibir más información sobre las opciones de alojamiento y los servicios disponibles en Villa Los Reyes'
-    );
-    window.open(`https://wa.me/5352741734?text=${message}`, '_blank');
+    // Verificamos si estamos en el navegador antes de usar 'window'
+    if (isPlatformBrowser(this.platformId)) {
+      const message = encodeURIComponent(this.config.whatsapp.defaultMessage);
+      const url = `https://wa.me/${this.config.whatsapp.number}?text=${message}`;
+      window.open(url, '_blank');
+    }
   }
 
   copyNumber(value: string) {
-    this.copiedNumber.set(value);
-
-    setTimeout(() => this.copiedNumber.set(null), 2000);
+    // Navigator (clipboard) también requiere estar en el navegador
+    if (isPlatformBrowser(this.platformId)) {
+      this.copiedNumber.set(value);
+      navigator.clipboard.writeText(value); // Opcional: copiar de verdad al portapapeles
+      setTimeout(() => this.copiedNumber.set(null), 2000);
+    }
   }
 }
-
-
