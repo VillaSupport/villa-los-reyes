@@ -12,7 +12,7 @@
   [info]="{
     title: data?.title ?? '',
     desc: data?.description ?? '',
-    slug: '/about',
-    linkText: 'LABELS.EXPLORE',
+    slug: showNavigation() ? '/about/' : undefined,
+    linkText: showNavigation() ? 'LABELS.EXPLORE' : undefined,
   }"
 />

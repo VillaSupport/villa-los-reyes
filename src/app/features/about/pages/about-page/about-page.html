@@ -5,8 +5,7 @@
 
   @let otherSections = sections?.slice(1);
 
-
-  <about-view></about-view>
+  <about-view [showNavigation]="false"></about-view>
   @for (
     section of otherSections;
     track $index;

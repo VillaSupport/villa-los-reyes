@@ -1,4 +1,4 @@
-import { Component, effect, inject } from '@angular/core';
+import { Component, effect, inject, input } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { AboutService } from '../../services/about.service';
 import { GallerySplitView } from "../../../../shared/components/gallery-split-view/gallery-split-view";
@@ -12,6 +12,8 @@ import { GallerySplitView } from "../../../../shared/components/gallery-split-vi
 export class AboutView {
   aboutService = inject(AboutService);
 
+  public showNavigation = input<boolean>(true);
+  
   aboutData = toSignal(
     this.aboutService.getSectionBySlug("about-villa"),
     { initialValue: undefined },
