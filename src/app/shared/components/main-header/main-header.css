@@ -1,0 +1,21 @@
+:host {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: block;
+
+  /* Animación suave y un poco más lenta */
+  transition: transform 0.75s ease, opacity 0.75s ease;
+}
+
+:host.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+:host:not(.hidden) {
+  transform: translateY(0);
+  opacity: 1;
+}

@@ -1,0 +1,112 @@
+<div class="reviews-page">
+  <page-header [reserveSpace]="false" [header]="header" />
+
+  <div class="reviews-section section-outer">
+    <div class="reviews-container section-inner">
+      <section class="reviews-list">
+        @if (isLoading()) {
+          @for (i of skeletonArray; track i) {
+            <div class="review-card skeleton">
+              <div class="user-block">
+                <div class="user-avatar skeleton-pulse"></div>
+                <div class="user-info">
+                  <div class="skeleton-text-line name skeleton-pulse"></div>
+                  <div class="skeleton-text-line meta skeleton-pulse"></div>
+                </div>
+              </div>
+              <div class="review-main">
+                <div
+                  class="skeleton-text-line text medium skeleton-pulse"
+                ></div>
+                <div class="skeleton-text-line text skeleton-pulse"></div>
+                <div class="skeleton-text-line text short skeleton-pulse"></div>
+              </div>
+            </div>
+            <hr class="review-divider" />
+          }
+        } @else if (paginatedReviews().length) {
+          @for (review of paginatedReviews(); track review.id) {
+            <article class="review-card">
+              <header class="review-header">
+                <div class="user-block">
+                  <img
+                    [src]="getReviewUserPhoto(review)"
+                    alt="User Avatar"
+                    class="user-avatar"
+                  />
+                  <div class="user-info">
+                    <span class="user-name">{{
+                      userReviewDisplayName(review)
+                    }}</span>
+                    <div class="review-meta">
+                      <div class="review-stars">
+                        @for (s of stars; track s) {
+                          <span
+                            class="material-symbols-outlined"
+                            [style.color]="'#404944'"
+                            [style.font-variation-settings]="
+                              getStarStyle(review.rating, s)
+                            "
+                          >
+                            star
+                          </span>
+                        }
+                      </div>
+                      <time class="review-date">{{
+                        review.createdAt | date: "mediumDate"
+                      }}</time>
+                    </div>
+                  </div>
+                </div>
+              </header>
+              <div class="review-main">
+                <p class="review-text">{{ review.comment }}</p>
+                <p class="useful-summary">
+                  {{ review.usefulCount || 0 }}
+                  {{ "REVIEWS.USEFUL_COUNT" | translate }}
+                </p>
+              </div>
+
+              <footer class="review-footer">
+                <div class="useful-actions">
+                  <span class="useful-question">{{
+                    "REVIEWS.USEFUL_QUESTION" | translate
+                  }}</span>
+                  <button class="btn-useful" (click)="markUseful(review, true)">
+                    {{ "REVIEWS.YES" | translate }}
+                  </button>
+                  <button
+                    class="btn-useful"
+                    (click)="markUseful(review, false)"
+                  >
+                    {{ "REVIEWS.NO" | translate }}
+                  </button>
+                </div>
+              </footer>
+            </article>
+            <hr class="review-divider" />
+          }
+
+          @if (hasMore()) {
+            <div class="load-more-container">
+              <button class="btn-load-more" (click)="loadMore()">
+                {{ "REVIEWS.LOAD_MORE" | translate }}
+              </button>
+            </div>
+          }
+
+          <a (click)="scrollToForm()" class="floating-action-btn">
+            {{ "REVIEWS.WRITE_REVIEW" | translate }}
+          </a>
+        } @else {
+          <p class="no-reviews">{{ "REVIEWS.NO_REVIEWS" | translate }}</p>
+        }
+      </section>
+      <div class="form-column-wrapper">
+        <div #formContainer id="add-review">
+          <auth-review-form class="review-form"></auth-review-form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

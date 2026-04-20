@@ -1,0 +1,175 @@
+:host {
+  display: block;
+  font-family: "Poppins", sans-serif;
+
+  /* Background Colors */
+  --color-bg-light: var(--primary-bg-color, #e4eae5);
+  --color-bg-white: var(--secondary-bg-color, #f7faf7);
+
+  /* Text Colors */
+  --color-text-primary: #234e3f;
+  --color-text-secondary: #08372a;
+  --color-text-muted: #404944;
+  --color-text-accent: #d17d00;
+  --color-text-total: #3c6756;
+  --color-text-btn: #fff;
+  --color-btn: #f49516;
+  --color-btn-hover: #f49416c9;
+
+  /* Spacing */
+  --gap-section: 1.75rem; /*Space between Header Container and Column Container*/
+  --gap-header: 0.375rem; /*Space between <h2> and <p> in Header Container or which is the same space between header title and header description */
+  --gap-columns-container: 1.75rem; /*Space between the two columns in the Columns Container*/
+  --gap-column-content: 0.75rem; /*Space between elements inside each column (itinerary and includes)*/
+  
+  --gap-itinerary: 1.25rem;/*Space between items in the itinerary column */
+  --gap-includes: 0.875rem; /*Space between items in the includes column*/
+
+  /*Width*/
+  --layout-max-width: 1200px;      /* El límite de ancho del diseño */
+
+  /* Font Sizes */
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.75rem;
+  --fs-h4: 1.25rem;
+  --fs-body: 1.125rem;
+  --fs-btn: 1.2rem;
+  --fs-total: 1.75rem;
+  --fs-billing: 1rem;
+
+  color: var(--color-text-primary);
+  /* 
+ 
+  
+  --fs-small: 1rem;
+ */
+}
+
+ul { padding: 0; margin: 0; list-style: none; }
+
+/* --- Outer Container --- */
+.discover-package-section { position: relative; background: var(--color-bg-light,e4eae5);}
+/* --- Inner Container --- */
+.discover-package-container { max-width: var(--layout-max-width); gap: var(--gap-section) }
+
+/* --- Header Container --- */
+.discover-header { display: flex; flex-direction: column; gap: var(--gap-header, 1rem); }
+/* --- <h2> Header Title --- */
+.discover-title { color: var(--color-text-accent); font-size: var(--fs-h2); font-weight: 700; line-height: 1.2; }
+/* --- <p> Header Description --- */
+.discover-description { font-size: var(--fs-body); line-height: 1.6; letter-spacing: 0.03125rem; }
+
+/* --- Columns Container --- */
+.offer-details-container { display: flex; justify-content: space-between; gap: var(--gap-columns-container, 1.75rem); }
+/* --- Column Content --- */
+.offer-column { display: flex; flex-direction: column; flex: 1; gap: var(--gap-column-content, 1.75rem); }
+
+/* --- <h3> Column Title --- */
+.column-title { font-size: var(--fs-h3); font-weight: 700; line-height: 1.3;}
+/* --- <h4> Column Subtitle --- */
+.column-subtitle {  font-size: var(--fs-h4); font-weight: 700;  color: var(--color-text-secondary); }
+
+/* Items in each column */
+.offer-column li { font-size: var(--fs-body); line-height: 1.4; color: var(--color-text-muted);}
+/*Items Container in each column*/
+.offer-column > ul {  display: flex;  flex-direction: column;  gap: var(--gap-itinerary, 1.75rem); }
+
+/* Includes Column or The white box*/
+.includes { background: var(--color-bg-white, #fff); padding: 2rem 4rem; border-radius: 1rem; }
+
+/* Itinerary Title */
+.includes.column-title { color: var(--color-text-accent);}
+/* Items Container in the includes column */
+.offer-column.includes > ul { gap: var(--gap-includes, 1.5rem);}
+
+/* Total Price Container */
+.offer-total { display: flex; justify-content: space-between; align-items: center;}
+
+/* Total Price Info */
+.total-label, .amount, .currency { font-size: var(--fs-total); font-weight: 700; line-height: 1.2; }
+
+.total-label, .amount { color: var(--color-text-total); }
+.currency { color: var(--color-text-accent); margin-left: 0.25rem; text-transform: uppercase;}
+
+.billing {  display: block; text-align: right; color: var(--color-text-secondary); font-size: var(--fs-billing, 1rem); line-height: 1.2; }
+
+.reserve-btn {
+  width: 100%;
+  height: 3.75rem;
+  border-radius: 1.8rem;
+  background: var(--color-btn) ;
+  color: var(--color-text-btn, #fff);
+  font-size: var(--fs-btn,1.2rem);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.reserve-btn:hover {
+  background-color: var(--color-btn-hover);
+}
+
+section-nav{
+  /* Esto "pisará" los valores por defecto del componente */
+  --section-nav-padding: 1rem 0.95rem 0; 
+}
+
+@media (max-width: 1280px) {
+  :host {
+    --fs-h2: 1.625rem;
+    --fs-h3: 1.275em;
+    --fs-h4:1rem;
+    --fs-body: 0.85rem;
+    --fs-total: 1.125rem;
+    --fs-billing: 0.85rem;
+    --fs-btn: 1rem;
+
+    --gap-header: 0.125rem;
+    --gap-section: 0.5rem;
+
+    --gap-column-content: 0.5rem;
+    --gap-itinerary: 0.75rem;
+    --gap-includes: 0.5rem;
+
+    --layout-max-width: 1024px;
+  }
+
+
+  .includes { padding: 1.5rem 3rem; }
+  
+  .reserve-btn {
+    height: 3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .includes {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  :host {
+    --gap-header: 0.25rem;
+    --layout-max-width: 600px;
+  }
+  .offer-details-container {
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+
+
+}
+
+@media (max-width: 600px) {
+    :host {
+    --gap-header: 0.25rem;
+    --layout-max-width: 480px;
+  }
+  .discover-package-container {
+    gap: 1.2rem;
+  }
+  /* => h2: font-size: 1.5rem; */
+}

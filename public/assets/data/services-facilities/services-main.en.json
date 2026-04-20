@@ -1,0 +1,81 @@
+[
+  {
+    "id": 1,
+    "category": "facilities",
+    "name": "Facilities",
+    "title": "Explore our facilities",
+    "linkText": "Discover our facilities",
+    "desc": "We offer a unique experience with our <strong>independent rooms</strong>, providing privacy and comfort. Enjoy panoramic views from our <strong>terraces</strong>, perfect for relaxing. Stroll through our lush <strong>gardens</strong> and immerse yourself in the tranquility of nature. In addition, we have a refreshing <strong>swimming pool</strong> for your enjoyment. Come and live an unforgettable stay.",
+    "image": {
+      "src": "assets/imgs/outdoor/gardens/lush-garden-red-flowers-pool.webp",
+      "alt": "Panoramic views of the gardens and the Villa's structure"
+    },
+    "previewItems": [
+      {
+        "title": "Room 1",
+        "description": "2 beds / private bathroom / 4 people",
+        "slug": "rooms/1",
+        "image": {
+          "src": "assets/imgs/rooms/room-01/double-bedroom-air-conditioning.webp",
+          "alt": "Double bedroom with air conditioning"
+        }
+      },
+      {
+        "title": "Room 2",
+        "description": "3 beds / private bathroom / 4 people",
+        "slug": "rooms/2",
+        "image": {
+          "src": "assets/imgs/rooms/room-02/triple-room-blue-wall-garden-view.webp",
+          "alt": "Triple room with blue wall and garden view"
+        }
+      },
+      {
+        "title": "Room 3",
+        "description": "2 beds / private bathroom / 4 people",
+        "slug": "rooms/3",
+        "image": {
+          "src": "assets/imgs/rooms/room-03/decorative-lighting-golden-hour.webp",
+          "alt": "Decorative lighting during golden hour"
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Services",
+    "category": "stay-benefits",
+    "title": "Meet our services",
+    "linkText": "Discover our services",
+    "desc": "Enjoy delicious <strong>Cuban gastronomy</strong> prepared by local chefs, <strong>transportation</strong> to explore the region, and the assistance of our <strong>trip planner</strong> to make the most of your stay. Additionally, we offer <strong>laundry service, relaxing massages</strong> to recharge your energy, and <strong>dance classes</strong> to immerse yourself in Cuban culture.",
+    "image": {
+      "src": "assets/imgs/services/gastronomy/dining-table-setup-villa-los-reyes.webp",
+      "alt": "Table served with traditional Cuban dishes"
+    },
+    "previewItems": [
+      {
+        "slug": "#gastronomy",
+        "title": "Gastronomy",
+        "image": {
+          "src": "assets/imgs/services/gastronomy/villa-los-reyes-dining-area-interior.webp",
+          "alt": "Cozy view of the interior of Villa Los Reyes restaurant with arranged wooden tables and rustic decor"
+        }
+      },
+      {
+        "slug": "#mobility",
+        "title": "Mobility",
+        "image": {
+          "src": "assets/imgs/services/mobility/classic-red-desoto-car-vinales.webp",
+          "alt": "Classic American red car (DeSoto) parked in front of Villa Los Reyes, available for transfers and tours."
+        }
+      },
+      {
+        "slug": "#trip-planner",
+        "title": "Trip Planner",
+        "image": {
+          "src": "assets/imgs/services/trip-planner/trip-planner-map-camera-coffee.webp",
+          "alt": "Top view of hands pointing at a map on a wooden table with coffee, a vintage camera, and a passport"
+        }
+      }
+    ]
+  }
+]

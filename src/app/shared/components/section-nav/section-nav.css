@@ -2,6 +2,7 @@
   display: flex;
   background-color: #e4eae5;
   justify-content: center;
+  --section-nav-padding : 0 5rem 2rem;
 }
 
 .wrapper-nav {
@@ -14,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5rem 2rem;
+  padding: var(--section-nav-padding);
 }
 
 .nav-btn {
@@ -48,15 +49,15 @@
 
 /* 1025px - 1280px */
 @media (max-width: 1280px) {
-  .section-nav {
-    padding: 0 4rem 2rem;
+  :host {
+    --section-nav-padding : 0 4rem 2rem;
   }
 }
 
 /* 769px - 1024px */
 @media (max-width: 1024px) {
-  .section-nav {
-    padding: 0 3rem 1rem;
+  :host{
+    --section-nav-padding : 0 3rem 1rem;
   }
   .arrow-icon {
     font-size: 1.2rem;
@@ -68,9 +69,10 @@
 
 /* 601px - 768px */
 @media (max-width: 768px) {
-  .section-nav {
-    padding: 0 2rem 1rem;
+  :host{
+    --section-nav-padding : 0 2rem 1rem;
   }
+
   .arrow-icon {
     font-size: 1.1rem;
   }
@@ -81,9 +83,9 @@
 
 /* < 600px */
 @media (max-width: 600px) {
-  .section-nav {
-    padding: 0 1rem 1rem;
-  }
+    :host{
+      --section-nav-padding : 0 1rem 1rem;
+    }
   .arrow-icon {
     font-size: 0.9rem;
   }

@@ -1,25 +1,34 @@
 :host {
-
-  --bg-color: var(--primary-bg-color, #E4EAE5);
+  --bg-color: var(--primary-bg-color, #e4eae5);
   --bg-white: var(--secondary-bg-color, #f7faf7);
 
   --text-color-light: #ffffff;
 
-  --gradient-main-img: linear-gradient(to bottom,
-      transparent 0%,
-      rgba(0, 0, 0, 0) 40%,
-      rgba(0, 0, 0, 0.2) 60%,
-      rgba(0, 0, 0, 0.5) 80%,
-      rgba(0, 0, 0, 0.8) 100%);
-  --gradient-overlay-base: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.25) 40%, transparent 100%);
-  --gradient-overlay-hover: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, transparent 70%);
+  --gradient-main-img: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(0, 0, 0, 0.2) 60%,
+    rgba(0, 0, 0, 0.5) 80%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  --gradient-overlay-base: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0.25) 40%,
+    transparent 100%
+  );
+  --gradient-overlay-hover: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.65) 0%,
+    transparent 70%
+  );
 
   display: block;
   position: relative;
   font-family: var(--font-main, sans-serif);
   background-color: var(--bg-white);
 }
-
 
 :host:has(.white-bg) {
   background-color: var(--bg-color);
@@ -36,22 +45,19 @@
 .preview-section {
   display: flex;
   justify-content: center;
-  padding: 5rem;
-  border-radius: 3rem 3rem 0 0;
   z-index: 10;
   background-color: var(--bg-color);
 }
-
 .preview-section.white-bg {
   background-color: var(--bg-white);
 }
 
 .preview-container {
   display: flex;
-  max-width: 1568px;
+  flex-direction: row;
+
   width: 100%;
   gap: 2rem;
-
 }
 
 .preview-container.is-reversed {
@@ -103,8 +109,6 @@ div.main-box:not(.skeleton)::after {
   z-index: 1;
 }
 
-
-
 /* =========================================
   BLOQUE ASIDE (30%)
 ========================================= */
@@ -123,7 +127,6 @@ div.main-box:not(.skeleton)::after {
   aspect-ratio: 16 / 9;
   border-radius: 1rem;
   overflow: hidden;
-
 }
 
 .item-wrap {
@@ -133,7 +136,7 @@ div.main-box:not(.skeleton)::after {
   color: inherit;
   text-decoration: none;
   cursor: pointer;
-  isolation: isolate
+  isolation: isolate;
 }
 
 .item-wrap.is-static {
@@ -227,11 +230,21 @@ div.main-box:not(.skeleton)::after {
 }
 
 /* Variaciones de ancho para simular lectura real */
-.full   { width: 99%; }
-.long   { width: 92%;  }
-.medium { width: 85%;  }
-.base    { width: 65%; }
-.short  { width: 45%;  }
+.full {
+  width: 99%;
+}
+.long {
+  width: 92%;
+}
+.medium {
+  width: 85%;
+}
+.base {
+  width: 65%;
+}
+.short {
+  width: 45%;
+}
 
 /* Grupo de párrafos con menos espacio entre ellos que con el título */
 .skeleton-paragraph-group {
@@ -240,19 +253,14 @@ div.main-box:not(.skeleton)::after {
   gap: 0.6rem;
 }
 
-
 @media (max-width: 1280px) {
-
-  .preview-section {
-    padding: 5rem;
-    border-radius: 2.5rem 2.5rem 0 0;
+  .main-box {
+    aspect-ratio: 16 / 8;
   }
-
   .preview-container,
   .preview-container.is-reversed {
     flex-direction: column;
     height: auto;
-    max-width: 100%;
     gap: 1.5rem;
   }
 
@@ -290,16 +298,9 @@ div.main-box:not(.skeleton)::after {
     line-height: 1.5rem;
     letter-spacing: 0.03rem;
   }
-
-
 }
 
 @media (max-width: 1024px) {
-  .preview-section {
-    padding: 3.5rem 4rem;
-    border-radius: 2rem 2rem 0 0;
-  }
-
   .aside-item {
     min-width: 360px;
   }
@@ -317,11 +318,6 @@ div.main-box:not(.skeleton)::after {
 }
 
 @media (max-width: 768px) {
-  .preview-section {
-    padding: 2.5rem;
-    border-radius: 1.5rem 1.5rem 0 0;
-  }
-
   .preview-container {
     gap: 1rem;
   }
@@ -343,18 +339,12 @@ div.main-box:not(.skeleton)::after {
 }
 
 @media (max-width: 600px) {
-  .preview-section {
-    padding: 2rem 1rem;
-    border-radius: 1rem 1rem 0 0;
-  }
-
   .preview-container {
     align-items: center;
   }
 
   .preview-main,
   .preview-aside {
-    max-width: 400px;
     width: 100%;
   }
 
@@ -368,7 +358,6 @@ div.main-box:not(.skeleton)::after {
   }
 
   .aside-item {
-    min-width: 100%;
     width: 100%;
     aspect-ratio: 17 / 10;
   }

@@ -1,0 +1,390 @@
+:host {
+  display: block;
+  font-family: "Poppins", sans-serif;
+}
+
+.reviews-page {
+  display: flex;
+  flex-direction: column;
+  color: #171d1a;
+}
+
+.reviews-section {
+  margin-top: 1.5rem;
+  background: #e9efea;
+  z-index: 10;
+}
+
+.reviews-container {
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5rem;
+  overflow: visible;
+}
+
+.reviews-list {
+  flex: 1;
+  min-width: 400px;
+  max-width: 620px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-column-wrapper {
+  width: 100%;
+  align-self: stretch;
+  max-width: 500px; /* Ajusta al max-width de tu review-form */
+  min-width: 400px;
+  position: relative;
+}
+
+#add-review {
+  position: sticky;
+  align-self: flex-start;
+  top: 180px;
+  z-index: 10;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.user-block {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-avatar {
+  width: 4.25rem;
+  height: 4.25rem;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.user-name {
+  color: #707974;
+  font-size: 1.125rem;
+}
+
+.review-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.review-stars {
+  display: flex;
+  align-items: center;
+}
+
+.material-symbols-outlined {
+  font-size: 1.875rem;
+}
+
+.review-date {
+  color: #707974;
+  font-size: 0.875rem;
+}
+
+.review-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.review-text {
+  max-width: 600px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  line-height: 1.6;
+  color: #171d1a;
+  font-size: 1rem;
+}
+
+.useful-summary {
+  color: #707974;
+  text-align: start;
+  font-size: 0.9rem;
+}
+
+.useful-actions {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  font-size: 0.9rem;
+  color: #707974;
+  gap: 1rem;
+}
+
+.btn-useful {
+  height: 3rem;
+  padding: 10px 24px;
+  border-radius: 2rem;
+
+  border: 1px solid #707974;
+  background: transparent;
+  color: #d17d00;
+  cursor: pointer;
+
+  font-size: 1rem;
+
+  transition: all 0.18s ease;
+}
+
+.btn-useful:hover {
+  background-color: #d17d00;
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 0 0 4px rgba(209, 125, 0, 0.12);
+}
+
+/* Línea divisoria entre reseñas */
+.review-divider {
+  border: 0;
+  border-top: 1px solid #c9d1cc; /* Un gris suave que combine con #dee4df */
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+/* Contenedor y Botón Ver Más */
+.load-more-container {
+  display: flex;
+  justify-content: start;
+}
+
+.btn-load-more {
+  background: transparent;
+  border: none;
+  color: #234e3f;
+  padding: 8px 24px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-load-more:hover {
+  border-radius: 2rem;
+  background-color: #54806f;
+  color: white;
+  box-shadow: 0 4px 12px rgba(84, 128, 111, 0.2);
+}
+
+/* Estilo base del botón flotante (Oculto por defecto) */
+.floating-action-btn {
+  margin: 5px;
+  display: none; /* No se ve en Desktop */
+  background-color: #f49516;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 2.5rem;
+  text-decoration: none;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.floating-action-btn:hover {
+  background-color: #d17d00;
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 0 0 4px rgba(209, 125, 0, 0.12);
+}
+
+.skeleton {
+  border-radius: 12px;
+  background: #dee4df;
+  padding: 24px;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Animación de pulso para Skeleton */
+.skeleton-pulse {
+  background: linear-gradient(90deg, #cbd5ce 25%, #dbe4de 50%, #cbd5ce 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite ease-in-out;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.skeleton .user-avatar {
+  background-color: #cbd5ce;
+  border-radius: 50%;
+}
+
+.skeleton-text-line {
+  display: block;
+  height: 12px;
+  margin-bottom: 8px;
+  background-color: #cbd5ce;
+  border-radius: 4px;
+}
+
+.skeleton-text-line.name {
+  width: 75%;
+  height: 16px;
+}
+.skeleton-text-line.meta {
+  width: 60%;
+  height: 12px;
+}
+.skeleton-text-line.text {
+  width: 94%;
+  height: 14px;
+}
+.skeleton-text-line.text.medium {
+  width: 85%;
+}
+.skeleton-text-line.text.short {
+  width: 75%;
+}
+
+.no-reviews {
+  text-align: center;
+  padding: 3rem;
+  color: #707974;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 940px) {
+  .reviews-container {
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente el wrapper y la lista */
+    gap: 2.5rem;
+    padding: 0 1rem; /* Margen de seguridad para móviles */
+  }
+
+  .form-column-wrapper {
+    order: 1;
+    width: 100%;
+    max-width: 620px; /* Lo igualamos al ancho de la lista de reseñas */
+    min-width: 0; /* Rompemos el min-width de escritorio */
+    display: flex;
+    justify-content: center; /* Centra el div #add-review internamente */
+    align-self: center;
+    flex: none;
+  }
+
+  #add-review {
+    position: static;
+    width: 100%;
+    margin: 0 auto; /* Doble seguridad de centrado */
+  }
+
+  .reviews-list {
+    order: 2;
+    width: 100%;
+    max-width: 620px;
+    min-width: 0; /* Importante para que no desborde en pantallas pequeñas */
+  }
+
+  .floating-action-btn {
+    display: flex; /* Se activa en móviles y tablets */
+  }
+
+  .skeleton {
+    padding: 32px 36px;
+  }
+
+  /* Hacemos que el scroll sea suave para que el ancla no "salte" de golpe */
+  html {
+    scroll-behavior: smooth;
+  }
+  .reviews-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .review-form {
+    --review-form-max-width: 620px;
+  }
+}
+
+@media (max-width: 500px) {
+  .skeleton {
+    padding: 24px;
+  }
+
+  .floating-action-btn {
+    bottom: 1.5rem;
+    right: 1rem;
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .reviews-container {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .reviews-list {
+    min-width: 280px;
+  }
+
+  .user-block {
+    gap: 0.5rem;
+  }
+  .user-avatar,
+  .avatar-svg-render {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  .user-name {
+    font-size: 0.9rem;
+  }
+
+  .material-symbols-outlined {
+    font-size: 1.5rem;
+  }
+
+  .review-text {
+    font-size: 0.875rem;
+  }
+
+  .review-card {
+    gap: 0.875rem;
+  }
+
+  .useful-summary {
+    font-size: 0.8rem;
+  }
+
+  .useful-actions {
+    padding: 0 1rem;
+    font-size: 0.8rem;
+    gap: 0.5rem;
+  }
+
+  .btn-useful {
+    height: 2.75rem;
+    font-size: 0.9rem;
+    padding: 8px 24px;
+  }
+
+  .google-login-btn {
+    font-size: 0.85rem;
+  }
+}

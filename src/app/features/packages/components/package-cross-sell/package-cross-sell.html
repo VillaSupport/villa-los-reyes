@@ -1,0 +1,5 @@
+<grid-cross-sell [header]="header" [items]="packages()">
+  <ng-template #itemTemplate let-package>
+    <package-card [data]="package"></package-card>
+  </ng-template>
+</grid-cross-sell>

@@ -1,0 +1,22 @@
+<section class="explore-section section-outer">
+  <div class="explore-container section-inner">
+    <div class="header-group">
+      <h2 [innerHTML]="header().title | translate"></h2>
+      <p [innerHTML]="header().description | translate"></p>
+    </div>
+
+    <div class="items-grid">
+      @for (item of items(); track $index) {
+        <div class="grid-item">
+          <ng-container 
+            *ngTemplateOutlet="itemTemplate(); context: { $implicit: item }">
+          </ng-container>
+        </div>
+      }
+    </div>
+
+    <a [routerLink]="header().link?.route" class="discover-link">{{
+      header().link?.label | translate
+    }}</a>
+  </div>
+</section>

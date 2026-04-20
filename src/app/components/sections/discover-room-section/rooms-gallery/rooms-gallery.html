@@ -1,8 +1,0 @@
-<div class="rooms-gallery">
-  @for (room of rooms(); track room.name) {
-  <a [routerLink]="room.path" class="room-link">
-    <room-item [src]="room.src" [alt]="room.alt" [name]="room.name" [details]="room.details" variant="discover">
-   </room-item>
-  </a>
-  }
-</div>

@@ -1,0 +1,101 @@
+<div class="review-container">
+  <div class="review-header">
+    <h2 class="vlr-form-title">{{ 'CONFIRMATION.HEADER_TITLE' | translate }}</h2>
+    <p class="vlr-form-text">
+      {{ 'CONFIRMATION.HEADER_DESC' | translate }}
+    </p>
+  </div>
+
+  <div class="booking-card">
+    <div class="booking-card-header">
+      <img
+        class="logo"
+        src="assets/logo/logo-villa.svg"
+        alt="Logo de Villa Los Reyes"
+      />
+    </div>
+
+    <div class="content">
+      <h2 class="section-title vlr-form-title">{{ 'CONFIRMATION.CARD_TITLE' | translate }}</h2>
+
+      <div class="info-group">
+        <h3 class="vlr-form-text vlr-form-text-bold">
+          {{ 'CONFIRMATION.GUEST_INFO' | translate }}
+        </h3>
+        <p class="vlr-form-text">
+          {{ bookingData.firstName }} {{ bookingData.lastName }}
+        </p>
+      </div>
+
+      <div class="row date-row">
+        <div class="col">
+          <h3 class="vlr-form-text vlr-form-text-bold">{{ 'CONFIRMATION.CHECK_IN' | translate }}</h3>
+          <p class="vlr-form-text">
+            {{ bookingData.checkIn | date: "dd/MM/yyyy" : "UTC" }}
+          </p>
+        </div>
+        <div class="col">
+          <h3 class="vlr-form-text vlr-form-text-bold">{{ 'CONFIRMATION.CHECK_OUT' | translate }}</h3>
+          <p class="vlr-form-text">
+            {{ bookingData.checkOut | date: "dd/MM/yyyy" : "UTC" }}
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <h3 class="vlr-form-text vlr-form-text-bold">{{ 'CONFIRMATION.YOUR_BOOKING' | translate }}</h3>
+          <p class="vlr-form-text">
+            <span>{{ 'CONFIRMATION.PACKAGE' | translate }}</span> {{ selectedPackage()?.title }}
+          </p>
+          <p class="vlr-form-text">
+            {{ bookingData.adults }} {{ (bookingData.adults === 1 ? 'SUMMARY.ADULT' : 'SUMMARY.ADULTS') | translate }}, 
+            {{ bookingData.children }} {{ (bookingData.children === 1 ? 'SUMMARY.CHILD' : 'SUMMARY.CHILDREN') | translate }}
+          </p>
+        </div>
+        <div class="col">
+          <h3 class="vlr-form-text vlr-form-text-bold">{{ 'CONFIRMATION.ACCOMMODATION' | translate }}</h3>
+          <p class="vlr-form-text">
+            {{ 'CONFIRMATION.ADDRESS_DISPLAY' | translate }}
+          </p>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <div class="total-container">
+        <span class="vlr-form-total-label">{{ 'CONFIRMATION.TOTAL' | translate }}:</span>
+        <span class="vlr-form-total-label"
+          >{{ "0.00" }} <span class="vlr-form-billing-type">USD</span></span
+        >
+      </div>
+    </div>
+  </div>
+  <div class="wrapper-nav">
+    <div class="navigation">
+      <button
+        type="button"
+        (click)="onGoBack()"
+        class="nav-btn prev"
+        [disabled]="stepNumber() === 0"
+      >
+        <span class="material-symbols-outlined">arrow_back</span> {{ 'NAV.BACK' | translate }}
+      </button>
+
+      <button
+        type="button"
+        (click)="onNextStep()"
+        class="reserva-btn"
+        [disabled]="isLoading()"
+        [class.loading]="isLoading()"
+      >
+        @if (!isLoading()) {
+          {{ 'CONFIRMATION.SUBMIT_BUTTON' | translate }}
+        } @else {
+          {{ 'CONFIRMATION.PROCESS_BUTTON' | translate }}
+          <span class="spinner"></span>
+        }
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,12 +1,10 @@
 import { Component, computed, inject } from '@angular/core';
 import { DetailedGallery } from '../../../../../shared/components/detailed-gallery/detailed-gallery';
 import { SectionNav } from '../../../../../shared/components/section-nav/section-nav';
-// import { PackagePromoCard } from "../../../../packages/components/package-promo-card/package-promo-card";
-import { RoomCard } from '../../../../../components/sections/explore-items-section/room-card/room-card';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ExperiencesService } from '../../../services/experience.service';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { map, of, switchMap, tap } from 'rxjs';
+import {switchMap, tap } from 'rxjs';
 import {
   HeaderData,
   ImgData,
@@ -105,7 +103,7 @@ export class AdventureDetailTemplate {
       // 1. Añadimos la propiedad baseRoute aquí:
       baseRoute: {
         text: 'LABELS.EXPLORE',
-        url: '/package/',
+        url: '/packages/',
       },
       // 2. Mantenemos el flag para el control de la vista
       hasPackage: !!slug,

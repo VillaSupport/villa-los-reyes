@@ -21,7 +21,7 @@ export class ServiceCrossList {
       description: 'SECTION_HEADER.STAY_BENEFITS.DESCRIPTION',
       link: {
          label: 'SECTION_HEADER.STAY_BENEFITS.LINK_TEXT',
-         route: '/packages' // Esta es la ruta de tu aplicación
+         route: '/services-facilities/stay-benefits' // Esta es la ruta de tu aplicación
       }
    };
 

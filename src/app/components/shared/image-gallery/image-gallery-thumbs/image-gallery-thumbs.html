@@ -1,5 +1,0 @@
-<div class="image-gallery-thumbs" [style.gap]="gap()" [style.width]="width()">
-  @for (image of images(); track $index; let length = $count) {
-  <thumb-item [src]="image.src" [alt]="image.alt" [style.width]="getThumbWidth(length)" [style.height]="height()" />
-  }
-</div>

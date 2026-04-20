@@ -2,8 +2,8 @@
 @if (routeInfo()) {
   <a class="room-card" 
   [attr.variant]="variant()"
-  [routerLink]="routeInfo()!.commands"
-  [relativeTo]="route"
+  [routerLink]="routeInfo()?.commands || []"
+  [relativeTo]="isRelative() ? route : null"
   [fragment] = "routeInfo()!.fragment"
   >
     <ng-container *ngTemplateOutlet="content"></ng-container>

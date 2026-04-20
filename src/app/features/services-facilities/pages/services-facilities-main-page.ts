@@ -22,13 +22,7 @@ import { HeaderData } from '../../../shared/interfaces/common.interface';
   `
 })
 export class ServicesFacilitiesMainPage {
-    private servicesMainService = inject(ServicesMainService);
-
-    private servicesData = toSignal(this.servicesMainService.getServicesMain(), {
-        initialValue: [] as FeatureItem[]
-    });
-
-    readonly header:HeaderData = {
+     readonly header:HeaderData = {
         title: 'HEADER.SERVICES.TITLE',
         description: 'HEADER.SERVICES.DESCRIPTION',
         img:{
@@ -36,6 +30,14 @@ export class ServicesFacilitiesMainPage {
             alt: 'HEADER.SERVICES.ALT'
         }
     }; 
+    
+    private servicesMainService = inject(ServicesMainService);
+
+    private servicesData = toSignal(this.servicesMainService.getServicesMain(), {
+        initialValue: [] as FeatureItem[]
+    });
+
+   
 
     items = computed<FeatureTemplateItem[]>(() =>
         this.servicesData()?.map(item => mapToFeatureTemplateItem(item)) ?? []

@@ -1,0 +1,48 @@
+<nav class="navbar" [class.hidden]="navbarHidden()">
+  <!-- Logo -->
+  <div class="navbar-logo">
+    <a routerLink="/home">
+      <img
+        src="assets/logo/logo-villa.svg"
+        alt="Villa Los Reyes"
+        width="168"
+        height="64"
+      />
+    </a>
+  </div>
+
+  <ul class="navbar-menu" [class.open]="menuOpen()">
+    @for (link of navLinks; track link.path) {
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        <a [routerLink]="[link.path]"> {{ link.label | translate }}</a>
+      </li>
+    }
+    <li>
+      
+      <button class="btn-reservar">{{ navLabels.bookNow | translate }}</button>
+    </li>
+    <li>
+      <div class="lang-container">
+        <span class="lang-label">{{ navLabels.language | translate }}</span>
+        <lang-selector></lang-selector>
+      </div>
+    </li>
+  </ul>
+
+  <!-- Icono de menú (visible solo en ≤1328px) -->
+  <div
+    class="menu-toggle"
+    (click)="toggleMenu()"
+    role="button"
+    aria-label="Toggle menu"
+  >
+    <span class="material-symbols-outlined">
+      {{ menuOpen() ? "close" : "menu" }}
+    </span>
+  </div>
+</nav>
+
+<!-- Overlay (Angular control flow moderno) -->
+@if (menuOpen()) {
+  <div class="menu-overlay" (click)="toggleMenu()"></div>
+}

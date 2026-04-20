@@ -1,33 +1,32 @@
-import { HttpClient } from '@angular/common/http';
-import { inject, Injectable } from '@angular/core';
-import { catchError, map, Observable, of } from 'rxjs';
-import { AboutData } from '../interfaces/about.interfaces';
-// Importa las interfaces desde su archivo correspondiente
-// import { AboutData } from '../interfaces/about.interface';
+import { HttpClient } from "@angular/common/http";
+import { inject, Injectable } from "@angular/core";
+import { LanguageService } from "../../../shared/services/language.service";
+import { Observable, switchMap, catchError, of, map } from "rxjs";  
+import { AboutData } from "../interfaces/about.interfaces";
+import { toObservable } from "@angular/core/rxjs-interop";
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable({ providedIn: 'root' })
 export class AboutService {
   private http = inject(HttpClient);
-  private readonly PATH = 'assets/data/about'; // Asegúrate de que esta sea la ruta real
+  private langService = inject(LanguageService);
+  private readonly PATH = 'assets/data/about';
 
-  /**
-   * Obtiene todas las secciones del "About" según el idioma
-   */
-  getAboutData = (lang = 'es'): Observable<AboutData[] | undefined> =>
-    this.http.get<AboutData[]>(`${this.PATH}/${lang}.json`).pipe(
-      catchError(() => {
-        console.error(`No se pudo cargar el archivo about.${lang}.json`);
-        return of(undefined);
-      })
+   private currentLang$ = toObservable(this.langService.currentLang);
+
+  getAboutData = (): Observable<AboutData[] | undefined> =>
+    this.currentLang$.pipe(
+      switchMap((lang) => 
+        this.http.get<AboutData[]>(`${this.PATH}/${lang}.json`).pipe(
+          catchError((error) => {
+            console.error(`Error cargando about.${lang}.json:`, error);
+            return of(undefined);
+          })
+        )
+      )
     );
 
-  /**
-   * Obtiene una sección específica por su slug (ej: 'location' o 'comfort')
-   */
-  getSectionBySlug = (slug: string, lang = 'es'): Observable<AboutData | undefined> =>
-    this.getAboutData(lang).pipe(
-      map(sections => sections?.find(section => section.slug === slug))
+  getSectionBySlug = (slug: string): Observable<AboutData | undefined> =>
+    this.getAboutData().pipe(
+      map((sections) => sections?.find((s) => s.slug === slug))
     );
 }

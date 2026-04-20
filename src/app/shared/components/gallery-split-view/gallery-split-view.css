@@ -1,6 +1,7 @@
 :host {
   --bg-color: var(--primary-bg-color, #E4EAE5);
   --bg-white: var(--secondary-bg-color, #f7faf7);
+  z-index: 800;
 
   display: block;
   position: relative;
@@ -18,7 +19,6 @@
 }
 
 .split-view-section {
-  z-index: 10;
   background-color: var(--bg-color);
 }
 
@@ -67,3 +67,5 @@
     width: 100%;
   }
 }
+
+

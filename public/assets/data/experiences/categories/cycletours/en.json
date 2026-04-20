@@ -1,0 +1,106 @@
+{
+  "category": "cycletours",
+  "title": "All cycle tours",
+  "adventures": [
+    {
+      "id": 1,
+      "slug": "el-calvario-ride",
+      "relatedPackageSlug": "relaxing-beach",
+      "title": "El Calvario",
+      "desc": "Explore the beauty of <strong>Viñales</strong> with the <strong>“El Calvario”</strong> excursion, a journey full of <strong>stunning</strong> <strong>landscapes</strong>, from <strong>intermountain</strong> <strong>valleys</strong> to <strong>coffee</strong> and <strong>tobacco</strong> <strong>crops</strong>. Visit the <strong>Prehistory</strong> <strong>Mural</strong> and finish with a refreshing swim in the <strong>El Calvario river</strong>. Ideal for <strong>cycling</strong> and <strong>nature</strong> lovers, this experience combines <strong>adventure</strong>, <strong>exercise</strong>, and <strong>cultural immersion</strong>.",
+      "imgs": [
+        {
+          "src": "assets/imgs/adventures/cycletours/el-calvario-ride/calvario-scenic-drive.webp",
+          "alt": "Paved road winding between majestic green mogotes under a blue sky with white clouds."
+        }
+      ],
+      "tips": [
+        "Closed shoes",
+        "Long pants",
+        "Water bottle",
+        "Mosquito repellent",
+        "Sunscreen"
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "resbaloso-river-tour",
+      "relatedPackageSlug": "vinales-360",
+      "title": "El Resbaloso",
+      "desc": "Embark on a <strong>unique experience</strong> that combines <strong>sports, culture, and history</strong> in <strong>Viñales</strong>. Explore the <strong>Palenque de los Cimarrones</strong> to learn about the rich <strong>Afro-Cuban culture</strong>, navigate the underground river of the <strong>Indian Cave (Cueva del Indio)</strong>, and enjoy a refreshing swim in the <strong>Resbaloso River</strong>, surrounded by nature. Culminate your adventure with a visit to the first <strong>Agricultural Production Cooperative</strong> founded by <strong>Fidel Castro</strong>, where you will learn about <strong>Cuba's agricultural history</strong>. An ideal excursion for those looking for a mix of <strong>physical activity</strong> and <strong>cultural enrichment</strong>.",
+      "imgs": [
+        {
+          "src": "assets/imgs/adventures/cycletours/resbaloso-river-tour/resbaloso-natural-pool.webp",
+          "alt": "Natural pool of crystal clear water fed by a small waterfall in the Resbaloso River."
+        }
+      ],
+      "tips": [
+        "Closed shoes",
+        "Long pants",
+        "Water bottle",
+        "Mosquito repellent",
+        "Sunscreen"
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "valley-explorer",
+      "relatedPackageSlug": "vinales-families",
+      "title": "Touring valleys",
+      "desc": "Enjoy a three-hour excursion through the <strong>Penitence Valley (Valle de la Penitencia)</strong>, exploring <strong>mogotes</strong>, <strong>intermountain valleys</strong>, and the <strong>Prehistory Mural</strong>. Make a stop at a <strong>natural viewpoint</strong> and finish the tour in the <strong>Viñales Valley</strong>, visiting <strong>tobacco drying houses</strong> and a <strong>coffee plantation</strong>. An ideal experience for <strong>cycling</strong> and <strong>nature lovers</strong>.",
+      "imgs": [
+        {
+          "src": "assets/imgs/adventures/cycletours/valley-explorer/prehistory-mural-vinales.webp",
+          "alt": "Enormous modern rock painting on the side of a mogote in the Valley of Penitence."
+        }
+      ],
+      "tips": [
+        "Closed shoes",
+        "Long pants",
+        "Water bottle",
+        "Mosquito repellent",
+        "Sunscreen"
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "eco-farming-trip",
+      "relatedPackageSlug": "romance-vinales",
+      "title": "Ecological agriculture",
+      "desc": "Explore the fascinating <strong>ecosystem</strong> of the <strong>Pizarras del Sur</strong> in a three-hour tour that will take you to a <strong>lake</strong> for a refreshing dip and then to the <strong>El Paraíso Agroecological Farm</strong>, where you will learn about <strong>ecological agriculture</strong> in <strong>Cuba</strong>. Ideal for those seeking <strong>nature</strong>, <strong>adventure</strong>, and <strong>learning</strong>, this excursion offers a complete and unique experience in the heart of the <strong>Pizarras del Sur</strong>.",
+      "imgs": [
+        {
+          "src": "assets/imgs/adventures/cycletours/eco-farming-trip/organic-farming-vinales.webp",
+          "alt": "Rows of sustainable crops in an agroecological farm with the mountains of the Viñales Valley in the background."
+        }
+      ],
+      "tips": [
+        "Closed shoes",
+        "Long pants",
+        "Water bottle",
+        "Mosquito repellent",
+        "Sunscreen"
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "pizarras-lake-trail",
+      "relatedPackageSlug": "natural-adventure",
+      "title": "Visit to the lake",
+      "desc": "Discover the charm of the <strong>Pizarras del Sur</strong>, a <strong>fascinating</strong> and little-known <strong>landscape</strong>. The tour will take you through these formations to a <strong>lake</strong>, where you can enjoy a refreshing dip, and then you will descend to the <strong>Viñales Valley</strong>, a place full of <strong>greenery</strong>, <strong>culture</strong>, and <strong>peasant traditions</strong>. This excursion offers a <strong>unique experience</strong>, combining <strong>nature</strong> and <strong>culture</strong> for an unforgettable day in <strong>Viñales</strong>.",
+      "imgs": [
+        {
+          "src": "assets/imgs/adventures/cycletours/pizarras-lake-trail/pizarras-mirror-lake.webp",
+          "alt": "Mountain reflected on the calm surface of a lake at sunset in the Pizarras del Sur."
+        }
+      ],
+      "tips": [
+        "Closed shoes",
+        "Long pants",
+        "Water bottle",
+        "Mosquito repellent",
+        "Sunscreen"
+      ]
+    }
+  ]
+}

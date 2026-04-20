@@ -1,0 +1,71 @@
+[
+  {
+    "id": "1",
+    "slug": "about-villa",
+    "title": "Discover\nVilla Los Reyes",
+    "description": "Welcome to <strong>Villa Los Reyes</strong> in <strong>Viñales</strong>. With more than <strong>20 years of experience</strong>, we offer hotel and extra-hotel services adapted to your needs. We are dedicated to guaranteeing your <strong>maximum comfort</strong>, ensuring that you enjoy an <strong>ecological resort</strong> with <strong>24-hour electricity availability</strong>. Come and enjoy a unique experience in an incomparable environment.",
+    "images": [
+      {
+        "src": "assets/imgs/shared/garden-terrace.webp",
+        "alt": "Interior garden with reddish paths and elevated terrace surrounded by tropical vegetation."
+      },
+      {
+        "src": "assets/imgs/rooms/room-05/cozy-bedroom-queen-bed-red-walls.webp",
+        "alt": "Cozy bedroom with queen bed and red walls"
+      },
+      {
+        "src": "assets/imgs/services/gastronomy/villa-los-reyes-bar-restaurant.webp",
+        "alt": "Rustic bar counter at Villa Los Reyes bar with hanging crystal glasses and wine bottles on light stone walls"
+      },
+      {
+        "src": "assets/imgs/shared/solar-panels.webp",
+        "alt": "Solar panels installed on the terrace of Villa Los Reyes with view of the Viñales mogotes."
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "slug": "location",
+    "title": "Privileged location",
+    "description": "Located in a privileged environment, <strong>Villa Los Reyes</strong> is situated in the picturesque town of Viñales, offering <strong>easy and fast access</strong> to all local attractions while enjoying the <strong>tranquility and natural beauty</strong> of the region.",
+    "map": {
+      "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12646.181147372738!2d-83.71814470930195!3d22.613867528379853!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88cb51356c77abad%3A0xce15618536e54315!2sVilla%20los%20reyes%20Casa%20Yarelis%20y%20Yoan!5e1!3m2!1ses-419!2sus!4v1760252195741!5m2!1ses-419!2sus"
+    }
+  },
+  {
+    "id": "3",
+    "slug": "nature",
+    "title": "Natural beauty",
+    "description": "At Villa Los Reyes, in addition to finding a place of <strong>rest</strong>, you can access a variety of <strong>experiences and adventures</strong>. We offer <strong>guided eco-activities</strong> by local experts that will allow you to explore the <strong>natural and cultural beauty of Viñales</strong>, from <strong>hiking excursions</strong>, horseback, car, and bicycle rides to visits to <strong>tobacco plantations and caves</strong>.",
+    "images": [
+      {
+        "src": "assets/imgs/shared/vinales-valley-view.webp",
+        "alt": "Panoramic view of the Viñales valley and its mogotes under a clear sky."
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "slug": "comfort",
+    "title": "Comfort",
+    "description": "Villa Los Reyes is a <strong>private ecological resort</strong> of <strong>modern construction</strong>, equipped with <strong>solar panels</strong> to guarantee <strong>24-hour electricity</strong>. It offers <strong>five comfortable rooms</strong>, a <strong>restaurant</strong> with local and international dishes and a <strong>bar with exquisite Cuban cocktails</strong>. It also has a <strong>pool</strong> perfect for hot days and wheelchair accessibility. From its terraces, you enjoy a <strong>majestic view of the mogotes</strong>, completing a unique experience of comfort and nature.",
+    "images": [
+      {
+        "src": "assets/imgs/outdoor/gardens/lush-garden-red-flowers-pool.webp",
+        "alt": "Detailed view of vibrant red flowers and lush vegetation next to the pool area"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "slug": "green",
+    "title": "Sustainability",
+    "description": "We are proud to say that our villa is <strong>sustainable</strong>, as the <strong>electrical energy</strong> we use is managed through <strong>solar panels</strong>, thus contributing to the <strong>care of the environment</strong>. In addition, we have implemented <strong>recycling practices</strong> and <strong>efficient water use</strong>, ensuring that every aspect of our operation minimizes ecological impact and promotes a <strong>greener and healthier future</strong>.",
+    "images": [
+      {
+        "src": "assets/imgs/shared/solar-panels.webp",
+        "alt": "Solar panels installed on the terrace of Villa Los Reyes with view of the Viñales mogotes."
+      }
+    ]
+  }
+]

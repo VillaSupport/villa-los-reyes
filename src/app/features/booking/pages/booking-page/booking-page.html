@@ -1,0 +1,25 @@
+<div #topScrollAnchor></div>
+@if (currentStep() < 3) {
+  <form class="booking mt-negative-160">
+    <steps-card [step]="currentStep()"  [maxStep]="maxStepReached()" (stepChange)="goToStep($event)"></steps-card>
+
+    @switch(currentStep()) {
+      @case(0) {
+        <stay-step [stepNumber]="0" (next)="nextStep()" (prev)="previousStep()" [slug]="slug()"></stay-step>
+      }
+      @case(1) {
+        <contact-step [stepNumber]="1" (next)="nextStep()" (prev)="previousStep()"></contact-step>
+      }
+      @case(2) {
+        <review-step [stepNumber]="2" (next)="handleBookingResult($event)" (prev)="previousStep()" [slug]="slug()"></review-step>
+      }
+    }
+  </form>
+} @else {
+  <div class="booking mt-negative-160">
+    <request-step 
+      [hasError]="bookingError()" 
+      (completed)="resetProgress()">
+    </request-step>
+  </div>
+}

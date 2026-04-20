@@ -1,0 +1,57 @@
+:host {
+  display: block;
+  background: #E9EFEA;
+}
+
+.booking {
+ margin-inline: auto;
+  max-width: 1200px;
+  min-height:75vh;
+  padding: 200px 5rem 5rem;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1280px) {
+  .booking {
+    max-width: 920px;
+    padding: 200px 2rem 2rem;
+  }
+}
+
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.875rem;
+}
+
+
+
+
+
+@media (max-width: 850px) {
+  .booking {
+    padding: 160px 1rem 2rem;
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .booking {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+
+
+}

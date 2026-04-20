@@ -1,0 +1,117 @@
+{
+    "category": "stay-benefits",
+    "benefits": [
+        {
+            "id": 1,
+            "slug": "gastronomy",
+            "title": "Gastronomy",
+            "desc": "In our <strong>restaurant and bar</strong>, you will enjoy authentic <strong>Cuban food</strong>, along with <strong>vegetarian, Italian</strong>, and <strong>Mediterranean</strong> options. We offer everything from <strong>breakfast</strong> to <strong>dinner</strong>, with <strong>appetizers</strong> and <strong>snacks</strong> to take with you if you are on the move. Don't miss our <strong>Cuban cocktails</strong>, where each drink reflects the <strong>authentic flavor of Cuba</strong>. Come and taste the best of our kitchen!",
+            "images": [
+                {
+                    "src": "assets/imgs/services/gastronomy/dining-table-setup-villa-los-reyes.webp",
+                    "alt": "Wooden table prepared for lunch with white dinnerware, fresh flowers, and wooden chairs in the villa's restaurant."
+                },
+                {
+                    "src": "assets/imgs/services/gastronomy/villa-los-reyes-bar-sign-rustic.webp",
+                    "alt": "Wooden Villa Los Reyes Bar Restaurant sign on a stone wall with hanging wine glasses."
+                },
+                {
+                    "src": "assets/imgs/services/gastronomy/villa-los-reyes-bar-restaurant.webp",
+                    "alt": "Rustic bar at Villa Los Reyes with hanging glass goblets and wine bottles against light stone walls"
+                },
+                {
+                    "src": "assets/imgs/services/gastronomy/villa-los-reyes-dining-area-interior.webp",
+                    "alt": "Cozy view of the interior of Villa Los Reyes restaurant with arranged wooden tables and rustic decor"
+                }
+            ],
+            "highlights": [
+                "Breakfast",
+                "Dinner",
+                "Cocktails",
+                "Snacks",
+                "To go",
+                "Wifi"
+            ]
+        },
+        {
+            "id": 2,
+            "slug": "mobility",
+            "title": "Mobility",
+            "desc": "We facilitate your access to the best destinations with <strong>local taxis</strong>, <strong>shared taxis (colectivos)</strong>, <strong>bicycle and motocross rentals</strong>. We also provide comfortable and safe <strong>transfers</strong> to and from the airport and other locations. Your comfort is our priority!",
+            "images": [
+                {
+                    "src": "assets/imgs/services/mobility/classic-red-desoto-car-vinales.webp",
+                    "alt": "Classic red American car (DeSoto) parked in front of Villa Los Reyes, available for transfers and tours."
+                },
+                {
+                    "src": "assets/imgs/services/mobility/modern-red-taxi-transfer.webp",
+                    "alt": "Modern red car available for taxi services and private transfers in the Viñales area."
+                }
+            ],
+            "highlights": [
+                "Private taxis",
+                "Shared taxis",
+                "Transfer",
+                "Motorcycle and Bicycle Rentals"
+            ]
+        },
+        {
+            "id": 3,
+            "slug": "trip-planner",
+            "title": "Trip Planner",
+            "desc": "We offer <strong>personalized advice</strong> to organize your trip to Viñales or any destination in <strong>Cuba</strong>. We take care of <strong>managing accommodation, transportation</strong>, and <strong>activities</strong>, ensuring a comfortable and unforgettable experience. Let us make your stay pleasant and memorable!",
+            "images": [
+                {
+                    "src": "assets/imgs/services/trip-planner/trip-planner-map-camera-coffee.webp",
+                    "alt": "Top view of hands pointing at a map on a wooden table with coffee, an antique camera, and a passport"
+                }
+            ],
+            "highlights": [
+                "Lodging",
+                "Transportation",
+                "Gastronomy",
+                "Experiences and adventures"
+            ]
+        },
+        {
+            "id": 4,
+            "slug": "laundry",
+            "title": "Laundry",
+            "desc": "Our laundry service includes <strong>washing</strong> and <strong>ironing clothes</strong>, as well as cleaning <strong>shoes</strong> and <strong>bags</strong>. This way, you will always have everything impeccable and ready to enjoy to the fullest. We have a space dedicated to hand washing, ideal for those who prefer to do the process themselves instead of opting for the laundry service.",
+            "images": [
+                {
+                    "src": "assets/imgs/services/laundry/laundry-service-fresh-clothes.webp",
+                    "alt": "Person holding a stack of clean, folded, and ironed clothes, laundry service at Villa Los Reyes"
+                }
+            ],
+            "highlights": [
+                "Washing",
+                "Ironing"
+            ]
+        },
+        {
+            "id": 5,
+            "slug": "massages",
+            "title": "Massages",
+            "desc": "We offer a <strong>Massage</strong> service designed to provide <strong>maximum comfort</strong> and <strong>relaxation</strong> during your stay. Our professional massage therapists are trained in various <strong>massage techniques</strong>, ensuring that each session is personalized according to your needs and preferences. Discover a rejuvenating experience in a tranquil setting. You can request your reservation at least 30 minutes in advance at our Villa.",
+            "images": [
+                {
+                    "src": "assets/imgs/services/massages/massage-therapy-relaxation-vinales.webp",
+                    "alt": "Close-up of professional hands performing a relaxation massage on a client's back."
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "slug": "dance-classes",
+            "title": "Dance classes",
+            "desc": "We offer <strong>traditional Cuban dance classes</strong> so you can immerse yourself in the rich <strong>culture of Cuba</strong>. With qualified and passionate instructors, you will enjoy an <strong>educational</strong> and <strong>fun</strong> experience. Choose between <strong>individual or group</strong> classes, adapted to your level and time. Don't miss the opportunity to enrich your stay with the flavor of Cuba!",
+            "images": [
+                {
+                    "src": "assets/imgs/services/dance-classes/cuban-dance-classes-feet-closeup.webp",
+                    "alt": "Close-up of the feet of several dancers with dance shoes during a traditional Cuban rhythms class."
+                }
+            ]
+        }
+    ]
+}

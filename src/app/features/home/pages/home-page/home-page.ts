@@ -17,27 +17,27 @@ export class HomePage {
     carouselSlides = [
     {
       src: 'assets/images/carousel/slide-facade.jpg',
-      altKey: 'carousel.slide1.alt',
-      titleKey: 'carousel.slide1.title',
-      subtitleKey: 'carousel.slide1.subtitle'
+      altKey: 'CAROUSEL.SLIDE_1.ALT_TEXT',
+      titleKey: 'CAROUSEL.SLIDE_1.HEADING',
+      subtitleKey: 'CAROUSEL.SLIDE_1.DESCRIPTION'
     },
     {
       src: 'assets/images/carousel/slide-terrace.jpg',
-      altKey: 'carousel.slide2.alt',
-      titleKey: 'carousel.slide2.title',
-      subtitleKey: 'carousel.slide2.subtitle'
+      altKey: 'CAROUSEL.SLIDE_2.ALT_TEXT',
+      titleKey: 'CAROUSEL.SLIDE_2.HEADING',
+      subtitleKey: 'CAROUSEL.SLIDE_2.DESCRIPTION'
     },
     {
       src: 'assets/images/carousel/slide-solar.jpg',
-      altKey: 'carousel.slide3.alt',
-      titleKey: 'carousel.slide3.title',
-      subtitleKey: 'carousel.slide3.subtitle'
+      altKey: 'CAROUSEL.SLIDE_3.ALT_TEXT',
+      titleKey: 'CAROUSEL.SLIDE_3.HEADING',
+      subtitleKey: 'CAROUSEL.SLIDE_3.DESCRIPTION'
     },
     {
       src: 'assets/images/carousel/slide-room.jpg',
-      altKey: 'carousel.slide4.alt',
-      titleKey: 'carousel.slide4.title',
-      subtitleKey: 'carousel.slide4.subtitle'
+      altKey: 'CAROUSEL.SLIDE_4.ALT_TEXT',
+      titleKey: 'CAROUSEL.SLIDE_4.HEADING',
+      subtitleKey: 'CAROUSEL.SLIDE_4.DESCRIPTION'
     }
   ];
 }

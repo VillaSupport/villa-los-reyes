@@ -16,7 +16,7 @@ export class RoomCard {
   room = input.required<RoomData>();
  
   variant = input<'default' | 'discover'>('default');
-  
+  isRelative = input<boolean>(false);
 
   mainImage = computed<ImgData>(
     () => this.room().images?.[0] ?? { src: 'placeholder.jpg', alt: 'default' },

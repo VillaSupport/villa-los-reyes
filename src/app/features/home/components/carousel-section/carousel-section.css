@@ -1,17 +1,19 @@
-:host{
+:host {
   display: block;
+  font-family: "Poppins", sans-serif;
+  --accent-orange:#d17d00;
 }
 .carousel-container {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   width: 100%;
-  max-width: 100%;
-  height: 110vh;
+  height: 100vh;
+
+  display: flex;
+  align-items: flex-end;
+
+  padding: 0 0 8% 0;
+  background-color: #000;
   overflow: hidden;
-  padding: 210px 44px;
-  box-sizing: border-box;
 }
 
 .carousel-image {
@@ -19,216 +21,167 @@
   inset: 0;
   width: 100%;
   height: 100%;
+  /* object-position: center; */
+
   object-fit: cover;
-  object-position: center;
-  z-index: -2;
+  z-index: 0;
+  /* Efecto de escala suave para dar vida a la foto */
+  animation: zoomIn 20s infinite alternate;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
 }
 
 .carousel-container::after {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: -1;
-  background: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0.0) 0%,
-      rgba(0, 0, 0, 0.15) 30%,
-      rgba(0, 0, 0, 0.45) 60%,
-      rgba(0, 0, 0, 0.75) 85%,
-      rgba(0, 0, 0, 0.95) 100%);
-  mix-blend-mode: multiply;
+  /* Degradado sutil desde arriba y más oscuro abajo para que el texto brille */
+  /* background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.1) 40%,
+    rgba(0, 0, 0, 0.8) 100%
+  ); */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.15) 30%,
+    rgba(0, 0, 0, 0.45) 60%,
+    rgba(0, 0, 0, 0.75) 85%,
+    rgba(0, 0, 0, 0.95) 100%
+  );
+  z-index: 1;
 }
 
-
 .carousel-overlay {
-  position: relative;
+  z-index: 10;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 80px 1fr 80px;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.left-side {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: auto;
-  min-height: 20vh;
-  gap: 2rem;
+  align-items:  center;
+  order: 0;
+}
+.right-side {
+  display: flex;
+  align-items:  center;
+  order: 2;
 }
 
 .text-content {
   order: 1;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .text-content h1 {
-  color: #D17D00;
-  font-family: Poppins;
-  font-size: 68px;
+  color: var(--accent-orange); /* Usamos tu variable */
+  font-size: clamp(2rem, 8vw, 4.5rem); /* Tamaño fluido */
   font-weight: 700;
-  line-height: 60px;
-  letter-spacing: -0.25px;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Sombra para legibilidad */
   white-space: pre-line;
-
 }
 
 .text-content p {
-  color: #FFF;
-  font-family: Poppins;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.1px;
-  white-space: pre-line;
+  color: #fff;
+  font-size: clamp(0.9rem, 2vw, 1.25rem);
+  line-height: 1.4;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  opacity: 0.9;
 }
 
 .nav-button {
   background: none;
   border: none;
-  color: #fff;
-  font-size: 42px;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.nav-button:hover {
-  transform: scale(1.2);
-}
-
-.left-side {
-  order: 0;
-}
-
-.right-side {
-  order: 2;
-}
-
-
-.indicator-container {
-  display: flex;
-  justify-content: center;
-  gap: 2.5rem;
-  padding: 8px;
-}
-
-.indicator {
-  background-color: #aaa;
-  border: none;
+  backdrop-filter: blur(5px); /* Efecto cristal moderno */
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
+.nav-button:hover {
+  background: var(--accent-orange);
+  border-color: var(--accent-orange);
+  transform: scale(1.2);
+}
+
+/* Indicadores más modernos */
+.indicator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 20px;
+}
 
 .indicator.active {
-  background-color: #D17D00;
-  transform: scale(1.6);
+  background: var(--accent-orange);
 }
 
 
-
-/* DESKTOP PEQUEÑO – 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {
-
-  .carousel-container {
-    padding: 14rem 2rem 10rem;
-  }
-
-  .carousel-overlay {
-    min-height: 15vh;
-    gap: 1.5rem;
-  }
-
-  .text-content h1 {
-    font-size: 3.8rem;
-    line-height: 3.6rem;
-  }
-
-  .text-content p {
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-  }
-
-  .nav-button {
-    font-size: 40px;
-  }
-
-  .indicator-container {
-    gap: 2.2rem;
-    padding: 0.75rem;
-  }
+.indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #aaa;
+  border: none;
+  transition: all 0.4s ease;
+  cursor: pointer;
 }
 
+.indicator.active {
+  background: var(--accent-orange);
+  transform: scale(1.075);
+}
 
-/* TABLETS Y MÓVILES GRANDES */
-@media (min-width: 601px) and (max-width: 768px) {
+.carousel-container {
+  /* Evita que el navegador intente hacer scroll horizontal mientras deslizas */
+  touch-action: pan-y; 
+  user-select: none;
+  -webkit-user-drag: none;
+}
 
-  .carousel-container {
-    padding: 12rem 1.5rem 10rem;
-    
-  }
-
-  /* Ajusta overlay */
-  .carousel-overlay {
-    min-height: 10vh;
-    gap: 1rem;
-  }
-
-  /* Título adaptado */
-  .text-content h1 {
-    font-size: 3rem;
-    line-height: 3.2rem;
-  }
-
-  /* Subtítulo adaptado */
-  .text-content p {
-    font-size: 1rem;
-    line-height: 1.6rem;
-  }
-
-  /* Botones laterales ligeramente más grandes que en móvil */
-  .nav-button {
-    font-size: 36px;
-  }
-
-  /* Indicadores */
-  .indicator-container {
-    gap: 2rem;
-    padding: 0.75rem;
-  }
-
+.carousel-image {
+  /* Evita que el navegador intente "arrastrar" la imagen como archivo */
+  pointer-events: none; 
 }
 
 @media (max-width: 600px) {
-
-  .carousel-container {
-    padding: 16rem 0.5rem 10rem;
-    max-height: 90vh;
-  }
-
-  .text-content h1 {
-    font-size: 1.80rem;
-    font-weight: 700;
-    line-height: 2rem;
-  }
-
-  .text-content p {
-    font-size: 0.8rem;
-    font-weight: 400;
-    line-height: 1.25rem;
-    letter-spacing: 0.00625rem;
-  }
-
   .carousel-overlay {
-    min-height: 0;
-    gap: 0.5rem;
+    grid-template-columns: 1fr; /* Apilamos en móvil */
+    grid-template-rows: 1fr auto;
   }
-
-  .nav-button {
-    font-size: 32px;
-    cursor: pointer;
-    transition: transform 0.2s;
+  
+  .left-side, .right-side {
+    display: none; /* Ocultamos flechas en móviles pequeños para limpiar la UI */
   }
-
-  .indicator-container {
-    gap: 1.5rem;
-    padding: 0.5rem;
+  
+  .carousel-container {
+    
+  padding: 0 0 20% 0;
+    height: 85vh; /* Más corto en móvil para ver contenido abajo */
   }
-
 }

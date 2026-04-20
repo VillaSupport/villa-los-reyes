@@ -1,0 +1,69 @@
+<footer class="footer-section">
+  <div class="footer-container">
+
+    <!-- Columna 1: Logo y redes -->
+    <div class="footer-column brand">
+      <div class="brand-wrapper">
+        <img class="footer-logo" src="assets/logo/logo-villa.svg" alt="Logo de Villa Los Reyes">
+
+        <div class="social-icons">
+          @for (s of socialLinks; track s.url) {
+          <a [href]="s.url" target="_blank">
+            <fa-icon [icon]="['fab', s.icon]"></fa-icon>
+          </a>
+          }
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Columna 2: Contactos -->
+    <div class="footer-column contact">
+      <h3>{{ 'footer.contacts_title' | translate }} </h3>
+
+      <ul>
+        @for (c of contacts; track c.label ?? c.url) {
+        <li class="hover-line" [class.click-to-copy]="c.copy" (click)="c.copy && copyNumber(c.value)"
+          [class.copied]="copiedNumber() === c.value">
+
+          <span class="material-symbols-outlined">{{ c.icon }}</span>
+
+          @if (c.url) {
+          <a [href]="c.url" target="_blank">{{ c.label }}</a>
+          } @else {
+          {{ c.label }}
+          }
+
+          @if (c.copy) {
+          <span class="tooltip">Copiado</span>
+          }
+        </li>
+        }
+      </ul>
+
+    </div>
+
+    <!-- Columna 3: Chat -->
+    <div class="footer-column message">
+      <h3>{{ 'footer.chat_title' | translate }}
+</h3>
+      <p>{{ 'footer.chat_description' | translate }}
+</p>
+
+      <a class="chat-btn" (click)="openWhatsApp()">
+        <span class="material-symbols-outlined">chat_bubble</span>
+        {{ 'footer.contacts_title' | translate }}
+
+      </a>
+    </div>
+
+  </div>
+
+  <hr />
+
+  <div class="footer-bottom">
+    <p>{{ 'footer.rights' | translate }}
+</p>
+    <p>Villa Los Reyes {{ currentYear }}</p>
+  </div>
+</footer>

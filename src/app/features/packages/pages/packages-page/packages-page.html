@@ -1,0 +1,14 @@
+<div class="page-content">
+  <page-header [header]="header" />
+
+  <section class="discover-package-section section-outer mt-negative">
+    <div class="discover-package-container section-inner">
+      <div class="discover-info">
+        <h2>{{ headerSection.title | translate }}</h2>
+        <p>{{ headerSection.desc | translate }}</p>
+      </div>
+      <packages-grid [packages]="packages()" />
+    </div>
+  </section>
+
+</div>

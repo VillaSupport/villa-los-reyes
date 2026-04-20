@@ -1,0 +1,32 @@
+<div class="steps-card" [class.is-open]="isDropdownOpen()">
+  
+  @if (isMobile()) {
+    <div class="dropdown-header" (click)="toggleDropdown()">
+      <div class="step active">
+        <span class="circle">{{ currentStepInfo.step }}</span>
+        <div class="step-info">
+          <strong>{{ currentStepInfo.title|translate }} de {{ steps.length }}</strong>
+          <p>{{ currentStepInfo.desc|translate }}</p>
+        </div>
+      </div>
+      <span class="arrow material-symbols-outlined" [class.rotated]="isDropdownOpen()">arrow_drop_up</span>
+    </div>
+  }
+
+<div class="steps-container" [class.hidden]="isMobile() && !isDropdownOpen()">
+    @for (stepInfo of steps; track stepInfo.id) {
+        <div class="step" 
+          [class.current]="step() === stepInfo.id" 
+          [class.active]="step() >= stepInfo.id" 
+          [class.reachable]="stepInfo.id <= maxStep()"
+          (click)="goToStep(stepInfo.id)">
+          
+          <span class="circle">{{ stepInfo.step }}</span>
+          <div class="step-info">
+            <strong>{{ stepInfo.title|translate }}</strong>
+            <p>{{ stepInfo.desc|translate  }}</p>
+          </div>
+        </div>
+      }
+  </div>
+</div>

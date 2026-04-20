@@ -1,7 +1,0 @@
-<div class="services-gallery">
-  @for (service of services(); track $index) {
-    <a class="service-link" [routerLink]="service.path" [fragment]="service.fragment">
-      <service-item [service]="service" />
-    </a>
-  }
-</div>

@@ -1,7 +1,6 @@
 import { Component, input } from '@angular/core';
 import { ImgData, InfoData } from '../../interfaces/common.interface';
 import { InfoBlock } from "../info-block/info-block";
-import { GalleryGrid } from "../../../components/shared/gallery-grid/gallery-grid";
 import { GalleryThumbsGrid } from "../gallery-thumbs-grid/gallery-thumbs-grid";
 
 @Component({

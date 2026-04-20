@@ -4,7 +4,7 @@
 
       <img class="carousel-image" [src]="slide.src" [alt]="slide.altKey | translate" />
 
-      <div class="carousel-overlay">
+      <div class="carousel-overlay" (click)="$event.stopPropagation()">
 
         <div class="text-content">
           <h1>{{ slide.titleKey | translate }}</h1>

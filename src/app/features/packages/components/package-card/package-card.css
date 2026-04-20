@@ -1,13 +1,19 @@
 :host {
+
   display: block;
 
-  --cards-per-view: 3;
-  --card-width: calc((100% - (var(--cards-per-view) - 1) * var(--local-spacing)) / var(--cards-per-view));
+  container-type: inline-size;
+  container-name: card;
+
+  --cards-per-view: var(--cards-count, 3);
+  /* --card-width: calc((100% - var(--local-spacing)*(var(--cards-per-view) - 1)) / var(--cards-per-view));   */
+ 
+  /* Redondea hacia abajo al 1px más cercano */
+--card-width: round(down, calc((100% - var(--local-spacing) * (var(--cards-per-view) - 1)) / var(--cards-per-view)), 1px);
+
   font-family: 'Poppins', sans-serif;
-
   flex: 0 0 var(--card-width);
-  min-width: 380px;
-
+  min-width: 300px;
 }
 
 .pkg-container {
@@ -111,6 +117,31 @@
   letter-spacing: 0.0325rem;
 }
 
+@container card (max-width: 350px) {
+  .pkg-overlay {
+    padding: 1.25rem; /* Un poco menos de padding si es pequeña */
+  }
+
+  .pkg-title {
+    font-size: 1.3rem; /* Disminuye el título */
+    line-height: 1.2;
+  }
+
+  .pkg-duration, .pkg-unit {
+    font-size: 0.85rem;
+  }
+
+  .pkg-summary {
+    font-size: 0.85rem; /* Disminuye el texto del cuerpo */
+    line-height: 1.15rem;
+    margin: 0.25rem 0 0.5rem;
+  }
+
+  .pkg-price {
+    font-size: 1.3rem; /* Disminuye el precio */
+  }
+}
+
 @media (max-width: 600px) {
   :host {
     min-width: unset;
@@ -152,3 +183,7 @@
     letter-spacing: 0.025rem;
   }
 }
+
+
+
+

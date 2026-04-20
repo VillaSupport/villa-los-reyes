@@ -1,0 +1,60 @@
+/* validation-feedback.css */
+:host {
+  display: block;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  /* Valores por defecto: justo debajo a la izquierda */
+  --error-top: 100%;
+  --error-left: 0;
+}
+
+.message-container {
+  position: relative;
+  width: 100%;
+}
+
+.error-msg {
+  color: var(--clr-error, #d32f2f);
+  font-size: var(--fs-error, 0.875rem);
+  line-height: 1.2;
+  
+  font-weight: 500;
+  opacity: 0;
+  pointer-events: none;
+
+  /* POSICIÓN FLOTANTE USANDO VARIABLES */
+  position: absolute;
+  top: var(--error-top);
+  left: var(--error-left);
+
+  white-space: nowrap;
+  z-index: 50;
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

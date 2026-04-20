@@ -1,68 +1,74 @@
-import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, catchError, filter, map, of } from 'rxjs';
+import { inject, Injectable } from '@angular/core';
+import { LanguageService } from '../../../shared/services/language.service';
+import { toObservable } from '@angular/core/rxjs-interop';
+import { Observable, switchMap, map, catchError, of, filter } from 'rxjs';
 import {
-  CommonSpace,
   FacilitiesDetail,
-  RoomData,
   RoomSpace,
-  Space,
+  RoomData,
+  CommonSpace,
 } from '../interfaces/services-facilities.interface';
 
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable({ providedIn: 'root' })
 export class FacilitiesService {
   private http = inject(HttpClient);
+  private langService = inject(LanguageService);
   private readonly PATH =
     'assets/data/services-facilities/categories/facilities';
 
-  getFacilitiesDetail = (
-    lang = 'es',
-  ): Observable<FacilitiesDetail | undefined> =>
-    this.http
-      .get<FacilitiesDetail>(`${this.PATH}/${lang}.json`)
-      .pipe(catchError(() => of(undefined)));
+  private currentLang$ = toObservable(this.langService.currentLang);
 
-  getRoomSpaces = (lang = 'es'): Observable<RoomSpace> =>
-    this.getFacilitiesDetail(lang).pipe(
-      // 1. Filtramos para que solo pasen detalles que existan
-      filter((detail): detail is FacilitiesDetail => !!detail),
-      map((detail) => {
-        const space = detail.spaces.find((s: Space) => s.type === 'rooms');
+  private getFacilitiesWithContext = (): Observable<{
+    lang: string;
+    detail: FacilitiesDetail | undefined;
+  }> =>
+    this.currentLang$.pipe(
+      switchMap((lang) =>
+        this.http.get<FacilitiesDetail>(`${this.PATH}/${lang}.json`).pipe(
+          map((detail) => ({ lang, detail })),
+          catchError(() => of({ lang, detail: undefined })),
+        ),
+      ),
+    );
 
-        // 2. Si no existe el tipo 'rooms', lanzamos un error o warn
+  getFacilitiesDetail = (): Observable<FacilitiesDetail | undefined> =>
+    this.getFacilitiesWithContext().pipe(map((res) => res.detail));
+
+  getRoomSpaces = (): Observable<RoomSpace> =>
+    this.getFacilitiesWithContext().pipe(
+      filter(
+        (res): res is { lang: string; detail: FacilitiesDetail } =>
+          !!res.detail,
+      ),
+      map(({ lang, detail }) => {
+        const space = detail.spaces.find((s) => s.type === 'rooms');
         if (!space) {
           console.warn(
-            `[FacilitiesService]: No se encontró el espacio 'rooms' para el idioma: ${lang}`,
+            `[FacilitiesService]: No se encontró 'rooms' en: ${lang}.json`,
           );
           throw new Error('Room space not found');
         }
-
         return space as RoomSpace;
       }),
     );
 
-
-    // Agrega esta función a tu FacilitiesService
-getRoomById(id: string, lang = 'es'): Observable<RoomData> {
-  return this.getRoomSpaces(lang).pipe(
-    map(roomSpace => {
-      // Buscamos la habitación específica dentro del array de items
-      const room = roomSpace.items.find(item => item.id === id);
-      if (!room) throw new Error(`Room with id ${id} not found`);
-      return room;
-    })
-  );
-}
-  getCommonSpaces = (lang = 'es'): Observable<CommonSpace[]> =>
-    this.getFacilitiesDetail(lang).pipe(
-      filter((detail): detail is FacilitiesDetail => !!detail),
-      map((detail) => {
-        const filtered = detail?.spaces.filter(
-          (s: Space) => s.type === 'common',
-        );
-        return (filtered as CommonSpace[]) ?? [];
+  getRoomById = (id: string): Observable<RoomData> =>
+    this.getRoomSpaces().pipe(
+      map((roomSpace) => {
+        const room = roomSpace.items.find((item) => item.id === id);
+        if (!room) throw new Error(`Room with id ${id} not found`);
+        return room;
       }),
+    );
+
+  getCommonSpaces = (): Observable<CommonSpace[]> =>
+    this.getFacilitiesDetail().pipe(
+      filter((detail): detail is FacilitiesDetail => !!detail),
+      map(
+        (detail) =>
+          (detail.spaces.filter((s) => s.type === 'common') as CommonSpace[]) ??
+          [],
+      ),
     );
 }

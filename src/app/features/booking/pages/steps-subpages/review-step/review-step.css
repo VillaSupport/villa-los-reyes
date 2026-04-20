@@ -1,0 +1,229 @@
+:host {
+  font-family: "Poppins", sans-serif;
+}
+
+.review-container {
+  margin: 2.5rem auto;
+  max-width: 800px;
+}
+.review-header{
+  margin-bottom: 1rem;
+
+}
+.booking-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.booking-card-header {
+  background-color:#003e2e ;
+  padding: 25px;
+  text-align: center;
+}
+
+.logo {
+  max-height: 60px; /* Ajusta según tu imagen */
+}
+
+.content {
+  padding: 30px;
+}
+
+.section-title {
+  margin-bottom: 20px;
+}
+
+.info-group {
+  margin-bottom: 12px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 12px;
+}
+
+.col {
+  flex: 1;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*------------------------------------*/
+/* Navegación entre pasos */
+.wrapper-nav {
+  display: flex;
+  padding-top: 2rem;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-btn {
+  background: transparent;
+  border: none;
+  color: #186b53;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  padding: 0.5rem 0;
+}
+
+.nav-btn:hover {
+  color: #d17d00;
+  transform: translateX(0);
+  /* Preparado para animación */
+}
+
+.nav-btn.prev:hover {
+  transform: translateX(-5px);
+}
+
+.nav-btn.next:hover {
+  transform: translateX(5px);
+}
+
+.nav-btn:disabled,
+.nav-btn.disabled {
+  color: #a0a0a0; /* Gris neutro para indicar inactividad */
+  cursor: not-allowed; /* Cambia el puntero al símbolo de prohibido */
+  opacity: 0.6; /* Lo hace un poco más tenue */
+  pointer-events: none; /* Bloquea cualquier evento de click o hover */
+  transform: none;
+}
+
+.nav-btn:disabled:hover,
+.nav-btn.disabled:hover {
+  color: #a0a0a0;
+  transform: none;
+}
+
+.reserva-btn {
+  background: #F49516;
+  color: white;
+  border: none;
+  padding: 0.5rem; /* Un poco más de aire lateral */
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el contenido */
+  gap: 0.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px rgba(244, 149, 22, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efecto de elevación y brillo al pasar el ratón */
+.reserva-btn:hover:not(:disabled) {
+  background: #ffaa33; /* Un naranja un poco más brillante */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(244, 149, 22, 0.3);
+}
+
+/* Efecto de pulsación al hacer click */
+.reserva-btn:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(244, 149, 22, 0.2);
+}
+
+/* Estado cuando está procesando */
+.reserva-btn.loading {
+  background-color: #d1d1d1;
+  color: #777;
+  cursor: wait;
+  box-shadow: none;
+  transform: none;
+}
+
+.reserva-btn:disabled {
+  background-color: #e0e0e0;
+  color: #a0a0a0;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Spinner animado */
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-top: 3px solid #777; /* Color a juego con el texto del loading */
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/*------------------------------------*/
+
+/* ... Tus estilos anteriores se mantienen ... */
+
+@media (max-width: 850px) {
+
+  .content {
+    padding: 20px; /* Reducimos padding interno */
+  }
+
+  .row {
+    flex-direction: column; /* Apilamos las columnas */
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .date-row {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  /* Opcional: Centrar el encabezado en móvil para que luzca mejor */
+  .review-header {
+    text-align: center;
+    padding-inline: 10px;
+  }
+
+  /* Ajustamos el tamaño del texto del total para que destaque */
+  .vlr-form-total-label {
+    font-size: 1.25rem;
+  }
+}
+
+/* Optimización extra para pantallas MUY pequeñas (320px - 400px) */
+@media (max-width: 480px) {
+  .booking-card-header {
+    padding: 15px;
+  }
+  
+  .logo {
+    max-height: 45px;
+  }
+}

@@ -36,6 +36,16 @@
       "TITLE": "Conoce Villa Los Reyes",
       "DESCRIPTION": "Descubre nuestra casa de huéspedes con más de <strong>20 años de experiencia</strong>",
       "ALT": "Fachada exterior de Villa Los Reyes con habitaciones de planta baja."
+    },
+    "PACKAGES": {
+      "TITLE": "Paquetes y Ofertas",
+      "DESCRIPTION": "Explora nuestras opciones y encuentra la experiencia perfecta para ti.",
+      "ALT": "Impresionante vista panorámica del Valle de Viñales, Patrimonio de la Humanidad"
+    },
+
+    "ITINERARY": {
+      "TITLE": "Paquetes promocionales",
+      "DESCRIPTION": "Aquí conocerás las mejores ofertas para tu estadía en Viñales."
     }
   },
 
@@ -55,7 +65,7 @@
       "DESCRIPTION": "Descubre Viñales con nuestras emocionantes excursiones: [cabalgatas](/experiences/horseback-riding), [senderismo](/experiences/hiking), [ciclotours](/experiences/cycle-tours) y [más](/experiences/other).\n¡Aventuras inolvidables en un entorno natural único te esperan!",
       "LINK_TEXT": "VER TODAS LAS EXPERIENCIAS Y AVENTURAS"
     },
-    
+
     "ROOMS_HOME": {
       "TITLE": "Nuestras\nhabitaciones",
       "DESCRIPTION": "Nuestras cinco habitaciones independientes ofrecen privacidad, baños privados y acceso a diversas áreas comunes, todo en un entorno rodeado de jardines exuberantes y con vistas a los imponentes mogotes del Valle de Viñales.",
@@ -65,47 +75,170 @@
       "TITLE": "Te puede interesar",
       "DESCRIPTION": "Descubre <strong>Viñales</strong> con nuestras emocionantes <strong>excursiones</strong>.\n¡<strong>Aventuras inolvidables</strong> en un entorno natural único te esperan!",
       "LINK_TEXT": "Descubre más"
+    },
+    "PACKAGES": {
+      "TITLE": "Ofertas disponibles",
+      "DESCRIPTION": "Descubre nuestros paquetes promocionales y ahorra mientras disfrutas de ofertas exclusivas diseñadas para ti. ¡Aprovecha ahora!"
+    }
+  },
+
+  "NAVBAR": {
+    "HOME": "Inicio",
+    "ABOUT": "Conócenos",
+    "SERVICES": "Servicios e instalaciones",
+    "EXPERIENCES": "Experiencias y aventuras",
+    "REVIEWS": "Reseñas",
+    "PACKAGES": "Paquetes promocionales",
+    "BOOK_NOW": "Reservar",
+    "LANGUAGE": "Idioma"
+  },
+
+  "REVIEWS": {
+    "USEFUL_COUNT": "personas la han encontrado útil",
+    "USEFUL_QUESTION": "¿Te ha parecido útil esta opinión?",
+    "YES": "Sí",
+    "NO": "No",
+    "LOAD_MORE": "Ver más",
+    "WRITE_REVIEW": "Escribe una reseña",
+    "NO_REVIEWS": "No hay reseñas disponibles."
+  },
+
+  "REVIEW_FORM": {
+    "ANONYMOUS_GREETING": "¡Valora nuestro servicios!",
+    "FORM_TITLE": "Calificación <br />de los servicios",
+    "FORM_SUBTITLE": "¡Comparte tu experiencia con nosotros!",
+    "AUTH_PROMPT": "Queremos escucharte.<br />Inicia sesión para dejarnos<br />tu opinión",
+    "AUTH_BUTTON": "Continuar con Google",
+    "TEXTAREA_PLACEHOLDER": "Describe tu experiencia",
+    "CHARACTER_COUNTER": "caracteres",
+    "FORM_DESCRIPTION": "¡Comparte tu experiencia con nosotros! Tu opinión nos ayuda a mejorar y ofrecerte un mejor servicio",
+    "SUBMIT_BUTTON": "Enviar"
+  },
+
+  "ITINERARY": {
+    "ITINERARY_TITLE": "Itinerario detallado",
+    "INCLUDES_TITLE": "Esta oferta incluye",
+    "INCLUDES": {
+      "LODGING": "Hospedaje",
+      "DURATION": "Duración",
+      "DAY": "Día",
+      "EXPERIENCES": "Experiencias y aventuras",
+      "GASTRONOMY": "Gastronomía",
+      "TRANSPORTATION": "Transportación"
+    },
+    "TOTAL": "Total",
+    "RESERVE_BUTTON": "Reservar ya"
+  },
+
+  "STEPS": {
+    "STEP_1": {
+      "TITLE": "Paso 1",
+      "DESCRIPTION": "Datos de la reserva"
+    },
+    "STEP_2": {
+      "TITLE": "Paso 2",
+      "DESCRIPTION": "Detalles del huésped"
+    },
+    "STEP_3": {
+      "TITLE": "Paso 3",
+      "DESCRIPTION": "Confirmación"
+    }
+  },
+
+  "STAY": {
+    "TITLE_DATE": "Fecha de estancia",
+    "TITLE_GUESTS": "Huéspedes",
+    "LABEL_CHECK_IN": "Fecha de entrada",
+    "LABEL_CHECK_OUT": "Fecha de salida",
+    "ADULTS_TITLE": "Adultos",
+    "ADULTS_CAPTION": "Mayores de 12 años",
+    "KIDS_TITLE": "Niños",
+    "KIDS_CAPTION": "Menores de 12 años"
+  },
+  "NAV": {
+    "BACK": "Anterior",
+    "NEXT": "Siguiente"
+  },
+
+  "CONTACT": {
+    "TITLE": "Información de contacto",
+    "DESCRIPTION": "La información recopilada en esta sección se limita solo a los datos de una única persona responsable de la reserva.",
+    "PLACEHOLDER_NAME": "Nombre",
+    "PLACEHOLDER_LASTNAME": "Apellidos",
+    "PLACEHOLDER_EMAIL": "Correo electrónico",
+    "ADDITIONAL_DETAILS_TITLE": "Detalles adicionales",
+    "ADDITIONAL_DETAILS_DESC": "Puede proporcionar información adicional en relación con su estancia, que deba conocer sus anfitriones.",
+    "PLACEHOLDER_NOTES": "Solicitudes y experiencias"
+  },
+  "SUMMARY": {
+    "TITLE": "Resumen del costo",
+    "ADULT": "Adulto",
+    "ADULTS": "Adultos",
+    "CHILD": "Niño",
+    "CHILDREN": "Niños",
+    "PROMO_DISCOUNT": "Descuento por promoción",
+    "PENDING": "Pendiente",
+    "TOTAL": "Total"
+  },
+
+  "CONFIRMATION": {
+    "HEADER_TITLE": "Confirmación de la reserva",
+    "HEADER_DESC": "Por favor asegúrese de que los datos ingresados sean correctos",
+    "CARD_TITLE": "Resumen de la reserva",
+    "GUEST_INFO": "Información del huésped",
+    "CHECK_IN": "Entrada",
+    "CHECK_OUT": "Salida",
+    "YOUR_BOOKING": "Tu reserva",
+    "PACKAGE": "Paquete:",
+    "ACCOMMODATION": "Alojamiento",
+    "ADDRESS_DISPLAY": "Calle Salvador Cisneros # 206-C, Viñales, Pinar del Río, Cuba",
+    "TOTAL": "Total",
+    "SUBMIT_BUTTON": "Solicitar Reserva",
+    "PROCESS_BUTTON": "Procesando..."
+  },
+
+  "REQUEST_STATUS": {
+    "SUCCESS_TITLE": "¡Gracias por elegirnos!",
+    "SUCCESS_MSG_1": "Su solicitud de reserva se ha realizado con éxito. En un plazo máximo de 24 horas, recibirá la confirmación por el correo electrónico proporcionado.",
+    "SUCCESS_MSG_2": "Si tienes alguna otra solicitud o inquietud, no dudes en contactarnos.",
+    "ERROR_TITLE": "¡Ups! Algo salió mal",
+    "ERROR_MSG_1": "Hemos sufrido algún inconveniente técnico al procesar tu solicitud automáticamente.",
+    "ERROR_MSG_2": "Para asegurar tu estancia, te recomendamos contactar directamente con nosotros:",
+    "EMAIL_BTN": "Enviar Correo Directo",
+    "WHATSAPP_BTN": "Contactar por WhatsApp"
+  },
+
+
+"CAROUSEL": {
+    "SLIDE_1": {
+      "ALT_TEXT": "Villa Los Reyes — alojamiento rural en Viñales, fachada principal con jardín y entrada",
+      "HEADING": "¡Sus vacaciones\ncon nosotros!",
+      "DESCRIPTION": "¡Descubra Viñales con nosotros!.\nAventuras naturales, bellas vistas y tranquilidad."
+    },
+    "SLIDE_2": {
+      "ALT_TEXT": "Villa Los Reyes — alojamiento rural en Viñales, fachada principal con jardín y entrada",
+      "HEADING": "¡Sus vacaciones\ncon nosotros!",
+      "DESCRIPTION": "¡Descubra Viñales con nosotros!.\nAventuras naturales, bellas vistas y tranquilidad."
+    },
+    "SLIDE_3": {
+      "ALT_TEXT": "Villa Los Reyes — alojamiento rural en Viñales, fachada principal con jardín y entrada",
+      "HEADING": "¡Sus vacaciones\ncon nosotros!",
+      "DESCRIPTION": "¡Descubra Viñales con nosotros!.\nAventuras naturales, bellas vistas y tranquilidad."
+    },
+    "SLIDE_4": {
+   "ALT_TEXT": "Villa Los Reyes — alojamiento rural en Viñales, fachada principal con jardín y entrada",
+      "HEADING": "¡Sus vacaciones\ncon nosotros!",
+      "DESCRIPTION": "¡Descubra Viñales con nosotros!.\nAventuras naturales, bellas vistas y tranquilidad."
     }
   },
 
 
-
-  "carousel": {
-    "slide1": {
-      "alt": "Villa Los Reyes — alojamiento rural en Viñales, fachada principal con jardín y entrada",
-      "title": "¡Sus vacaciones\ncon nosotros!",
-      "subtitle": "¡Descubra Viñales con nosotros!\nAventuras naturales, bellas vistas y tranquilidad."
-    },
-    "slide2": {
-      "alt": "Villa Los Reyes — patio central y piscina, zona de descanso al aire libre en Viñales",
-      "title": "¡Sus vacaciones\ncon nosotros!",
-      "subtitle": "¡Descubra Viñales con nosotros!\nAventuras naturales, bellas vistas y tranquilidad."
-    },
-    "slide3": {
-      "alt": "Villa Los Reyes — paneles solares en tejado, alojamiento sostenible y energía renovable",
-      "title": "¡Sus vacaciones\ncon nosotros!",
-      "subtitle": "¡Descubra Viñales con nosotros!\n Aventuras naturales, bellas vistas y tranquilidad."
-    },
-    "slide4": {
-      "alt": "Villa Los Reyes — habitación con vistas al patio interior y acceso a jardín",
-      "title": "¡Sus vacaciones\ncon nosotros!",
-      "subtitle": "¡Descubra Viñales con nosotros!\nAventuras naturales, bellas vistas y tranquilidad."
-    }
-  },
-  "navbar": {
-    "inicio": "Inicio",
-    "conocenos": "Conócenos",
-    "servicios": "Servicios e instalaciones",
-    "experiencias": "Experiencias y aventuras",
-    "resenas": "Reseñas",
-    "paquetes": "Paquetes promocionales",
-    "reservar": "Reservar"
-  },
   "promo": {
     "organiza": "Organiza tu viaje con nosotros",
     "verano": "Super promoción de verano. Gana hasta un <strong>10% de descuento</strong>",
     "paquetes": "Conoce nuestros paquetes promocionales"
   },
+
   "about": {
     "info": {
       "title": "Conoce\nVilla Los Reyes",
@@ -1017,21 +1150,7 @@
       "Protector solar"
     ]
   },
-  "package": {
-    "itineraryTitle": "Itinerario detallado",
-    "includesTitle": "Esta oferta incluye",
-    "includes": {
-      "lodging": "Hospedaje",
-      "duration": "Duración",
-      "day": "Día",
-      "experiences": "Experiencias y aventuras",
-      "gastronomy": "Gastronomía",
-      "transportation": "Transportación"
-    },
-    "total": "Total",
-    "perPerson": "por persona",
-    "reserveButton": "Reservar ya"
-  },
+
   "packageHeader": {
     "title": "Paquetes promocionales",
     "description": "Aquí conocerás las mejores ofertas para tu estadía en Viñales."

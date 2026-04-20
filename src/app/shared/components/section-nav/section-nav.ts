@@ -1,8 +1,9 @@
 import { Component, EventEmitter, input, Input, output, Output } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'section-nav',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './section-nav.html',
   styleUrl: './section-nav.css',
 })

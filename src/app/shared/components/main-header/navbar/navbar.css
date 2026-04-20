@@ -1,0 +1,233 @@
+:host {
+  --primary-green: #00513d;
+  --accent-orange: #f49516;
+  --accent-hover: #ffb553;
+  --white: #ffffff;
+
+  font-family: "Poppins", sans-serif;
+
+  display: block;
+  position: sticky; /* Cambiado a sticky para que funcione con navbarHidden */
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  transition: transform 0.3s ease;
+}
+
+:host(.navbar-hidden) {
+  transform: translateY(-100%);
+}
+
+.navbar {
+  display: flex;
+  height: 90px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  background-color: var(--primary-green);
+  gap: 2rem;
+}
+
+.navbar-menu {
+  display: flex;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-menu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 10px;
+  position: relative;
+  max-width: 150px;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover,
+.navbar-menu li.active a {
+  color: var(--accent-orange);
+}
+
+.navbar-menu li.active::after {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  width: 80%;
+  height: 4px;
+  background-color: var(--accent-orange);
+  border-radius: 3px 3px 0 0;
+}
+
+.btn-reservar {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 28px;
+  background: var(--accent-orange);
+  color: var(--white);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-reservar:hover {
+  background: var(--accent-hover);
+  /* transform: translateY(-1px); */
+}
+
+/* Icono (por defecto oculto) */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--accent-orange);
+}
+
+.material-symbols-outlined {
+  font-size: 3rem;
+  color: var(--accent-orange);
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+.lang-label {
+  display: none; /* Oculto en pantallas grandes */
+}
+
+.lang-container {
+  display: flex;
+  align-items: center;
+}
+
+/* ==========================
+   RESPONSIVE: <= 1328px
+   ========================== */
+@media (max-width: 1200px) {
+  .menu-toggle {
+    display: flex;
+    cursor: pointer;
+    z-index: 400;
+  }
+
+  /* Convertimos la misma lista en panel lateral */
+  .navbar-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* width: 280px; */
+    width: 280px;
+    height: 100vh;
+
+    flex-direction: column;
+    background: var(--primary-green);
+    align-items: start;
+    padding: 60px 24px 24px;
+    gap: 0.5rem;
+
+    transform: translateX(100%);
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+
+    z-index: 300;
+  }
+
+  /* Solo visible cuando se abre */
+  .navbar-menu.open {
+    transform: translateX(0);
+  }
+
+
+  .navbar-menu li {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    max-width: none;
+    min-height: 3rem; /* Un poco más alto para dar aire */
+    padding: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Línea mucho más sutil */
+  }
+
+  .navbar-menu li:nth-last-child(-n + 2) {
+    border-bottom: none;
+  }
+
+  .navbar-menu li.active::after {
+    content: "";
+    position: absolute;
+    bottom: -1px; /* Encima de la línea gris */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--accent-orange);
+    box-shadow: 0 0 8px rgba(244, 149, 22, 0.4);
+  }
+
+
+  .navbar-menu a {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 300; /* Letra más fina se ve más elegante */
+    letter-spacing: 0.5px;
+    text-transform: uppercase; /* Estilo hotel boutique */
+  }
+
+  .btn-reservar {
+    width: 100%;
+    margin-top: 8px;
+    z-index: 500;
+  }
+
+
+  /* --- Contenedor de Idioma mejorado --- */
+  .lang-container {
+    margin-top: 1rem;
+    padding: 8px 20px;
+    background: rgba(255, 255, 255, 0.05); /* Un recuadro sutil */
+    border-radius: 12px;
+    width: 100%;
+    justify-content: space-evenly;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .lang-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7); /* Menos blanco para que no compita */
+    text-transform: none;
+  }
+
+  /* Overlay detrás del panel lateral */
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(2px);
+    z-index: 200;
+    animation: fadeIn 0.28s forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+}

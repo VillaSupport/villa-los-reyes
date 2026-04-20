@@ -1,0 +1,103 @@
+<div [formGroup]="stayForm" class="stay-form-group">
+  <h2 class="section-header vlr-form-title" style="grid-area: title-date">
+    {{"STAY.TITLE_DATE"|translate}}
+  </h2>
+  <h2 class="section-header vlr-form-title" style="grid-area: title-guests">
+        {{"STAY.TITLE_GUESTS"|translate}}
+
+  </h2>
+
+  <div class="vlr-date-field" style="grid-area: check-in">
+    <label class="vlr-field-label" for="checkIn">{{"STAY.LABEL_CHECK_IN"|translate}}</label>
+    <div class="vlr-date-control">
+      <span class="material-symbols-outlined vlr-date-icon"
+        >calendar_month</span
+      >
+      <input
+        #checkInPicker
+        class="vlr-input-field vlr-date-field"
+        id="checkIn"
+        type="date"
+        [formControl]="checkInControl"
+        (click)="checkInPicker.showPicker()"
+        required
+      />
+    </div>
+    <validation-feedback
+      [triggerControls]="[checkInControl]"
+      [messageSources]="[checkInControl]"
+    >
+    </validation-feedback>
+  </div>
+
+  <div class="guest-count-item" style="grid-area: adults">
+    <div class="guest-info">
+      <span class="vlr-form-text vlr-form-text-bold">{{"STAY.ADULTS_TITLE"|translate}}</span>
+      <span class="vlr-form-caption">{{"STAY.ADULTS_CAPTION"|translate}}</span>
+    </div>
+    <div class="counter-controls">
+      <button type="button" class="counter-btn" (click)="decreaseAdult()">
+        <span class="material-symbols-outlined remove">do_not_disturb_on</span>
+      </button>
+      <span class="counter-value vlr-form-text">{{ adults }}</span>
+      <button type="button" class="counter-btn" (click)="increaseAdult()">
+        <span class="material-symbols-outlined add">add_circle</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="vlr-date-field" style="grid-area: check-out">
+    <label class="vlr-field-label" for="checkOut">{{"STAY.LABEL_CHECK_OUT"|translate}}</label>
+
+    <div class="vlr-date-control">
+      <span class="material-symbols-outlined vlr-date-icon"
+        >calendar_month</span
+      >
+      <input
+        class="vlr-input-field"
+        id="checkOut"
+        type="date"
+        [formControl]="checkOutControl"
+      />
+    </div>
+    <validation-feedback
+      [triggerControls]="[checkOutControl, dateGroup]"
+      [messageSources]="[checkOutControl, dateGroup]"
+    ></validation-feedback>
+  </div>
+
+  <div class="guest-count-item" style="grid-area: kids">
+    <div class="guest-info">
+      <span class="vlr-form-text vlr-form-text-bold">{{"STAY.KIDS_TITLE"|translate}}</span>
+      <span class="vlr-form-caption">{{"STAY.KIDS_CAPTION"|translate}}</span>
+    </div>
+    <div class="counter-controls">
+      <button type="button" class="counter-btn" (click)="decreaseChild()">
+        <span class="material-symbols-outlined remove">do_not_disturb_on</span>
+      </button>
+      <span class="counter-value vlr-form-text">{{ children }}</span>
+      <button type="button" class="counter-btn" (click)="increaseChild()">
+        <span class="material-symbols-outlined add">add_circle</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper-nav">
+  <div class="navigation">
+    <button
+      type="button"
+      (click)="onGoBack()"
+      class="nav-btn prev"
+      [disabled]="stepNumber() === 0"
+    >
+      <span class="material-symbols-outlined">arrow_back</span> {{"NAV.BACK"|translate}}
+    </button>
+
+    <button type="button" (click)="onNextStep()" class="nav-btn next">
+      {{"NAV.NEXT"|translate}} <span class="material-symbols-outlined">arrow_forward</span>
+    </button>
+  </div>
+</div>
+
+<!-- <form-debug [formGroup]="stayForm"></form-debug> -->

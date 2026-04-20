@@ -1,6 +1,5 @@
 import { Component, computed, inject } from '@angular/core';
 import { PageHeader } from '../../../../shared/components/page-header/page-header';
-import { GridRoomsSection } from '../../../../components/sections/grid-rooms-section/grid-rooms-section';
 import { FacilitiesService } from '../../services/facilities.service';
 import { toSignal } from '@angular/core/rxjs-interop';
 import {

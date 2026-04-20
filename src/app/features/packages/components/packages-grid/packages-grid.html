@@ -1,0 +1,7 @@
+<div class="packages-grid">
+  @for (data of packages(); track data.title) {
+    <div class="card-container">
+      <package-card [data]="data"></package-card>
+    </div>
+  }
+</div>

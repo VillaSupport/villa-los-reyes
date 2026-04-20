@@ -1,6 +1,4 @@
 import { Component, computed, inject } from '@angular/core';
-import { DiscoverPackageDefaultOne } from '../../../../../presets/discover-package-default-one/discover-package-default-one';
-import { DiscoverServicesDefault } from '../../../../../presets/discover-services-default/discover-services-default';
 import { AdventureGrid } from '../../../components/adventure-grid/adventure-grid';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -11,7 +9,6 @@ import { PageHeader } from '../../../../../shared/components/page-header/page-he
 import { PackageCrossList } from '../../../../packages/components/package-cross-list/package-cross-list';
 import { ServiceCrossList } from '../../../../services-facilities/components/service-cross-list/service-cross-list';
 import { HeaderData } from '../../../../../shared/interfaces/common.interface';
-import { experienceHeaderData } from '../../../../../pages/experiences-page/experiences-page';
 
 @Component({
   selector: 'adventures-overview-template',

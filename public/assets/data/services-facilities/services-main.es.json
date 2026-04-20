@@ -7,7 +7,7 @@
     "linkText": "Descubre nuestras instalaciones",
     "desc": "Ofrecemos una experiencia única con nuestras <strong>habitaciones independientes</strong>, proporcionando privacidad y comodidad. Disfruta de vistas panorámicas desde nuestras <strong>terrazas</strong>, perfectas para relajarse. Pasea por nuestros exuberantes <strong>jardines</strong> y sumérgete en la tranquilidad de la naturaleza. Además, contamos con una refrescante <strong>piscina</strong> para tu disfrute. Ven y vive una estancia inolvidable.",
     "image": {
-      "src": "assets/images/outdoor-areas/gardens-03.jpg",
+      "src": "assets/imgs/outdoor/gardens/lush-garden-red-flowers-pool.webp",
       "alt": "Vistas panorámicas de los jardines y la estructura de la Villa"
     },
     "previewItems": [
@@ -48,7 +48,7 @@
     "linkText": "Descubre nuestros servicios",
     "desc": "Disfruta de una deliciosa <strong>gastronomía cubana</strong> preparada por chefs locales, <strong>transporte</strong> para explorar la región, y la asistencia de nuestro <strong>gestor de viajes</strong> para que aproveches al máximo tu estancia. Además, contamos con servicio de <strong>lavandería, masajes</strong> relajantes para recargar energías y <strong>clases de baile</strong> para sumergirte en la cultura cubana.",
     "image": {
-      "src": "assets/images/restaurant/slide-dining-area-01.jpg",
+      "src": "assets/imgs/services/gastronomy/dining-table-setup-villa-los-reyes.webp",
       "alt": "Mesa servida con platos tradicionales cubanos"
     },
     "previewItems": [

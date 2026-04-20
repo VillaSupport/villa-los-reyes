@@ -1,0 +1,179 @@
+:host {
+  display: block;
+  font-family: "Poppins", sans-serif;
+
+  --grid-gap: 0.75rem;
+  --extra-gap: 1rem;
+  --fs-error: 0.75rem;
+}
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+}
+.stay-form-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: clamp(20px, 8vw, 170px);
+  row-gap: var(--grid-gap);
+  padding-block: 3rem 2.5rem;
+  padding-inline: 10px;
+
+  grid-template-areas:
+    "title-date title-guests"
+    "check-in adults"
+    "check-out kids";
+}
+
+.section-header {
+  margin-bottom: 0;
+}
+
+.stay-form-group > *:nth-child(n + 3) {
+  margin-bottom: var(--extra-gap);
+}
+
+.vlr-date-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.vlr-date-control {
+  position: relative;
+  width: 100%;
+}
+
+.vlr-date-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #003e2e;
+  pointer-events: none;
+}
+
+.vlr-input-field {
+  padding-inline: 3rem;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  display: none;
+}
+
+.guest-count-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.guest-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.counter-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 4px;
+}
+
+.counter-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #003e2e;
+  font-size: 1.6rem;
+}
+
+.counter-btn:hover {
+  color: #003e2ed0;
+}
+
+.counter-value {
+  min-width: 24px;
+  text-align: center;
+}
+
+/*------------------------------------*/
+/* Navegación entre pasos */
+.wrapper-nav {
+  display: flex;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-btn {
+  background: transparent;
+  border: none;
+  color: #186b53;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  padding: 0.5rem 0;
+}
+
+.nav-btn:hover {
+  color: #d17d00;
+  transform: translateX(0);
+  /* Preparado para animación */
+}
+
+.nav-btn.prev:hover {
+  transform: translateX(-5px);
+}
+
+.nav-btn.next:hover {
+  transform: translateX(5px);
+}
+
+.nav-btn:disabled,
+.nav-btn.disabled {
+  color: #a0a0a0; /* Gris neutro para indicar inactividad */
+  cursor: not-allowed; /* Cambia el puntero al símbolo de prohibido */
+  opacity: 0.6; /* Lo hace un poco más tenue */
+  pointer-events: none; /* Bloquea cualquier evento de click o hover */
+  transform: none;
+}
+
+.nav-btn:disabled:hover,
+.nav-btn.disabled:hover {
+  color: #a0a0a0;
+  transform: none;
+}
+/*------------------------------------*/
+
+/* ORDEN PARA DESKTOP (Cuando quepan las 2 columnas) */
+@media (max-width: 850px) {
+  .stay-form-group {
+    padding-block: 2.5rem;
+    grid-template-areas:
+      "title-date"
+      "check-in"
+      "check-out"
+      "title-guests"
+      "adults"
+      "kids";
+  }
+}

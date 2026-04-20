@@ -1,0 +1,96 @@
+:host{
+  display: block;
+}
+.lang-selector {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Contenedor bandera + caret */
+.lang-current-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 10px;
+  padding: 4px 6px;
+  transition: background-color 0.2s ease;
+}
+
+
+/* Bandera actual */
+.lang-current {
+  font-size: 1.4rem;
+  border-radius: 3px;
+}
+
+/* Caret */
+.lang-current-container i {
+  font-size: 0.9rem;
+  color: #ccc;
+  transition: transform 0.2s ease;
+}
+
+/* Girar caret al abrir */
+.lang-selector:hover .lang-current-container i {
+  transform: rotate(180deg);
+}
+
+/* Dropdown con fade y pequeño delay al cerrar */
+.lang-dropdown {
+  position: absolute;
+  top: calc(125%);
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+  background: #313131;
+  border: 3px solid #008362;
+  border-radius: 6px;
+  padding: 6px;
+  z-index: 500;
+  min-width: 60px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.6);
+
+  /* transición de aparición */
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-4px); /* leve slide hacia arriba */
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition-delay: 0.5s; /* retardo al cerrar */
+}
+
+/* Mostrar dropdown al hover */
+.lang-selector:hover .lang-dropdown {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+  transition-delay: 0s; /* aparece rápido */
+}
+
+/* Cada opción */
+.lang-option {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  background-color: transparent;
+  padding: 3px 5px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lang-option:hover {
+  background-color: #3d3d3d;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+/* Código ISO al lado de la bandera */
+.lang-option .lang-code {
+  color: #fff;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}

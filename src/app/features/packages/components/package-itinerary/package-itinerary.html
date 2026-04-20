@@ -1,0 +1,122 @@
+<div class="discover-package-section section-outer">
+  <section class="discover-package-container section-inner">
+    <header class="discover-header">
+      <h2 class="discover-title">{{ package()?.title | translate }}</h2>
+      <p class="discover-description">{{ package()?.desc | translate }}</p>
+    </header>
+
+    <section class="offer-details-container">
+      <!-- Columna izquierda -->
+      <div class="offer-column itinerary">
+        <h3 class="column-title">
+          {{ "ITINERARY.ITINERARY_TITLE" | translate }}
+        </h3>
+
+        <ul>
+          @for (item of package()?.itinerary; let i = $index; track i) {
+            <li>
+              <strong
+                >{{ "ITINERARY.INCLUDES.DAY" | translate }} {{ i + 1 }}:</strong
+              >
+              {{ item | translate }}
+            </li>
+          }
+        </ul>
+      </div>
+
+      <!-- Columna derecha -->
+      <div class="offer-column includes">
+        <h3 class="column-title">
+          {{ "ITINERARY.INCLUDES_TITLE" | translate }}
+        </h3>
+
+        <ul>
+          <li>
+            <h4 class="column-subtitle">
+              {{ "ITINERARY.INCLUDES.LODGING" | translate }}:
+            </h4>
+
+            <ul>
+              <li>
+                <strong>{{ "ITINERARY.INCLUDES.DURATION" | translate }}:</strong
+                >&nbsp;{{ package()?.duration | translate }}
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <h4 class="column-subtitle">
+              {{ "ITINERARY.INCLUDES.EXPERIENCES" | translate }}:
+            </h4>
+
+            <ul>
+              @for (
+                experience of package()?.includes?.activities;
+                let i = $index;
+                track i
+              ) {
+                <li>{{ experience | translate }}</li>
+              }
+            </ul>
+          </li>
+
+          <li>
+            <h4 class="column-subtitle">
+              {{ "ITINERARY.INCLUDES.GASTRONOMY" | translate }}:
+            </h4>
+
+            <ul>
+              @for (
+                meal of package()?.includes?.gastronomy;
+                let i = $index;
+                track i
+              ) {
+                <li>{{ meal | translate }}</li>
+              }
+            </ul>
+          </li>
+
+          <li>
+            <h4 class="column-subtitle">
+              {{ "ITINERARY.INCLUDES.TRANSPORTATION" | translate }}:
+            </h4>
+
+            <ul>
+              @for (
+                transport of package()?.includes?.transportation;
+                let i = $index;
+                track i
+              ) {
+                <li>{{ transport | translate }}</li>
+              }
+            </ul>
+          </li>
+        </ul>
+
+        <hr class="divider" />
+
+        <div class="offer-total">
+          <span class="total-label">{{ "ITINERARY.TOTAL" | translate }}:</span>
+
+          <div class="total-info">
+            <span class="amount">00.00</span>
+            <span class="currency">USD</span>
+            <span class="billing">{{
+              package()?.billingType | translate
+            }}</span>
+          </div>
+        </div>
+        <button class="reserve-btn" (click)="onReserve()">
+          {{ "ITINERARY.RESERVE_BUTTON" | translate }}
+        </button>
+      </div>
+    </section>
+
+    <section-nav
+      [prevDisabled]="nav()?.isFirst ?? false"
+      [nextDisabled]="nav()?.isLast ?? false"
+      (onPrev)="goPrev()"
+      (onNext)="goNext()"
+    />
+  </section>
+</div>

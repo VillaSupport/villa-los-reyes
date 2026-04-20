@@ -1,0 +1,114 @@
+<div class="content-grid">
+
+  <div class="form-container" [formGroup]="contactForm">
+    <div class="form-column" style="grid-area: form-column;">
+      <div class="form-description">
+        <h2 class="section-header section-header vlr-form-title"
+        
+        > {{ 'CONTACT.TITLE' | translate }}
+      
+      </h2>
+        <p class="vlr-form-text">
+         {{ 'CONTACT.DESCRIPTION' | translate }}
+        </p>
+      </div>
+
+      <div class="inputs-wrapper">
+        <div class="input-container">
+          <input class="vlr-input-field" type="text" [placeholder]="'CONTACT.PLACEHOLDER_NAME' | translate" formControlName="name">
+          <validation-feedback [triggerControls]="[nameControl]" [messageSources]="[nameControl]">
+          </validation-feedback>
+        </div>
+
+        <div class="input-container">
+          <input class="vlr-input-field" type="text" [placeholder]="'CONTACT.PLACEHOLDER_LASTNAME' | translate" formControlName="lastName">
+          <validation-feedback [triggerControls]="[lastNameControl]" [messageSources]="[lastNameControl]">
+          </validation-feedback>
+        </div>
+
+        <div class="phone-group" formGroupName="phoneData">
+          <div class="input-container">
+            <country-selector [countriesList]="countriesList" [codeControl]="isoCodeControl"
+              [countryControl]="countryControl" [dialCodeControl]="dialCodeControl" />
+            <validation-feedback [triggerControls]="[countryControl]" [messageSources]="[countryControl]" />
+          </div>
+
+          <div class="input-container">
+            <div class="phone-number">
+              <input  type="text" class="dial-code vlr-input-field" formControlName="dialCode" maxlength="4"
+                (keydown)="handleDialKeyDown($event)">
+              <input type="text" class="phone-input vlr-input-field" [placeholder]="phonePlaceholder|translate" formControlName="phoneNumber"
+                (keydown)="handlePhoneKeyDown($event)">
+            </div>
+
+            <validation-feedback [triggerControls]="[phoneNumberControl,phoneGroup]"
+              [messageSources]="[phoneNumberControl,phoneGroup]" />
+          </div>
+        </div>
+
+        <div class="input-container">
+          <input class="vlr-input-field" type="email" [placeholder]="'CONTACT.PLACEHOLDER_EMAIL' | translate" formControlName="email">
+          <validation-feedback [triggerControls]="[emailControl]" [messageSources]="[emailControl]">
+          </validation-feedback>
+        </div>
+      </div>
+      <div class="notes-wrapper">
+        <div class="form-description">
+          <h2 class="section-header vlr-form-title">{{ 'CONTACT.ADDITIONAL_DETAILS_TITLE' | translate }}</h2>
+          <p class="vlr-form-text">
+            {{ 'CONTACT.ADDITIONAL_DETAILS_DESC' | translate }}
+          </p>
+        </div>
+
+        <div class="input-container textarea-wrapper">
+          <textarea class = "vlr-input-field"[placeholder]="'CONTACT.PLACEHOLDER_NOTES' | translate" formControlName="notes" (keydown)="handleMaxChars($event)">
+        </textarea>
+          <span class="char-counter" [class.at-limit]="notesControl.value?.length === 500">
+            {{ notesControl.value?.length || 0 }} / 500
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="summary-column" style="grid-area: summary-column;">
+      <h2 class="section-header vlr-form-title">{{ 'SUMMARY.TITLE' | translate }}</h2>
+
+      <div class="row">
+        <span class="vlr-form-text vlr-form-text-blod">{{ adultsCount }} {{ (adultsCount === 1 ? 'SUMMARY.ADULT' : 'SUMMARY.ADULTS') | translate }}</span>
+        <span class="vlr-form-text">{{ 'SUMMARY.PENDING' | translate }}</span>
+      </div>
+
+      <div class="row">
+        <span class="vlr-form-text vlr-form-text-blod">
+          {{ childrenCount }} {{ (childrenCount === 1 ? 'SUMMARY.CHILD' : 'SUMMARY.CHILDREN') | translate }}
+        </span>
+        <span class="vlr-form-text">{{ 'SUMMARY.PENDING' | translate }}</span>
+      </div>
+
+      <div class="row discount">
+        <span class="vlr-form-text vlr-form-text-blod">{{ 'SUMMARY.PROMO_DISCOUNT' | translate }}</span>
+        <span class="vlr-form-text">{{ 'SUMMARY.PENDING' | translate }}</span>
+      </div>
+
+      <div class="total">
+        <span>{{ 'SUMMARY.TOTAL' | translate }}</span>
+        <strong>{{ 'SUMMARY.PENDING' | translate }}</strong>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="wrapper-nav">
+  <div class="navigation">
+    <button type="button" (click)="onGoBack()" class="nav-btn prev"  [disabled]="stepNumber() === 0">
+      <span class="material-symbols-outlined">arrow_back</span> {{ 'NAV.BACK' | translate }}
+    </button>
+
+    <button type="button" (click)="onNextStep()" class="nav-btn next">
+      {{ 'NAV.NEXT' | translate }} <span class="material-symbols-outlined">arrow_forward</span>
+    </button>
+  </div>
+</div>
+
+  <!-- <form-debug [formGroup]="contactForm"></form-debug> -->

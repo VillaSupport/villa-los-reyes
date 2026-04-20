@@ -1,8 +1,0 @@
-<div class="experiences-gallery">
-  @for (item of experiences(); track item.title)
-  {
-    <a [routerLink]="item.link" class="experience-link">
-      <experience-item [src]="item.src" [alt]="item.alt" [title]="item.title" />
-    </a>
-  }
-</div>

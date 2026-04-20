@@ -12,6 +12,6 @@ import { PackageCardData } from '../../interfaces/packages.interface';
 })
 export class PackageCard {
 
-  data = input<PackageCardData>();
+  data = input.required<PackageCardData|undefined>();
 
 }

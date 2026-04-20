@@ -19,6 +19,8 @@
 
 ---
 
+
+
 ## 🏞️ Experiences
 - [x] experiences → ExperiencesPage (Experiencias) `/experiences`
   - [x] horseback-riding → HorsebackRidingPage (Cabalgatas) `/experiences/horseback-riding`
@@ -28,7 +30,6 @@
     - [x] valley-of-penitence → ValleyOfPenitencePage (Valle de la Penitencia) `/experiences/horseback-riding/valley-of-penitence`
   - [x] hiking → HikingPage (Senderismo) `/experiences/hiking`
     - [x] from-hell-to-paradise → FromHellToParadisePage (Del Infierno al Paraíso) `/experiences/hiking/from-hell-to-paradise`
-    - [x] incredible-sunrise → IncredibleSunrisePage (Amanecer Increíble) `/experiences/hiking/incredible-sunrise`
     - [x] true-hiking → TrueHikingPage (Un Verdadero Hiking) `/experiences/hiking/true-hiking`
     - [x] ancient-nature → AncientNaturePage (Antigüedad y Naturaleza) `/experiences/hiking/ancient-nature`
     - [x] eco-trail → EcoTrailPage (100% Ecología) `/experiences/hiking/eco-trail`
