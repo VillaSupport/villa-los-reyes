@@ -27,8 +27,22 @@ export class FacilitiesPage {
       alt: 'HEADER.FACILITIES.ALT',
     },
   };
-  // toSignal convierte el Observable directamente en un Signal público
-  public roomsData = toSignal(this.facilitiesService.getRoomSpaces());
+
+  private rawRooms = toSignal(this.facilitiesService.getRoomSpaces());
+
+  public roomsData = computed(() => {
+    const data = this.rawRooms(); // Esto es de tipo RoomSpace | undefined
+
+    if (!data || !data.items) return null;
+
+    return {
+      ...data,
+      items: data.items.map((item) => ({
+        ...item,
+        slug: `/services-facilites/${item.slug}`, // Aquí es donde vive el slug
+      })),
+    };
+  });
 
   spacesData = toSignal(this.facilitiesService.getCommonSpaces(), {
     initialValue: [],
