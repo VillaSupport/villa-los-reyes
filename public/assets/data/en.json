@@ -233,5 +233,10 @@
       "HEADING": "Your Vacation\nwith us!",
       "DESCRIPTION": "Discover Viñales with us!\nNatural adventures, beautiful views, and tranquility."
     }
+  },
+  "PROMO": {
+    "ORGANIZE": "Organiza tu viaje con nosotros",
+    "SUMMER": "Super promoción de verano. Gana hasta un <strong>10% de descuento</strong>",
+    "PACKAGES": "Conoce nuestros paquetes promocionales"
   }
 }

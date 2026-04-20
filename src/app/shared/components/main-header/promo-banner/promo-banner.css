@@ -5,13 +5,18 @@
   /* verde oscuro de ejemplo */
   color: #08372A;
   font-size: 15px;
-  font-weight: 500;
   overflow: hidden;
-  font-family: "Poppins";
+  font-family: "Poppins",sans-serif;
   line-height: 24px;
   height: 56px;
   align-content: center;
+  text-decoration: none;
 
+}
+
+a {
+  text-decoration: none; /* Quita el subrayado */
+  color: inherit;         /* Hace que el link use el color del texto que lo rodea */
 }
 
 .message-container {

@@ -17,10 +17,12 @@ export class PromoBanner {
 
   // se usarán las keys de traducción, no los textos directos
   messages = [
-    'promo.organiza',
-    'promo.verano',
-    'promo.paquetes'
+    'PROMO.ORGANIZE',
+    'PROMO.SUMMER',
+    'PROMO.PACKAGES'
   ];
+
+
 
   constructor() {
     this.startRotation();

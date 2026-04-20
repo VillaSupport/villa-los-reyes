@@ -247,11 +247,14 @@
 
 
 
-  "promo": {
-    "organiza": "Organiza tu viaje con nosotros",
-    "verano": "Super promoción de verano. Gana hasta un <strong>10% de descuento</strong>",
-    "paquetes": "Conoce nuestros paquetes promocionales"
+  "PROMO": {
+    "ORGANIZE": "Organiza tu viaje con nosotros",
+    "SUMMER": "Super promoción de verano. Gana hasta un <strong>10% de descuento</strong>",
+    "PACKAGES": "Conoce nuestros paquetes promocionales"
   },
+
+
+
 
   "about": {
     "info": {
