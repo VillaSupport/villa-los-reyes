@@ -129,13 +129,16 @@
     right: 0;
     /* width: 280px; */
     width: 280px;
-    height: 100vh;
+    height: 100dvh;
 
     flex-direction: column;
     background: var(--primary-green);
     align-items: start;
-    padding: 60px 24px 24px;
+    padding: 60px 24px 120px;
     gap: 0.5rem;
+
+    overflow-y: auto;
+    overflow-x: hidden;
 
     transform: translateX(100%);
     transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -156,7 +159,7 @@
     text-align: left;
     width: 100%;
     max-width: none;
-    min-height: 3rem; /* Un poco más alto para dar aire */
+    min-height: 4rem; /* Un poco más alto para dar aire */
     padding: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Línea mucho más sutil */
   }
@@ -211,14 +214,18 @@
     text-transform: none;
   }
 
-  /* Overlay detrás del panel lateral */
+
   .menu-overlay {
     position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
-    backdrop-filter: blur(2px);
-    z-index: 200;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Color de la sombra */
+    backdrop-filter: blur(2px);    /* Efecto de desenfoque opcional */
+    z-index: 200;                  /* Por debajo de la navbar-menu (300) */
     animation: fadeIn 0.28s forwards;
+    display: block;                /* Se controla con @if en el HTML */
   }
 
   @keyframes fadeIn {
