@@ -235,8 +235,8 @@
     }
   },
   "PROMO": {
-    "ORGANIZE": "Organiza tu viaje con nosotros",
-    "SUMMER": "Super promoción de verano. Gana hasta un <strong>10% de descuento</strong>",
-    "PACKAGES": "Conoce nuestros paquetes promocionales"
+    "ORGANIZE": "Plan your trip with us",
+    "SUMMER": "Summer super promo. Get up to <strong>10% off</strong>",
+    "PACKAGES": "Check out our promotional packages"
   }
 }
