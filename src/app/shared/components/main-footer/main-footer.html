@@ -19,7 +19,7 @@
 
     <!-- Columna 2: Contactos -->
     <div class="footer-column contact">
-      <h3>{{ 'footer.contacts_title' | translate }} </h3>
+      <h3>{{ 'FOOTER.CONTACTS_TITLE' | translate }} </h3>
 
       <ul>
         @for (c of contacts; track c.label ?? c.url) {
@@ -45,14 +45,14 @@
 
     <!-- Columna 3: Chat -->
     <div class="footer-column message">
-      <h3>{{ 'footer.chat_title' | translate }}
+      <h3>{{ 'FOOTER.CHAT_TITLE' | translate }}
 </h3>
-      <p>{{ 'footer.chat_description' | translate }}
+      <p>{{ 'FOOTER.CHAT_DESCRIPTION' | translate }}
 </p>
 
       <a class="chat-btn" (click)="openWhatsApp()">
         <span class="material-symbols-outlined">chat_bubble</span>
-        {{ 'footer.contacts_title' | translate }}
+        {{ 'FOOTER.CHAT_BUTTON' | translate }}
 
       </a>
     </div>
@@ -62,7 +62,7 @@
   <hr />
 
   <div class="footer-bottom">
-    <p>{{ 'footer.rights' | translate }}
+    <p>{{ 'FOOTER.RIGHTS' | translate }}
 </p>
     <p>Villa Los Reyes {{ currentYear }}</p>
   </div>

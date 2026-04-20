@@ -238,21 +238,20 @@
     }
   },
 
-
-
-
-
-
-
-
-
-
   "PROMO": {
     "ORGANIZE": "Organiza tu viaje con nosotros",
     "SUMMER": "Super promoción de verano. Gana hasta un <strong>10% de descuento</strong>",
     "PACKAGES": "Conoce nuestros paquetes promocionales"
   },
 
+  "FOOTER": {
+  "CONTACTS_TITLE": "Contactos",
+  "CHAT_TITLE": "¡Comunícate con nosotros!",
+  "CHAT_DESCRIPTION": "Envíenos sus comentarios, preguntas o inquietudes. Estaremos encantados de atenderle y ponernos en contacto con usted.",
+  "CHAT_BUTTON": "Chat en línea",
+  "RIGHTS": "Todos los derechos reservados",
+  "VILLA": "Villa Los Reyes"
+},
 
 
 
@@ -1326,13 +1325,7 @@
     "pricing": {
       "unit": "por persona"
     }
-  },
-  "footer": {
-    "contacts_title": "Contactos",
-    "chat_title": "¡Comunícate con nosotros!",
-    "chat_description": "Envíenos sus comentarios, preguntas o inquietudes. Estaremos encantados de atenderle y ponernos en contacto con usted.",
-    "chat_button": "Chat en línea",
-    "rights": "Todos los derechos reservados",
-    "villa": "Villa Los Reyes"
   }
+
+  
 }
