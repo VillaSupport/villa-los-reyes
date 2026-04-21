@@ -13,30 +13,46 @@ button,
 select {
   font-family: inherit;
 }
-input[type="date"]::-webkit-datetime-edit {
-  display: flex;
-  padding: 0;
-}
-
 input[type="date"] {
-  text-align: left;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
   -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
-  min-height: 2.5rem; 
-  padding-left: 12px; /* Dale un aire a la izquierda */
-  width: 100%;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  text-align: left !important;
 }
 
+/* 1. Atacamos el contenedor de los campos (día/mes/año) */
+input[type="date"]::-webkit-datetime-edit-fields-wrapper {
+  display: flex !important;
+  flex-direction: row;
+  padding: 0 !important;
+  margin: 0 !important;
+  justify-content: flex-start !important;
+}
+
+/* 2. Forzamos a que cada segmento (dd, mm, yyyy) se alinee a la izquierda */
+input[type="date"]::-webkit-datetime-edit-text,
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-day-field,
+input[type="date"]::-webkit-datetime-edit-year-field {
+  display: inline-block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* 3. ELIMINACIÓN TOTAL DEL INDICADOR (Último recurso) */
+/* Si el display: none no sirvió, lo hacemos invisible y sin tamaño */
 input[type="date"]::-webkit-calendar-picker-indicator {
-  opacity: 0;
-  -webkit-appearance: none;
-  display: none;
+  background: transparent !important;
+  color: transparent !important;
+  cursor: pointer;
+  height: 1px !important;
+  width: 1px !important;
+  position: absolute !important;
+  right: 0;
+  -webkit-appearance: none !important;
 }
-
 .stay-form-group {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
