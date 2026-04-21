@@ -65,6 +65,11 @@ input[type="date"] {
   appearance: none;
 }
 
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  -webkit-appearance: none;
+  display: none;
+}
 
 .guest-count-item {
   display: flex;
