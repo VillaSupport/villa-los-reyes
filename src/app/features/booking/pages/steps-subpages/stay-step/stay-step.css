@@ -13,6 +13,19 @@ button,
 select {
   font-family: inherit;
 }
+input[type="date"] {
+  text-align: left;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  -webkit-appearance: none;
+  display: none;
+}
+
 .stay-form-group {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -59,17 +72,7 @@ select {
   padding-inline: 3rem;
 }
 
-input[type="date"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
 
-input[type="date"]::-webkit-calendar-picker-indicator {
-  opacity: 0;
-  -webkit-appearance: none;
-  display: none;
-}
 
 .guest-count-item {
   display: flex;
