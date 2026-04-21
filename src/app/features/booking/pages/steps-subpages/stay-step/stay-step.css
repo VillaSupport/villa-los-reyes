@@ -26,6 +26,9 @@ input[type="date"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  min-height: 2.5rem; 
+  padding-left: 12px; /* Dale un aire a la izquierda */
+  width: 100%;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
