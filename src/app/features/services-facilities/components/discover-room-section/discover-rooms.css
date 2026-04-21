@@ -5,20 +5,16 @@
 
 .rooms-section {
   display: flex;
-  justify-content: flex-start;
-  background-color: #E4EAE5;
+  /* justify-content: flex-start; */
+  background-color: #e4eae5;
   overflow: hidden;
 }
 
 .rooms-container {
-  display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
-  width: 100%;
-  max-width: 1568px;
-  box-sizing: content-box;
-  padding-left: max(5rem, calc((100vw - 1728px) / 2 + 5rem));
-
+  /* padding-right: 0; */
   gap: 2.5rem;
   position: relative;
 }
@@ -37,97 +33,33 @@
   -webkit-overflow-scrolling: touch;
 }
 
-@media (min-width: 1024px) and (max-width: 1280px) {
+/* @media (min-width: 1729px) {
+  .section-inner {
+    padding-right: 5rem;
+  }
+} */
 
+@media (max-width: 1280px) {
+  /* .section-inner {
+    padding-right: 0;
+  } */
   .info-container {
     flex: 0 0 auto;
-    margin: 0 5rem;
+    /* margin: 0 5rem; */
   }
 
   .rooms-container {
     flex-direction: column;
     align-items: center;
-    padding:0;
-    box-sizing:border-box;
-
+    /* padding: 0; */
     gap: 0.2rem;
-  }
-
-  .gallery-wrapper {
-    padding-left: 5rem;
   }
 }
 
-/* ==========================
-   DESKTOP PEQUEÑO – 1024px
-   ========================== */
-
-
-@media (min-width: 769px) and (max-width: 1024px) {
-
-  .info-container {
-    flex: 0 0 auto;
-    margin: 0 4rem;
-  }
-
+@media (max-width: 600px) {
   .rooms-container {
-    flex-direction: column;
-    align-items: center;
-    padding:0;
-    box-sizing:border-box;
 
-    gap: 0.2rem;
-  }
-
-
-
-  .gallery-wrapper {
-    padding-left: 4rem;
-  }
-}
-
-
-@media (min-width: 601px) and (max-width: 768px) {
-
-  .info-container {
-    flex: 0 0 auto;
-    margin: 0 2.5rem;
-  }
-
-  .rooms-container {
-    flex-direction: column;
-    padding:0;
-    box-sizing:border-box;
-
-    align-items: center;
-    gap: 0.2rem;
-  }
-
-
-
-  .gallery-wrapper {
-    padding-left: 2.5rem;
-  }
-}
-
-@media(max-width: 600px) {
-
-  .rooms-container {
-    flex-direction: column;
-    padding:0;
-    box-sizing:border-box;
-    align-items: center;
     gap: 1rem;
-  }
-
-  .info-container {
-    margin-left: 0;
-    flex: 0 0 auto;
-    /* o simplemente flex: none; */
-    align-self: center;
-    /* opcional: centra el bloque en el eje cruzado */
-    width: 100%;
-    max-width: 400px;
   }
 
   .gallery-wrapper {
@@ -137,6 +69,5 @@
 
   .room-link {
     flex: 0 0 80%;
-    /* 👈 fuerza el desborde horizontal */
   }
 }

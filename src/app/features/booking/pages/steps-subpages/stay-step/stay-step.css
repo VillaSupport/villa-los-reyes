@@ -61,6 +61,7 @@ select {
 
 input[type="date"]::-webkit-calendar-picker-indicator {
   opacity: 0;
+  -webkit-appearance: none;
   display: none;
 }
 

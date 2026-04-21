@@ -114,6 +114,7 @@
     "AUTH_PROMPT": "We want to hear from you.<br />Log in to leave us<br />your review",
     "AUTH_BUTTON": "Continue with Google",
     "TEXTAREA_PLACEHOLDER": "Describe your experience",
+    "EMPTY_WARNING": "How was your stay at Villa Los Reyes? Write a short review to post it.",
     "CHARACTER_COUNTER": "characters",
     "FORM_DESCRIPTION": "Share your experience with us! Your feedback helps us improve and provide you with better service",
     "SUBMIT_BUTTON": "Submit"

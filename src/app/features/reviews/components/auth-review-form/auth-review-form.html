@@ -87,6 +87,12 @@
           class="form-textarea"
           [disabled]="!user()"
           [placeholder]="'REVIEW_FORM.TEXTAREA_PLACEHOLDER' | translate"
+
+[placeholder]="isEmptyWarning() 
+    ? ('REVIEW_FORM.EMPTY_WARNING' | translate) 
+    : ('REVIEW_FORM.TEXTAREA_PLACEHOLDER' | translate)"
+
+
           maxlength="500"
           rows="4"
         ></textarea>

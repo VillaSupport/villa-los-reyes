@@ -116,6 +116,7 @@
     "AUTH_PROMPT": "Queremos escucharte.<br />Inicia sesión para dejarnos<br />tu opinión",
     "AUTH_BUTTON": "Continuar con Google",
     "TEXTAREA_PLACEHOLDER": "Describe tu experiencia",
+    "EMPTY_WARNING": "¿Cómo te fue en Villa Los Reyes? Escribe una breve reseña para poder publicarla.",
     "CHARACTER_COUNTER": "caracteres",
     "FORM_DESCRIPTION": "¡Comparte tu experiencia con nosotros! Tu opinión nos ayuda a mejorar y ofrecerte un mejor servicio",
     "SUBMIT_BUTTON": "Enviar"

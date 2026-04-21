@@ -1,14 +1,13 @@
 .promo-banner {
 
-  padding: 12px 20px;
+  padding: 14px 20px;
   background-color: #FFB86E;
-  /* verde oscuro de ejemplo */
   color: #08372A;
   font-size: 15px;
   overflow: hidden;
   font-family: "Poppins",sans-serif;
-  line-height: 24px;
-  height: 56px;
+  line-height: 1.4;
+  height: fit-content;
   align-content: center;
   text-decoration: none;
 

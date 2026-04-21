@@ -2,12 +2,10 @@
   display: flex;
   gap: 1.5rem;
   width: 100%;
-  padding: 1rem 0;
+  padding: 10px 0 16px 0;
 
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
-
   scroll-snap-type: x mandatory;
 }
 
@@ -23,16 +21,8 @@
   /* no crece ni se encoge más allá de max-width */
 }
 
-
-
-
-
-
 @media (max-width: 600px) {
-
   .rooms-gallery {
-    padding: 0;
-    padding-left: calc((100% - 400px) / 2);
     gap: 1rem;
   }
 
