@@ -59,6 +59,20 @@ select {
   padding-inline: 3rem;
 }
 
+input[type="date"] {
+  /* Quita el estilo nativo del sistema operativo */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
+  /* Define un estilo manual para que no se vea como un simple texto */
+  min-height: 1.2em; 
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+
 input[type="date"]::-webkit-calendar-picker-indicator,
 input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-clear-button {
