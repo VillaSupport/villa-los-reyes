@@ -23,12 +23,13 @@ import { PackageService } from '../../../../packages/services/package.service';
 import { toObservable, toSignal } from '@angular/core/rxjs-interop';
 import { switchMap } from 'rxjs/internal/operators/switchMap';
 import { TranslatePipe } from '@ngx-translate/core';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'stay-step',
   templateUrl: './stay-step.html',
   styleUrls: ['./stay-step.css'],
-  imports: [ReactiveFormsModule, ValidationFeedback,TranslatePipe],
+  imports: [ReactiveFormsModule, ValidationFeedback,TranslatePipe,DatePipe],
 })
 export class StayStep {
   private state = inject(ReservationStateService);

@@ -53,11 +53,37 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   flex-direction: column;
 }
 
+/* .vlr-date-control {
+  position: relative;
+  width: 100%;
+} */
+
 .vlr-date-control {
   position: relative;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 
+.date-display {
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  padding-left: 3.5rem ; /* Espacio para el icono */
+  text-align: left;
+  background: transparent;
+  pointer-events: none; /* Para que el click pase al input de abajo */
+}
+.real-date-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Aquí está el truco */
+  cursor: pointer;
+  appearance: none;
+}
 .vlr-date-icon {
   position: absolute;
   left: 15px;
@@ -72,6 +98,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding-inline: 3rem;
 }
 
+.vlr-input-disabled {
+  background-color: #dde5df !important; /* El color de tu styles.css */
+  border-color: #c5cdc8 !important;
+  color: #9ba5a0 !important;
+  cursor: not-allowed;
+}
+
+/* El input real también debe bloquearse para que no abra el calendario */
+.real-date-input:disabled {
+  display: none; /* Si está deshabilitado, que ni siquiera exista para el click */
+}
 
 
 .guest-count-item {
