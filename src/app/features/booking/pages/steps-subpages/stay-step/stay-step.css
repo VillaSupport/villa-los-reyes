@@ -13,6 +13,11 @@ button,
 select {
   font-family: inherit;
 }
+input[type="date"]::-webkit-datetime-edit {
+  display: flex;
+  padding: 0;
+}
+
 input[type="date"] {
   text-align: left;
   display: flex;
