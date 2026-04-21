@@ -1,16 +1,22 @@
-<div 
+<div
   #scrollContainer
   class="scroll-container"
   [class.is-mobile-row]="mobileRow()"
   (mousedown)="startDragging($event)"
+  (touchstart)="startDraggingTouch($event)"
   (mousemove)="moveEvent($event)"
+  (touchmove)="moveEvent($event)"
   (mouseup)="stopDragging()"
+  (touchend)="stopDragging()"
   (mouseleave)="stopDragging()"
   (click)="handleGlobalClick($event)"
-  (dragstart)="preventNativeDrag($event)">
-  
+  (dragstart)="preventNativeDrag($event)"
+>
   @for (item of data(); track $index) {
-      <ng-container [ngTemplateOutlet]="cardTemplate()" [ngTemplateOutletContext]="{ $implicit: item }">
-      </ng-container>
+    <ng-container
+      [ngTemplateOutlet]="cardTemplate()"
+      [ngTemplateOutletContext]="{ $implicit: item }"
+    >
+    </ng-container>
   }
 </div>
