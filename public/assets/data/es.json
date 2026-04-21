@@ -47,12 +47,10 @@
       "TITLE": "Paquetes promocionales",
       "DESCRIPTION": "Aquí conocerás las mejores ofertas para tu estadía en Viñales."
     },
-    "REVIEWS":{
+    "REVIEWS": {
       "TITLE": "Reseñas y comentarios",
       "DESCRIPTION": "Lee las reseñas de nuestros huéspedes y descubre por qué Villa Los Reyes es el lugar perfecto para tu estancia. ¡Tu opinión también cuenta!."
     }
-
-
   },
 
   "SECTION_HEADER": {
@@ -173,6 +171,8 @@
     "PLACEHOLDER_NAME": "Nombre",
     "PLACEHOLDER_LASTNAME": "Apellidos",
     "PLACEHOLDER_EMAIL": "Correo electrónico",
+    "PHONE_NUMBER": "Teléfono",
+    "COUNTRY": "País",
     "ADDITIONAL_DETAILS_TITLE": "Detalles adicionales",
     "ADDITIONAL_DETAILS_DESC": "Puede proporcionar información adicional en relación con su estancia, que deba conocer sus anfitriones.",
     "PLACEHOLDER_NOTES": "Solicitudes y experiencias"
@@ -215,8 +215,7 @@
     "WHATSAPP_BTN": "Contactar por WhatsApp"
   },
 
-
-"CAROUSEL": {
+  "CAROUSEL": {
     "SLIDE_1": {
       "ALT_TEXT": "Villa Los Reyes — alojamiento rural en Viñales, fachada principal con jardín y entrada",
       "HEADING": "¡Sus vacaciones\ncon nosotros!",
@@ -233,7 +232,7 @@
       "DESCRIPTION": "¡Descubra Viñales con nosotros!.\nAventuras naturales, bellas vistas y tranquilidad."
     },
     "SLIDE_4": {
-   "ALT_TEXT": "Villa Los Reyes — alojamiento rural en Viñales, fachada principal con jardín y entrada",
+      "ALT_TEXT": "Villa Los Reyes — alojamiento rural en Viñales, fachada principal con jardín y entrada",
       "HEADING": "¡Sus vacaciones\ncon nosotros!",
       "DESCRIPTION": "¡Descubra Viñales con nosotros!.\nAventuras naturales, bellas vistas y tranquilidad."
     }
@@ -246,15 +245,13 @@
   },
 
   "FOOTER": {
-  "CONTACTS_TITLE": "Contactos",
-  "CHAT_TITLE": "¡Comunícate con nosotros!",
-  "CHAT_DESCRIPTION": "Envíenos sus comentarios, preguntas o inquietudes. Estaremos encantados de atenderle y ponernos en contacto con usted.",
-  "CHAT_BUTTON": "Chat en línea",
-  "RIGHTS": "Todos los derechos reservados",
-  "COPIED": "Copiado"
-},
-
-
+    "CONTACTS_TITLE": "Contactos",
+    "CHAT_TITLE": "¡Comunícate con nosotros!",
+    "CHAT_DESCRIPTION": "Envíenos sus comentarios, preguntas o inquietudes. Estaremos encantados de atenderle y ponernos en contacto con usted.",
+    "CHAT_BUTTON": "Chat en línea",
+    "RIGHTS": "Todos los derechos reservados",
+    "COPIED": "Copiado"
+  },
 
   "about": {
     "info": {
@@ -1327,6 +1324,4 @@
       "unit": "por persona"
     }
   }
-
-  
 }
