@@ -35,12 +35,12 @@
   margin-bottom: 25px;
 }
 
-.icon-container .material-symbols-outlined {
-  font-size: clamp(100px, 12.5vw, 250px); 
+.icon-container .icon {
+  height: clamp(100px, 12.5vw, 250px); 
 }
 
-.success .material-symbols-outlined { color: var(--color-gold); }
-.error .material-symbols-outlined { color: var(--color-error); }
+.success .icon { background: var(--color-gold); }
+.error .icon { background: var(--color-error); }
 
 /* Mensajes */
 .message-content {

@@ -40,22 +40,22 @@ export class FooterSection {
   ];
 
   contacts = [
-    ...this.config.phones.map((p) => ({
+    ...this.config.phones.map((p,i) => ({
       type: 'contact',
-      icon: 'phone',
+        icon: i === 0 ?  'icon-call': 'icon-smartphone',
       label: p.label,
       value: p.value,
       copy: true,
     })),
     {
       type: 'contact',
-      icon: 'mail',
+      icon: 'icon-mail',
       label: this.config.email,
       url: `mailto:${this.config.email}`,
     },
     {
       type: 'address',
-      icon: 'location_on',
+      icon: 'icon-location_on',
       label: this.config.address.label,
       url: this.config.address.mapUrl,
     },

@@ -1,0 +1,106 @@
+{
+  "category": "cycletours",
+  "title": "Tous les cyclotours",
+  "adventures": [
+    {
+      "id": 1,
+      "slug": "el-calvario-ride",
+      "relatedPackageSlug": "relaxing-beach",
+      "title": "El Calvario",
+      "desc": "Explorez la beauté de <strong>Viñales</strong> avec l'excursion <strong>« El Calvario »</strong>, un parcours plein de <strong>paysages</strong> <strong>impressionnants</strong>, des <strong>vallées</strong> <strong>intramontagnardes</strong> aux <strong>cultures</strong> <strong>de</strong> <strong>café</strong> et <strong>de tabac</strong>. Visitez le <strong>Mur de la Préhistoire</strong> et terminez par une baignade rafraîchissante dans la <strong>rivière El Calvario</strong>. Idéale pour les amateurs de <strong>cyclisme</strong> et de <strong>nature</strong>, cette expérience combine <strong>aventure</strong>, <strong>exercice</strong> et <strong>immersion culturelle</strong>.",
+      "imgs": [
+        {
+          "src": "assets/imgs/adventures/cycletours/el-calvario-ride/calvario-scenic-drive.webp",
+          "alt": "Route goudronnée serpentant entre de majestueux mogotes verts sous un ciel bleu avec des nuages blancs."
+        }
+      ],
+      "tips": [
+        "Chaussures fermées",
+        "Pantalons longs",
+        "Bouteille d'eau",
+        "Répulsif anti-moustiques",
+        "Protection solaire"
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "resbaloso-river-tour",
+      "relatedPackageSlug": "vinales-360",
+      "title": "El Resbaloso",
+      "desc": "Embarquez pour une <strong>expérience unique</strong> qui combine <strong>sport, culture et histoire</strong> à <strong>Viñales</strong>. Explorez le <strong>Palenque de los Cimarrones</strong> pour découvrir la riche <strong>culture afro-cubaine</strong>, naviguez sur la rivière souterraine de la <strong>Cueva del Indio</strong> et profitez d'une baignade rafraîchissante dans le <strong>Río Resbaloso</strong>, entouré de nature. Couronnez votre aventure par une visite de la première <strong>Coopérative de Production Agricole</strong> fondée par <strong>Fidel Castro</strong>, où vous découvrirez l'<strong>histoire agricole de Cuba</strong>. Une excursion idéale pour ceux qui recherchent un mélange d'<strong>activité physique</strong> et d'<strong>enrichissement culturel</strong>.",
+      "imgs": [
+        {
+          "src": "assets/imgs/adventures/cycletours/resbaloso-river-tour/resbaloso-natural-pool.webp",
+          "alt": "Piscine naturelle aux eaux cristallines alimentée par une petite cascade sur la rivière Resbaloso."
+        }
+      ],
+      "tips": [
+        "Chaussures fermées",
+        "Pantalons longs",
+        "Bouteille d'eau",
+        "Répulsif anti-moustiques",
+        "Protection solaire"
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "valley-explorer",
+      "relatedPackageSlug": "vinales-families",
+      "title": "Parcourir les vallées",
+      "desc": "Profitez d'une excursion de trois heures dans la <strong>Vallée de la Penitencia</strong>, en explorant les <strong>mogotes</strong>, les <strong>vallées intramontagnardes</strong> et le <strong>Mur de la Préhistoire</strong>. Faites une halte à un <strong>belvédère naturel</strong> et terminez le parcours dans la <strong>Vallée de Viñales</strong>, en visitant des <strong>séchoirs à tabac</strong> et une <strong>plantation de café</strong>. Une expérience idéale pour les <strong>amateurs de cyclisme</strong> et de <strong>nature</strong>.",
+      "imgs": [
+        {
+          "src": "assets/imgs/adventures/cycletours/valley-explorer/prehistory-mural-vinales.webp",
+          "alt": "Immense peinture rupestre moderne sur le flanc d'un mogote dans la Vallée de la Pénitence."
+        }
+      ],
+      "tips": [
+        "Chaussures fermées",
+        "Pantalons longs",
+        "Bouteille d'eau",
+        "Répulsif anti-moustiques",
+        "Protection solaire"
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "eco-farming-trip",
+      "relatedPackageSlug": "romance-vinales",
+      "title": "Agriculture écologique",
+      "desc": "Explorez le fascinant <strong>écosystème</strong> des <strong>Pizarras del Sur</strong> lors d'un parcours de trois heures, qui vous mènera à un <strong>lac</strong> pour un plongeon rafraîchissant, puis à la <strong>Finca Agroecológica El Paraíso</strong>, où vous apprendrez tout sur l'<strong>agriculture écologique</strong> à <strong>Cuba</strong>. Idéale pour ceux qui recherchent <strong>nature</strong>, <strong>aventure</strong> et <strong>apprentissage</strong>, cette excursion offre une expérience complète et unique au cœur des <strong>Pizarras del Sur</strong>.",
+      "imgs": [
+        {
+          "src": "assets/imgs/adventures/cycletours/eco-farming-trip/organic-farming-vinales.webp",
+          "alt": "Rangées de cultures durables dans une ferme agroécologique avec les montagnes de la Vallée de Viñales en arrière-plan."
+        }
+      ],
+      "tips": [
+        "Chaussures fermées",
+        "Pantalons longs",
+        "Bouteille d'eau",
+        "Répulsif anti-moustiques",
+        "Protection solaire"
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "pizarras-lake-trail",
+      "relatedPackageSlug": "natural-adventure",
+      "title": "Visite au lac",
+      "desc": "Découvrez le charme des <strong>Pizarras del Sur</strong>, un <strong>paysage fascinant</strong> et peu connu. Le parcours vous mènera à travers ces formations jusqu'à un <strong>lac</strong>, où vous pourrez profiter d'une baignade rafraîchissante, puis vous descendrez vers la <strong>Vallée de Viñales</strong>, un lieu plein de <strong>verdure</strong>, de <strong>culture</strong> et de <strong>traditions paysannes</strong>. Cette excursion offre une <strong>expérience unique</strong>, combinant <strong>nature</strong> et <strong>culture</strong> pour une journée inoubliable à <strong>Viñales</strong>.",
+      "imgs": [
+        {
+          "src": "assets/imgs/adventures/cycletours/pizarras-lake-trail/pizarras-mirror-lake.webp",
+          "alt": "Montagne reflétée sur la surface calme d'un lac au coucher du soleil dans les Pizarras del Sur."
+        }
+      ],
+      "tips": [
+        "Chaussures fermées",
+        "Pantalons longs",
+        "Bouteille d'eau",
+        "Répulsif anti-moustiques",
+        "Protection solaire"
+      ]
+    }
+  ]
+}

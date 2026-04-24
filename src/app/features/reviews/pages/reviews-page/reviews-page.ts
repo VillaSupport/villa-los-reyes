@@ -139,8 +139,8 @@ async markUseful(review: Review, markUseful: boolean) {
     return review?.userEmail?.trim() || review?.userName?.trim();
   };
 
-  getStarStyle(rating: number, starIndex: number) {
+  getClassStar(rating: number, starIndex: number) {
     const isFilled = rating >= starIndex;
-    return `'FILL' ${isFilled ? 1 : 0}, 'wght' 400, 'GRAD' 0, 'opsz' 24`;
+    return isFilled ? "icon-star_fill" : "icon-star";
   }
 }

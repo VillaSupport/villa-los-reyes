@@ -1,39 +1,42 @@
 <div class="request-container">
   @if (!hasError()) {
-    <h1 class="main-title">{{ 'REQUEST_STATUS.SUCCESS_TITLE' | translate }}</h1>
+    <h1 class="main-title">{{ "REQUEST_STATUS.SUCCESS_TITLE" | translate }}</h1>
 
     <div class="icon-container success">
-      <span class="material-symbols-outlined"> task_alt </span>
+      <span class="icon icon-task_alt"></span>
     </div>
 
     <div class="message-content">
       <p class="paragraph-text">
-        {{ 'REQUEST_STATUS.SUCCESS_MSG_1' | translate }}
+        {{ "REQUEST_STATUS.SUCCESS_MSG_1" | translate }}
       </p>
       <p class="paragraph-text">
-        {{ 'REQUEST_STATUS.SUCCESS_MSG_2' | translate }}
+        {{ "REQUEST_STATUS.SUCCESS_MSG_2" | translate }}
       </p>
     </div>
   } @else {
-    <h1 class="main-title error-title">{{ 'REQUEST_STATUS.ERROR_TITLE' | translate }}</h1>
+    <h1 class="main-title error-title">
+      {{ "REQUEST_STATUS.ERROR_TITLE" | translate }}
+    </h1>
 
     <div class="icon-container error">
-      <span class="material-symbols-outlined"> error </span>
+      <span class="icon icon-error"></span>
     </div>
 
     <div class="message-content">
       <p class="paragraph-text">
-        {{ 'REQUEST_STATUS.ERROR_MSG_1' | translate }}
+        {{ "REQUEST_STATUS.ERROR_MSG_1" | translate }}
       </p>
       <p class="paragraph-text">
-{{ 'REQUEST_STATUS.ERROR_MSG_2' | translate }}
+        {{ "REQUEST_STATUS.ERROR_MSG_2" | translate }}
       </p>
 
-   <div class="contact-links">
-        
+      <div class="contact-links">
         <a [href]="'mailto:' + business.email" class="btn-contact email-link">
           <span class="material-symbols-outlined icon-left">mail</span>
-          <span class="btn-text">{{ 'REQUEST_STATUS.EMAIL_BTN' | translate }}</span>
+          <span class="btn-text">{{
+            "REQUEST_STATUS.EMAIL_BTN" | translate
+          }}</span>
         </a>
 
         <a
@@ -41,10 +44,14 @@
           target="_blank"
           class="btn-contact whatsapp-link"
         >
-          <fa-icon [icon]="['fab', 'whatsapp']" class="icon-left fa-lg"></fa-icon>
-          <span class="btn-text">{{ 'REQUEST_STATUS.WHATSAPP_BTN' | translate }}</span>
+          <fa-icon
+            [icon]="['fab', 'whatsapp']"
+            class="icon-left fa-lg"
+          ></fa-icon>
+          <span class="btn-text">{{
+            "REQUEST_STATUS.WHATSAPP_BTN" | translate
+          }}</span>
         </a>
-
       </div>
     </div>
   }

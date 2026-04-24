@@ -1,0 +1,222 @@
+{
+  "category": "hiking",
+  "title": "Toutes les randonnées",
+  "adventures": [
+    {
+      "id": 1,
+      "slug": "hell-to-paradise",
+      "relatedPackageSlug": "natural-adventure",
+      "title": "De l'enfer au paradis",
+      "desc": "L'expérience commence en quittant le tumulte de la ville, où le bruit, le trafic et la précipitation marquent le rythme quotidien, une sorte d'enfer moderne. Peu à peu, le chemin s'ouvre vers la <strong>Vallée de Viñales</strong>, où le <strong>silence</strong>, le <strong>vert</strong> intense et l'<strong>air</strong> pur transforment l'environnement en un véritable <strong>paradis</strong>. À pied, on parcourt des <strong>sentiers</strong> qui mènent à un <strong>belvédère</strong> avec vue sur <strong>Viñales et Palmarito</strong>. En chemin, on visite la communauté de <strong>Los Acuáticos</strong>, où les habitants partagent leurs <strong>traditions</strong> et leur mode de vie. La journée se termine par un retour en <strong>calèche</strong>, clôturant un voyage qui va, littéralement, du chaos urbain à la <strong>paix de la vallée</strong>.",
+      "imgs": [
+        {
+          "src": "assets/imgs/adventures/hiking/hell-to-paradise/vinales-traditional-tobacco-hut.webp",
+          "alt": "Cabane traditionnelle de paysans avec toit de chaume dans une vallée verte et exubérante à Viñales."
+        },
+        {
+          "src": "assets/imgs/adventures/hiking/hell-to-paradise/vinales-valley-hiking-panorama.webp",
+          "alt": "Vue panoramique de la végétation tropicale et des montagnes de la Vallée de Viñales sous un ciel nuageux."
+        }
+      ],
+      "tips": [
+        "Chaussures fermées",
+        "Pantalons longs",
+        "Bouteille d'eau",
+        "Répulsif anti-moustiques",
+        "Protection solaire"
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "amazing-sunrise",
+      "relatedPackageSlug": "relaxing-beach",
+      "title": "Aube incroyable",
+      "desc": "Levez-vous tôt pour vivre un <strong>lever de soleil</strong> inoubliable dans la <strong>Vallée de Viñales</strong>, en montant au sommet du <strong>Parc National</strong> pour admirer le <strong>soleil</strong> levant sur les <strong>mogotes</strong> et la riche <strong>biodiversité cubaine</strong>. En chemin, vous aurez l'occasion de visiter l'unique <strong>communauté de Los Acuáticos</strong>, connue pour ses croyances traditionnelles liées au <strong>pouvoir curatif de l'eau</strong> et son mode de vie en harmonie avec la <strong>nature</strong>. Profitez d'un <strong>café artisanal</strong> avec les habitants avant de redescendre vers le <strong>Mur de la Préhistoire</strong>, où se terminera cette expérience unique en contact avec l'<strong>environnement naturel</strong>.",
+      "imgs": [
+        {
+          "src": "assets/imgs/adventures/hiking/amazing-sunrise/cuban-hat-silhouette-sunrise.webp",
+          "alt": "Silhouette d'un chapeau traditionnel cubain face au lever du soleil dans les montagnes de Viñales."
+        },
+        {
+          "src": "assets/imgs/adventures/hiking/amazing-sunrise/vinales-sunrise-sea-of-clouds.webp",
+          "alt": "Lever de soleil doré sur la mer de nuages et les mogotes de la Vallée de Viñales, Cuba."
+        },
+        {
+          "src": "assets/imgs/adventures/hiking/amazing-sunrise/tourists-watching-sunrise-vinales.webp",
+          "alt": "Touristes profitant de la vue du lever du soleil depuis un porche en bois traditionnel à Viñales."
+        }
+      ],
+      "tips": [
+        "Chaussures fermées",
+        "Pantalons longs",
+        "Bouteille d'eau",
+        "Répulsif anti-moustiques",
+        "Protection solaire"
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "enjoying-sunset",
+      "relatedPackageSlug": "nature-tradition",
+      "title": "Profitant du crépuscule",
+      "desc": "Profitez de la <strong>Vallée du Silence</strong>, découvrez le <strong>processus du tabac</strong>, de la <strong>plantation</strong> à la <strong>confection de cigares créoles</strong>. Terminez l'expérience en vous relaxant dans une <strong>maison paysanne</strong>, en dégustant un <strong>Mojito Créole</strong> et un <strong>cigare naturel</strong> tout en contemplant le <strong>coucher de soleil</strong>.",
+      "imgs": [
+        {
+          "src": "assets/imgs/adventures/hiking/enjoying-sunset/vinales-valley-sunset-landscape.webp",
+          "alt": "Lumière chaude du coucher de soleil illuminant les champs de tabac et les mogotes de la Vallée de Viñales."
+        },
+        {
+          "src": "assets/imgs/adventures/hiking/enjoying-sunset/traditional-tobacco-rolling-process.webp",
+          "alt": "Paysan local roulant avec expertise un cigare cubain traditionnel à la main dans un séchoir."
+        },
+        {
+          "src": "assets/imgs/adventures/hiking/enjoying-sunset/cuban-cigar-experience-vinales.webp",
+          "alt": "Gros plan d'une main tenant un cigare naturel avec les montagnes de Viñales en arrière-plan."
+        }
+      ],
+      "tips": [
+        "Chaussures fermées",
+        "Pantalons longs",
+        "Bouteille d'eau",
+        "Répulsif anti-moustiques",
+        "Protection solaire"
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "true-hiking",
+      "relatedPackageSlug": "vinales-families",
+      "title": "Un vrai hiking",
+      "desc": "Découvrez <strong>Viñales</strong> lors d'un tour idéal pour les amateurs d'<strong>exercice en plein air</strong>, en montant à travers une ancienne <strong>forêt-galerie</strong> et en descendant vers la <strong>Vallée de Palmarito</strong>. Profitez de <strong>vues impressionnantes</strong>, échangez avec les habitants <strong>locaux</strong> et apprenez-en davantage sur la <strong>culture du tabac</strong>.",
+      "imgs": [
+        {
+          "src": "assets/imgs/adventures/hiking/true-hiking/hiking-adventure-crossing-river-vinales.webp",
+          "alt": "Randonneurs traversant avec prudence une petite rivière en utilisant un tronc tombé comme pont près d'une cascade dans la forêt de Viñales."
+        }
+      ],
+      "tips": [
+        "Chaussures fermées",
+        "Pantalons longs",
+        "Bouteille d'eau",
+        "Répulsif anti-moustiques",
+        "Protection solaire"
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "antiquity-nature",
+      "relatedPackageSlug": "vinales-360",
+      "title": "Antiquité et nature",
+      "desc": "Explorez l'<strong>ancien canyon fluvial</strong> de la <strong>Vallée de Viñales</strong> lors d'une <strong>randonnée</strong> de trois heures, un refuge de <strong>biodiversité</strong> et d'<strong>agriculture écologique</strong>. Observez des <strong>oiseaux endémiques</strong> comme le <strong>tocororo</strong> et le <strong>pic vert</strong> tout en profitant de <strong>vues impressionnantes</strong> sur les <strong>montagnes et les champs</strong>. Une expérience unique pour les <strong>amoureux de la nature</strong> et de l'<strong>aventure</strong>.",
+      "imgs": [
+        {
+          "src": "assets/imgs/adventures/hiking/antiquity-nature/vinales-ancient-river-canyon.webp",
+          "alt": "Vue de l'intérieur d'une grotte dans un ancien canyon fluvial vers la végétation exubérante de la Vallée de Viñales."
+        }
+      ],
+      "tips": [
+        "Chaussures fermées",
+        "Pantalons longs",
+        "Bouteille d'eau",
+        "Répulsif anti-moustiques",
+        "Protection solaire"
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "vinales-eco-tou",
+      "relatedPackageSlug": "romance-vinales",
+      "title": "100% écologie",
+      "desc": "Profitez d'un parcours exclusif dans une <strong>ferme privée</strong> dédiée à l'<strong>agriculture écologique</strong>, où vous dégusterez des <strong>fruits et jus naturels</strong> tout en apprenant les <strong>traditions et cultures locales</strong>. Les résidents locaux partageront des détails sur les <strong>pratiques durables</strong> de la ferme, et la visite se terminera par un parcours jusqu'à la <strong>Cueva de la Vaca</strong>, offrant des vues impressionnantes sur l'<strong>environnement naturel</strong>.",
+      "imgs": [
+        {
+          "src": "assets/imgs/adventures/hiking/vinales-eco-tour/vinales-eco-trail-cueva-vaca.webp",
+          "alt": "Sentier de terre rouge avec un panneau en bois signalant le chemin vers la Cueva de la Vaca."
+        },
+        {
+          "src": "assets/imgs/adventures/hiking/vinales-eco-tour/sustainable-organic-farm-vinales.webp",
+          "alt": "Rangées de cultures dans une ferme d'agriculture écologique avec les montagnes de Viñales en arrière-plan."
+        },
+        {
+          "src": "assets/imgs/adventures/hiking/vinales-eco-tour/farmers-harvesting-tobacco-vinales.webp",
+          "alt": "Paysans locaux récoltant des feuilles fraîches dans une plantation de tabac lors d'un tour écologique."
+        }
+      ],
+      "tips": [
+        "Chaussures fermées",
+        "Pantalons longs",
+        "Bouteille d'eau",
+        "Répulsif anti-moustiques",
+        "Protection solaire"
+      ]
+    },
+    {
+      "id": 7,
+      "slug": "tobacco-inside",
+      "relatedPackageSlug": "nature-tradition",
+      "title": "Tabaco inside",
+      "desc": "Découvrez la tradition de la <strong>culture du tabac</strong> avec l'expérience \"TABACO IN SIDE\", en explorant ses <strong>racines aborigènes</strong> et son <strong>héritage paysan</strong>. Pendant la saison de <strong>culture</strong> (novembre à mars), vous parcourrez les <strong>plantations</strong>, participerez au processus d'<strong>écotage</strong> et apprendrez l'<strong>élaboration artisanale de cigares créoles</strong> avec des <strong>guides locaux</strong>. Une expérience authentique qui vous connectera à l'<strong>histoire et à la culture du tabac à Cuba</strong>.",
+      "imgs": [
+        {
+          "src": "assets/imgs/adventures/hiking/tobacco-inside/hand-rolling-cuban-cigar-detail.webp",
+          "alt": "Gros plan des mains d'un paysan roulant un cigare cubain traditionnel sur une table en bois rustique."
+        },
+        {
+          "src": "assets/imgs/adventures/hiking/tobacco-inside/vinales-tobacco-farmer-field.webp",
+          "alt": "Paysan cubain avec chapeau traditionnel et cigare travaillant dans une plantation de tabac avec les mogotes au fond."
+        },
+        {
+          "src": "assets/imgs/adventures/hiking/tobacco-inside/tobacco-leaves-drying-house.webp",
+          "alt": "Rangées de feuilles de tabac vert suspendues pour sécher à l'intérieur d'une maison de tabac traditionnelle."
+        }
+      ],
+      "tips": [
+        "Chaussures fermées",
+        "Pantalons longs",
+        "Bouteille d'eau",
+        "Répulsif anti-moustiques",
+        "Protection solaire"
+      ]
+    },
+    {
+      "id": 8,
+      "slug": "vinales-day-trip",
+      "relatedPackageSlug": "natural-adventure",
+      "title": "Viñales: day trip",
+      "desc": "Profitez au maximum de votre visite à <strong>Viñales</strong> avec notre <strong>excursion</strong> d'une journée, un <strong>forfait</strong> <strong>tout</strong> <strong>compris</strong> qui combine <strong>nature</strong> et <strong>culture</strong>. Parcourez en <strong>voiture</strong> <strong>américaine</strong> la <strong>Vallée</strong> <strong>de</strong> San <strong>Vicente</strong>, visitez la <strong>Cueva</strong> <strong>del</strong> <strong>Indio</strong> et le <strong>Palenque</strong> <strong>de</strong> <strong>los</strong> <strong>Cimarrones</strong>, profitez des vues depuis <strong>Los</strong> <strong>Jazmines</strong> et explorez le <strong>Mur</strong> <strong>de</strong> <strong>la</strong> <strong>Préhistoire</strong>. Ensuite, marchez dans la <strong>Vallée</strong> <strong>de</strong> <strong>La</strong> <strong>Penitencia</strong>, découvrez les <strong>plantations</strong> <strong>de</strong> <strong>tabac</strong> et revenez dans une <strong>voiture</strong> <strong>tirée</strong> <strong>par</strong> <strong>des chevaux</strong>. L'<strong>expérience</strong> inclut un <strong>déjeuner</strong> chez <strong>Los</strong> <strong>Reyes</strong> et un parcours à <strong>cheval</strong> dans la <strong>Vallée</strong> <strong>du</strong> <strong>Palmarito</strong>, avec des options alternatives comme le <strong>vélo</strong> ou la visite de la <strong>Cueva</strong> <strong>de</strong> <strong>la</strong> <strong>Vaca</strong>.",
+      "imgs": [
+        {
+          "src": "assets/imgs/adventures/shared/vinales-day-trip/classic-blue-car-vinales-valley-tour.webp",
+          "alt": "Une voiture classique américaine de couleur bleue circulant sur un chemin de terre rougeâtre avec les mogotes et la végétation de Viñales au fond."
+        }
+      ],
+      "tips": [
+        "Chaussures fermées",
+        "Pantalons longs",
+        "Bouteille d'eau",
+        "Répulsif anti-moustiques",
+        "Protection solaire"
+      ]
+    },
+    {
+      "id": 9,
+      "slug": "vinales-heritage-tour",
+      "relatedPackageSlug": "natural-adventure",
+      "title": "Histoire, culture et nature",
+      "desc": "Découvrez l'<strong>histoire</strong>, la <strong>culture</strong> et la <strong>nature</strong> de <strong>Viñales</strong> lors d'une excursion complète incluant la <strong>Cueva</strong> <strong>del</strong> <strong>Indio</strong>, le <strong>Palenque</strong> <strong>de</strong> <strong>los</strong> <strong>Cimarrones</strong> et l'<strong>écotage</strong> <strong>du</strong> <strong>tabac</strong>, où vous apprendrez l'élaboration du <strong>cigare</strong> <strong>cubain</strong>. Admirez le <strong>Mur</strong> <strong>de</strong> <strong>la</strong> <strong>Préhistoire</strong>, profitez de <strong>vues</strong> <strong>panoramiques</strong> depuis les vallées <strong>Palmarito</strong> et <strong>La</strong> <strong>Penitencia</strong>, ainsi que depuis la terrasse de l'<strong>Hôtel</strong> <strong>Los</strong> <strong>Jazmines</strong>. L'expérience se complète par une visite chez un paysan <strong>tabaculteur</strong> et un tour du <strong>centre</strong> <strong>historique</strong> de <strong>Viñales</strong>.",
+      "imgs": [
+        {
+          "src": "assets/imgs/adventures/shared/vinales-heritage-tour/prehistoric-mural-vinales-heritage-tour.webp",
+          "alt": "Grand Mur de la Préhistoire peint sur un mogote, représentant l'évolution historique dans la Vallée de Viñales."
+        }
+      ],
+      "tips": [
+        "Chaussures fermées",
+        "Pantalons longs",
+        "Bouteille d'eau",
+        "Répulsif anti-moustiques",
+        "Protection solaire"
+      ]
+    }
+  ]
+}

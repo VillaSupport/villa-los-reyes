@@ -270,3 +270,104 @@ input:-webkit-autofill:active {
     max-width: 480px;
   }
 }
+
+
+.icon {
+  display: inline-block;
+  height: 24px;
+  aspect-ratio: 1;
+  background-color: currentColor; /* El icono tendrá el color del texto */
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.icon-add_circle{
+  -webkit-mask-image: url('/assets/icons/add_circle.svg');
+  mask-image: url('/assets/icons/add_circle.svg');
+
+}
+.icon-arrow_back{
+  -webkit-mask-image: url('/assets/icons/arrow_back.svg');
+  mask-image: url('/assets/icons/arrow_back.svg');
+
+}
+.icon-arrow_drop_up{
+  -webkit-mask-image: url('/assets/icons/arrow_drop_up.svg');
+  mask-image: url('/assets/icons/arrow_drop_up.svg');
+
+}
+.icon-arrow_forward{
+  -webkit-mask-image: url('/assets/icons/arrow_forward.svg');
+  mask-image: url('/assets/icons/arrow_forward.svg');
+
+}
+.icon-calendar_month{
+  -webkit-mask-image: url('/assets/icons/calendar_month.svg');
+  mask-image: url('/assets/icons/calendar_month.svg');
+
+}
+.icon-call{
+  -webkit-mask-image: url('/assets/icons/call.svg');
+  mask-image: url('/assets/icons/call.svg');
+
+}
+.icon-chat_bubble{
+  -webkit-mask-image: url('/assets/icons/chat_bubble.svg');
+  mask-image: url('/assets/icons/chat_bubble.svg');
+
+}
+.icon-close{
+  -webkit-mask-image: url('/assets/icons/close.svg');
+  mask-image: url('/assets/icons/close.svg');
+
+}
+.icon-do_not_disturb_on{
+  -webkit-mask-image: url('/assets/icons/do_not_disturb_on.svg');
+  mask-image: url('/assets/icons/do_not_disturb_on.svg');
+
+}
+.icon-error{
+  -webkit-mask-image: url('/assets/icons/error.svg');
+  mask-image: url('/assets/icons/error.svg');
+
+}
+.icon-location_on{
+  -webkit-mask-image: url('/assets/icons/location_on.svg');
+  mask-image: url('/assets/icons/location_on.svg');
+
+}
+.icon-mail{
+  -webkit-mask-image: url('/assets/icons/mail.svg');
+  mask-image: url('/assets/icons/mail.svg');
+
+}
+.icon-menu{
+  -webkit-mask-image: url('/assets/icons/menu.svg');
+  mask-image: url('/assets/icons/menu.svg');
+
+}
+.icon-person{
+  -webkit-mask-image: url('/assets/icons/person.svg');
+  mask-image: url('/assets/icons/person.svg');
+
+}
+.icon-smartphone{
+  -webkit-mask-image: url('/assets/icons/smartphone.svg');
+  mask-image: url('/assets/icons/smartphone.svg');
+
+}
+.icon-star{
+  -webkit-mask-image: url('/assets/icons/star.svg');
+  mask-image: url('/assets/icons/star.svg');
+}
+.icon-star_fill{
+  -webkit-mask-image: url('/assets/icons/star_fill.svg');
+  mask-image: url('/assets/icons/star_fill.svg');
+}
+.icon-task_alt{
+  -webkit-mask-image: url('/assets/icons/task_alt.svg');
+  mask-image: url('/assets/icons/task_alt.svg');
+
+}

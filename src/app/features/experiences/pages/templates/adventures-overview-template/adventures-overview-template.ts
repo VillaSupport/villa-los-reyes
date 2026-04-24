@@ -26,11 +26,10 @@ export class AdventuresOverviewTemplate {
     title: 'HEADER.EXPERIENCES.TITLE',
     description: 'HEADER.EXPERIENCES.DESCRIPTION',
     img: {
-      src: '/assets/images/experiences/experiences-header.jpg',
+      src: 'assets/imgs/headers/experiences/experiences-header.webp',
       alt: 'HEADER.EXPERIENCES.ALT',
     },
   };
-
   private params = toSignal(this.route.paramMap);
   public slug = computed(() => this.params()?.get('category') || '');
 

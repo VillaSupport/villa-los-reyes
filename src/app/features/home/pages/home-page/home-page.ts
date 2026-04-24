@@ -14,30 +14,30 @@ import { DiscoverRooms } from "../../../services-facilities/components/discover-
 })
 export class HomePage {
 
-    carouselSlides = [
+    slides = [
     {
-      src: 'assets/images/carousel/slide-facade.jpg',
-      altKey: 'CAROUSEL.SLIDE_1.ALT_TEXT',
-      titleKey: 'CAROUSEL.SLIDE_1.HEADING',
-      subtitleKey: 'CAROUSEL.SLIDE_1.DESCRIPTION'
+      src: 'assets/imgs/outdoor/carousel/villa-los-reyes-facade-vinales.webp',
+      alt: 'CAROUSEL.SLIDE_1.ALT_TEXT',
+      title: 'CAROUSEL.SLIDE_1.HEADING',
+      subtitle: 'CAROUSEL.SLIDE_1.DESCRIPTION'
     },
     {
-      src: 'assets/images/carousel/slide-terrace.jpg',
-      altKey: 'CAROUSEL.SLIDE_2.ALT_TEXT',
-      titleKey: 'CAROUSEL.SLIDE_2.HEADING',
-      subtitleKey: 'CAROUSEL.SLIDE_2.DESCRIPTION'
+      src: 'assets/imgs/outdoor/carousel/terrace-pool-mountain-view.webp',
+      alt: 'CAROUSEL.SLIDE_2.ALT_TEXT',
+      title: 'CAROUSEL.SLIDE_2.HEADING',
+      subtitle: 'CAROUSEL.SLIDE_2.DESCRIPTION'
     },
     {
-      src: 'assets/images/carousel/slide-solar.jpg',
-      altKey: 'CAROUSEL.SLIDE_3.ALT_TEXT',
-      titleKey: 'CAROUSEL.SLIDE_3.HEADING',
-      subtitleKey: 'CAROUSEL.SLIDE_3.DESCRIPTION'
+      src: 'assets/imgs/shared/solar-panels.webp',
+      alt: 'CAROUSEL.SLIDE_3.ALT_TEXT',
+      title: 'CAROUSEL.SLIDE_3.HEADING',
+      subtitle: 'CAROUSEL.SLIDE_3.DESCRIPTION'
     },
     {
-      src: 'assets/images/carousel/slide-room.jpg',
-      altKey: 'CAROUSEL.SLIDE_4.ALT_TEXT',
-      titleKey: 'CAROUSEL.SLIDE_4.HEADING',
-      subtitleKey: 'CAROUSEL.SLIDE_4.DESCRIPTION'
+      src: 'assets/imgs/rooms/room-02/view-from-bed-to-patio.webp',
+      alt: 'CAROUSEL.SLIDE_4.ALT_TEXT',
+      title: 'CAROUSEL.SLIDE_4.HEADING',
+      subtitle: 'CAROUSEL.SLIDE_4.DESCRIPTION'
     }
   ];
 }

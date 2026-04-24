@@ -102,8 +102,8 @@
   cursor: pointer;
 }
 
-.material-symbols-outlined {
-  font-size: 2.5rem;
+.icon {
+  height: 2.5rem;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -346,8 +346,8 @@
   .form-textarea {
     font-size: 0.95rem;
   }
-  .material-symbols-outlined {
-    font-size: 2rem;
+  .icon {
+    height: 2rem;
   }
   .form-submit {
     height: 2.75rem;
@@ -362,13 +362,10 @@
     font-size: 0.85rem;
   }
 
-  .user-block:has(.anonymous-avatar) .user-name
-  {
+  .user-block:has(.anonymous-avatar) .user-name {
     font-size: 0.875rem;
   }
   .user-block:has(.anonymous-avatar) .anonymous-avatar {
     right: calc(50% + 6.25rem); /* Ajuste manual según el centro */
   }
-
-
 }

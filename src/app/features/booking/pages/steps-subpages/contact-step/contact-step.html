@@ -102,11 +102,11 @@
   <div class="wrapper-nav">
   <div class="navigation">
     <button type="button" (click)="onGoBack()" class="nav-btn prev"  [disabled]="stepNumber() === 0">
-      <span class="material-symbols-outlined">arrow_back</span> {{ 'NAV.BACK' | translate }}
+      <span class="icon icon-arrow_back"></span> {{ 'NAV.BACK' | translate }}
     </button>
 
     <button type="button" (click)="onNextStep()" class="nav-btn next">
-      {{ 'NAV.NEXT' | translate }} <span class="material-symbols-outlined">arrow_forward</span>
+      {{ 'NAV.NEXT' | translate }} <span class="icon icon-arrow_forward"></span>
     </button>
   </div>
 </div>

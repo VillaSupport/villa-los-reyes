@@ -1,215 +1,255 @@
 {
-  "carousel": {
-    "slide1": {
-      "alt": "Villa Los Reyes — hébergement rural à Viñales, façade principale avec jardin et entrée",
-      "title": "Vos vacances\navec nous !",
-      "subtitle": "Découvrez Viñales avec nous !\nAventures naturelles, belles vues et tranquillité."
+  "LABELS": {
+    "OFFERS": "Forfaits en Offre",
+    "ROOM_FEATURES": "Cette chambre comprend :",
+    "RECOMMENDATION": "Il est recommandé d'apporter :",
+    "EXPLORE": "Découvrez plus"
+  },
+
+  "HEADER": {
+    "EXPERIENCES": {
+      "TITLE": "Expériences et aventures",
+      "DESCRIPTION": "Découvrez des aventures inoubliables et des expériences uniques à Viñales.",
+      "ALT": "Paysan travaillant la terre avec des bœufs devant les mogotes de Viñales"
     },
-    "slide2": {
-      "alt": "Villa Los Reyes — patio central et piscine, espace de détente en plein air à Viñales",
-      "title": "Vos vacances\navec nous !",
-      "subtitle": "Découvrez Viñales avec nous !\nAventures naturelles, belles vues et tranquillité."
+    "SERVICES": {
+      "TITLE": "Services et installations",
+      "DESCRIPTION": "Découvrez les services qui feront de votre séjour une expérience inoubliable",
+      "ALT": "Enseigne en bois de Villa Los Reyes Bar Restaurant sur un mur de pierre avec des verres à vin suspendus."
     },
-    "slide3": {
-      "alt": "Villa Los Reyes — panneaux solaires sur le toit, hébergement durable avec énergie renouvelable",
-      "title": "Vos vacances\navec nous !",
-      "subtitle": "Découvrez Viñales avec nous !\nAventures naturelles, belles vues et tranquillité."
+    "STAY_BENEFITS": {
+      "TITLE": "Nos services",
+      "DESCRIPTION": "Découvrez des services qui feront de votre séjour une expérience inoubliable.",
+      "ALT": "Table en bois dressée pour le déjeuner avec vaisselle blanche, fleurs fraîches et chaises en bois dans le restaurant de la villa."
     },
-    "slide4": {
-      "alt": "Villa Los Reyes — chambre avec vue sur le patio intérieur et accès au jardin",
-      "title": "Vos vacances\navec nous !",
-      "subtitle": "Découvrez Viñales avec nous !\nAventures naturelles, belles vues et tranquillité."
+
+    "FACILITIES": {
+      "TITLE": "Nos installations",
+      "DESCRIPTION": "Découvrez les différents espaces qui rendent l'expérience à Villa Los Reyes unique.",
+      "ALT": "Vue détaillée de fleurs rouges vibrantes et végétation luxuriante à côté de la piscine"
+    },
+    "ROOMS": {
+      "TITLE": "Nos chambres",
+      "DESCRIPTION": "Profitez d'espaces conçus pour votre repos et un séjour inoubliable à Viñales."
+    },
+    "ABOUT": {
+      "TITLE": "Découvrez Villa Los Reyes",
+      "DESCRIPTION": "Découvrez notre maison d'hôtes avec plus de <strong>20 ans d'expérience</strong>",
+      "ALT": "Façade extérieure de Villa Los Reyes avec chambres au rez-de-chaussée."
+    },
+    "PACKAGES": {
+      "TITLE": "Forfaits et Offres",
+      "DESCRIPTION": "Explorez nos options et trouvez l'expérience parfaite pour vous.",
+      "ALT": "Vue panoramique impressionnante de la vallée de Viñales, Patrimoine de l'Humanité"
+    },
+
+    "ITINERARY": {
+      "TITLE": "Forfaits promotionnels",
+      "DESCRIPTION": "Ici vous découvrirez les meilleures offres pour votre séjour à Viñales."
+    },
+    "REVIEWS": {
+      "TITLE": "Avis et commentaires",
+      "DESCRIPTION": "Lisez les avis de nos clients et découvrez pourquoi Villa Los Reyes est le lieu parfait pour votre séjour. Votre avis compte aussi !."
     }
   },
-  "navbar": {
-    "inicio": "Accueil",
-    "conocenos": "À propos",
-    "servicios": "Services et installations",
-    "experiencias": "Expériences et aventures",
-    "resenas": "Avis",
-    "paquetes": "Forfaits promotionnels",
-    "reservar": "Réserver"
-  },
-  "promo": {
-    "organiza": "Organisez votre voyage avec nous",
-    "verano": "Super promotion d'été. Profitez jusqu'à <strong>10 % de réduction</strong>",
-    "paquetes": "Découvrez nos forfaits promotionnels"
-  },
-  "about": {
-    "info": {
-      "title": "Découvrez\nVilla Los Reyes",
-      "description": "Bienvenue à Villa Los Reyes à Viñales. Avec plus de 20 ans d’expérience, nous offrons des services hôteliers et para-hôteliers adaptés à vos besoins. Nous nous engageons à assurer votre confort maximal dans un éco-resort disposant d’électricité 24 h/24. Venez profiter d’une expérience unique dans un cadre naturel incomparable.",
-      "button": "En savoir plus"
+
+  "SECTION_HEADER": {
+    "PACKAGE": {
+      "TITLE": "Forfaits en offre",
+      "DESCRIPTION": "Vivez la magie de Viñales avec nos forfaits exclusifs : <strong>hébergement accueillant</strong>, <strong>paysages inoubliables</strong> et <strong>expériences authentiques</strong>. Réservez dès aujourd'hui !",
+      "LINK_TEXT": "VOIR TOUS LES FORFAITS EN OFFRE"
     },
-    "mainHeader": {
-      "title": "Découvrez Villa Los Reyes",
-      "description": "Découvrez notre maison d’hôtes avec plus de <strong>20 ans d’expérience</strong>",
-      "imageAlt": "Façade de Villa Los Reyes"
+    "STAY_BENEFITS": {
+      "TITLE": "Services et Installations",
+      "DESCRIPTION": "Profitez de services exceptionnels : <strong>gastronomie locale, transferts et plus.</strong>\nTout pour un séjour inoubliable !",
+      "LINK_TEXT": "DÉCOUVREZ NOS SERVICES ET INSTALLATIONS"
     },
-    "location": {
-      "title": "Emplacement privilégié",
-      "description": "Située dans un environnement privilégié, Villa Los Reyes se trouve dans le pittoresque village de Viñales, offrant un accès facile et rapide à toutes les attractions locales tout en profitant de la tranquillité et de la beauté naturelle de la région."
+    "EXPERIENCES": {
+      "TITLE": "Expériences et Aventures",
+      "DESCRIPTION": "Découvrez Viñales avec nos excursions passionnantes : [équitation](/experiences/horseback-riding), [randonnée](/experiences/hiking), [cyclotours](/experiences/cycle-tours) et [plus](/experiences/other).\nDes aventures inoubliables dans un cadre naturel unique vous attendent !",
+      "LINK_TEXT": "VOIR TOUTES LES EXPÉRIENCES ET AVENTURES"
     },
-    "nature": {
-      "title": "Beauté naturelle",
-      "description": "À Villa Los Reyes, vous trouverez non seulement un lieu de repos, mais aussi une variété d’expériences et d’aventures. Nous proposons des activités écologiques guidées par des experts locaux, qui vous permettront d’explorer la beauté naturelle et culturelle de Viñales — des excursions à pied, à cheval, en voiture ou à vélo, jusqu’aux visites des plantations de tabac et des grottes."
+
+    "ROOMS_HOME": {
+      "TITLE": "Nos\nchambres",
+      "DESCRIPTION": "Nos cinq chambres indépendantes offrent intimité, salles de bains privées et accès à diverses zones communes, le tout dans un environnement entouré de jardins luxuriants avec vue sur les imposants mogotes de la vallée de Viñales.",
+      "LINK_TEXT": "DÉCOUVREZ PLUS"
     },
-    "comfort": {
-      "title": "Confort",
-      "description": "Villa Los Reyes est un éco-resort privé de construction moderne, équipé de panneaux solaires garantissant l’électricité 24h/24. Il propose cinq chambres confortables, un restaurant servant des plats locaux et internationaux, ainsi qu’un bar avec une exquise sélection de cocktails cubains. Il dispose également d’une piscine idéale pour les journées chaudes et d’un accès pour fauteuils roulants. Depuis ses terrasses, vous pourrez admirer une vue majestueuse sur les mogotes, complétant une expérience unique de confort et de nature."
+    "ROOMS": {
+      "TITLE": "Cela peut vous intéresser",
+      "DESCRIPTION": "Découvrez <strong>Viñales</strong> avec nos <strong>excursions</strong> passionnantes.\nDes <strong>aventures inoubliables</strong> dans un cadre naturel unique vous attendent !",
+      "LINK_TEXT": "Découvrez plus"
     },
-    "sustainability": {
-      "title": "Durabilité",
-      "description": "Nous sommes fiers d’annoncer que notre villa est durable, l’énergie électrique que nous utilisons étant produite par des panneaux solaires, contribuant ainsi à la protection de l’environnement. De plus, nous avons mis en œuvre des pratiques de recyclage et d’utilisation efficace de l’eau, garantissant que chaque aspect de notre fonctionnement minimise l’impact écologique et favorise un avenir plus vert et plus sain."
+    "PACKAGES": {
+      "TITLE": "Offres disponibles",
+      "DESCRIPTION": "Découvrez nos forfaits promotionnels et économisez tout en profitant d'offres exclusives conçues pour vous. Profitez-en maintenant !"
     }
   },
-  "images": {
-    "aboutSection": {
-      "mainAlt": "Vue générale de Villa Los Reyes",
-      "thumb1Alt": "Chambre d’hôtes confortable",
-      "thumb2Alt": "Espace bar et restaurant de la villa",
-      "thumb3Alt": "Panneaux solaires sur la propriété"
+
+  "NAVBAR": {
+    "HOME": "Accueil",
+    "ABOUT": "À propos",
+    "SERVICES": "Services et installations",
+    "EXPERIENCES": "Expériences et aventures",
+    "REVIEWS": "Avis",
+    "PACKAGES": "Forfaits promotionnels",
+    "BOOK_NOW": "Réserver",
+    "LANGUAGE": "Langue"
+  },
+
+  "REVIEWS": {
+    "USEFUL_COUNT": "personnes ont trouvé cela utile",
+    "USEFUL_QUESTION": "Cet avis vous a-t-il semblé utile ?",
+    "YES": "Oui",
+    "NO": "Non",
+    "LOAD_MORE": "Voir plus",
+    "WRITE_REVIEW": "Écrire un avis",
+    "NO_REVIEWS": "Aucun avis disponible."
+  },
+
+  "REVIEW_FORM": {
+    "ANONYMOUS_GREETING": "Évaluez nos services !",
+    "FORM_TITLE": "Évaluation <br />des services",
+    "FORM_SUBTITLE": "Partagez votre expérience avec nous !",
+    "AUTH_PROMPT": "Nous voulons vous entendre.<br />Connectez-vous pour nous laisser<br />votre avis",
+    "AUTH_BUTTON": "Continuer avec Google",
+    "TEXTAREA_PLACEHOLDER": "Décrivez votre expérience",
+    "EMPTY_WARNING": "Comment s'est passé votre séjour à Villa Los Reyes ? Écrivez un bref avis pour pouvoir le publier.",
+    "CHARACTER_COUNTER": "caractères",
+    "FORM_DESCRIPTION": "Partagez votre expérience avec nous ! Votre avis nous aide à nous améliorer et à vous offrir un meilleur service",
+    "SUBMIT_BUTTON": "Envoyer"
+  },
+
+  "ITINERARY": {
+    "ITINERARY_TITLE": "Itinéraire détaillé",
+    "INCLUDES_TITLE": "Cette offre comprend",
+    "INCLUDES": {
+      "LODGING": "Hébergement",
+      "DURATION": "Durée",
+      "DAY": "Jour",
+      "EXPERIENCES": "Expériences et aventures",
+      "GASTRONOMY": "Gastronomie",
+      "TRANSPORTATION": "Transport"
+    },
+    "TOTAL": "Total",
+    "RESERVE_BUTTON": "Réserver maintenant"
+  },
+
+  "STEPS": {
+    "STEP_1": {
+      "TITLE": "Étape 1",
+      "DESCRIPTION": "Données de réservation"
+    },
+    "STEP_2": {
+      "TITLE": "Étape 2",
+      "DESCRIPTION": "Détails du client"
+    },
+    "STEP_3": {
+      "TITLE": "Étape 3",
+      "DESCRIPTION": "Confirmation"
     }
   },
-  "experiences": {
-    "header": {
-      "title": "Expériences et Aventures",
-      "description": "Découvrez Viñales avec nos excursions passionnantes : balades à cheval, randonnées, circuits à vélo et bien plus encore.\nDes aventures inoubliables vous attendent dans un cadre naturel unique !",
-      "linkText": "Voir toutes les expériences et aventures"
+
+  "STAY": {
+    "TITLE_DATE": "Dates du séjour",
+    "TITLE_GUESTS": "Clients",
+    "LABEL_CHECK_IN": "Date d'arrivée",
+    "LABEL_CHECK_OUT": "Date de départ",
+    "ADULTS_TITLE": "Adultes",
+    "ADULTS_CAPTION": "Plus de 12 ans",
+    "KIDS_TITLE": "Enfants",
+    "KIDS_CAPTION": "Moins de 12 ans"
+  },
+  "NAV": {
+    "BACK": "Précédent",
+    "NEXT": "Suivant"
+  },
+
+  "CONTACT": {
+    "TITLE": "Informations de contact",
+    "DESCRIPTION": "Les informations collectées dans cette section se limitent aux données d'une seule personne responsable de la réservation.",
+    "PLACEHOLDER_NAME": "Prénom",
+    "PLACEHOLDER_LASTNAME": "Nom",
+    "PLACEHOLDER_EMAIL": "Courrier électronique",
+    "PHONE_NUMBER": "Téléphone",
+    "COUNTRY": "Pays",
+    "ADDITIONAL_DETAILS_TITLE": "Détails supplémentaires",
+    "ADDITIONAL_DETAILS_DESC": "Vous pouvez fournir des informations supplémentaires concernant votre séjour que vos hôtes devraient connaître.",
+    "PLACEHOLDER_NOTES": "Demandes et expériences"
+  },
+  "SUMMARY": {
+    "TITLE": "Résumé du coût",
+    "ADULT": "Adulte",
+    "ADULTS": "Adultes",
+    "CHILD": "Enfant",
+    "CHILDREN": "Enfants",
+    "PROMO_DISCOUNT": "Remise promotionnelle",
+    "PENDING": "En attente",
+    "TOTAL": "Total"
+  },
+
+  "CONFIRMATION": {
+    "HEADER_TITLE": "Confirmation de la réservation",
+    "HEADER_DESC": "Veuillez vous assurer que les données saisies sont correctes",
+    "CARD_TITLE": "Résumé de la réservation",
+    "GUEST_INFO": "Informations du client",
+    "CHECK_IN": "Arrivée",
+    "CHECK_OUT": "Départ",
+    "YOUR_BOOKING": "Votre réservation",
+    "PACKAGE": "Forfait :",
+    "ACCOMMODATION": "Hébergement",
+    "ADDRESS_DISPLAY": "Calle Salvador Cisneros # 206-C, Viñales, Pinar del Río, Cuba",
+    "TOTAL": "Total",
+    "SUBMIT_BUTTON": "Demander la Réservation",
+    "PROCESS_BUTTON": "Traitement en cours..."
+  },
+
+  "REQUEST_STATUS": {
+    "SUCCESS_TITLE": "Merci de nous avoir choisis !",
+    "SUCCESS_MSG_1": "Votre demande de réservation a été effectuée avec succès. Dans un délai maximum de 24 heures, vous recevrez la confirmation par le courrier électronique fourni.",
+    "SUCCESS_MSG_2": "Si vous avez d'autres demandes ou préoccupations, n'hésitez pas à nous contacter.",
+    "ERROR_TITLE": "Oups ! Quelque chose s'est mal passé",
+    "ERROR_MSG_1": "Nous avons rencontré un problème technique lors du traitement automatique de votre demande.",
+    "ERROR_MSG_2": "Pour garantir votre séjour, nous vous recommandons de nous contacter directement :",
+    "EMAIL_BTN": "Envoyer un e-mail direct",
+    "WHATSAPP_BTN": "Contacter par WhatsApp"
+  },
+
+  "CAROUSEL": {
+    "SLIDE_1": {
+      "ALT_TEXT": "Façade de Villa Los Reyes à Viñales avec toit en tuiles rouges et jardin avant",
+      "HEADING": "Vos vacances\navec nous !",
+      "DESCRIPTION": "Découvrez Viñales avec nous !\nAventures naturelles, vues magnifiques et tranquillité."
     },
-    "items": {
-      "cabalgatas": {
-        "title": "Balades à cheval",
-        "alt": "Balades à cheval à travers les vallées de Viñales"
-      },
-      "senderismo": {
-        "title": "Randonnée",
-        "alt": "Randonnée à travers les mogotes et les sentiers naturels de Viñales"
-      },
-      "ciclotours": {
-        "title": "Circuits à vélo",
-        "alt": "Circuits à vélo à travers les paysages ruraux de Viñales"
-      },
-      "otras": {
-        "title": "Autres expériences",
-        "alt": "Autres expériences uniques à la Villa Los Reyes"
-      }
+    "SLIDE_2": {
+      "ALT_TEXT": "Terrasse extérieure avec piscine, parasols rouges et vue sur les mogotes de Viñales",
+      "HEADING": "Vos vacances\navec nous !",
+      "DESCRIPTION": "Découvrez Viñales avec nous !\nAventures naturelles, vues magnifiques et tranquillité."
+    },
+    "SLIDE_3": {
+      "ALT_TEXT": "Système de panneaux solaires installés sur la propriété pour une énergie durable",
+      "HEADING": "Vos vacances\navec nous !",
+      "DESCRIPTION": "Découvrez Viñales avec nous !\nAventures naturelles, vues magnifiques et tranquillité."
+    },
+    "SLIDE_4": {
+      "ALT_TEXT": "Vue de l'intérieur de la chambre vers le patio privé à travers la porte",
+      "HEADING": "Vos vacances\navec nous !",
+      "DESCRIPTION": "Découvrez Viñales avec nous !\nAventures naturelles, vues magnifiques et tranquillité."
     }
   },
-  "rooms": {
-    "info": {
-      "title": "Nos chambres",
-      "description": "Nos cinq chambres indépendantes offrent intimité, salles de bain privées et accès à diverses zones communes, le tout entouré de jardins luxuriants et avec vue sur les majestueux mogotes de la vallée de Viñales.",
-      "button": "DÉCOUVRIR PLUS"
-    },
-    "images": {
-      "room1Alt": "Chambre avec lits doubles et salle de bain privée",
-      "room1Name": "Chambre 1",
-      "room1Details": "2 lits / Salle de bain privée / 4 personnes",
-      "room2Alt": "Chambre double avec salle de bain partagée et décoration traditionnelle",
-      "room2Name": "Chambre 2",
-      "room2Details": "1 lit / Salle de bain partagée / 2 personnes",
-      "room3Alt": "Suite avec vue sur le jardin et mobilier moderne",
-      "room3Name": "Chambre 3",
-      "room3Details": "Suite / Vue sur le jardin / 3 personnes"
-    }
+
+  "PROMO": {
+    "ORGANIZE": "Organisez votre voyage avec nous",
+    "SUMMER": "Super promotion d'été. Gagnez jusqu'à <strong>10% de remise</strong>",
+    "PACKAGES": "Découvrez nos forfaits promotionnels"
   },
-  "packages": {
-    "title": "Forfaits en promotion",
-    "description": "Découvrez la magie de Viñales avec nos forfaits exclusifs : hébergement confortable,\npaysages inoubliables et expériences authentiques. Réservez dès aujourd'hui !",
-    "linkText": "VOIR TOUS LES FORFAITS EN PROMOTION",
-    "packageOne": {
-      "title": "Aventure Nature",
-      "duration": "2 Nuits / 3 Jours",
-      "description": "Plongez dans des paysages uniques, explorez les mogotes et profitez d'activités en plein air qui vous connecteront à l'essence rurale de Cuba.",
-      "price": "250,00 $ par personne"
-    },
-    "packageTwo": {
-      "title": "Détente & Plage",
-      "duration": "3 Nuits / 4 Jours",
-      "description": "Un forfait conçu pour ceux qui recherchent un équilibre entre la tranquillité de la campagne et la beauté des plages à proximité. Parfait pour les familles ou les groupes qui souhaitent combiner repos et plaisir.",
-      "price": "250,00 $ par personne"
-    },
-    "packageThree": {
-      "title": "Romance à Viñales",
-      "duration": "2 Nuits / 3 Jours",
-      "description": "Laissez-vous envelopper par la magie de Viñales lors d'un voyage romantique à travers des paysages spectaculaires, des dîners intimes et des moments de détente inoubliables.",
-      "price": "250,00 $ par personne"
-    }
-  },
-  "discoverServices": {
-    "header": {
-      "title": "Services et Installations",
-      "description": "Profitez de services exceptionnels : gastronomie locale, transferts et plus encore.\nTout pour un séjour inoubliable !",
-      "linkText": "VOIR TOUTES LES EXPÉRIENCES ET AVENTURES"
-    },
-    "services": {
-      "gastronomy": {
-        "title": "Gastronomie",
-        "src": "assets/images/services/gastronomia.jpg",
-        "alt": "Servi dans un restaurant local, cuisine cubaine typique"
-      },
-      "mobility": {
-        "title": "Mobilité",
-        "src": "assets/images/services/movilidad.jpg",
-        "alt": "Véhicule touristique pour les transferts à Viñales et à Cuba"
-      },
-      "tripPlanner": {
-        "title": "Trip Planner",
-        "src": "assets/images/services/trip planner.jpg",
-        "alt": "Guide montrant la carte et le plan de voyage aux visiteurs"
-      },
-      "massages": {
-        "title": "Massages",
-        "src": "assets/images/services/masajes.jpg",
-        "alt": "Masseuse appliquant un traitement relaxant"
-      },
-      "laundry": {
-        "title": "Blanchisserie",
-        "src": "assets/images/services/lavandería.jpg",
-        "alt": "Vêtements pliés et repassés dans le service de blanchisserie"
-      }
-    }
-  },
-  "servicesFacilities": {
-    "header": {
-      "title": "Services et installations",
-      "description": "Découvrez les services qui rendront votre séjour inoubliable"
-    },
-    "sections": [
-      {
-        "title": "Découvrez nos installations",
-        "description": "Nous offrons une expérience unique avec nos chambres indépendantes, offrant intimité et confort. Profitez des vues panoramiques depuis nos terrasses, parfaites pour se détendre. Promenez-vous dans nos jardins luxuriants et imprégnez-vous de la tranquillité de la nature. Nous disposons également d'une piscine rafraîchissante pour votre plaisir. Venez vivre un séjour inoubliable.",
-        "link": "En savoir plus sur nos installations"
-      },
-      {
-        "title": "Découvrez nos services",
-        "description": "Profitez d'une délicieuse cuisine cubaine préparée par des chefs locaux, du transport pour explorer la région, et de l'assistance de notre gestionnaire de voyages pour profiter pleinement de votre séjour. Nous proposons également un service de blanchisserie, des massages relaxants pour se ressourcer, et des cours de danse pour s'immerger dans la culture cubaine.",
-        "link": "En savoir plus sur nos services"
-      }
-    ]
-  },
-  "services": {
-    "header": {
-      "title": "Nos services",
-      "description": "Découvrez des services qui rendront votre séjour inoubliable."
-    },
-    "sections": [
-      {
-        "title": "Gastronomie",
-        "description": "Dans notre restaurant et notre bar, vous profiterez de la véritable cuisine cubaine, ainsi que d’options végétariennes, italiennes et méditerranéennes. Nous proposons des petits-déjeuners, des dîners, ainsi que des collations et des plats à emporter si vous êtes en déplacement. Ne manquez pas notre cocktail cubain, où chaque boisson reflète la saveur authentique de Cuba. Venez goûter le meilleur de notre cuisine !",
-        "features": {
-          "title": "Services :",
-          "items": [
-            "Petits-déjeuners",
-            "Dîners",
-            "Cocktails",
-            "Snacks",
-            "À emporter",
-            "Wifi"
-          ]
-        }
-      }
-    ]
+
+  "FOOTER": {
+    "CONTACTS_TITLE": "Contacts",
+    "CHAT_TITLE": "Communiquez avec nous !",
+    "CHAT_DESCRIPTION": "Envoyez-nous vos commentaires, questions ou préoccupations. Nous serons ravis de vous aider et de vous contacter.",
+    "CHAT_BUTTON": "Chat en ligne",
+    "RIGHTS": "Tous droits réservés",
+    "COPIED": "Copié"
   }
 }

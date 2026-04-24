@@ -1,0 +1,154 @@
+[
+  {
+    "id": 1,
+    "category": "horseback",
+    "name": "Promenades à cheval",
+    "title": "Balade à cheval à Viñales : nature, culture et tradition à chaque pas",
+    "linkText": "Découvrez toutes les balades à cheval",
+    "desc": "Parcourir <strong>Viñales à cheval</strong> est une <strong>expérience immersive</strong> qui révèle l'essence du <strong>paysage cubain</strong>. Entre mogotes imposants et champs de tabac verdoyants, le parcours permet de découvrir des fermes traditionnelles où le tabac et le café sont cultivés de manière artisanale. Cette activité, accessible à tous les niveaux, encourage le tourisme durable, renforçant le lien avec les communautés locales et préservant l'environnement naturel.",
+    "image": {
+      "src": "assets/imgs/adventures/horseback/vinales-horseback-tour-hero.webp",
+      "alt": "Cavalier parcourant les sentiers de la vallée de Viñales avec des mogotes en arrière-plan"
+    },
+    "previewItems": [
+      {
+        "slug": "mountain-ride",
+        "image": {
+          "src": "assets/imgs/adventures/horseback/mountain-ride/horseback-mountain-path-vinales.webp",
+          "alt": "Touristes à cheval sur un sentier avec vue sur les mogotes de Viñales"
+        },
+        "title": "Chevauchée vers la montagne"
+      },
+      {
+        "slug": "amazing-landscape",
+        "image": {
+          "src": "assets/imgs/adventures/horseback/amazing-landscape/amazing-landscape-red-soil-riders.webp",
+          "alt": "Cavaliers parcourant les sentiers de terre rouge caractéristiques de la Vallée de Palmarito"
+        },
+        "title": "Un paysage fascinant"
+      },
+      {
+        "slug": "sunset-ride",
+        "image": {
+          "src": "assets/imgs/adventures/horseback/sunset-ride/sunset-ride-valley-dusk-view.webp",
+          "alt": "Touristes profitant du coucher de soleil sur la vallée depuis un belvédère"
+        },
+        "title": "Le soleil couchant"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "category": "hiking",
+    "name": "Randonnées",
+    "title": "Randonnée à Viñales : entre montagnes, vallées et traditions vivantes",
+    "linkText": "Découvrez toutes les randonnées",
+    "desc": "S'aventurer sur les sentiers de Viñales, c'est découvrir un environnement vibrant où la biodiversité, l'air pur et les paysages montagneux marquent le rythme de la marche. Les itinéraires traversent des vallées fertiles et des belvédères naturels, tandis que l'interaction avec les paysans locaux révèle des coutumes agricoles transmises depuis des générations. Une expérience enrichissante qui allie aventure, culture et respect de l'environnement.",
+    "image": {
+      "src": "assets/imgs/adventures/hiking/vinales-hiking-group-tour-hero.webp",
+      "alt": "Groupe de randonneurs marchant sur un sentier étroit dans la vallée"
+    },
+    "previewItems": [
+      {
+        "slug": "hell-to-paradise",
+        "image": {
+          "src": "assets/imgs/adventures/hiking/hell-to-paradise/vinales-traditional-tobacco-hut.webp",
+          "alt": "Cabane traditionnelle de paysans avec toit de chaume dans une vallée verte et exubérante à Viñales."
+        },
+        "title": "De l'enfer au paradis"
+      },
+      {
+        "slug": "amazing-sunrise",
+        "image": {
+          "src": "assets/imgs/adventures/hiking/amazing-sunrise/vinales-sunrise-sea-of-clouds.webp",
+          "alt": "Lever de soleil doré sur la mer de nuages et les mogotes de la Vallée de Viñales, Cuba."
+        },
+        "title": "Lever de soleil incroyable"
+      },
+      {
+        "slug": "tobacco-inside",
+        "image": {
+          "src": "assets/imgs/adventures/hiking/tobacco-inside/vinales-tobacco-farmer-field.webp",
+          "alt": "Paysan cubain avec chapeau traditionnel et cigare travaillant dans une plantation de tabac avec les mogotes au fond."
+        },
+        "title": "Tabac à l'intérieur"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "category": "cycletours",
+    "name": "Cyclotours",
+    "title": "Viñales sur roues : une traversée entre nature et tradition",
+    "linkText": "Découvrez tous les cyclotours",
+    "desc": "Parcourir Viñales à vélo est une façon dynamique et authentique de se connecter avec ses paysages emblématiques. Les chemins serpentent entre les mogotes, les fermes de tabac et les décors ruraux pleins de vie, permettant une immersion totale dans l'environnement. Le contact avec les paysans et leurs savoirs traditionnels ajoute une valeur culturelle à cette expérience active, où le mouvement devient une forme de découverte.",
+    "image": {
+      "src": "assets/imgs/adventures/cycletours/vinales-cycling-group-hero.webp",
+      "alt": "Groupe de cyclistes parcourant un sentier de terre rouge avec des vues panoramiques sur les mogotes de la Vallée de Viñales."
+    },
+    "previewItems": [
+      {
+        "slug": "el-calvario-ride",
+        "image": {
+          "src": "assets/imgs/adventures/cycletours/el-calvario-ride/calvario-scenic-drive.webp",
+          "alt": "Route goudronnée serpentant entre de majestueux mogotes verts sous un ciel bleu avec des nuages blancs."
+        },
+        "title": "El Calvario"
+      },
+      {
+        "slug": "resbaloso-river-tour",
+        "image": {
+          "src": "assets/imgs/adventures/cycletours/resbaloso-river-tour/resbaloso-natural-pool.webp",
+          "alt": "Piscine naturelle aux eaux cristallines alimentée par une petite cascade sur la rivière Resbaloso."
+        },
+        "title": "El Resbaloso"
+      },
+      {
+        "slug": "valley-explorer",
+        "image": {
+          "src": "assets/imgs/adventures/cycletours/valley-explorer/prehistory-mural-vinales.webp",
+          "alt": "Immense peinture rupestre moderne sur le flanc d'un mogote dans la Vallée de la Pénitence."
+        },
+        "title": "Parcourir les vallées"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "category": "others",
+    "name": "Autres",
+    "title": "Au-delà de la vallée : expériences uniques à Viñales",
+    "linkText": "Découvrez d'autres expériences",
+    "desc": "Viñales surprend par la diversité de ses propositions qui vont bien au-delà de ses paysages montagneux. À quelques kilomètres, Cayo Jutías invite à la détente entre eaux turquoise et sables blancs, parfaits pour nager, plonger ou simplement déconnecter. Sur la terre ferme, les fermes agroécologiques ouvrent leurs portes aux visiteurs avec des pratiques durables et des saveurs authentiques. Une destination qui allie nature, saveur locale et moments de sérénité absolue.",
+    "image": {
+      "src": "assets/imgs/adventures/others/tropical-beach-vinales-adventure-hero.webp",
+      "alt": "Groupe de cyclistes parcourant un sentier de terre rouge avec des vues panoramiques sur les mogotes de la Vallée de Viñales."
+    },
+    "previewItems": [
+      {
+        "slug": "cayo-jutias-beach-paradise",
+        "image": {
+          "src": "assets/imgs/adventures/others/cayo-jutias-beach-paradise/aerial-view-cayo-jutias-beach-paradise.webp",
+          "alt": "Vue aérienne de la plage paradisiaque de Cayo Jutías avec des eaux turquoise et du sable blanc à Cuba"
+        },
+        "title": "Une plage paradisiaque"
+      },
+      {
+        "slug": "vinales-intense-adventure",
+        "image": {
+          "src": "assets/imgs/adventures/others/vinales-intense-adventure/grilled-lobster-cayo-jutias-beach.webp",
+          "alt": "Queues de langouste fraîche grillant sur un barbecue sur la plage de Cayo Jutías avec la mer des Caraïbes turquoise en arrière-plan."
+        },
+        "title": "Une journée intense"
+      },
+      {
+        "slug": "vinales-day-trip",
+        "image": {
+          "src": "assets/imgs/adventures/shared/vinales-day-trip/classic-blue-car-vinales-valley-tour.webp",
+          "alt": "Une voiture classique américaine de couleur bleue circulant sur un chemin de terre rougeâtre avec les mogotes et la végétation de Viñales au fond."
+        },
+        "title": "Viñales : excursion d'un jour"
+      }
+    ]
+  }
+]

@@ -1,0 +1,134 @@
+{
+  "category": "others",
+  "title": "Autres expériences",
+  "adventures": [
+    {
+      "id": 1,
+      "slug": "cayo-jutias-beach-paradise",
+      "relatedPackageSlug": "romance-vinales",
+      "title": "Une plage paradisiaque",
+      "desc": "<strong>Cayo Jutías</strong>, l'une des plus belles destinations de Cuba avec <strong>accès direct en voiture</strong>, se distingue par son <strong>sable blanc</strong> et ses <strong>eaux cristallines</strong> baignées par le <strong>soleil des Caraïbes</strong>. En plus de vous détendre sur ses <strong>plages paradisiaques</strong>, vous pouvez profiter d'<strong>activités</strong> comme le <strong>snorkeling</strong> et la <strong>plongée</strong>, en explorant les récifs de <strong>corail vibrants</strong> et la <strong>vie marine</strong>. Un lieu idéal pour ceux qui recherchent <strong>beauté naturelle</strong> et <strong>aventure aquatique</strong>.",
+      "imgs": [
+        {
+          "src": "assets/imgs/adventures/others/cayo-jutias-beach-paradise/aerial-view-cayo-jutias-beach-paradise.webp",
+          "alt": "Vue aérienne de la plage paradisiaque de Cayo Jutías avec des eaux turquoise et du sable blanc à Cuba"
+        }
+      ],
+      "tips": [
+        "Chaussures fermées",
+        "Pantalons longs",
+        "Bouteille d'eau",
+        "Répulsif anti-moustiques",
+        "Protection solaire"
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "vinales-intense-adventure",
+      "relatedPackageSlug": "relaxing-beach",
+      "title": "Une journée intense",
+      "desc": "<strong>Cayo Jutías</strong>, accessible en <strong>voiture</strong>, est l'une des <strong>plages</strong> les plus spectaculaires de <strong>Cuba</strong>, avec son <strong>sable blanc</strong> et ses <strong>eaux cristallines</strong> baignées par le soleil des Caraïbes. En plus de vous détendre sur ses <strong>plages paradisiaques</strong>, vous pouvez profiter d'activités comme le <strong>snorkeling</strong> et la <strong>plongée</strong>, et explorer le <strong>Mural de la Préhistoire</strong> et le <strong>Canopy El Fortín</strong>. L'excursion comprend également une visite de la <strong>Gran Caverna de Santo Tomás</strong>, l'un des <strong>systèmes cavernicoles les plus grands d'Amérique latine et des Caraïbes</strong>, offrant une combinaison parfaite de <strong>beauté naturelle</strong>, <strong>aventure</strong> et <strong>exploration culturelle</strong>.",
+      "imgs": [
+        {
+          "src": "assets/imgs/adventures/others/vinales-intense-adventure/grilled-lobster-cayo-jutias-beach.webp",
+          "alt": "Queues de langouste fraîche grillant sur un barbecue sur la plage de Cayo Jutías avec la mer des Caraïbes turquoise en arrière-plan."
+        },
+        {
+          "src": "assets/imgs/adventures/others/vinales-intense-adventure/canopy-zip-line-adventure-vinales.webp",
+          "alt": "Une personne profitant d'un parcours en tyrolienne (canopy) à travers la dense végétation tropicale à Viñales."
+        },
+        {
+          "src": "assets/imgs/adventures/others/vinales-intense-adventure/prehistoric-mural-vinales-valley.webp",
+          "alt": "Le coloré Mural de la Préhistoire peint sur le flanc d'un mogote dans la luxuriante Vallée de Viñales, Cuba."
+        }
+      ],
+      "tips": [
+        "Chaussures fermées",
+        "Pantalons longs",
+        "Bouteille d'eau",
+        "Répulsif anti-moustiques",
+        "Protection solaire"
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "santo-tomas-great-cave",
+      "relatedPackageSlug": "nature-tradition",
+      "title": "Gran Caverna de Santo Tomás",
+      "desc": "Découvrez la majestueuse <strong>Gran Caverna de Santo Tomás</strong>, l'un des <strong>systèmes cavernicoles</strong> les plus impressionnants de <strong>Cuba</strong> et parmi les <strong>10 plus grands d'Amérique latine et des Caraïbes</strong>. Avec environ <strong>45 km de galeries sur sept niveaux</strong>, elle offre une expérience unique pour les amoureux de la <strong>nature</strong> et de la <strong>spéléologie</strong>, avec des <strong>formations rocheuses</strong> telles que des <strong>stalactites</strong>, <strong>stalagmites</strong> et <strong>colonnes</strong>. Équipés de <strong>casques</strong> et de <strong>lampes</strong>, les randonneurs exploreront ce fascinant <strong>monde souterrain</strong> entouré d'une <strong>végétation luxuriante</strong>, vivant une <strong>aventure inoubliable</strong> dans cette merveille du <strong>karst cubain</strong>.",
+      "imgs": [
+        {
+          "src": "assets/imgs/adventures/others/santo-tomas-great-cave/explorer-inside-santo-tomas-cave-vinales.webp",
+          "alt": "Une personne debout sur une passerelle en bois à l'intérieur de la grotte de Santo Tomás, regardant vers le paysage luxuriant de la vallée de Viñales, Cuba."
+        }
+      ],
+      "tips": [
+        "Chaussures fermées",
+        "Pantalons longs",
+        "Bouteille d'eau",
+        "Répulsif anti-moustiques",
+        "Protection solaire"
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "vinales-horse-carriage-tour",
+      "relatedPackageSlug": "vinales-families",
+      "title": "Pour tous les âges",
+      "desc": "Nous proposons une <strong>inoubliable</strong> <strong>promenade</strong> en <strong>calèche</strong> <strong>tirée</strong> <strong>par</strong> <strong>des chevaux</strong>, idéale pour les <strong>personnes</strong> <strong>âgées</strong>, les personnes en situation de <strong>handicap</strong> et les <strong>enfants</strong>, permettant de profiter du <strong>paysage</strong> <strong>impressionnant</strong> des <strong>vallées</strong> <strong>de</strong> <strong>Viñales</strong>, célèbres pour leur <strong>beauté</strong> <strong>naturelle</strong> et leur <strong>riche</strong> <strong>culture</strong> <strong>paysanne</strong>. Durant le parcours, vous aurez l'occasion d'interagir avec les <strong>habitants</strong>, de découvrir leurs <strong>traditions</strong> et de vous immerger dans la culture <strong>tabacole</strong> millénaire de la région, le tout depuis le confort et la tranquillité d'une <strong>calèche</strong>, conçue pour votre <strong>confort maximal</strong> et votre plaisir.",
+      "imgs": [
+        {
+          "src": "assets/imgs/adventures/others/vinales-horse-carriage-tour/traditional-horse-carriage-ride-vinales.webp",
+          "alt": "Touristes profitant d'une balade en calèche à travers les sentiers ruraux de la Vallée de Viñales."
+        }
+      ],
+      "tips": [
+        "Chaussures fermées",
+        "Pantalons longs",
+        "Bouteille d'eau",
+        "Répulsif anti-moustiques",
+        "Protection solaire"
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "vinales-day-trip",
+      "relatedPackageSlug": "natural-adventure",
+      "title": "Viñales: day trip",
+      "desc": "Profitez au maximum de votre visite à <strong>Viñales</strong> avec notre <strong>excursion</strong> d'une journée, un <strong>forfait</strong> <strong>tout</strong> <strong>compris</strong> qui combine <strong>nature</strong> et <strong>culture</strong>. Parcourez en <strong>voiture</strong> <strong>américaine</strong> la <strong>Vallée</strong> <strong>de</strong> San <strong>Vicente</strong>, visitez la <strong>Cueva</strong> <strong>del</strong> <strong>Indio</strong> et le <strong>Palenque</strong> <strong>de</strong> <strong>los</strong> <strong>Cimarrones</strong>, profitez des vues depuis <strong>Los</strong> <strong>Jazmines</strong> et explorez le <strong>Mural</strong> <strong>de</strong> <strong>la</strong> <strong>Préhistoire</strong>. Ensuite, marchez dans la <strong>Vallée</strong> <strong>de</strong> <strong>La</strong> <strong>Penitencia</strong>, découvrez les <strong>plantations</strong> <strong>de</strong> <strong>tabac</strong> et revenez dans une <strong>calèche</strong> <strong>tirée</strong> <strong>par</strong> <strong>des chevaux</strong>. L'<strong>expérience</strong> inclut un <strong>déjeuner</strong> à <strong>Los</strong> <strong>Reyes</strong> et un parcours à <strong>cheval</strong> dans la <strong>Vallée</strong> <strong>du</strong> <strong>Palmarito</strong>, avec des options alternatives comme le <strong>vélo</strong> ou la visite de la <strong>Cueva</strong> <strong>de</strong> <strong>la</strong> <strong>Vaca</strong>.",
+      "imgs": [
+        {
+          "src": "assets/imgs/adventures/shared/vinales-day-trip/classic-blue-car-vinales-valley-tour.webp",
+          "alt": "Une voiture classique américaine de couleur bleue circulant sur un chemin de terre rougeâtre avec les mogotes et la végétation de Viñales au fond."
+        }
+      ],
+      "tips": [
+        "Chaussures fermées",
+        "Pantalons longs",
+        "Bouteille d'eau",
+        "Répulsif anti-moustiques",
+        "Protection solaire"
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "vinales-heritage-tour",
+      "relatedPackageSlug": "natural-adventure",
+      "title": "Histoire, culture et nature",
+      "desc": "Découvrez l'<strong>histoire</strong>, la <strong>culture</strong> et la <strong>nature</strong> de <strong>Viñales</strong> lors d'une excursion complète qui inclut la <strong>Cueva</strong> <strong>del</strong> <strong>Indio</strong>, le <strong>Palenque</strong> <strong>de</strong> <strong>los</strong> <strong>Cimarrones</strong> et l'<strong>écotage</strong> <strong>du</strong> <strong>tabac</strong>, où vous apprendrez l'élaboration du <strong>cigare</strong> <strong>cubain</strong>. Admirez le <strong>Mural</strong> <strong>de</strong> <strong>la</strong> <strong>Préhistoire</strong>, profitez de <strong>vues</strong> <strong>panoramiques</strong> depuis les vallées <strong>Palmarito</strong> et <strong>La</strong> <strong>Penitencia</strong>, et depuis la terrasse de l'<strong>Hôtel</strong> <strong>Los</strong> <strong>Jazmines</strong>. L'expérience se complète par une visite chez un paysan <strong>tabaculteur</strong> et un tour du <strong>centre</strong> <strong>historique</strong> de <strong>Viñales</strong>.",
+      "imgs": [
+        {
+          "src": "assets/imgs/adventures/shared/vinales-heritage-tour/prehistoric-mural-vinales-heritage-tour.webp",
+          "alt": "Grand Mural de la Préhistoire peint sur un mogote, représentant l'évolution historique dans la Vallée de Viñales."
+        }
+      ],
+      "tips": [
+        "Chaussures fermées",
+        "Pantalons longs",
+        "Bouteille d'eau",
+        "Répulsif anti-moustiques",
+        "Protection solaire"
+      ]
+    }
+  ]
+}

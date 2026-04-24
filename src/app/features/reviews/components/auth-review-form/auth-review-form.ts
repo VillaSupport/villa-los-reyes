@@ -78,6 +78,14 @@ export class AuthReviewForm {
     };
   }
 
+  getClassStar(rating: number, starIndex: number) {
+    const isFilled = rating >= starIndex;
+    return {
+      color: isFilled ? '#A3D0BD' : '#ccc',
+      class : isFilled ? "icon-star_fill" : "icon-star"
+    }
+  }
+
   async loginWithGoogle() {
     if (this.isProcessingLogin()) return;
     this.isProcessingLogin.set(true);
