@@ -1,11 +1,11 @@
 <div class="wrapper-nav">
   <div class="section-nav">
     <button (click)="handlePrev()" class="nav-btn prev" [disabled]="prevDisabled()">
-      <span class="material-symbols-outlined arrow-icon">arrow_back</span> {{'NAV.BACK' | translate}}
+      <span class="icon icon-arrow_back arrow-icon"></span> {{'NAV.BACK' | translate}}
     </button>
 
     <button (click)="handleNext()" class="nav-btn next" [disabled]="nextDisabled()">
-      {{'NAV.NEXT' | translate}} <span class="material-symbols-outlined arrow-icon">arrow_forward</span>
+      {{'NAV.NEXT' | translate}} <span class="icon icon-arrow_forward arrow-icon"></span>
     </button>
   </div>
 </div>

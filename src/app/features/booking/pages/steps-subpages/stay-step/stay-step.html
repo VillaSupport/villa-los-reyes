@@ -11,9 +11,7 @@
       "STAY.LABEL_CHECK_IN" | translate
     }}</label>
     <div class="vlr-date-control">
-      <span class="material-symbols-outlined vlr-date-icon"
-        >calendar_month</span
-      >
+      <span class="icon icon-calendar_month vlr-date-icon"></span>
       <div class="vlr-input-field date-display">
         {{
           checkInControl.value
@@ -23,7 +21,7 @@
       </div>
       <input
         #checkInPicker
-       class="real-date-input"
+        class="real-date-input"
         id="checkIn"
         type="date"
         [formControl]="checkInControl"
@@ -34,8 +32,7 @@
     <validation-feedback
       [triggerControls]="[checkInControl]"
       [messageSources]="[checkInControl]"
-    >
-    </validation-feedback>
+    />
   </div>
 
   <div class="guest-count-item" style="grid-area: adults">
@@ -49,11 +46,11 @@
     </div>
     <div class="counter-controls">
       <button type="button" class="counter-btn" (click)="decreaseAdult()">
-        <span class="material-symbols-outlined remove">do_not_disturb_on</span>
+        <span class="icon icon-do_not_disturb_on"></span>
       </button>
       <span class="counter-value vlr-form-text">{{ adults }}</span>
       <button type="button" class="counter-btn" (click)="increaseAdult()">
-        <span class="material-symbols-outlined add">add_circle</span>
+        <span class="icon icon-add_circle"></span>
       </button>
     </div>
   </div>
@@ -64,9 +61,7 @@
     }}</label>
 
     <div class="vlr-date-control">
-      <span class="material-symbols-outlined vlr-date-icon"
-        >calendar_month</span
-      >
+      <span class="icon icon-calendar_month vlr-date-icon"></span>
       <div class="vlr-input-field date-display vlr-input-disabled">
         {{
           checkOutControl.value
@@ -84,7 +79,7 @@
     <validation-feedback
       [triggerControls]="[checkOutControl, dateGroup]"
       [messageSources]="[checkOutControl, dateGroup]"
-    ></validation-feedback>
+    />
   </div>
 
   <div class="guest-count-item" style="grid-area: kids">
@@ -98,11 +93,12 @@
     </div>
     <div class="counter-controls">
       <button type="button" class="counter-btn" (click)="decreaseChild()">
-        <span class="material-symbols-outlined remove">do_not_disturb_on</span>
+        <span class="icon icon-do_not_disturb_on"></span>
+        
       </button>
       <span class="counter-value vlr-form-text">{{ children }}</span>
       <button type="button" class="counter-btn" (click)="increaseChild()">
-        <span class="material-symbols-outlined add">add_circle</span>
+        <span class="icon icon-add_circle"></span>
       </button>
     </div>
   </div>
@@ -116,13 +112,13 @@
       class="nav-btn prev"
       [disabled]="stepNumber() === 0"
     >
-      <span class="material-symbols-outlined">arrow_back</span>
+      <span class="icon icon-arrow_back "></span>
       {{ "NAV.BACK" | translate }}
     </button>
 
     <button type="button" (click)="onNextStep()" class="nav-btn next">
       {{ "NAV.NEXT" | translate }}
-      <span class="material-symbols-outlined">arrow_forward</span>
+      <span class="icon icon-arrow_forward"></span>
     </button>
   </div>
 </div>

@@ -21,7 +21,7 @@ export class CarouselSection {
 
   slides =
     input.required<
-      { src: string; altKey: string; titleKey: string; subtitleKey: string }[]
+      { src: string; alt: string; title: string; subtitle: string }[]
     >();
 
   current = signal(0);

@@ -29,7 +29,7 @@
             <article class="review-card">
               <header class="review-header">
                 <div class="user-block">
-                  <img
+                  <img referrerpolicy="no-referrer"
                     [src]="getReviewUserPhoto(review)"
                     alt="User Avatar"
                     class="user-avatar"
@@ -42,13 +42,9 @@
                       <div class="review-stars">
                         @for (s of stars; track s) {
                           <span
-                            class="material-symbols-outlined"
-                            [style.color]="'#404944'"
-                            [style.font-variation-settings]="
-                              getStarStyle(review.rating, s)
-                            "
+                          class="icon"
+                            [class]="getClassStar(review.rating, s)"
                           >
-                            star
                           </span>
                         }
                       </div>

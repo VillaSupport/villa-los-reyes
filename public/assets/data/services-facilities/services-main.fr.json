@@ -1,0 +1,81 @@
+[
+  {
+    "id": 1,
+    "category": "facilities",
+    "name": "Installations",
+    "title": "Découvrez nos installations",
+    "linkText": "Découvrez nos installations",
+    "desc": "Nous offrons une expérience unique avec nos <strong>chambres indépendantes</strong>, offrant intimité et confort. Profitez de vues panoramiques depuis nos <strong>terrasses</strong>, parfaites pour se détendre. Promenez-vous dans nos <strong>jardins</strong> luxuriants et plongez dans la tranquillité de la nature. De plus, nous disposons d'une <strong>piscine</strong> rafraîchissante pour votre plaisir. Venez vivre un séjour inoubliable.",
+    "image": {
+      "src": "assets/imgs/outdoor/gardens/lush-garden-red-flowers-pool.webp",
+      "alt": "Vues panoramiques des jardins et de la structure de la Villa"
+    },
+    "previewItems": [
+      {
+        "title": "Chambre 1",
+        "description": "2 lits / salle de bain privée / 4 personnes",
+        "slug": "rooms/1",
+        "image": {
+          "src": "assets/imgs/rooms/room-01/double-bedroom-air-conditioning.webp",
+          "alt": "Chambre double avec climatisation"
+        }
+      },
+      {
+        "title": "Chambre 2",
+        "description": "3 lits / salle de bain privée / 4 personnes",
+        "slug": "rooms/2",
+        "image": {
+          "src": "assets/imgs/rooms/room-02/triple-room-blue-wall-garden-view.webp",
+          "alt": "Chambre triple avec mur bleu et vue sur le jardin"
+        }
+      },
+      {
+        "title": "Chambre 3",
+        "description": "2 lits / salle de bain privée / 4 personas",
+        "slug": "rooms/3",
+        "image": {
+          "src": "assets/imgs/rooms/room-03/decorative-lighting-golden-hour.webp",
+          "alt": "Éclairage décoratif pendant l'heure dorée"
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Services",
+    "category": "stay-benefits",
+    "title": "Découvrez nos services",
+    "linkText": "Découvrez nos services",
+    "desc": "Profitez d'une délicieuse <strong>gastronomie cubaine</strong> préparée par des chefs locaux, de <strong>transports</strong> pour explorer la région, et de l'assistance de notre <strong>planificateur de voyages</strong> pour profiter au maximum de votre séjour. De plus, nous proposons un service de <strong>blanchisserie</strong>, des <strong>massages</strong> relaxants pour recharger vos énergies et des <strong>cours de danse</strong> pour vous immerger dans la culture cubaine.",
+    "image": {
+      "src": "assets/imgs/services/gastronomy/dining-table-setup-villa-los-reyes.webp",
+      "alt": "Table servie avec des plats traditionnels cubains"
+    },
+    "previewItems": [
+      {
+        "slug": "#gastronomy",
+        "title": "Gastronomie",
+        "image": {
+          "src": "assets/imgs/services/gastronomy/villa-los-reyes-dining-area-interior.webp",
+          "alt": "Vue accueillante de l'intérieur du restaurant Villa Los Reyes avec tables en bois dressées et décoration rustique"
+        }
+      },
+      {
+        "slug": "#mobility",
+        "title": "Mobilité",
+        "image": {
+          "src": "assets/imgs/services/mobility/classic-red-desoto-car-vinales.webp",
+          "alt": "Voiture classique américaine de couleur rouge (DeSoto) garée devant Villa Los Reyes, disponible pour les transferts et tours."
+        }
+      },
+      {
+        "slug": "#trip-planner",
+        "title": "Trip Planner",
+        "image": {
+          "src": "assets/imgs/services/trip-planner/trip-planner-map-camera-coffee.webp",
+          "alt": "Vue supérieure de mains désignant une carte sur une table en bois avec café, une caméra ancienne et un passeport"
+        }
+      }
+    ]
+  }
+]

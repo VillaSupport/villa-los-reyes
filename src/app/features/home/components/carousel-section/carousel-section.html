@@ -1,14 +1,19 @@
 <div class="carousel-container">
   @for (slide of slides(); let i = $index; track i) {
+    <img
+      class="carousel-image"
+      [src]="slide.src"
+      [alt]="slide.alt | translate"
+      [style.display]="current() === i ? 'block' : 'none'"
+      [attr.loading]="i === 0 ? 'eager' : 'lazy'"
+      [attr.fetchpriority]="i === 0 ? 'high' : 'low'"
+    />
+
     @if (current() === i) {
-
-      <img class="carousel-image" [src]="slide.src" [alt]="slide.altKey | translate" />
-
       <div class="carousel-overlay" (click)="$event.stopPropagation()">
-
         <div class="text-content">
-          <h1>{{ slide.titleKey | translate }}</h1>
-          <p>{{ slide.subtitleKey | translate }}</p>
+          <h1>{{ slide.title | translate }}</h1>
+          <p>{{ slide.subtitle | translate }}</p>
 
           <div class="indicator-container">
             @for (slide of slides(); let i = $index; track i) {
@@ -17,11 +22,10 @@
                 [class.active]="current() === i"
                 [style.width.px]="getIndicatorSize(i)"
                 [style.height.px]="getIndicatorSize(i)"
-                (click)="goToSlide(i)">
-              </button>
+                (click)="goToSlide(i)"
+              ></button>
             }
           </div>
-
         </div>
 
         <div class="left-side">
@@ -35,9 +39,7 @@
             <i class="fa-solid fa-angle-right"></i>
           </button>
         </div>
-
       </div>
-
     }
   }
 </div>

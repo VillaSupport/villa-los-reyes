@@ -13,6 +13,7 @@ button,
 select {
   font-family: inherit;
 }
+
 input[type="date"] {
   text-align: left;
   -webkit-appearance: none;

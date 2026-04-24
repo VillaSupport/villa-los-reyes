@@ -1,0 +1,146 @@
+{
+    "category": "horseback",
+    "title": "Toutes les balades à cheval",
+    "adventures": [
+        {
+            "id": 1,
+            "slug": "mountain-ride",
+            "relatedPackageSlug": "romance-vinales",
+            "title": "Chevauchée vers la montagne",
+            "desc": "Découvrez <strong>Los Acuáticos</strong>, une <strong>communauté</strong> de <strong>montagne</strong> à <strong>Viñales</strong> connue pour sa <strong>foi dans les propriétés curatives de l'eau</strong>. Plongez dans ses <strong>traditions</strong>, échangez avec les résidents et profitez de leur <strong>hospitalité</strong>, tout en admirant les <strong>vues impressionnantes</strong> sur les <strong>Vallées de Viñales</strong> et de <strong>Palmarito</strong>. Une expérience unique qui combine <strong>nature</strong>, <strong>culture</strong> et <strong>tradition</strong>.",
+            "imgs": [
+                {
+                    "src": "assets/imgs/adventures/horseback/mountain-ride/horseback-mountain-path-vinales.webp",
+                    "alt": "Touristes à cheval sur un sentier avec vue sur les mogotes de Viñales"
+                },
+                {
+                    "src": "assets/imgs/adventures/horseback/mountain-ride/panoramic-view-vinales-valley.webp",
+                    "alt": "Vue panoramique depuis la montagne vers la végétation exubérante de la vallée"
+                },
+                {
+                    "src": "assets/imgs/adventures/horseback/mountain-ride/los-acuaticos-community-house.webp",
+                    "alt": "Maison traditionnelle de la communauté Los Acuáticos avec un cheval blanc qui pâture"
+                }
+            ],
+            "tips": [
+                "Chaussures fermées",
+                "Pantalons longs",
+                "Bouteille d'eau",
+                "Répulsif anti-moustiques",
+                "Protection solaire"
+            ]
+        },
+        {
+            "id": 2,
+            "slug": "amazing-landscape",
+            "relatedPackageSlug": "relaxing-beach",
+            "title": "Un paysage fascinant",
+            "desc": "Explorez la <strong>Vallée de Palmarito</strong>, un paysage impressionnant où le contraste entre <strong>terres rouges</strong> et <strong>végétation exubérante</strong> reflète l'essence <strong>rurale cubaine</strong>. Profitez de <strong>vues panoramiques</strong>, découvrez les <strong>traditions paysannes</strong> et apprenez-en davantage sur la <strong>culture du tabac</strong> avec les <strong>agriculteurs locaux</strong>.",
+            "imgs": [
+                {
+                    "src": "assets/imgs/adventures/horseback/amazing-landscape/amazing-landscape-red-soil-riders.webp",
+                    "alt": "Cavaliers parcourant les sentiers de terre rouge caractéristiques de la Vallée de Palmarito"
+                },
+                {
+                    "src": "assets/imgs/adventures/horseback/amazing-landscape/amazing-landscape-tobacco-farm-hut.webp",
+                    "alt": "Maison de tabac traditionnelle où l'on apprend les techniques de culture des agriculteurs locaux"
+                },
+                {
+                    "src": "assets/imgs/adventures/horseback/amazing-landscape/amazing-landscape-lush-countryside.webp",
+                    "alt": "Vue panoramique de la végétation exubérante et de l'environnement rural de la zone de Palmarito"
+                }
+            ],
+            "tips": [
+                "Chaussures fermées",
+                "Pantalons longs",
+                "Bouteille d'eau",
+                "Répulsif anti-moustiques",
+                "Protection solaire"
+            ]
+        },
+        {
+            "id": 3,
+            "slug": "sunset-ride",
+            "relatedPackageSlug": "nature-tradition",
+            "title": "Le soleil couchant",
+            "desc": "Une promenade à <strong>cheval</strong> à <strong>Viñales</strong> permet de parcourir montagnes et vallées entourées d'une nature vivante. En chemin, les agriculteurs locaux partagent leur travail dans les <strong>cultures de tabac</strong>, tout en profitant d'un <strong>cigare créole</strong> et d'un <strong>Saoco Viñalero</strong> au coucher du soleil dans la paisible <strong>Vallée du Silence</strong>. La journée se termine par une baignade rafraîchissante dans un <strong>lac</strong> voisin, tout en contemplant le <strong>coucher de soleil</strong>.",
+            "imgs": [
+                {
+                    "src": "assets/imgs/adventures/horseback/sunset-ride/sunset-ride-valley-dusk-view.webp",
+                    "alt": "Touristes profitant du coucher de soleil sur la vallée depuis un belvédère"
+                },
+                {
+                    "src": "assets/imgs/adventures/horseback/sunset-ride/sunset-ride-tobacco-culture-sharing.webp",
+                    "alt": "Agriculteur local partageant la tradition du tabac cubain avec des visiteurs"
+                },
+                {
+                    "src": "assets/imgs/adventures/horseback/sunset-ride/sunset-ride-saoco-cocktail-tasting.webp",
+                    "alt": "Visiteurs dégustant un Saoco Viñalero dans un coco naturel pendant la pause"
+                }
+            ],
+            "tips": [
+                "Chaussures fermées",
+                "Pantalons longs",
+                "Bouteille d'eau",
+                "Répulsif anti-moustiques",
+                "Protection solaire"
+            ]
+        },
+        {
+            "id": 4,
+            "slug": "la-penitencia",
+            "relatedPackageSlug": "vinales-families",
+            "title": "Vallée de La Penitencia",
+            "desc": "Explorez la <strong>Vallée de La Penitencia</strong>, une petite mais impressionnante destination aux <strong>paysages agricoles</strong> et d'une grande <strong>beauté naturelle</strong>. Lors de cette excursion, vous profiterez de sa richesse <strong>agricole</strong> et visiterez le <strong>Mural de la Préhistoire</strong>, l'une des <strong>peintures à fresque</strong> les plus <strong>grandes</strong> au <strong>grand air</strong>, représentant l'évolution géologique de Viñales.",
+            "imgs": [
+                {
+                    "src": "assets/imgs/adventures/horseback/la-penitencia/la-penitencia-valley-overlook.webp",
+                    "alt": "Vue panoramique de la beauté naturelle et des paysages agricoles de la vallée"
+                },
+                {
+                    "src": "assets/imgs/adventures/horseback/la-penitencia/la-penitencia-prehistory-mural.webp",
+                    "alt": "Le Mural de la Préhistoire à Viñales, l'une des plus grandes peintures à fresque en plein air"
+                },
+                {
+                    "src": "assets/imgs/adventures/horseback/la-penitencia/la-penitencia-farmers-work.webp",
+                    "alt": "Agriculteurs locaux travaillant dans les cultures traditionnelles de la Vallée de La Penitencia"
+                }
+            ],
+            "tips": [
+                "Chaussures fermées",
+                "Pantalons longs",
+                "Bouteille d'eau",
+                "Répulsif anti-moustiques",
+                "Protection solaire"
+            ]
+        },
+        {
+            "id": 5,
+            "slug": "classic-vinales",
+            "relatedPackageSlug": "vinales-360",
+            "title": "Le plus célèbre",
+            "desc": "Découvrez l'impressionnante <strong>Vallée de Viñales</strong>, une destination de renommée mondiale pour son ampleur, sa beauté et sa richesse culturelle. Lors d'un parcours d'environ deux heures, vous pourrez admirer ses <strong>paysages uniques</strong> et vous immerger dans l'<strong>authentique vie paysanne</strong>, en interagissant avec les <strong>habitants locaux</strong> et en découvrant leurs <strong>traditions</strong>. Une expérience enrichissante qui combine <strong>nature</strong>, <strong>histoire</strong> et l'essence <strong>culturelle</strong> de <strong>Viñales</strong>.",
+            "imgs": [
+                {
+                    "src": "assets/imgs/adventures/horseback/classic-vinales/classic-vinales-valley-panorama.webp",
+                    "alt": "Impressionnante vue panoramique de la Vallée de Viñales, Patrimoine de l'Humanité"
+                },
+                {
+                    "src": "assets/imgs/adventures/horseback/classic-vinales/classic-vinales-agricultural-fields.webp",
+                    "alt": "Vastes champs de culture montrant l'authentique vie agricole de la région"
+                },
+                {
+                    "src": "assets/imgs/adventures/horseback/classic-vinales/classic-vinales-traditional-farmhouse.webp",
+                    "alt": "Maison paysanne traditionnelle entourée de cultures au cœur de la vallée"
+                }
+            ],
+            "tips": [
+                "Chaussures fermées",
+                "Pantalons longs",
+                "Bouteille d'eau",
+                "Répulsif anti-moustiques",
+                "Protection solaire"
+            ]
+        }
+    ]
+}

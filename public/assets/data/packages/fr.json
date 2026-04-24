@@ -1,0 +1,236 @@
+[
+    {
+        "id": 1,
+        "slug": "natural-adventure",
+        "title": "Aventure Naturelle",
+        "desc": "Plongez dans des paysages uniques, explorez les mogotes et profitez d'activités de plein air qui vous connecteront à l'essence rurale de Cuba. Idéal pour les couples, les petits groupes ou les voyageurs en solo.",
+        "duration": "2 nuits / 3 jours",
+        "image": {
+            "src": "assets/imgs/adventures/horseback/mountain-ride/horseback-mountain-path-vinales.webp",
+            "alt": "Touristes à cheval sur un sentier avec vue sur les mogotes de Viñales"
+        },
+        "price": 0,
+        "currency": "USD",
+        "billingType": "par personne",
+        "itinerary": [
+            "Cocktail de bienvenue avec des jus naturels rafraîchissants ou des cocktails typiques. Après-midi libre pour se détendre sur la terrasse avec vue sur les mogotes. Dîner au restaurant avec des plats traditionnels cubains.",
+            "Petit-déjeuner au restaurant. Excursion à Cayo Jutías : \"Une plage paradisiaque\". Retour à la maison et dîner au restaurant.",
+            "Randonnée : \"Aube incroyable\". Petit-déjeuner au restaurant. Expériences et aventures : \"Grande Grotte de Santo Tomás\". Dîner au restaurant avec un menu spécial.",
+            "Petit-déjeuner d'adieu au restaurant avec des produits frais locaux. Départ vers la prochaine destination."
+        ],
+        "includes": {
+            "activities": [
+                "Randonnée",
+                "Cyclotour dans les environs (optionnel)"
+            ],
+            "gastronomy": [
+                "2 petits-déjeuners",
+                "1 déjeuner",
+                "2 dîners"
+            ],
+            "transportation": [
+                "Transferts pour toutes les excursions"
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "slug": "relaxing-beach",
+        "title": "Relax et Plage",
+        "desc": "Conçu spécialement pour les familles avec enfants, ce forfait combine des activités éducatives et récréatives qui permettront à tous de profiter d'une expérience inoubliable à Viñales.",
+        "duration": "3 nuits / 4 jours",
+        "image": {
+            "src": "assets/imgs/adventures/others/cayo-jutias-beach-paradise/aerial-view-cayo-jutias-beach-paradise.webp",
+            "alt": "Vue aérienne de la plage paradisiaque de Cayo Jutías avec des eaux turquoise et du sable blanc à Cuba"
+        },
+        "price": 0,
+        "currency": "USD",
+        "billingType": "par personne",
+        "itinerary": [
+            "Cocktail de bienvenue avec des jus naturels rafraîchissants ou des cocktails typiques. Après-midi libre pour se détendre sur la terrasse avec vue sur les mogotes. Dîner au restaurant avec des plats traditionnels cubains.",
+            "Petit-déjeuner au restaurant. Excursion à Cayo Jutías : \"Une plage paradisiaque\". Retour à la maison et dîner au restaurant.",
+            "Randonnée : \"Aube incroyable\". Petit-déjeuner au restaurant. Expériences et aventures : \"Grande Grotte de Santo Tomás\". Dîner au restaurant avec un menu spécial.",
+            "Petit-déjeuner d'adieu au restaurant avec des produits frais locaux. Départ vers la prochaine destination."
+        ],
+        "includes": {
+            "activities": [
+                "Journée complète à Cayo Jutías",
+                "Marche à l'aube",
+                "Visite d'une grotte"
+            ],
+            "gastronomy": [
+                "3 petits-déjeuners",
+                "2 déjeuners",
+                "3 dîners"
+            ],
+            "transportation": [
+                "Transferts à Cayo Jutías et excursions locales"
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "slug": "romance-vinales",
+        "title": "Romance à Viñales",
+        "desc": "Laissez-vous envelopper par la magie de Viñales avec un voyage romantique entre paysages spectaculaires, dîners intimes et moments de détente inoubliables.",
+        "duration": "2 nuits / 3 jours",
+        "image": {
+            "src": "assets/imgs/packages/romance-vinales/romantic-sunset-vinales-valley.webp",
+            "alt": "Un couple assis sur des chaises en bois regardant le coucher de soleil sur les mogotes brumeux de la vallée de Viñales."
+        },
+        "price": 0,
+        "currency": "USD",
+        "billingType": "par personne",
+        "itinerary": [
+            "Arrivée à la maison d'hébergement. Cocktail de bienvenue avec des attentions romantiques. Expériences et aventures : \"Viñales : histoire, culture et nature\". Dîner spécial au restaurant \"Los Reyes\" dans une ambiance intime.",
+            "Randonnée : \"Aube incroyable\". Petit-déjeuner au restaurant \"Los Reyes\". Après-midi libre ou massages optionnels. Dîner sous les étoiles sur la terrasse du restaurant.",
+            "Petit-déjeuner sur la terrasse avec vue sur les mogotes. Temps libre pour se promener dans le village avant le départ."
+        ],
+        "includes": {
+            "activities": [
+                "Randonnée à travers les lieux les plus emblématiques de Viñales",
+                "Chevauchée à l'aube"
+            ],
+            "gastronomy": [
+                "2 petits-déjeuners",
+                "1 déjeuner",
+                "2 dîners"
+            ],
+            "transportation": [
+                "Transferts pour excursions privées"
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "slug": "nature-tradition",
+        "title": "Nature et Tradition",
+        "desc": "Vivez une expérience unique à Viñales, où la nature et la tradition fusionnent dans des moments de romance, d'aventure et de détente inoubliables.",
+        "duration": "2 nuits / 3 jours",
+        "image": {
+            "src": "assets/imgs/packages/nature-tradition/cuban-tobacco-farmer-vinales.webp",
+            "alt": "Paysan avec chapeau fumant un cigare dans une plantation de tabac à Cuba."
+        },
+        "price": 0,
+        "currency": "USD",
+        "billingType": "par personne",
+        "itinerary": [
+            "Arrivée à la maison d'hébergement. Cocktail de bienvenue avec une boisson rafraîchissante locale. Après-midi libre ou promenade dans le village. Dîner au restaurant \"Los Reyes\".",
+            "Petit-déjeuner au restaurant \"Los Reyes\". Chevauchée : \"La Penitencia\". Visite d'une ferme de tabac avec déjeuner inclus. Expériences et aventures : \"Profitant du crépuscule\". Dîner avec musique traditionnelle.",
+            "Petit-déjeuner au restaurant \"Los Reyes\". Temps libre pour les achats ou pour visiter le Jardin Botanique. Départ vers la prochaine destination."
+        ],
+        "includes": {
+            "activities": [
+                "Randonnée dans la vallée de La Penitencia",
+                "Visite d'une ferme de tabac"
+            ],
+            "gastronomy": [
+                "2 petits-déjeuners",
+                "1 déjeuner",
+                "2 dîners"
+            ],
+            "transportation": [
+                "Transferts pour les excursions incluses"
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "slug": "vinales-360",
+        "title": "Viñales 360",
+        "desc": "Une escapade intense pour vivre l'essence de Viñales en une seule journée. Plongez dans l'histoire, la culture et la nature de la vallée de Viñales dans cette expérience compacte mais inoubliable. Découvrez des paysages de rêve, des sites emblématiques et des saveurs authentiques dans un parcours qui vous connecte au meilleur de l'occident cubain.",
+        "duration": "3 nuits / 4 jours",
+        "image": {
+            "src": "assets/imgs/packages/vinales-360/slide-vinales-360.webp",
+            "alt": "Groupe de cyclistes parcourant un sentier de terre rouge avec des vues panoramiques sur les mogotes de la vallée de Viñales."
+        },
+        "price": 0,
+        "currency": "USD",
+        "billingType": "par personne",
+        "itinerary": [
+            "Arrivée à la maison d'hébergement. Cocktail de bienvenue. Dîner au restaurant \"Los Reyes\".",
+            "Petit-déjeuner. Chevauchée : \"Le plus célèbre\" à travers la vallée de Viñales. Déjeuner au restaurant. Après-midi libre. Dîner avec des plats traditionnels.",
+            "Petit-déjeuner. Cyclotour : \"Parcourant les Vallées\". Déjeuner en route. Visite de la Grande Grotte de Santo Tomás. Dîner avec musique en direct.",
+            "Petit-déjeuner. Matinée libre pour des activités optionnelles. Départ vers la prochaine destination."
+        ],
+        "includes": {
+            "activities": [
+                "Chevauchée dans la vallée de Viñales",
+                "Cyclotour dans les environs",
+                "Visite de la grotte de Santo Tomás"
+            ],
+            "gastronomy": [
+                "3 petits-déjeuners",
+                "2 déjeuners",
+                "3 dîners"
+            ],
+            "transportation": [
+                "Transferts pour les excursions incluses"
+            ]
+        }
+    },
+    {
+        "id": 6,
+        "slug": "vinales-families",
+        "title": "Viñales en Famille",
+        "desc": "Conçu spécialement pour les familles avec enfants, ce forfait combine des activités éducatives et récréatives qui permettront à tous de profiter d'une expérience inoubliable à Viñales.",
+        "duration": "4 nuits / 5 jours",
+        "image": {
+            "src": "assets/imgs/adventures/hiking/amazing-sunrise/tourists-watching-sunrise-vinales.webp",
+            "alt": "Touristes profitant de la vue du lever du soleil depuis un porche en bois traditionnel à Viñales."
+        },
+        "price": 0,
+        "currency": "USD",
+        "billingType": "par personne",
+        "itinerary": [
+            "Arrivée à la maison d'hébergement. Cocktail de bienvenue avec des options pour adultes et enfants. Dîner en famille au restaurant.",
+            "Petit-déjeuner au restaurant \"Los Reyes\". Expérience et aventures : \"Tabac inside\". Déjeuner dans une ferme écologique pendant l'excursion. Dîner au restaurant \"Los Reyes\".",
+            "Petit-déjeuner au restaurant \"Los Reyes\". Viñales : histoire, culture et nature. Déjeuner au restaurant. Après-midi libre pour des jeux ou activités récréatives. Dîner thématique pour les enfants au restaurant \"Los Reyes\".",
+            "Petit-déjeuner au restaurant \"Los Reyes\". Expériences et aventures : \"Une journée intense\". Journée complète à la plage avec transport et déjeuner, et visite de la Grande Grotte de Santo Tomás. Dîner au restaurant \"Los Reyes\".",
+            "Petit-déjeuner d'adieu. Départ vers la prochaine destination."
+        ],
+        "includes": {
+            "activities": [
+                "Visite d'une ferme et de plantations",
+                "Excursion dans une grotte",
+                "Journée complète à la plage"
+            ],
+            "gastronomy": [
+                "4 petits-déjeuners",
+                "3 déjeuners",
+                "4 dîners"
+            ],
+            "transportation": [
+                "Transferts pour excursions et journée de plage"
+            ]
+        }
+    },
+    {
+        "id": 7,
+        "slug": "vinales-express",
+        "title": "Viñales Express",
+        "desc": "Découvrez l'essence de Viñales dans un parcours unique entre vallées, traditions et saveurs authentiques, avec des activités qui vous connecteront à sa nature et sa culture.",
+        "duration": "1 nuit / 2 jours",
+        "image": {
+            "src": "assets/imgs/packages/vinales-express/test-image.webp",
+            "alt": "Groupe de cyclistes parcourant un sentier de terre rouge avec des vues panoramiques sur les mogotes de la vallée de Viñales."
+        },
+        "price": 0,
+        "currency": "USD",
+        "billingType": "par personne",
+        "itinerary": [
+            "Départ de La Havane à 8h00. Bienvenue à la Villa Los Reyes. Visite du belvédère de l'Hôtel Los Jazmines et du Mural de la Préhistoire. Marche ou chevauchée de 2 heures avec dégustations locales. Déjeuner au restaurant. Après-midi libre pour explorer.",
+            "Petit-déjeuner léger optionnel à 7h00. Départ vers la prochaine destination."
+        ],
+        "includes": {
+            "activities": [],
+            "gastronomy": [
+                "1 petit-déjeuner",
+                "1 déjeuner"
+            ],
+            "transportation": [
+                "Prise en charge à La Havane"
+            ]
+        }
+    }
+]
