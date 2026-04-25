@@ -6,10 +6,11 @@ import {
   PLATFORM_ID,
   signal,
 } from '@angular/core';
-import { TranslatePipe } from '@ngx-translate/core';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { LangSelector } from './lang-selector/lang-selector';
 import { isPlatformBrowser } from '@angular/common';
+import { environment } from '../../../../../environments/environment';
 
 @Component({
   selector: 'navbar',
@@ -19,6 +20,7 @@ import { isPlatformBrowser } from '@angular/common';
 })
 export class Navbar {
   private platformId = inject(PLATFORM_ID);
+  private translate = inject(TranslateService);
   private isBrowser = isPlatformBrowser(this.platformId);
 
   menuOpen = signal(false);
@@ -49,6 +51,21 @@ export class Navbar {
   toggleMenu() {
     this.menuOpen.update((v) => !v);
   }
+
+  private readonly whatsapp =
+    environment.contactBusiness.whatsapp;
+
+
+handleBooking(): void {
+  if (isPlatformBrowser(this.platformId)) {
+    const lang = (this.translate.getCurrentLang() || 'es') as 'es'|'en'|'fr';
+    
+    const message = encodeURIComponent(this.whatsapp.defaultMessage[lang]);
+    
+    const url = `https://wa.me/${this.whatsapp.number}?text=${message}`;
+    window.open(url, '_blank', 'noopener noreferrer');
+  }
+}
 
   @HostListener('window:resize')
   onResize() {

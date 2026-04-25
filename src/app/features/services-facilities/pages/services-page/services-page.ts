@@ -48,12 +48,11 @@ export class ServicesPage {
       alt: 'HEADER.STAY_BENEFITS.ALT',
     },
   };
-  // TODO:Revisar services.sections.0.features.title
   private transformBenefits = (data?: StayBenefitsDetail) =>
     data?.benefits.map((benefit: Benefit) => {
       const { images } = benefit;
       return {
-        info: mapToInfoData(benefit, 'services.sections.0.features.title'),
+        info: mapToInfoData(benefit, 'LABELS.SERVICES'),
         images,
       };
     }) ?? [];
