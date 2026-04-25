@@ -23,7 +23,8 @@ export type BookingResult = { success: boolean; error?: any };
 @Component({
   selector: 'review-step',
   standalone: true,
-  imports: [DatePipe,TranslatePipe],
+  imports: [TranslatePipe],
+  providers: [DatePipe],
   templateUrl: './review-step.html',
   styleUrl: './review-step.css',
 })
@@ -31,6 +32,8 @@ export class ReviewStep {
   private packageService = inject(PackageService);
   private state = inject(ReservationStateService);
   private http = inject(HttpClient);
+  private datePipe = inject(DatePipe);
+
   slug = input.required<string>();
 
   stepNumber = input.required<number>();
@@ -44,10 +47,8 @@ export class ReviewStep {
   );
   public selectedPackage = toSignal(this.packageData$, { initialValue: null });
 
-  get bookingData(): BookingData {
-    // Paso 0: StayStep (Contiene dates: {checkIn, checkOut}, adults, children)
+  get payload() {
     const stayData = this.state.getStep(0) || {};
-    // Paso 1: ContactStep (Contiene name, lastName, email, phoneData: {dialCode, phoneNumber})
     const contactData = this.state.getStep(1) || {};
 
     return {
@@ -57,10 +58,13 @@ export class ReviewStep {
       phone: contactData.phoneData
         ? `${contactData.phoneData.dialCode} ${contactData.phoneData.phoneNumber}`
         : '',
-      checkIn: stayData.dates?.checkIn || '',
-      checkOut: stayData.dates?.checkOut || '',
+      country: contactData.phoneData?.country || 'No especificado', // Campo nuevo
+      packageName: this.selectedPackage()?.title || 'Personalizado', // Campo nuevo
+      checkIn: this.datePipe.transform(stayData.dates?.checkIn, 'dd/MM/yyyy', 'UTC') || '',
+      checkOut: this.datePipe.transform(stayData.dates?.checkOut, 'dd/MM/yyyy', 'UTC') || '',
       adults: stayData.adults || 0,
       children: stayData.children || 0,
+      additionalNotes: contactData.notes || 'Sin detalles adicionales', // Campo nuevo (Detalles adicionales)
     };
   }
 
@@ -71,10 +75,8 @@ export class ReviewStep {
     const { base, type, key, suffix } = environment.googleScript;
     const url = `${base}${type}${key}${suffix}`;
 
-    console.log('Procesando reserva...');
-
     this.http
-      .post(url, JSON.stringify(this.bookingData))
+      .post(url, JSON.stringify(this.payload))
       .pipe(
         finalize(() => this.isLoading.set(false)), // Se ejecuta siempre, sea error o éxito
       )
