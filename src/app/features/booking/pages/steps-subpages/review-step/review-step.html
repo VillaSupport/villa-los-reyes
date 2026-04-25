@@ -23,7 +23,7 @@
           {{ 'CONFIRMATION.GUEST_INFO' | translate }}
         </h3>
         <p class="vlr-form-text">
-          {{ bookingData.firstName }} {{ bookingData.lastName }}
+          {{ payload.firstName }} {{ payload.lastName }}
         </p>
       </div>
 
@@ -31,13 +31,13 @@
         <div class="col">
           <h3 class="vlr-form-text vlr-form-text-bold">{{ 'CONFIRMATION.CHECK_IN' | translate }}</h3>
           <p class="vlr-form-text">
-            {{ bookingData.checkIn | date: "dd/MM/yyyy" : "UTC" }}
+            {{ payload.checkIn}}
           </p>
         </div>
         <div class="col">
           <h3 class="vlr-form-text vlr-form-text-bold">{{ 'CONFIRMATION.CHECK_OUT' | translate }}</h3>
           <p class="vlr-form-text">
-            {{ bookingData.checkOut | date: "dd/MM/yyyy" : "UTC" }}
+            {{ payload.checkOut}}
           </p>
         </div>
       </div>
@@ -49,8 +49,8 @@
             <span>{{ 'CONFIRMATION.PACKAGE' | translate }}</span> {{ selectedPackage()?.title }}
           </p>
           <p class="vlr-form-text">
-            {{ bookingData.adults }} {{ (bookingData.adults === 1 ? 'SUMMARY.ADULT' : 'SUMMARY.ADULTS') | translate }}, 
-            {{ bookingData.children }} {{ (bookingData.children === 1 ? 'SUMMARY.CHILD' : 'SUMMARY.CHILDREN') | translate }}
+            {{ payload.adults }} {{ (payload.adults === 1 ? 'SUMMARY.ADULT' : 'SUMMARY.ADULTS') | translate }}, 
+            {{ payload.children }} {{ (payload.children === 1 ? 'SUMMARY.CHILD' : 'SUMMARY.CHILDREN') | translate }}
           </p>
         </div>
         <div class="col">

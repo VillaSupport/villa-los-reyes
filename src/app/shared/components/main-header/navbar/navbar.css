@@ -124,7 +124,7 @@
     right: 0;
     /* width: 280px; */
     width: 280px;
-    height: 100dvh;
+    height: 100vh;
 
     flex-direction: column;
     background: var(--primary-green);

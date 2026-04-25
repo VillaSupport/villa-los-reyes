@@ -97,19 +97,24 @@
 }
 
 .lightbox-content {
-  max-width: 90%;
-  max-height: 90vh;
-  position: relative;
+  width: 90vw;      /* Ocupa el 90% del ancho de la pantalla */
+  max-width: 1000px; /* Pero no más de 1000px para que no pierda calidad */
+  aspect-ratio: 16 / 9; /* <--- FUERZA LA PROPORCIÓN IGUAL PARA TODAS */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #000; /* Fondo negro por si la imagen no rellena perfecto */
+  border-radius: 0.5rem;
 }
 
 .lightbox-content img {
   width: 100%;
-  height: auto;
-  max-height: 90vh;
-  object-fit: contain;
-  border-radius: 0.5rem;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  height: 100%;
+  object-fit: cover; /* <--- IMPORTANTE: Hace que la imagen rellene el ratio sin deformarse */
+  display: block;
 }
+
 
 .close-btn {
   position: absolute;

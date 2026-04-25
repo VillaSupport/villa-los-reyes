@@ -11,7 +11,7 @@ export const environment = {
   googleScript: {
     base: 'https://script.google.com/macros',
     type: '/s/',
-    key: 'AKfycbzu8icwv5iLm3aPq6o3TDfAo-SlxB3gVwg8vMXZOYrwuxpTV59R3xbpYmW_TNsRt3Vlyg',
+    key: 'AKfycbxM5JolsO6ZmRHvDtA3sPibNJfE23PNAEuALGwD4aUbIrGs0yit_u8kAFCjz0M3ktzSvw',
     suffix: '/exec',
   },
   contactBusiness: {
