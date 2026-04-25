@@ -1,6 +1,6 @@
 <div class="gallery-grid">
   @if (mainImage(); as main) {
-    <div class="main-image-wrapper" [class.skeleton]="!mainImageLoaded()">
+    <div class="main-image-wrapper" [class.skeleton]="!mainImageLoaded()"  (click)="openImage(main)">
       <img
         [src]="main.src"
         [alt]="main.alt"
@@ -20,7 +20,7 @@
       }
     } @else {
       @for (image of thumbImages(); track $index) {
-        <div class="thumb-image-wrapper" [class.skeleton]="!allThumbsLoaded()">
+        <div class="thumb-image-wrapper" [class.skeleton]="!allThumbsLoaded()" (click)="openImage(image)">
           <img
             [src]="image.src"
             [alt]="image.alt"
@@ -33,3 +33,12 @@
     }
   }
 </div>
+
+@if (selectedImage(); as selected) {
+  <div class="lightbox-overlay" (click)="closeImage()">
+    <button class="close-btn" (click)="closeImage()">&times;</button>
+    <div class="lightbox-content" (click)="$event.stopPropagation()">
+      <img [src]="selected.src" [alt]="selected.alt" />
+    </div>
+  </div>
+}

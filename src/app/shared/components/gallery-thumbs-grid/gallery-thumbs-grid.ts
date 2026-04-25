@@ -13,6 +13,9 @@ export class GalleryThumbsGrid {
   thumbImages = input<ImgData[]>();
 
   showThumbs = input<boolean>(false);
+
+  selectedImage = signal<ImgData | null>(null);
+
   isActive = computed(() => {
     return this.showThumbs() || this.thumbImages() !== undefined;
   });
@@ -33,4 +36,12 @@ export class GalleryThumbsGrid {
     this.loadedThumbsCount.update(count => count + 1);
   }
 
+  // --- NUEVOS MÉTODOS ---
+  openImage(img: ImgData | undefined) {
+    if (img) this.selectedImage.set(img);
+  }
+
+  closeImage() {
+    this.selectedImage.set(null);
+  }
 }
