@@ -12,7 +12,7 @@ export const environment = {
   googleScript: {
     base: 'https://script.google.com/macros',
     type: '/s/',
-    key: 'AKfycby6niL4CQCXHCOFxAASOTOCWEYkQhnHnaXUsnu_CVZWXS07OIfeMHWjE24jHR0j_fQ13Q',
+    key: 'AKfycbzG2GtOc3wGwqsuyQmyoLfo8lOWl4T4WrDX1nkiiVzoE7kb8ZXo7mlNaD8-DwbsJf8mQw',
     suffix: '/exec',
   },
 
