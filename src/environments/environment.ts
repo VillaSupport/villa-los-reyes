@@ -24,8 +24,11 @@ export const environment = {
 
     whatsapp: {
       number: '5352741734',
-      defaultMessage:
-        '¡Hola!. Me gustaría recibir más información sobre las opciones de alojamiento y los servicios disponibles en Villa Los Reyes',
+      defaultMessage: {
+        es: "¡Hola!. Me gustaría recibir más información sobre las opciones de alojamiento y los servicios disponibles en Villa Los Reyes",
+        en: "Hello!. I would like to receive more information about the accommodation options and services available at Villa Los Reyes.",
+        fr: "Bonjour ! J'aimerais recevoir plus d'informations sur les options d'hébergement et les services disponibles a Villa Los Reyes.",
+      },
     },
 
     email: 'joanmanuel2008@yahoo.es',
