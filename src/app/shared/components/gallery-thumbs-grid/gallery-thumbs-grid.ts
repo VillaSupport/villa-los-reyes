@@ -22,11 +22,33 @@ export class GalleryThumbsGrid {
   constructor() {
   effect(() => {
     if (isPlatformBrowser(this.platformId)) {
-      // Si hay una imagen seleccionada, bloqueamos el scroll
-      // Esto evita que el HostListener del Navbar detecte movimiento
-      document.body.style.overflow = this.selectedImage() ? 'hidden' : 'auto';
+      const isOpen = !!this.selectedImage();
+      const body = document.body;
+      const html = document.documentElement;
+
+      if (isOpen) {
+        // Bloqueo estándar + Prevención de salto en iOS
+        body.style.overflow = 'hidden';
+        body.style.height = '100vh';
+        html.style.overflow = 'hidden';
+        
+        // Bloqueo de desplazamiento táctil (opcional pero recomendado)
+        body.addEventListener('touchmove', this.preventScroll, { passive: false });
+      } else {
+        // Restauración total
+        body.style.overflow = 'auto';
+        body.style.height = '';
+        html.style.overflow = 'auto';
+        
+        body.removeEventListener('touchmove', this.preventScroll);
+      }
     }
   });
+}
+
+// Método auxiliar para bloquear el swipe
+private preventScroll(e: TouchEvent) {
+  e.preventDefault();
 }
 
   isActive = computed(() => {
