@@ -13,7 +13,7 @@ import {
 } from '@angular/fire/auth';
 import { Observable, from } from 'rxjs';
 
-@Injectable({ providedIn: 'root' })
+@Injectable()
 export class AuthService {
   private auth = inject(Auth);
   private platformId = inject(PLATFORM_ID);

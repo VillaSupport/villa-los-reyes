@@ -12,9 +12,7 @@ import { isPlatformBrowser } from '@angular/common';
 export class GalleryThumbsGrid {
   mainImage = input.required<ImgData|undefined>();
   thumbImages = input<ImgData[]>();
-
   showThumbs = input<boolean>(false);
-
   selectedImage = signal<ImgData | null>(null);
 
   private platformId = inject(PLATFORM_ID);

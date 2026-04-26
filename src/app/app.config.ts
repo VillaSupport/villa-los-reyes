@@ -1,5 +1,15 @@
-import { ApplicationConfig, importProvidersFrom, provideBrowserGlobalErrorListeners, provideZonelessChangeDetection } from '@angular/core';
-import { provideRouter, withComponentInputBinding, withInMemoryScrolling, withRouterConfig } from '@angular/router';
+import {
+  ApplicationConfig,
+  importProvidersFrom,
+  provideBrowserGlobalErrorListeners,
+  provideZonelessChangeDetection,
+} from '@angular/core';
+import {
+  provideRouter,
+  withComponentInputBinding,
+  withInMemoryScrolling,
+  withRouterConfig,
+} from '@angular/router';
 
 import { routes } from './app.routes';
 import { provideHttpClient } from '@angular/common/http';
@@ -10,43 +20,34 @@ import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getAuth, provideAuth } from '@angular/fire/auth';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
-import { getStorage, provideStorage } from '@angular/fire/storage';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideBrowserGlobalErrorListeners(),
+    // provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection(),
     provideRouter(
       routes,
       withComponentInputBinding(),
       withInMemoryScrolling({
-        scrollPositionRestoration: 'enabled', // vuelve al inicio
-        anchorScrolling: 'enabled',           // permite #anclas
-
-      })
+        scrollPositionRestoration: 'enabled',
+        anchorScrolling: 'enabled',
+      }),
     ),
 
     provideHttpClient(),
     provideTranslateService({
       loader: provideTranslateHttpLoader({
         prefix: '/assets/data/',
-        suffix: '.json'
+        suffix: '.json',
       }),
       fallbackLang: 'es',
-      lang: 'es'
-    })
-    ,
+      lang: 'es',
+    }),
     provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideAuth(() => getAuth()),
-    provideFirestore(() => getFirestore()),
-
     {
-      provide:LocationStrategy,
-      useClass:HashLocationStrategy,
-
-    }
-  ]
+      provide: LocationStrategy,
+      useClass: HashLocationStrategy,
+    },
+  ],
 };
-
-
