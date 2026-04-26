@@ -18,7 +18,7 @@ import { map, Observable, shareReplay } from 'rxjs';
 import { AuthService } from '../../../services/auth-service';
 import { Review } from '../interfaces/reviews.interfaces';
 
-@Injectable({ providedIn: 'root' })
+@Injectable()
 export class ReviewsService {
   private firestore = inject(Firestore);
   private auth = inject(AuthService);

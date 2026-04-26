@@ -1,38 +1,68 @@
 import { Routes } from '@angular/router';
-import { AboutPage } from './features/about/pages/about-page/about-page';
-import { HomePage } from './features/home/pages/home-page/home-page';
-import { ReviewsPage } from './features/reviews/pages/reviews-page/reviews-page';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { getAuth, provideAuth } from '@angular/fire/auth';
+import { AuthService } from './services/auth-service';
+import { ReviewsService } from './features/reviews/services/reviews-service';
 
 export const routes: Routes = [
-
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: HomePage },
-  { path: 'about', component:AboutPage },
+  {
+    path: 'home',
+    loadComponent: () =>
+      import('./features/home/pages/home-page/home-page').then(
+        (m) => m.HomePage,
+      ),
+  },
+  {
+    path: 'about',
+    loadComponent: () =>
+      import('./features/about/pages/about-page/about-page').then(
+        (m) => m.AboutPage,
+      ),
+  },
+  {
+    path: 'reviews',
+    loadComponent: () =>
+      import('./features/reviews/pages/reviews-page/reviews-page').then(
+        (m) => m.ReviewsPage,
+      ),
+    // MOVER FIREBASE AQUÍ:
+    providers: [
+      provideFirestore(() => getFirestore()),
+      provideAuth(() => getAuth()),
+      AuthService, 
+      ReviewsService, 
+    ],
+  },
   {
     path: 'experiences',
-    loadChildren: () => import('./features/experiences/experiences.routes').then(m => m.EXPERIENCE_ROUTES)
+    loadChildren: () =>
+      import('./features/experiences/experiences.routes').then(
+        (m) => m.EXPERIENCE_ROUTES,
+      ),
   },
 
   {
     path: 'services-facilities',
-    loadChildren: () => import('./features/services-facilities/services-facilities.routes').then(m => m.SERVICES_FACILITIES_ROUTES)
+    loadChildren: () =>
+      import('./features/services-facilities/services-facilities.routes').then(
+        (m) => m.SERVICES_FACILITIES_ROUTES,
+      ),
   },
 
   {
     path: 'packages',
-    loadChildren: () => import('./features/packages/packages.routes').then(m => m.PACKAGE_ROUTES)
+    loadChildren: () =>
+      import('./features/packages/packages.routes').then(
+        (m) => m.PACKAGE_ROUTES,
+      ),
   },
 
   {
     path: 'booking',
-    loadChildren: () => import('./features/booking/booking.routes').then(m => m.BOOKING_ROUTES)
+    loadChildren: () =>
+      import('./features/booking/booking.routes').then((m) => m.BOOKING_ROUTES),
   },
 
-
-   {
-    path: 'reviews',
-    component: ReviewsPage
-  },
-
-  { path: '**', redirectTo: '/home' }
+  { path: '**', redirectTo: '/home' },
 ];

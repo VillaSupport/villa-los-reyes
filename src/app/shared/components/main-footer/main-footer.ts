@@ -23,12 +23,12 @@ import { environment } from '../../../../environments/environment';
 import { isPlatformBrowser } from '@angular/common';
 
 @Component({
-  selector: 'footer-section',
+  selector: 'main-footer',
   imports: [FaIconComponent, TranslatePipe],
   templateUrl: './main-footer.html',
   styleUrl: './main-footer.css',
 })
-export class FooterSection {
+export class MainFooter {
   private platformId = inject(PLATFORM_ID);
   private readonly config = environment.contactBusiness;
   private translate = inject(TranslateService);

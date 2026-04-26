@@ -56,9 +56,6 @@ importers:
       firebase-admin:
         specifier: ^13.5.0
         version: 13.7.0
-      i18n-iso-countries:
-        specifier: ^7.14.0
-        version: 7.14.0
       libphonenumber-js:
         specifier: ^1.12.33
         version: 1.12.41
@@ -2084,9 +2081,6 @@ packages:
   di@0.0.1:
     resolution: {integrity: sha512-uJaamHkagcZtHPqCIHZxnFrXlunQXgBOsZSUOWwFw31QJCAbyTBoHMW75YOTur5ZNx8pIeAKgf6GWIgaqqiLhA==}
 
-  diacritics@1.3.0:
-    resolution: {integrity: sha512-wlwEkqcsaxvPJML+rDh/2iS824jbREk6DUMUKkEaSlxdYHeS43cClJtsWglvw2RfeXGm6ohKDqsXteJ5sP5enA==}
-
   dom-serialize@2.2.1:
     resolution: {integrity: sha512-Yra4DbvoW7/Z6LBN560ZwXMjoNOSAN2wRsKFGc4iBeso+mpIA6qj1vfdf9HpMaKAqG6wXTy+1SYEzmNpKXOSsQ==}
 
@@ -2487,10 +2481,6 @@ packages:
   https-proxy-agent@7.0.6:
     resolution: {integrity: sha512-vK9P5/iUfdl95AI+JVyUuIcVtd4ofvtrOr3HNtM2yxC9bnMbEdp3x01OhQNnjb8IJYi38VlTE3mBXwcfvywuSw==}
     engines: {node: '>= 14'}
-
-  i18n-iso-countries@7.14.0:
-    resolution: {integrity: sha512-nXHJZYtNrfsi1UQbyRqm3Gou431elgLjKl//CYlnBGt5aTWdRPH1PiS2T/p/n8Q8LnqYqzQJik3Q7mkwvLokeg==}
-    engines: {node: '>= 12'}
 
   iconv-lite@0.4.24:
     resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==}
@@ -5868,8 +5858,6 @@ snapshots:
 
   di@0.0.1: {}
 
-  diacritics@1.3.0: {}
-
   dom-serialize@2.2.1:
     dependencies:
       custom-event: 1.0.1
@@ -6483,10 +6471,6 @@ snapshots:
       debug: 4.4.3
     transitivePeerDependencies:
       - supports-color
-
-  i18n-iso-countries@7.14.0:
-    dependencies:
-      diacritics: 1.3.0
 
   iconv-lite@0.4.24:
     dependencies:
