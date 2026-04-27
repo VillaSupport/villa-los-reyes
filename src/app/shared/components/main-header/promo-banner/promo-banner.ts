@@ -1,31 +1,28 @@
-import { Component, signal } from '@angular/core';
-import { TranslateService, TranslateModule } from '@ngx-translate/core';
-import { CommonModule } from '@angular/common';
+import { Component, inject, PLATFORM_ID, signal } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { RouterLink } from '@angular/router';
-
 
 @Component({
   selector: 'promo-banner',
   standalone: true,
   imports: [CommonModule, TranslateModule, RouterLink],
   templateUrl: './promo-banner.html',
-  styleUrls: ['./promo-banner.css']
+  styleUrls: ['./promo-banner.css'],
 })
 export class PromoBanner {
+  private platformId = inject(PLATFORM_ID);
+  private isBrowser = isPlatformBrowser(this.platformId);
+
   currentIndex = signal(0);
-  intervalId?: any;
+  private intervalId?: any;
 
-  // se usarán las keys de traducción, no los textos directos
-  messages = [
-    'PROMO.ORGANIZE',
-    'PROMO.SUMMER',
-    'PROMO.PACKAGES'
-  ];
+  messages = ['PROMO.ORGANIZE', 'PROMO.SUMMER', 'PROMO.PACKAGES'];
 
-
-
-  constructor() {
-    this.startRotation();
+  ngOnInit() {
+    if (this.isBrowser) {
+      this.startRotation();
+    }
   }
 
   startRotation() {
@@ -35,7 +32,7 @@ export class PromoBanner {
   }
 
   nextMessage() {
-    this.currentIndex.update(v => (v + 1) % this.messages.length);
+    this.currentIndex.update((v) => (v + 1) % this.messages.length);
   }
 
   ngOnDestroy() {

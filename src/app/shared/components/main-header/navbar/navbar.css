@@ -1,21 +1,14 @@
 :host {
+  font-family: "Poppins", sans-serif;
+  display: block;
+  width: 100%;
+
+  /* Variables de marca Villa Los Reyes */
   --primary-green: #00513d;
   --accent-orange: #f49516;
   --accent-hover: #ffb553;
   --white: #ffffff;
 
-  font-family: "Poppins", sans-serif;
-
-  display: block;
-  position: sticky; /* Cambiado a sticky para que funcione con navbarHidden */
-  top: 0;
-  width: 100%;
-  z-index: 100;
-  transition: transform 0.3s ease;
-}
-
-:host(.navbar-hidden) {
-  transform: translateY(-100%);
 }
 
 .navbar {
@@ -26,6 +19,8 @@
   padding: 0 24px;
   background-color: var(--primary-green);
   gap: 2rem;
+  position: relative;
+  z-index: 100;
 }
 
 .navbar-menu {
@@ -51,6 +46,7 @@
   color: var(--white);
   font-size: 16px;
   transition: color 0.3s ease;
+  cursor: pointer;
 }
 
 .navbar-menu a:hover,
@@ -68,6 +64,12 @@
   border-radius: 3px 3px 0 0;
 }
 
+.menu-toggle,
+.lang-label,
+.menu-overlay {
+  display: none;
+}
+
 .btn-reservar {
   padding: 12px 24px;
   border: none;
@@ -76,21 +78,12 @@
   color: var(--white);
   font-size: 16px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .btn-reservar:hover {
   background: var(--accent-hover);
-  /* transform: translateY(-1px); */
-}
-
-/* Icono (por defecto oculto) */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: var(--accent-orange);
+  transform: translateY(-1px);
 }
 
 .icon {
@@ -98,67 +91,50 @@
   height: 3rem;
 }
 
-.lang-label {
-  display: none; /* Oculto en pantallas grandes */
-}
-
-.lang-container {
-  display: flex;
-  align-items: center;
-}
-
-/* ==========================
-   RESPONSIVE: <= 1328px
-   ========================== */
 @media (max-width: 1200px) {
   .menu-toggle {
     display: flex;
     cursor: pointer;
+    color: var(--accent-orange);
     z-index: 400;
   }
 
-  /* Convertimos la misma lista en panel lateral */
   .navbar-menu {
     position: fixed;
     top: 0;
     right: 0;
-    /* width: 280px; */
     width: 280px;
     height: 100vh;
-
     flex-direction: column;
     background: var(--primary-green);
     align-items: start;
-    padding: 60px 24px 120px;
+    padding: 80px 24px;
     gap: 0.5rem;
 
-    overflow-y: auto;
-    overflow-x: hidden;
+    /* Por encima del overlay (200) pero bajo el botón (400) */
+    z-index: 300;
 
+    /* Animación */
     transform: translateX(100%);
     transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
-
-    z-index: 300;
+    overflow-y: auto;
   }
 
-  /* Solo visible cuando se abre */
   .navbar-menu.open {
     transform: translateX(0);
   }
 
-
+  /* Estilos de los items en el panel lateral */
   .navbar-menu li {
-    display: flex;
+    width: 100%;
     align-items: center;
     text-align: left;
-    width: 100%;
     max-width: none;
-    min-height: 4rem; /* Un poco más alto para dar aire */
+    min-height: 4rem;
     padding: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Línea mucho más sutil */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
-
   .navbar-menu li:nth-last-child(-n + 2) {
     border-bottom: none;
   }
@@ -171,65 +147,55 @@
     width: 100%;
     height: 2px;
     background: var(--accent-orange);
-    box-shadow: 0 0 8px rgba(244, 149, 22, 0.4);
+    box-shadow: 0 0 8px rgba(22, 244, 33, 0.4);
   }
-
 
   .navbar-menu a {
     width: 100%;
     font-size: 15px;
-    font-weight: 300; /* Letra más fina se ve más elegante */
+    font-weight: 300;
     letter-spacing: 0.5px;
-    text-transform: uppercase; /* Estilo hotel boutique */
+    text-transform: uppercase;
   }
 
   .btn-reservar {
     width: 100%;
     margin-top: 8px;
-    z-index: 500;
   }
-
-
-  /* --- Contenedor de Idioma mejorado --- */
-  .lang-container {
+    .lang-container {
+    display: flex;
+    align-items: center;
     margin-top: 1rem;
-    padding: 8px 20px;
-    background: rgba(255, 255, 255, 0.05); /* Un recuadro sutil */
+   padding: 8px 20px;
+    background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
     width: 100%;
     justify-content: space-evenly;
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
-
-  .lang-label {
+    .lang-label {
     display: block;
     font-size: 14px;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.7); /* Menos blanco para que no compita */
-    text-transform: none;
+    color: rgba(255, 255, 255, 0.7);
   }
-
 
   .menu-overlay {
+    display: block; /* Se controla con @if en HTML */
     position: fixed;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.5); /* Color de la sombra */
-    backdrop-filter: blur(2px);    /* Efecto de desenfoque opcional */
-    z-index: 200;                  /* Por debajo de la navbar-menu (300) */
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    z-index: 20;
     animation: fadeIn 0.28s forwards;
-    display: block;                /* Se controla con @if en el HTML */
   }
-
   @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
 }

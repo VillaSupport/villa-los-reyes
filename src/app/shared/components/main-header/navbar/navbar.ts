@@ -24,8 +24,6 @@ export class Navbar {
   private isBrowser = isPlatformBrowser(this.platformId);
 
   menuOpen = signal(false);
-  navbarHidden = signal(false);
-  private lastScroll = 0;
 
   readonly navLinks = [
     { path: '/home', label: 'NAVBAR.HOME' },
@@ -43,57 +41,32 @@ export class Navbar {
 
   constructor() {
     effect(() => {
-      if (!this.isBrowser) return;
-      // Bloquea el scroll del body si el menú está abierto
-      document.body.style.overflow = this.menuOpen() ? 'hidden' : 'auto';
+      if (!this.isBrowser) {
+        document.body.style.overflow = this.menuOpen() ? 'hidden' : '';
+      }
     });
   }
   toggleMenu() {
     this.menuOpen.update((v) => !v);
   }
 
-  private readonly whatsapp =
-    environment.contactBusiness.whatsapp;
-
-
-handleBooking(): void {
-  if (isPlatformBrowser(this.platformId)) {
-    const lang = (this.translate.getCurrentLang() || 'es') as 'es'|'en'|'fr';
-    
-    const message = encodeURIComponent(this.whatsapp.defaultMessage[lang]);
-    
-    const url = `https://wa.me/${this.whatsapp.number}?text=${message}`;
-    window.open(url, '_blank', 'noopener noreferrer');
+  handleBooking(): void {
+    if (this.isBrowser) {
+      const whatsapp = environment.contactBusiness.whatsapp;
+      const lang = (this.translate.getCurrentLang() || 'es') as
+        | 'es'
+        | 'en'
+        | 'fr';
+      const message = encodeURIComponent(whatsapp.defaultMessage[lang]);
+      const url = `https://wa.me/${whatsapp.number}?text=${message}`;
+      window.open(url, '_blank', 'noopener noreferrer');
+    }
   }
-}
 
   @HostListener('window:resize')
   onResize() {
     if (this.isBrowser && window.innerWidth > 1280 && this.menuOpen()) {
       this.menuOpen.set(false);
     }
-  }
-
-  @HostListener('window:scroll')
-  onScroll() {
-    if (!this.isBrowser) return;
-
-    const currentScroll = window.scrollY;
-
-    // 1. Si el menú está abierto y el usuario hace scroll, cerrarlo
-    if (this.menuOpen()) {
-      this.menuOpen.set(false);
-    }
-
-    // 2. Lógica de ocultar/mostrar el navbar (Sticky behavior)
-    if (currentScroll > this.lastScroll && currentScroll > 80) {
-      // Bajando: ocultar barra
-      this.navbarHidden.set(true);
-    } else {
-      // Subiendo: mostrar barra
-      this.navbarHidden.set(false);
-    }
-
-    this.lastScroll = currentScroll;
   }
 }

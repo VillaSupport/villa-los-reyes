@@ -1,15 +1,14 @@
 <div class="promo-banner">
   <a routerLink="/packages">
-
     <div class="message-container">
       @for (message of messages; let i = $index; track $index) {
-      @if(i === currentIndex()){
-      <p class="message active" [innerHTML]="messages[currentIndex()] | translate"></p>
+        @if (i === currentIndex()) {
+          <p
+            class="message active"
+            [innerHTML]="messages[currentIndex()] | translate"
+          ></p>
+        }
       }
-
-      }
-
     </div>
   </a>
 </div>
-
