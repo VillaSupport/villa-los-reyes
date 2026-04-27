@@ -1,4 +1,4 @@
-<nav class="navbar" [class.hidden]="navbarHidden()">
+<nav class="navbar">
   <!-- Logo -->
   <div class="navbar-logo">
     <a routerLink="/home">
@@ -14,12 +14,15 @@
   <ul class="navbar-menu" [class.open]="menuOpen()">
     @for (link of navLinks; track link.path) {
       <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-        <a [routerLink]="[link.path]"> {{ link.label | translate }}</a>
+        <a [routerLink]="[link.path]" (click)="menuOpen.set(false)">
+          {{ link.label | translate }}</a
+        >
       </li>
     }
     <li>
-      
-      <button class="btn-reservar" (click)="handleBooking()">{{ navLabels.bookNow | translate }}</button>
+      <button class="btn-reservar" (click)="handleBooking()">
+        {{ navLabels.bookNow | translate }}
+      </button>
     </li>
     <li>
       <div class="lang-container">
@@ -36,7 +39,10 @@
     role="button"
     aria-label="Toggle menu"
   >
-  <span class = "icon icon-fn" [class]="menuOpen() ? 'icon-close' : 'icon-menu'"></span>
+    <span
+      class="icon icon-fn"
+      [class]="menuOpen() ? 'icon-close' : 'icon-menu'"
+    ></span>
   </div>
 </nav>
 

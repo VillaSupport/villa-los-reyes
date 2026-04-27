@@ -27,22 +27,31 @@ export class GalleryThumbsGrid {
 
   constructor() {
     effect(() => {
-      if (isPlatformBrowser(this.platformId)) {
-        const isOpen = !!this.selectedImage();
-        const body = document.body;
+  if (isPlatformBrowser(this.platformId)) {
+    const isOpen = !!this.selectedImage();
+    const body = document.body;
+    const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
 
-        if (isOpen) {
-          body.classList.add('lightbox-open'); // <--- Añadimos esto
-          body.style.overflow = 'hidden';
-          // ... resto de tu código
-        } else {
-          body.classList.remove('lightbox-open'); // <--- Quitamos esto
-          body.style.overflow = 'auto';
-          // ... resto de tu código
-        }
-      }
-    });
+    if (isOpen) {
+      body.style.overflow = 'hidden';
+      // Evita que la web "salte" al desaparecer la barra de scroll
+      body.style.paddingRight = `${scrollBarWidth}px`;
+      body.classList.add('lightbox-open');
+      
+      // Opcional: Bloqueo extra para móviles (iOS es rebelde con el overflow: hidden)
+      body.addEventListener('touchmove', this.preventScroll, { passive: false });
+    } else {
+      body.style.overflow = '';
+      body.style.paddingRight = '';
+      body.classList.remove('lightbox-open');
+      
+      body.removeEventListener('touchmove', this.preventScroll);
+    }
   }
+});
+  }
+
+  
 
   // Método auxiliar para bloquear el swipe
   private preventScroll(e: TouchEvent) {

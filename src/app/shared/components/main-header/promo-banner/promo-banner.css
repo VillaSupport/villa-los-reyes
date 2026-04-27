@@ -1,34 +1,49 @@
-.promo-banner {
+:host {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
 
-  padding: 14px 20px;
+.promo-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 45px;
+
+  padding: 12px 20px;
   background-color: #FFB86E;
   color: #08372A;
   font-size: 15px;
   overflow: hidden;
-  font-family: "Poppins",sans-serif;
   line-height: 1.4;
   height: fit-content;
-  align-content: center;
   text-decoration: none;
 
 }
 
-a {
-  text-decoration: none; /* Quita el subrayado */
-  color: inherit;         /* Hace que el link use el color del texto que lo rodea */
-}
-
-.message-container {
-  align-content: center;
+.promo-banner a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
 }
 
 .message {
+  margin: 0;
+  text-align: center;
   width: 100%;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  text-align: center;
+  animation: fadeIn 0.5s ease-in-out forwards;
 }
 
-.message.active {
-  opacity: 1;
+/* Animación de entrada suave */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
