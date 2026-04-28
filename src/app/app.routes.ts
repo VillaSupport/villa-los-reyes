@@ -26,13 +26,6 @@ export const routes: Routes = [
       import('./features/reviews/pages/reviews-page/reviews-page').then(
         (m) => m.ReviewsPage,
       ),
-    // MOVER FIREBASE AQUÍ:
-    providers: [
-      provideFirestore(() => getFirestore()),
-      provideAuth(() => getAuth()),
-      AuthService, 
-      ReviewsService, 
-    ],
   },
   {
     path: 'experiences',

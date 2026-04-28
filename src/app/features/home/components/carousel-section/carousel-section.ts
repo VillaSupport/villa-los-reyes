@@ -1,3 +1,4 @@
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { isPlatformBrowser } from '@angular/common';
 import {
   Component,
@@ -29,6 +30,16 @@ export class CarouselSection {
   private touchStartX = 0;
   private touchEndX = 0;
   private readonly minSwipeDistance = 50; // Píxeles mínimos para mover
+
+  private breakpointObserver = inject(BreakpointObserver);
+isMobile = signal(false);
+
+constructor() {
+  // Detectar si es móvil (opcional, requiere @angular/cdk)
+  this.breakpointObserver.observe([Breakpoints.Handset]).subscribe(result => {
+    this.isMobile.set(result.matches);
+  });
+}
 
   @HostListener('touchstart', ['$event'])
   onTouchStart(event: TouchEvent) {
@@ -78,14 +89,16 @@ export class CarouselSection {
     }
   }
 
-  getIndicatorSize(i: number): number {
-    const currentIndex = this.current();
-    const distance = Math.abs(currentIndex - i);
+ getIndicatorSize(i: number): number {
+  const currentIndex = this.current();
+  const distance = Math.abs(currentIndex - i);
 
-    const maxSize = 25; 
-    const step = 5; 
-    const minSize = 5;
+  // Valores dinámicos según el dispositivo
+  const isMobile = this.isMobile();
+  const maxSize = isMobile ? 15 : 25; 
+  const step = isMobile ? 3 : 5; 
+  const minSize = isMobile ? 4 : 5;
 
-    return Math.max(maxSize - (distance * step), minSize);
-  }
+  return Math.max(maxSize - (distance * step), minSize);
+}
 }

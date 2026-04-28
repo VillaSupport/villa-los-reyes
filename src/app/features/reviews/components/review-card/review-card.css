@@ -1,0 +1,113 @@
+:host {
+  display: block;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.review-card {
+  /* Layout Base */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 24px;
+
+  /* Dimensiones Dinámicas */
+  width: clamp(280px, 30vw, 350px);
+  height: 270px;
+
+  /* Estética */
+  background: #f5fbf6;
+  border-radius: 12px;
+  border: 0.75px solid #bfc9c3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  /* Interacción y Seguridad */
+  transition: transform 0.2s ease;
+  box-sizing: border-box;
+}
+
+.review-card:hover {
+  transform: translateY(-4px);
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: center;
+  /* Crucial para que el texto truncado funcione dentro de flex */
+  min-width: 0;
+  width: 100%;
+}
+
+.user-photo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0; /* Evita que la foto se aplaste */
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  /* Crucial para truncar el nombre si es muy largo */
+  width: 100%;
+  min-width: 0;
+}
+
+.user-name {
+  margin: 0;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #707974;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.rating-stars {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  background: #F49516;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+}
+
+.comment {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5; /* Altura de línea clara */
+  color: #234e3f;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+
+  /* --- CONFIGURACIÓN CORRECTA --- */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4; /* Limitamos a 4 líneas */
+  line-clamp: 4;
+  max-width: 250px;
+  
+  overflow: hidden;
+  word-break: break-word; 
+}

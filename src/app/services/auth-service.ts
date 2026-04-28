@@ -6,14 +6,13 @@ import {
   signInWithPopup,
   signOut,
   authState,
-  setPersistence,
-  browserSessionPersistence,
   User,
-  browserPopupRedirectResolver,
 } from '@angular/fire/auth';
-import { Observable, from } from 'rxjs';
+import { Observable } from 'rxjs';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root' // <--- ESTO ES VITAL
+})
 export class AuthService {
   private auth = inject(Auth);
   private platformId = inject(PLATFORM_ID);

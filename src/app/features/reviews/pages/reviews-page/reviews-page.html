@@ -24,26 +24,26 @@
             </div>
             <hr class="review-divider" />
           }
-        } @else if (paginatedReviews().length) {
-          @for (review of paginatedReviews(); track review.id) {
+        } @else if (displayReviews().length) {
+          @for (review of displayReviews(); track review.id) {
             <article class="review-card">
               <header class="review-header">
                 <div class="user-block">
                   <img referrerpolicy="no-referrer"
-                    [src]="getReviewUserPhoto(review)"
+                    [src]="getPhoto(review)"
                     alt="User Avatar"
                     class="user-avatar"
                   />
                   <div class="user-info">
                     <span class="user-name">{{
-                      userReviewDisplayName(review)
+                      getName(review)
                     }}</span>
                     <div class="review-meta">
                       <div class="review-stars">
                         @for (s of stars; track s) {
                           <span
                           class="icon"
-                            [class]="getClassStar(review.rating, s)"
+                            [class]="getStarClass(review.rating, s)"
                           >
                           </span>
                         }
