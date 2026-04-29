@@ -44,7 +44,11 @@ export const appConfig: ApplicationConfig = {
       fallbackLang: 'es',
       lang: 'es',
     }),
+    // --- CONFIGURACIÓN DE FIREBASE GLOBAL ---
     provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirestore(() => getFirestore()), // <--- ESTO FALTABA
+    provideAuth(() => getAuth()),           // <--- ESTO TAMBIÉN
+    // ----------------------------------------
     {
       provide: LocationStrategy,
       useClass: HashLocationStrategy,

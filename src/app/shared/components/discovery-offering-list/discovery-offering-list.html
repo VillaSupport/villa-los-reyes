@@ -1,6 +1,6 @@
 <div class="offering-container section-outer">
-    <div class="inner-wrapper section-inner">
-        <discovery-header [header]="header()" />
+    <div class="inner-wrapper section-inner" [class.disable-padding]="disablePadding()" >
+        <discovery-header [header]="header()" [class.section-inner] = "disablePadding()"/>
 
         <scroll-snap-list [data]="data()" [mobileRow]="mobileRow()">
             <ng-template let-item>
@@ -9,7 +9,9 @@
                     [ngTemplateOutletContext]="{ $implicit: item }">
                 </ng-container>
             </ng-template>
+            <ng-content></ng-content>
         </scroll-snap-list>
+        
     </div>
 
 </div>

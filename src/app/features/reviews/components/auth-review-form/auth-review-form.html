@@ -14,11 +14,12 @@
             alt="Avatar"
             class="user-avatar"
           />
-          <span class="user-name">{{ userDisplayName() }}</span>
+          
+          <span class="user-name">{{ userName() }}</span>
         } @else {
           <div class="user-avatar anonymous-avatar">
             <img
-              [src]="anonymousAvatarPath()"
+              [src]="anonymousAvatar()"
               alt="Anónimo"
               class="avatar-svg-render"
             />
@@ -40,8 +41,9 @@
       @for (s of stars; track s) {
         <span
           class="icon"
-          [style.background]="getStarStyle(rating(), s).color"
-          [class]="getClassStar(rating(), s).class"
+          (click)="updateRating(s)"
+          [style.background]="getStarColor(rating(), s)"
+          [class]="getStarClass(rating(), s)"
         >
         </span>
       }

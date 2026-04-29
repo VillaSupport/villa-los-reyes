@@ -1,0 +1,11 @@
+<discovery-offering-list 
+    [header]="header" 
+    [data]="reviewCardsData()"
+    [mobileRow] = "true"
+    > 
+    
+    <ng-template #itemTemplate let-item>
+        <review-card [review]="item"></review-card>
+    </ng-template>
+    <div #endAnchor class="scroll-end-anchor"></div>
+</discovery-offering-list>

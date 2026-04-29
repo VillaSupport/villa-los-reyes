@@ -206,7 +206,7 @@ hr {
 /* =========================================================
    RESPONSIVE 600PX (MOBILE)
    ========================================================= */
-@media (min-width: 601px) and (max-width: 768px) {
+@media (max-width: 768px) {
 
   .footer-section {
     padding: 3rem 1.25rem 2rem;
@@ -219,6 +219,7 @@ hr {
     align-items: center;
     text-align: center;
   }
+
 
   .brand,
   .contact,
@@ -241,14 +242,17 @@ hr {
     gap: 2.25rem;
   }
 
-
-
   .contact ul {
-    align-items: center;
+    gap: 1.25rem;
+    align-items:flex-start;
   }
 
+  .contact a {
+    text-align: left;
+  }
 
   .contact h3 {
+    text-align: left;
     font-size: 1.6rem;
   }
 
@@ -289,25 +293,10 @@ hr {
     padding: 3rem 1.25rem 2rem;
   }
 
-  .footer-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    text-align: center;
-  }
-
   .brand,
   .contact,
   .message {
-    width: 100%;
     max-width: 410px;
-  }
-
-  /* BRAND */
-  .brand {
-    gap: 1.25rem;
-    align-items: center;
   }
 
   .footer-logo {
@@ -322,43 +311,41 @@ hr {
     font-size: 1.9rem;
   }
 
-  .contact ul {
-    align-items: center;
-  }
-
 
   .contact h3 {
     font-size: 1.45rem;
   }
 
+
   .contact li {
     font-size: 0.95rem;
   }
 
-  .message h3 {
+  /* .message h3 {
     font-size: 1.45rem;
   }
 
   .message p {
     font-size: 0.95rem;
-  }
+  } */
 
-  .chat-btn {
+  /* .chat-btn {
     font-size: 1.1rem;
     padding: 0.5rem;
-  }
+  } */
 
-  .tooltip {
+  /* .tooltip {
     position: absolute;
     left: 105%;
     transform: none;
     padding: 0 0.25rem;
     font-size: 0.55rem;
     white-space: nowrap;
-  }
+  } */
 
-  .footer-bottom {
+
+  /* .footer-bottom {
     font-size: 0.95rem;
 
-  }
+  } */
 }

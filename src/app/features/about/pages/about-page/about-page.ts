@@ -6,10 +6,11 @@ import { HeaderData } from '../../../../shared/interfaces/common.interface';
 import { AboutService } from '../../services/about.service';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { AboutView } from '../../components/about-view/about-view';
+import { ReviewsCrossList } from "../../../reviews/components/reviews-cross-list/reviews-cross-list";
 
 @Component({
   selector: 'about-page',
-  imports: [PageHeader, SplitView,AboutView],
+  imports: [PageHeader, SplitView, AboutView, ReviewsCrossList],
   templateUrl: './about-page.html',
   styleUrl: './about-page.css',
 })

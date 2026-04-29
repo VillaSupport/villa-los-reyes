@@ -8,6 +8,10 @@
     background: var(--outer-bg-color);
 }
 
+.inner-wrapper.disable-padding {
+  padding: 0;
+}
+
 .offering-container {
     background: var(--inner-bg-color);
 }

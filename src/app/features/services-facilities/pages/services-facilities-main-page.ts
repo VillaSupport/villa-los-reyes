@@ -19,6 +19,7 @@ import { HeaderData } from '../../../shared/interfaces/common.interface';
       [header]="header" 
       [items]="items()" >
     </feature-overview-template>
+   
   `
 })
 export class ServicesFacilitiesMainPage {

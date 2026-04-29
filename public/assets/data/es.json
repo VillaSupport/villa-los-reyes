@@ -50,9 +50,10 @@
     },
     "REVIEWS": {
       "TITLE": "Reseñas y comentarios",
-      "DESCRIPTION": "Lee las reseñas de nuestros huéspedes y descubre por qué Villa Los Reyes es el lugar perfecto para tu estancia. ¡Tu opinión también cuenta!."
+      "DESCRIPTION": "Lee las <strong>reseñas</strong> de nuestros huéspedes y descubre por qué <strong>Villa Los Reyes</strong> es el lugar perfecto para tu estancia. ¡Tu <strong>opinión</strong> también cuenta!."
     }
   },
+
 
   "SECTION_HEADER": {
     "PACKAGE": {

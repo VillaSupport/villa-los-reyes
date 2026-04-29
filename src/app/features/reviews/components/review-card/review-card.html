@@ -1,0 +1,27 @@
+<article class="review-card">
+  <header class="card-header">
+    <img
+      referrerpolicy="no-referrer"
+      [src]="review().userPhoto"
+      [alt]="review().userName"
+      class="user-photo"
+      loading="lazy"
+    />
+    <div class="user-info">
+      <h4 class="user-name">{{ review().userName }}</h4>
+      <div class="rating-stars">
+        @for (star of [1, 2, 3, 4, 5]; track star) {
+          <span class="icon" 
+          [style.background]="getStarColor(review().rating, star,'orange')"
+          [class]="getStarClass(review().rating, star,'filled')">
+          </span>
+        }
+        
+      </div>
+    </div>
+  </header>
+
+  <div class="card-body">
+    <p class="comment">{{ review().comment }}</p>
+  </div>
+</article>

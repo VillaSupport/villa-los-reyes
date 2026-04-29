@@ -1,0 +1,6 @@
+.scroll-end-anchor {
+  display: inline-block;
+  min-width: 100px; /* Ancho para que el observer tenga tiempo de reaccionar */
+  height: 100%;
+  flex-shrink: 0; /* Evita que el contenedor flex lo colapse */
+}

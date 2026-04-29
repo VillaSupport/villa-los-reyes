@@ -15,5 +15,5 @@ export class DiscoveryOfferingList {
   data = input.required<any[]>()
   mobileRow = input<boolean>(false)
   cardTemplate = contentChild.required(TemplateRef);
-
+  disablePadding = input<boolean>(false);
 }
