@@ -5,10 +5,11 @@ import { ExperiencesCrossSell } from "../../../experiences/components/experience
 import { CarouselSection } from '../../components/carousel-section/carousel-section';
 import { AboutView } from "../../../about/components/about-view/about-view";
 import { DiscoverRooms } from "../../../services-facilities/components/discover-room-section/discover-rooms";
+import { ReviewsCrossList } from "../../../reviews/components/reviews-cross-list/reviews-cross-list";
 
 @Component({
   selector: 'app-home-page',
-  imports: [ServiceCrossList, PackageCrossList, ExperiencesCrossSell, CarouselSection, AboutView, DiscoverRooms],
+  imports: [ServiceCrossList, PackageCrossList, ExperiencesCrossSell, CarouselSection, AboutView, DiscoverRooms, ReviewsCrossList],
   templateUrl: './home-page.html',
   styleUrl: './home-page.css',
 })

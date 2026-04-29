@@ -5,10 +5,10 @@
   align-items: center;
   gap: 0.5rem;
   max-width: 1200px;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 .section-header h1 {
-  color: #D17D00;
+  color: #d17d00;
   font-family: Poppins, sans-serif;
   font-size: 2.25rem;
   font-weight: 700;
@@ -18,14 +18,14 @@
   font-family: Poppins, sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
-  color: #234E3F;
+  color: #234e3f;
   line-height: 1.875rem;
-  white-space: pre-wrap; 
+  white-space: pre-wrap;
   letter-spacing: 0.03rem;
 }
 
 .section-header a {
-  color: #186B53;
+  color: #186b53;
   font-family: Poppins, sans-serif;
   font-size: 1.25rem;
   font-weight: 500;
@@ -44,7 +44,7 @@
    Usamos .inner-link porque es la clase que pone la directiva
    ============================================================ */
 .section-header .inner-link {
-  color: #147CA7;
+  color: #147ca7;
   font-family: Poppins, sans-serif;
   font-size: 1.13rem;
   font-weight: 700;
@@ -59,7 +59,13 @@
 }
 
 .section-header .inner-link:hover {
-  color: #0F6690;
+  color: #0f6690;
+}
+
+@media (max-width: 1024px) {
+  .section-header {
+    margin: 0;
+  }
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -74,7 +80,7 @@
     line-height: 2.5rem;
   }
 
-  .section-header p, 
+  .section-header p,
   .section-header .inner-link {
     font-size: 1rem;
     line-height: 1.75rem;
@@ -98,7 +104,7 @@
     line-height: 2rem;
   }
 
-  .section-header p, 
+  .section-header p,
   .section-header .inner-link {
     font-size: 0.75rem;
     line-height: 1rem;

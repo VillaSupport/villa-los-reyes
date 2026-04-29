@@ -13,7 +13,7 @@ import { Review } from '../../interfaces/reviews.interfaces';
 // Componentes
 import { PageHeader } from '../../../../shared/components/page-header/page-header';
 import { AuthReviewForm } from '../../components/auth-review-form/auth-review-form';
-import { getClassStar, getReviewUserPhoto, getUserDisplayName } from '../../../../utils/review-utils';
+import { getClassStar, getReviewUserPhoto, getStarColor, getUserDisplayName } from '../../../../utils/review-utils';
 
 @Component({
   selector: 'reviews-page',
@@ -34,6 +34,7 @@ export class ReviewsPage {
   // Referencias a Utils para el HTML
   readonly getName = getUserDisplayName;
   readonly getStarClass = getClassStar;
+  readonly getStarColor = getStarColor;
 
   // --- Propiedades de UI ---
   readonly header = { title: 'HEADER.REVIEWS.TITLE', description: 'HEADER.REVIEWS.DESCRIPTION' };

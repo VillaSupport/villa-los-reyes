@@ -11,9 +11,12 @@
       <h4 class="user-name">{{ review().userName }}</h4>
       <div class="rating-stars">
         @for (star of [1, 2, 3, 4, 5]; track star) {
-          <span class="icon" [class]="getStarClass(review().rating, star)">
+          <span class="icon" 
+          [style.background]="getStarColor(review().rating, star,'orange')"
+          [class]="getStarClass(review().rating, star,'filled')">
           </span>
         }
+        
       </div>
     </div>
   </header>

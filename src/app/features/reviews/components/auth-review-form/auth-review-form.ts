@@ -86,9 +86,15 @@ export class AuthReviewForm {
     );
   }
 
-  setRating(val: number) {
+  updateRating(val: number): void {
+  // Verificamos si existe el usuario antes de actualizar
+  if (this.user()) {
     this.rating.set(val);
+  } else {
+    console.warn('Acceso denegado: El usuario no está autenticado');
+    // Aquí podrías disparar una alerta o abrir un modal de login
   }
+}
 
   async sendReview() {
     if (this.isSendingReview()) return;

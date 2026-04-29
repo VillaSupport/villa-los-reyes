@@ -39,8 +39,8 @@ export class ReviewsCrossList implements AfterViewInit, OnDestroy {
   private observer?: IntersectionObserver;
 
   readonly header = {
-    title: 'REVIEWS.TITLE',
-    description: 'REVIEWS.DESCRIPTION',
+    title: 'HEADER.REVIEWS.TITLE',
+    description: 'HEADER.REVIEWS.DESCRIPTION',
   };
 
   readonly isLoading = signal(true);

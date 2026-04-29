@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { getClassStar } from '../../../../utils/review-utils';
+import { getClassStar, getStarColor } from '../../../../utils/review-utils';
 
 export interface ReviewCardData {
   userName: string;
@@ -16,5 +16,6 @@ export interface ReviewCardData {
 })
 export class ReviewCard {
   readonly getStarClass = getClassStar;
+  readonly getStarColor = getStarColor;
   review = input.required<ReviewCardData>();
 }

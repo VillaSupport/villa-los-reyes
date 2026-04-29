@@ -41,6 +41,7 @@
       @for (s of stars; track s) {
         <span
           class="icon"
+          (click)="updateRating(s)"
           [style.background]="getStarColor(rating(), s)"
           [class]="getStarClass(rating(), s)"
         >

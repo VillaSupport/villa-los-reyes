@@ -29,20 +29,20 @@
             <article class="review-card">
               <header class="review-header">
                 <div class="user-block">
-                  <img referrerpolicy="no-referrer"
+                  <img
+                    referrerpolicy="no-referrer"
                     [src]="getPhoto(review)"
                     alt="User Avatar"
                     class="user-avatar"
                   />
                   <div class="user-info">
-                    <span class="user-name">{{
-                      getName(review)
-                    }}</span>
+                    <span class="user-name">{{ getName(review) }}</span>
                     <div class="review-meta">
                       <div class="review-stars">
                         @for (s of stars; track s) {
                           <span
-                          class="icon"
+                            class="icon"
+                            [style.background]="getStarColor(review.rating, s,'dark')"
                             [class]="getStarClass(review.rating, s)"
                           >
                           </span>
