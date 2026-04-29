@@ -6,10 +6,8 @@ import { CarouselSection } from '../../components/carousel-section/carousel-sect
 import { AboutView } from "../../../about/components/about-view/about-view";
 import { DiscoverRooms } from "../../../services-facilities/components/discover-room-section/discover-rooms";
 import { ReviewsCrossList } from "../../../reviews/components/reviews-cross-list/reviews-cross-list";
-import { ReviewsCrossList } from "../../../reviews/components/reviews-cross-list/reviews-cross-list";
 
 @Component({
-  imports: [ServiceCrossList, PackageCrossList, ExperiencesCrossSell, CarouselSection, AboutView, DiscoverRooms, ReviewsCrossList]
   imports: [ServiceCrossList, PackageCrossList, ExperiencesCrossSell, CarouselSection, AboutView, DiscoverRooms, ReviewsCrossList],
   templateUrl: './home-page.html',
   styleUrl: './home-page.css',
